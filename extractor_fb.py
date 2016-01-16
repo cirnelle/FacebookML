@@ -7,12 +7,16 @@ import urllib
 import langdetect
 import os
 import sys
-import time
-from pprint import pprint
+
+
+if os.path.isfile('../../keys/facebook_api_keys.txt'):
+    access_token = open('../../keys/facebook_api_keys.txt','r').readline()
+
+else:
+    print ("Path not found")
+    sys.exit(1)
 
 user_list = ['nasa', 'spacex']
-access_token = '454218051442928|J5hRAmyqPSpMb8aCBYO7dz6kTD8'
-
 
 
 class Extractor_fb():
@@ -89,7 +93,6 @@ class Extractor_fb():
                         id_list.append(next_page['data'][m]['id'])
 
         return post_list, id_list
-
 
 
     def get_comments(self,graph,id_list):
@@ -201,50 +204,3 @@ comments = ext.get_comments(graph,ids)
 
 write_file = ext.write_to_file(comments)
 
-
-
-'''
-
-graph = facebook.GraphAPI(access_token = access_token)
-
-comments = graph.get_connections(id='nasa', connection_name='posts', limit=5)
-
-print (comments)
-
-f = open ('test.csv', 'w')
-
-for i in range(len(comments['data'])):
-    f.write(str(comments['data'][i]['message'])+'\n')
-
-
-
-# comments is already a dictionary, do not need to use json to transform it!
-# comments contains dictionaries within dictionary
-# 'data' is the dictionary that contains the comments, which are all in one list: data = {[comment 1, comment 2, ...]}
-
-#for i in range(len(comments['data'])):
-#    print (comments['data'][i]['message'])
-
-
-#post = graph.get_object(id='54971236771', fields='posts')
-#print (post)
-
-
-
-
-
-
-
-
-    #print (data['text'])
-
-
-#f = open('/test.csv', 'w')
-
-#for fc in fullcomments:
-#    f.write(str(fc)+'\n')
-
-#f.close()
-
-
-'''
