@@ -17,7 +17,7 @@ else:
     print ("Path not found")
     sys.exit(1)
 
-user_list = ['nasa', 'spacex']
+user_list = ['barackobama']
 
 
 class Extractor_fb():
@@ -52,7 +52,7 @@ class Extractor_fb():
     def create_post_list(self, user, posts, post_list):
 
         ##############
-        # creates a list of parameters we want from the dict returned through API
+        # creates a list of post information we want from the dict returned through API
         ##############
 
         #################
@@ -76,6 +76,36 @@ class Extractor_fb():
                 post_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'], str(posts['data'][m]['likes']['summary']['total_count']), str(0), str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'], posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
                 temp_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'], str(posts['data'][m]['likes']['summary']['total_count']), str(0), str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'], posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
+
+        ##################
+        # write to file each time this function is called, so that we don't lose data if error occurs
+        ##################
+
+
+        f = open('test.csv', 'a')
+
+        for tl in temp_list:
+            f.write(', '.join(tl)+'\n')
+
+        f.close()
+
+        return post_list
+
+    def create_comment_list(self, id, comments, comment_list):
+
+    ##############
+    # creates a list of comment information we want from the dict returned through API
+    ##############
+
+        temp_list = []
+
+        for n in range(len(comments['data'])):
+
+            if comments['data'][n]['message'] != '':
+                #print (comments['data'][n]['id'])
+                comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(comments['data'][n]['like_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                temp_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(comments['data'][n]['like_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
         ##################
         # write to file each time this function is called, so that we don't lose data if error occurs
         ##################
@@ -88,14 +118,16 @@ class Extractor_fb():
 
         f.close()
 
-        return post_list
+        return comment_list
 
 
     def get_page_posts(self,graph):
 
-        post_limit = 3
-        page_limit = 3
+        post_limit = 2
+        page_limit = 6
         post_list = []
+        retries = 5
+        sleep_time = 50
 
         for user in user_list:
 
@@ -115,37 +147,18 @@ class Extractor_fb():
             # the next section gets the posts for the first 'next' URL (which is retrieved with the get_connections method), and run only once
             ################
 
-            url = posts['paging']['next']
-            next_url = urllib.request.urlopen(url)
-            readable_page = next_url.read()
-            next_page = json.loads(readable_page.decode())
 
-            print ("Collecting page 2 for "+user)
-
-            post_list = self.create_post_list(user, next_page, post_list)
-
-
-            ###############
-            # the next section gets the posts for the second 'next' URL onwards (which are retrieved with the urllib!)
-            ###############
-
-            for l in range(page_limit-2):
-
-                print ("Collecting page "+str(l+3)+" for "+user)
-
-            ###############
-            # Try and except to catch HTTPError (Internal server error), set a maximum number of retries
-            ###############
-
-                retries = 5
+            if 'next' in posts['paging']:
 
                 for r in range (retries):
+
+                    print ("Collecting page 2 for "+user)
 
                     print ("Attempt "+str(r))
 
                     try:
 
-                        url = next_page['paging']['next']
+                        url = posts['paging']['next']
                         next_url = urllib.request.urlopen(url)
                         readable_page = next_url.read()
                         next_page = json.loads(readable_page.decode())
@@ -156,11 +169,56 @@ class Extractor_fb():
 
                     except urllib.error.HTTPError as e:
                         print ("HTTPError caught, retrying...", e.read())
-                        time.sleep(10)
+                        time.sleep(sleep_time)
 
                     except:
                         print ("An error occurred.")
                         time.sleep(10)
+
+
+            ###############
+            # the next section gets the posts for the second 'next' URL onwards (which are retrieved with the urllib!)
+            ###############
+
+
+                for l in range(page_limit-2):
+
+                    # check if there is a next page
+                    if 'paging' in next_page:
+
+                        print ("Collecting page "+str(l+3)+" for "+user)
+
+            ###############
+            # Try and except to catch HTTPError (Internal server error), set a maximum number of retries
+            ###############
+
+                        for r in range (retries):
+
+                            print ("Attempt "+str(r))
+
+                            try:
+
+                                url = next_page['paging']['next']
+                                next_url = urllib.request.urlopen(url)
+                                readable_page = next_url.read()
+                                next_page = json.loads(readable_page.decode())
+
+                                post_list = self.create_post_list(user, next_page, post_list)
+
+                                break
+
+                            except urllib.error.HTTPError as e:
+                                print ("HTTPError caught, retrying...", e.read())
+                                time.sleep(sleep_time)
+
+                            except:
+                                print ("An error occurred.")
+                                time.sleep(10)
+
+                    else:
+                        print ("No more next page")
+                        break
+
 
 
         return post_list
@@ -176,6 +234,8 @@ class Extractor_fb():
             # get comment count for the post with this id
             ###########
 
+            print ("Getting comments for "+str(id))
+
             comment_obj = graph.get_object(id = id, fields = 'comments.summary(true)')
             comment_count = comment_obj['comments']['summary']['total_count']
 
@@ -189,19 +249,16 @@ class Extractor_fb():
                 comments_limit = 100
                 #page_limit = int(comment_count/100)+1
 
-            comments = graph.get_connections(id = id, connection_name='comments', limit = comments_limit, fields = 'message, id, created_time')
+            comments = graph.get_connections(id = id, connection_name='comments', limit = comments_limit, fields = 'message, id, created_time, like_count')
 
             ##############
             # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
             ##############
 
-            print ('This is the first page with length '+str(comments_limit))
+            print ('1st page with length '+str(comments_limit))
 
-            for k in range(len(comments['data'])):
 
-                if comments['data'][k]['message'] != '':
-
-                    comment_list.append([id, comments['data'][k]['created_time'], comments['data'][k]['id'], comments['data'][k]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+            comment_list = self.create_comment_list(id, comments, comment_list)
 
 
             ##############
@@ -215,13 +272,9 @@ class Extractor_fb():
                 readable_page = next_url.read()
                 next_page = json.loads(readable_page.decode())
 
-                print ('This is the next page with length '+str(len(next_page['data'])))
+                print ('2nd page with length '+str(len(next_page['data'])))
 
-                for m in range(len(next_page['data'])):
-
-                    if next_page['data'][m]['message'] != '':
-
-                        comment_list.append([id, next_page['data'][m]['created_time'], next_page['data'][m]['id'], next_page['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                comment_list = self.create_comment_list(id, next_page, comment_list)
 
             ##############
             # check if there is a next comment page by checking for the key 'next' in the 'next_page' dictionary obtained from URL
@@ -237,11 +290,7 @@ class Extractor_fb():
 
                     print (len(next_page['data']))
 
-                    for n in range(len(next_page['data'])):
-
-                        if next_page['data'][n]['message'] != '':
-
-                            comment_list.append([id, next_page['data'][n]['created_time'], next_page['data'][n]['id'], next_page['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                    comment_list = self.create_comment_list(id,next_page,comment_list)
 
 
         return comment_list
@@ -276,12 +325,13 @@ class Extractor_fb():
 
         return list_clean
 
+
     def create_id_list(self):
 
         id_list = []
 
         # lines is a list of strings ['nasa, 2016-01-16, ID, message', 'nasa, 2016-01-01, ID, message', ...]
-        lines = open('test.csv', 'r').readlines()
+        lines = open('output/fb_posts_20160121.csv', 'r').readlines()
 
         for line in lines:
 
@@ -313,14 +363,15 @@ graph = ext.connectToApi(access_token)
 # get posts for pages
 ################
 
-posts = ext.get_page_posts(graph)
+#posts = ext.get_page_posts(graph)
 
 
 ###############
 # get comments for collected posts based on their id's
 ###############
-#ids = ext.create_id_list()
-#comments = ext.get_comments(graph,ids)
+
+ids = ext.create_id_list()
+comments = ext.get_comments(graph,ids)
 
 
 ###############
@@ -334,7 +385,7 @@ posts = ext.get_page_posts(graph)
 # get single post or comment
 ###############
 
-#single_post = ext.get_post_by_id('54971236771_10151476814486772')
+#single_post = ext.get_post_by_id('54912575666_10153187460825667')
 
 #single_comment = ext.get_comment_by_id('10153794959836772_10153794962046772')
 
