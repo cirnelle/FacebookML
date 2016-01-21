@@ -7,6 +7,7 @@ import urllib
 import langdetect
 import os
 import sys
+import time
 
 
 if os.path.isfile('../../keys/facebook_api_keys.txt'):
@@ -47,52 +48,122 @@ class Extractor_fb():
 
         return graph
 
+
+    def create_post_list(self, user, posts, post_list):
+
+        ##############
+        # creates a list of parameters we want from the dict returned through API
+        ##############
+
+        #################
+        # check if 'message' and 'shares' exist as keys, sometimes they don't (e.g. when page publishes a 'story' such as updating their profile pic)
+        #################
+
+        temp_list = []
+
+        for m in range(len(posts['data'])):
+
+            message = 'message'
+            shares = 'shares'
+
+            if message in posts['data'][m] and shares in posts['data'][m]:
+                print (posts['data'][m]['id'])
+                post_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'], str(posts['data'][m]['likes']['summary']['total_count']), str(posts['data'][m]['shares']['count']), str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'], posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                temp_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'], str(posts['data'][m]['likes']['summary']['total_count']), str(posts['data'][m]['shares']['count']), str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'], posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+            elif message in posts['data'][m] and shares not in posts['data'][m]:
+                print ("No shares for "+str(posts['data'][m]['id']))
+                post_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'], str(posts['data'][m]['likes']['summary']['total_count']), str(0), str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'], posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                temp_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'], str(posts['data'][m]['likes']['summary']['total_count']), str(0), str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'], posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+        ##################
+        # write to file each time this function is called, so that we don't lose data if error occurs
+        ##################
+
+
+        f = open('test1.csv', 'a')
+
+        for tl in temp_list:
+            f.write(', '.join(tl)+'\n')
+
+        f.close()
+
+        return post_list
+
+
     def get_page_posts(self,graph):
 
-        post_limit = 2
-        page_limit = 2
+        post_limit = 3
+        page_limit = 3
         post_list = []
-        id_list = []
-
 
         for user in user_list:
 
-            posts = graph.get_connections(id=user, connection_name='posts', limit=post_limit, fields='shares, message, id, type, created_time, likes.summary(true)') #posts is a dict (with other dicts inside)
 
+            posts = graph.get_connections(id=user, connection_name='posts', limit=post_limit, fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)') #posts is a dict (with other dicts inside)
 
             #################
             # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
             #################
 
-            for k in range(len(posts['data'])):
+            print ("Collecting page 1 for "+user)
 
-            #################
-            # check if 'message' exists as a key, sometimes it doesn't (e.g. when page publishes a 'story' such as updating their profile pic)
-            #################
-
-                key = 'message'
-
-                if key in posts['data'][k]:
-                    post_list.append([user, posts['data'][k]['created_time'], posts['data'][k]['id'], str(posts['data'][k]['likes']['summary']['total_count']), str(posts['data'][k]['shares']['count']), posts['data'][k]['type'], posts['data'][k]['message'].replace('\n', ' ').replace(',', ' ')])
-                    id_list.append(posts['data'][k]['id'])
+            post_list = self.create_post_list(user, posts, post_list)
 
 
-            for l in range(page_limit-1):
+            ################
+            # the next section gets the posts for the first 'next' URL (which is retrieved with the get_connections method), and run only once
+            ################
 
-                url = posts['paging']['next']
-                next_url = urllib.request.urlopen(url)
-                readable_page = next_url.read()
-                next_page = json.loads(readable_page.decode())
+            url = posts['paging']['next']
+            next_url = urllib.request.urlopen(url)
+            readable_page = next_url.read()
+            next_page = json.loads(readable_page.decode())
 
-                for m in range(len(next_page['data'])):
+            print ("Collecting page 2 for "+user)
 
-                    key = 'message'
+            post_list = self.create_post_list(user, next_page, post_list)
 
-                    if key in next_page['data'][m]:
-                        post_list.append([user, next_page['data'][m]['created_time'], next_page['data'][m]['id'], str(next_page['data'][m]['likes']['summary']['total_count']), str(next_page['data'][m]['shares']['count']), next_page['data'][m]['type'], next_page['data'][m]['message'].replace('\n', ' ').replace(',', ' ')])
-                        id_list.append(next_page['data'][m]['id'])
 
-        return post_list, id_list
+            ###############
+            # the next section gets the posts for the second 'next' URL onwards (which are retrieved with the urllib!)
+            ###############
+
+            for l in range(page_limit-2):
+
+                print ("Collecting page "+str(l+3)+" for "+user)
+
+            ###############
+            # Try and except to catch HTTPError (Internal server error), set a maximum number of retries
+            ###############
+
+                retries = 5
+
+                for r in range (retries):
+
+                    print ("Attempt "+str(r))
+
+                    try:
+
+                        url = next_page['paging']['next']
+                        next_url = urllib.request.urlopen(url)
+                        readable_page = next_url.read()
+                        next_page = json.loads(readable_page.decode())
+
+                        post_list = self.create_post_list(user, next_page, post_list)
+
+                        break
+
+                    except urllib.error.HTTPError as e:
+                        print ("HTTPError caught, retrying...", e.read())
+                        time.sleep(10)
+
+                    except:
+                        print ("An error occurred.")
+                        time.sleep(10)
+
+
+        return post_list
 
 
     def get_comments(self,graph,id_list):
@@ -130,7 +201,7 @@ class Extractor_fb():
 
                 if comments['data'][k]['message'] != '':
 
-                    comment_list.append([id, comments['data'][k]['created_time'], comments['data'][k]['id'], comments['data'][k]['message'].replace('\n', ' ').replace(',', ' ')])
+                    comment_list.append([id, comments['data'][k]['created_time'], comments['data'][k]['id'], comments['data'][k]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
 
             ##############
@@ -150,7 +221,7 @@ class Extractor_fb():
 
                     if next_page['data'][m]['message'] != '':
 
-                        comment_list.append([id, next_page['data'][m]['created_time'], next_page['data'][m]['id'], next_page['data'][m]['message'].replace('\n', ' ').replace(',', ' ')])
+                        comment_list.append([id, next_page['data'][m]['created_time'], next_page['data'][m]['id'], next_page['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
             ##############
             # check if there is a next comment page by checking for the key 'next' in the 'next_page' dictionary obtained from URL
@@ -170,21 +241,56 @@ class Extractor_fb():
 
                         if next_page['data'][n]['message'] != '':
 
-                            comment_list.append([id, next_page['data'][n]['created_time'], next_page['data'][n]['id'], next_page['data'][n]['message'].replace('\n', ' ').replace(',', ' ')])
+                            comment_list.append([id, next_page['data'][n]['created_time'], next_page['data'][n]['id'], next_page['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
+
+        return comment_list
+
+
+    def get_post_by_id(self,id):
+
+        post = graph.get_object(id=id, fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')
+
+        print ([post['created_time'], post['id'], str(post['likes']['summary']['total_count']), str(0), str(post['comments']['summary']['total_count']), post['type'], post['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+
+    def get_comment_by_id(self,id):
+
+        comment = graph.get_object(id=id, fields = 'message, id, created_time, comments, comment_count')
+
+        print (comment)
+
+
+    def remove_duplicates(self,target_list):
 
         #########
-        #remove duplicates by comment id
+        #remove duplicates by post/comment id
         #########
 
-        comment_list_clean = []
+        list_clean = []
         temp = []
-        for cl in comment_list:
-            if cl[2] not in temp:
-                comment_list_clean.append(cl)
-                temp.append(cl[2])
+        for tl in target_list:
+            if tl[2] not in temp:
+                list_clean.append(tl)
+                temp.append(tl[2])
 
-        return comment_list_clean
+        return list_clean
+
+    def create_id_list(self):
+
+        id_list = []
+
+        # lines is a list of strings ['nasa, 2016-01-16, ID, message', 'nasa, 2016-01-01, ID, message', ...]
+        lines = open('test.csv', 'r').readlines()
+
+        for line in lines:
+
+            spline=line.replace("\n","").split(', ')
+            # spline = ['nasa', '2016-01-16', 'ID', 'message']
+
+            id_list.append(spline[2])
+
+        return id_list
 
 
     def write_to_file(self,list):
@@ -196,11 +302,46 @@ class Extractor_fb():
         f.close()
 
 
+################
+# connect to Facebook Graph API
+################
+
 ext = Extractor_fb()
 graph = ext.connectToApi(access_token)
-posts = ext.get_page_posts(graph)[0]
-ids = ext.get_page_posts(graph)[1]
-comments = ext.get_comments(graph,ids)
 
-write_file = ext.write_to_file(comments)
+################
+# get posts for pages
+################
+
+posts = ext.get_page_posts(graph)
+
+
+###############
+# get comments for collected posts based on their id's
+###############
+#ids = ext.create_id_list()
+#comments = ext.get_comments(graph,ids)
+
+
+###############
+# remove duplicates
+###############
+
+#clean_list = ext.remove_duplicates(posts)
+
+
+###############
+# get single post or comment
+###############
+
+#single_post = ext.get_post_by_id('54971236771_10151476814486772')
+
+#single_comment = ext.get_comment_by_id('10153794959836772_10153794962046772')
+
+
+#############
+# write to CSV file
+#############
+
+#write_file = ext.write_to_file(posts)
 
