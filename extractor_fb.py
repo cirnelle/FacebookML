@@ -17,7 +17,7 @@ else:
     print ("Path not found")
     sys.exit(1)
 
-user_list = ['barackobama']
+user_list = ['cosnes']
 
 
 class Extractor_fb():
@@ -82,10 +82,17 @@ class Extractor_fb():
         ##################
 
 
-        f = open('test.csv', 'a')
+        path = 'test.csv'
+        f = open(path, 'a')
 
-        for tl in temp_list:
-            f.write(', '.join(tl)+'\n')
+        if os.stat(path).st_size == 0:
+            f.write('user, created_time, post_id, like_count, share_count, comment_count, type, message'+'\n')
+            for tl in temp_list:
+                f.write(', '.join(tl)+'\n')
+
+        else:
+            for tl in temp_list:
+                f.write(', '.join(tl)+'\n')
 
         f.close()
 
@@ -103,22 +110,91 @@ class Extractor_fb():
 
             if comments['data'][n]['message'] != '':
                 #print (comments['data'][n]['id'])
-                comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(comments['data'][n]['like_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
-                temp_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(comments['data'][n]['like_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                temp_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
         ##################
         # write to file each time this function is called, so that we don't lose data if error occurs
         ##################
 
 
-        f = open('test1.csv', 'a')
+        path = 'test1.csv'
+        f = open(path, 'a')
 
-        for tl in temp_list:
-            f.write(', '.join(tl)+'\n')
+        if os.stat(path).st_size == 0:
+            f.write('post_id, created_time, comment_id, like_count, comment_count, message'+'\n')
+            for tl in temp_list:
+                f.write(', '.join(tl)+'\n')
+
+        else:
+            for tl in temp_list:
+                f.write(', '.join(tl)+'\n')
 
         f.close()
 
         return comment_list
+
+
+    def create_comment_list_with_replies(self, id, comments):
+
+        comment_list = []
+
+        for n in range(len(comments['data'])):
+
+            if comments['data'][n]['comment_count']== 0:
+
+                print ("No replies to this comment, id is "+str(comments['data'][n]['id']))
+
+                if comments['data'][n]['message'] != '':
+
+                    comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0), str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+
+            elif comments['data'][n]['comment_count'] > 0:
+
+                print ("There are replies to this comment, id is "+str(comments['data'][n]['id']))
+
+                comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0), str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                # check if 'comments' exist as a key. Sometimes even when comment count is greater than 0, there are actually no replies!
+                if 'comments' in comments['data'][n]:
+
+                    for m in range(len(comments['data'][n]['comments']['data'])):
+
+                        if comments['data'][n]['comments']['data'][m]['message'] != '':
+
+                            comment_list.append([id, comments['data'][n]['comments']['data'][m]['created_time'], comments['data'][n]['comments']['data'][m]['id'], str(1), str(comments['data'][n]['comments']['data'][m]['like_count']), str(0), comments['data'][n]['comments']['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                    if 'next' in comments['data'][n]['comments']['paging']:
+
+                        url = comments['data'][n]['comments']['paging']['next']
+                        next_url = urllib.request.urlopen(url)
+                        readable_page = next_url.read()
+                        next_page = json.loads(readable_page.decode())
+
+                        print ('2nd page replies with length '+str(len(next_page['data'])))
+
+                        for x in range(len(next_page['data'])):
+
+                            if next_page['data'][x]['message'] != '':
+
+                                comment_list.append([id, next_page['data'][x]['created_time'], next_page['data'][x]['id'], str(1), str(next_page['data'][x]['like_count']), str(0), next_page['data'][x]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                        while 'next' in next_page['paging']:
+
+                            url = next_page['paging']['next']
+                            next_url = urllib.request.urlopen(url)
+                            readable_page = next_url.read()
+                            next_page = json.loads(readable_page.decode())
+
+                            print ('More replies with length '+str(len(next_page['data'])))
+
+                            for y in range(len(next_page['data'])):
+
+                                if next_page['data'][y]['message'] != '':
+
+                                    comment_list.append([id, next_page['data'][y]['created_time'], next_page['data'][y]['id'], str(1), str(next_page['data'][y]['like_count']), str(0), next_page['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
 
 
     def get_page_posts(self,graph):
@@ -241,22 +317,27 @@ class Extractor_fb():
 
             print ('Comment count is '+str(comment_count))
 
-            if comment_count <= 100:
+            if comment_count <= 100 and comment_count > 0:
                 comments_limit = comment_count
                 #page_limit = 1
 
-            else:
+            elif comment_count > 100:
                 comments_limit = 100
                 #page_limit = int(comment_count/100)+1
 
-            comments = graph.get_connections(id = id, connection_name='comments', limit = comments_limit, fields = 'message, id, created_time, like_count')
+            elif comment_count == 0:
+                print ("No comments, skipping")
+                continue
+
+
+            comments = graph.get_connections(id = id, connection_name='comments', limit = comments_limit, fields = 'message, id, created_time, comments{like_count,message,id,created_time}, like_count, comment_count')
+            print (comments)
 
             ##############
             # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
             ##############
 
             print ('1st page with length '+str(comments_limit))
-
 
             comment_list = self.create_comment_list(id, comments, comment_list)
 
@@ -296,6 +377,212 @@ class Extractor_fb():
         return comment_list
 
 
+    def get_replies_to_comment(self, graph, id_list):
+
+
+        comment_list = []
+
+        for id in id_list:
+
+            ###########
+            # get comment count for the post with this id
+            ###########
+
+            print ("Getting comments for "+str(id))
+
+            comment_obj = graph.get_object(id = id, fields = 'comments.summary(true)')
+            comment_count = comment_obj['comments']['summary']['total_count']
+
+            print ('Comment count is '+str(comment_count))
+
+            if comment_count <= 100 and comment_count > 0:
+                comments_limit = comment_count
+                #page_limit = 1
+
+            elif comment_count > 100:
+                comments_limit = 100
+                #page_limit = int(comment_count/100)+1
+
+            elif comment_count == 0:
+                print ("No comments, skipping")
+                continue
+
+
+            comments = graph.get_connections(id = id, connection_name='comments', limit = comments_limit, fields = 'message, id, created_time, comments{like_count,message,id,created_time}, like_count, comment_count')
+
+
+            ##############
+            # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
+            ##############
+
+            print ('1st page with length '+str(comments_limit))
+
+            for n in range(len(comments['data'])):
+
+                if comments['data'][n]['comment_count']== 0:
+
+                    print ("No replies to this comment, id is "+str(comments['data'][n]['id']))
+
+                    if comments['data'][n]['message'] != '':
+
+                        comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0), str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+
+                elif comments['data'][n]['comment_count'] > 0:
+
+                    print ("There are replies to this comment, id is "+str(comments['data'][n]['id']))
+
+                    comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0), str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']), comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                    # check if 'comments' exist as a key. Sometimes even when comment count is greater than 0, there are actually no replies!
+                    if 'comments' in comments['data'][n]:
+
+                        for m in range(len(comments['data'][n]['comments']['data'])):
+
+                            if comments['data'][n]['comments']['data'][m]['message'] != '':
+
+                                comment_list.append([id, comments['data'][n]['comments']['data'][m]['created_time'], comments['data'][n]['comments']['data'][m]['id'], str(1), str(comments['data'][n]['comments']['data'][m]['like_count']), str(0), comments['data'][n]['comments']['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                        if 'next' in comments['data'][n]['comments']['paging']:
+
+                            url = comments['data'][n]['comments']['paging']['next']
+                            next_url = urllib.request.urlopen(url)
+                            readable_page = next_url.read()
+                            next_page = json.loads(readable_page.decode())
+
+                            print ('2nd page replies with length '+str(len(next_page['data'])))
+
+                            for x in range(len(next_page['data'])):
+
+                                if next_page['data'][x]['message'] != '':
+
+                                    comment_list.append([id, next_page['data'][x]['created_time'], next_page['data'][x]['id'], str(1), str(next_page['data'][x]['like_count']), str(0), next_page['data'][x]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                            while 'next' in next_page['paging']:
+
+                                url = next_page['paging']['next']
+                                next_url = urllib.request.urlopen(url)
+                                readable_page = next_url.read()
+                                next_page = json.loads(readable_page.decode())
+
+                                print ('More replies with length '+str(len(next_page['data'])))
+
+                                for y in range(len(next_page['data'])):
+
+                                    if next_page['data'][y]['message'] != '':
+
+                                        comment_list.append([id, next_page['data'][y]['created_time'], next_page['data'][y]['id'], str(1), str(next_page['data'][y]['like_count']), str(0), next_page['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+
+
+            ##############
+            # check if there is a next comment page by checking for the key 'next' in the 'comments' dictionary obtained from get_connections method
+            ##############
+
+            if 'next' in comments['paging']:
+
+                url = comments['paging']['next']
+                next_url = urllib.request.urlopen(url)
+                readable_page = next_url.read()
+                next_page = json.loads(readable_page.decode())
+
+                print ('2nd page with length '+str(len(next_page['data'])))
+
+
+                for n in range(len(next_page['data'])):
+
+                    if next_page['data'][n]['comment_count']== 0:
+
+                        print ("No replies to this comment, id is "+str(comments['data'][n]['id']))
+
+                        if next_page['data'][n]['message'] != '':
+
+                            comment_list.append([id, next_page['data'][n]['created_time'], next_page['data'][n]['id'], str(0), str(next_page['data'][n]['like_count']), str(next_page['data'][n]['comment_count']), next_page['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+
+                    elif next_page['data'][n]['comment_count'] > 0:
+
+                        print ("There are replies to this comment, id is "+str(next_page['data'][n]['id']))
+
+                        comment_list.append([id, next_page['data'][n]['created_time'], next_page['data'][n]['id'], str(0), str(next_page['data'][n]['like_count']), str(next_page['data'][n]['comment_count']), next_page['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                        # check if 'comments' exist as a key. Sometimes even when comment count is greater than 0, there are actually no replies!
+                        if 'comments' in next_page['data'][n]:
+
+                            for m in range(len(next_page['data'][n]['comments']['data'])):
+
+                                if next_page['data'][n]['comments']['data'][m]['message'] != '':
+
+                                    comment_list.append([id, next_page['data'][n]['comments']['data'][m]['created_time'], next_page['data'][n]['comments']['data'][m]['id'], str(1), str(next_page['data'][n]['comments']['data'][m]['like_count']), str(0), next_page['data'][n]['comments']['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                            if 'next' in next_page['data'][n]['comments']['paging']:
+
+                                url = next_page['data'][n]['comments']['paging']['next']
+                                next_url = urllib.request.urlopen(url)
+                                readable_page = next_url.read()
+                                next_page = json.loads(readable_page.decode())
+
+                                print ('2nd page replies with length '+str(len(next_page['data'])))
+
+                                for x in range(len(next_page['data'])):
+
+                                    if next_page['data'][x]['message'] != '':
+
+                                        comment_list.append([id, next_page['data'][x]['created_time'], next_page['data'][x]['id'], str(1), str(next_page['data'][x]['like_count']), str(0), next_page['data'][x]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+                                while 'next' in next_page['paging']:
+
+                                    url = next_page['paging']['next']
+                                    next_url = urllib.request.urlopen(url)
+                                    readable_page = next_url.read()
+                                    next_page = json.loads(readable_page.decode())
+
+                                    print ('More replies with length '+str(len(next_page['data'])))
+
+                                    for y in range(len(next_page['data'])):
+
+                                        if next_page['data'][y]['message'] != '':
+
+                                            comment_list.append([id, next_page['data'][y]['created_time'], next_page['data'][y]['id'], str(1), str(next_page['data'][y]['like_count']), str(0), next_page['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+
+
+
+
+
+            ##############
+            # check if there is a next comment page by checking for the key 'next' in the 'next_page' dictionary obtained from URL
+            # Important! While loop has to be under the if statement above
+            ##############
+
+                while 'next' in next_page['paging']:
+
+                    url = next_page['paging']['next']
+                    next_url = urllib.request.urlopen(url)
+                    readable_page = next_url.read()
+                    next_page = json.loads(readable_page.decode())
+
+                    print (len(next_page['data']))
+
+                    comment_list = self.create_comment_list(id,next_page,comment_list)
+
+
+
+
+
+            print (comment_list)
+
+            path = 'test1.csv'
+            f = open(path, 'w')
+
+            for l in comment_list:
+                f.write(', '.join(l)+'\n')
+            f.close()
+
+
+        return comment_list
+
+
+
     def get_post_by_id(self,id):
 
         post = graph.get_object(id=id, fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')
@@ -305,23 +592,36 @@ class Extractor_fb():
 
     def get_comment_by_id(self,id):
 
-        comment = graph.get_object(id=id, fields = 'message, id, created_time, comments, comment_count')
+        comment = graph.get_object(id=id, fields = 'message, id, created_time, comments, comment_count, like_count')
 
         print (comment)
 
 
-    def remove_duplicates(self,target_list):
+    def remove_duplicates(self):
 
         #########
         #remove duplicates by post/comment id
         #########
 
+        target_list = []
         list_clean = []
         temp = []
+
+        lines = open('test.csv', 'r').readlines()
+
+        #Create a list of lists from a list of strings!
+        for line in lines:
+            target_list.append(line.strip().replace('\n', ' ').split(', '))
+
+        print ("Original length of list is "+str(len(target_list)))
+
+        # check duplicates of comment/post ID
         for tl in target_list:
             if tl[2] not in temp:
                 list_clean.append(tl)
                 temp.append(tl[2])
+
+        print ("New length of list is "+str(len(list_clean)))
 
         return list_clean
 
@@ -331,7 +631,7 @@ class Extractor_fb():
         id_list = []
 
         # lines is a list of strings ['nasa, 2016-01-16, ID, message', 'nasa, 2016-01-01, ID, message', ...]
-        lines = open('output/fb_posts_20160121.csv', 'r').readlines()
+        lines = open('test.csv', 'r').readlines()
 
         for line in lines:
 
@@ -340,12 +640,14 @@ class Extractor_fb():
 
             id_list.append(spline[2])
 
+        del(id_list[0])
+
         return id_list
 
 
     def write_to_file(self,list):
 
-        f = open('test.csv', 'w')
+        f = open('test1.csv', 'w')
 
         for l in list:
             f.write(', '.join(l)+'\n')
@@ -371,14 +673,14 @@ graph = ext.connectToApi(access_token)
 ###############
 
 ids = ext.create_id_list()
-comments = ext.get_comments(graph,ids)
+comments = ext.get_replies_to_comment(graph,ids)
 
 
 ###############
 # remove duplicates
 ###############
 
-#clean_list = ext.remove_duplicates(posts)
+#clean_list = ext.remove_duplicates()
 
 
 ###############
@@ -394,5 +696,5 @@ comments = ext.get_comments(graph,ids)
 # write to CSV file
 #############
 
-#write_file = ext.write_to_file(posts)
+#write_file = ext.write_to_file(clean_list)
 
