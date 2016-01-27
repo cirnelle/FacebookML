@@ -9,6 +9,10 @@ import os
 import sys
 import time
 
+#################
+# Get Facebook API access token
+#################
+
 
 if os.path.isfile('../../keys/facebook_api_keys.txt'):
     access_token = open('../../keys/facebook_api_keys.txt','r').readline()
@@ -17,7 +21,23 @@ else:
     print ("Path not found")
     sys.exit(1)
 
-user_list = ['cosnes']
+
+################
+# Construct user list from txt file
+################
+
+
+
+if os.path.isfile('user_list/user_list_fb.txt'):
+    lines = open('user_list/user_list_fb.txt', 'r').readlines()
+
+
+user_list = []
+
+for line in lines:
+    spline = line.replace('\n', '').split(',')
+    user_list.append(spline[0])
+
 
 
 class Extractor_fb():
@@ -82,7 +102,7 @@ class Extractor_fb():
         ##################
 
 
-        path = 'test.csv'
+        path = 'output/fb_post_20160127.csv'
         f = open(path, 'a')
 
         if os.stat(path).st_size == 0:
@@ -224,8 +244,8 @@ class Extractor_fb():
 
     def get_page_posts(self,graph):
 
-        post_limit = 2
-        page_limit = 6
+        post_limit = 20
+        page_limit = 100
         post_list = []
         retries = 5
         sleep_time = 50
@@ -565,15 +585,15 @@ graph = ext.connectToApi(access_token)
 # get posts for pages
 ################
 
-#posts = ext.get_page_posts(graph)
+posts = ext.get_page_posts(graph)
 
 
 ###############
 # get comments for collected posts based on their id's
 ###############
 
-ids = ext.create_id_list()
-comments = ext.get_replies_to_comment(graph,ids)
+#ids = ext.create_id_list()
+#comments = ext.get_replies_to_comment(graph,ids)
 
 
 ###############
