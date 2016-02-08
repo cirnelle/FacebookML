@@ -4,7 +4,6 @@ __author__ = 'yi-linghwong'
 import facebook
 import json
 import urllib
-import langdetect
 import os
 import sys
 import time
