@@ -13,55 +13,36 @@ import time
 #################
 
 
-if os.path.isfile('../../keys/facebook_api_keys.txt'):
-    access_token = open('../../keys/facebook_api_keys.txt','r').readline()
+if os.path.isfile('../../../keys/facebook_api_keys.txt'):
+    access_token = open('../../../keys/facebook_api_keys.txt','r').readline()
 
 else:
     print ("Path not found")
     sys.exit(1)
 
 
-################
-# Construct user list from txt file
-################
-
-
-
-if os.path.isfile('user_list/user_list_fb.txt'):
-    lines = open('user_list/user_list_fb.txt', 'r').readlines()
-
-
-user_list = []
-
-for line in lines:
-    spline = line.replace('\n', '').split(',')
-    user_list.append(spline[0])
-
-
-
 class Extractor_fb():
 
+    def create_user_list(self):
 
-    def printer(self,messagew,case):
-        #
-        # 1: info
-        # 2: error
-        # 3: warning
+        ################
+        # Construct user list from txt file
+        ################
 
+        lines = open(path_to_user_list, 'r').readlines()
 
-        if case == 1:
-            print ("Info  ==> ",messagew)
+        user_list = []
 
-        elif case == 2:
-            print ("Error  ==> ",messagew)
+        for line in lines:
+            spline = line.replace('\n', '').split(',')
+            user_list.append(spline[0])
 
-        elif case == 3:
-            print ("Warning  ==> ",messagew)
+        return user_list
 
 
     def connectToApi(self,token):
 
-        self.printer("connecting to Facebook Graph API",1)
+        print ("Connecting to Facebook Graph API")
 
         graph = facebook.GraphAPI(access_token = access_token)
 
@@ -100,11 +81,10 @@ class Extractor_fb():
         # write to file each time this function is called, so that we don't lose data if error occurs
         ##################
 
+        f = open(path_to_store_fb_posts, 'a')
 
-        path = 'output/fb_post_20160127.csv'
-        f = open(path, 'a')
-
-        if os.stat(path).st_size == 0:
+        # if file is empty create heading
+        if os.stat(path_to_store_fb_posts).st_size == 0:
             f.write('user, created_time, post_id, like_count, share_count, comment_count, type, message'+'\n')
             for tl in temp_list:
                 f.write(', '.join(tl)+'\n')
@@ -136,11 +116,10 @@ class Extractor_fb():
         # write to file each time this function is called, so that we don't lose data if error occurs
         ##################
 
+        f = open(path_to_store_fb_comments, 'a')
 
-        path = 'test1.csv'
-        f = open(path, 'a')
-
-        if os.stat(path).st_size == 0:
+        # if file is empty create heading
+        if os.stat(path_to_store_fb_comments).st_size == 0:
             f.write('post_id, created_time, comment_id, like_count, comment_count, message'+'\n')
             for tl in temp_list:
                 f.write(', '.join(tl)+'\n')
@@ -224,10 +203,11 @@ class Extractor_fb():
                                     comment_list.append([id, next_page_comment['data'][y]['created_time'], next_page_comment['data'][y]['id'], str(1), str(next_page_comment['data'][y]['like_count']), str(0), next_page_comment['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
                                     temp_list.append([id, next_page_comment['data'][y]['created_time'], next_page_comment['data'][y]['id'], str(1), str(next_page_comment['data'][y]['like_count']), str(0), next_page_comment['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
-        path = 'test1.csv'
-        f = open(path, 'a')
 
-        if os.stat(path).st_size == 0:
+        f = open(path_to_store_fb_comments_replies, 'a')
+
+        # if file is empty create heading
+        if os.stat(path_to_store_fb_comments_replies).st_size == 0:
             f.write('post_id, created_time, comment_id, is_reply, like_count, comment_count, message'+'\n')
             for tl in temp_list:
                 f.write(', '.join(tl)+'\n')
@@ -248,6 +228,7 @@ class Extractor_fb():
         post_list = []
         retries = 5
         sleep_time = 50
+        user_list = self.create_user_list()
 
         for user in user_list:
 
@@ -526,7 +507,7 @@ class Extractor_fb():
         list_clean = []
         temp = []
 
-        lines = open('test1.csv', 'r').readlines()
+        lines = open(path_to_store_fb_comments_replies, 'r').readlines()
 
         #Create a list of lists from a list of strings!
         for line in lines:
@@ -550,7 +531,7 @@ class Extractor_fb():
         id_list = []
 
         # lines is a list of strings ['nasa, 2016-01-16, ID, message', 'nasa, 2016-01-01, ID, message', ...]
-        lines = open('test.csv', 'r').readlines()
+        lines = open(path_to_store_fb_posts, 'r').readlines()
 
         for line in lines:
 
@@ -564,56 +545,54 @@ class Extractor_fb():
         return id_list
 
 
-    def write_to_file(self,list):
-
-        f = open('test1.csv', 'w')
-
-        for l in list:
-            f.write(', '.join(l)+'\n')
-        f.close()
-
-
-################
-# connect to Facebook Graph API
-################
-
-ext = Extractor_fb()
-graph = ext.connectToApi(access_token)
-
-################
-# get posts for pages
-################
-
-posts = ext.get_page_posts(graph)
-
 
 ###############
-# get comments for collected posts based on their id's
+# variables
 ###############
 
-#ids = ext.create_id_list()
-#comments = ext.get_replies_to_comment(graph,ids)
+path_to_user_list = '../user_list/user_list_fb_MASTER'
+path_to_store_fb_posts = '../fb_data/posts/raw_fb_posts_20160223.csv'
+path_to_store_fb_comments = '../fb_data/comments/raw_fb_comments_20160223.csv'
+path_to_store_fb_comments_replies = '../fb_data/comments/raw_fb_comments_replies_20160223.csv'
 
 
-###############
-# remove duplicates
-###############
+if __name__ == '__main__':
 
-#clean_list = ext.remove_duplicates()
+    ################
+    # connect to Facebook Graph API
+    ################
+
+    ext = Extractor_fb()
+    graph = ext.connectToApi(access_token)
+
+    ################
+    # get posts for pages
+    ################
+
+    posts = ext.get_page_posts(graph)
 
 
-###############
-# get single post or comment
-###############
+    ###############
+    # get comments for collected posts based on their id's
+    ###############
 
-#single_post = ext.get_post_by_id('54912575666_10153187460825667')
+    #ids = ext.create_id_list()
+    #comments = ext.get_replies_to_comment(graph,ids)
 
-#single_comment = ext.get_comment_by_id('10153794959836772_10153794962046772')
+
+    ###############
+    # remove duplicates
+    ###############
+
+    #clean_list = ext.remove_duplicates()
 
 
-#############
-# write to CSV file
-#############
+    ###############
+    # get single post or comment
+    ###############
 
-#write_file = ext.write_to_file(clean_list)
+    #single_post = ext.get_post_by_id('54912575666_10153187460825667')
+
+    #single_comment = ext.get_comment_by_id('10153794959836772_10153794962046772')
+
 

@@ -41,7 +41,7 @@ for ul in user_list:
 
     now = time.strftime("%c")
 
-    f = open(ul+".txt",'a')
+    f = open("likes/"+ul+".txt",'a')
 
     f.write(str(now)+','+str(user['likes'])+'\n')
 
