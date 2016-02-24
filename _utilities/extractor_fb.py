@@ -321,94 +321,100 @@ class Extractor_fb():
 
         for user in user_list:
 
-            posts = graph.get_connections(id=user, connection_name='posts', limit=post_limit,
-                                          fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')  # posts is a dict (with other dicts inside)
+            try:
 
-            #################
-            # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
-            #################
+                posts = graph.get_connections(id=user, connection_name='posts', limit=post_limit,
+                                              fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')  # posts is a dict (with other dicts inside)
 
-            print("Collecting page 1 for " + user)
+                #################
+                # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
+                #################
 
-            post_list = self.create_post_list(user, posts, post_list)
+                print("Collecting page 1 for " + user)
 
-
-            ################
-            # the next section gets the posts for the first 'next' URL (which is retrieved with the get_connections method), and run only once
-            ################
+                post_list = self.create_post_list(user, posts, post_list)
 
 
-            if 'next' in posts['paging']:
-
-                for r in range(retries):
-
-                    print("Collecting page 2 for " + user)
-
-                    print("Attempt " + str(r))
-
-                    try:
-
-                        url = posts['paging']['next']
-                        next_url = urllib.request.urlopen(url)
-                        readable_page = next_url.read()
-                        next_page = json.loads(readable_page.decode())
-
-                        post_list = self.create_post_list(user, next_page, post_list)
-
-                        break
-
-                    except urllib.error.HTTPError as e:
-                        print("HTTPError caught, retrying...", e.read())
-                        time.sleep(sleep_time)
-
-                    except:
-                        print("An error occurred.")
-                        time.sleep(10)
+                ################
+                # the next section gets the posts for the first 'next' URL (which is retrieved with the get_connections method), and run only once
+                ################
 
 
-                        ###############
-                        # the next section gets the posts for the second 'next' URL onwards (which are retrieved with the urllib!)
-                        ###############
+                if 'next' in posts['paging']:
 
-                for l in range(page_limit - 2):
+                    for r in range(retries):
 
-                    # check if there is a next page
-                    if 'paging' in next_page:
+                        print("Collecting page 2 for " + user)
 
-                        print("Collecting page " + str(l + 3) + " for " + user)
+                        print("Attempt " + str(r))
 
-                        ###############
-                        # Try and except to catch HTTPError (Internal server error), set a maximum number of retries
-                        ###############
+                        try:
 
-                        for r in range(retries):
+                            url = posts['paging']['next']
+                            next_url = urllib.request.urlopen(url)
+                            readable_page = next_url.read()
+                            next_page = json.loads(readable_page.decode())
 
-                            print("Attempt " + str(r))
+                            post_list = self.create_post_list(user, next_page, post_list)
 
-                            try:
+                            break
 
-                                url = next_page['paging']['next']
-                                next_url = urllib.request.urlopen(url)
-                                readable_page = next_url.read()
-                                next_page = json.loads(readable_page.decode())
+                        except urllib.error.HTTPError as e:
+                            print("HTTPError caught, retrying...", e.read())
+                            time.sleep(sleep_time)
 
-                                post_list = self.create_post_list(user, next_page, post_list)
+                        except:
+                            print("An error occurred.")
+                            time.sleep(10)
 
-                                break
 
-                            except urllib.error.HTTPError as e:
-                                print("HTTPError caught, retrying...", e.read())
-                                time.sleep(sleep_time)
+                            ###############
+                            # the next section gets the posts for the second 'next' URL onwards (which are retrieved with the urllib!)
+                            ###############
 
-                            except:
-                                print("An error occurred.")
-                                time.sleep(10)
+                    for l in range(page_limit - 2):
 
-                    else:
-                        print("No more next page")
-                        break
+                        # check if there is a next page
+                        if 'paging' in next_page:
+
+                            print("Collecting page " + str(l + 3) + " for " + user)
+
+                            ###############
+                            # Try and except to catch HTTPError (Internal server error), set a maximum number of retries
+                            ###############
+
+                            for r in range(retries):
+
+                                print("Attempt " + str(r))
+
+                                try:
+
+                                    url = next_page['paging']['next']
+                                    next_url = urllib.request.urlopen(url)
+                                    readable_page = next_url.read()
+                                    next_page = json.loads(readable_page.decode())
+
+                                    post_list = self.create_post_list(user, next_page, post_list)
+
+                                    break
+
+                                except urllib.error.HTTPError as e:
+                                    print("HTTPError caught, retrying...", e.read())
+                                    time.sleep(sleep_time)
+
+                                except:
+                                    print("An error occurred.")
+                                    time.sleep(10)
+
+                        else:
+                            print("No more next page")
+                            break
+
+            except Exception as e:
+                print('Failed: ' + str(e))
 
         return post_list
+
 
     def get_comments(self, graph, id_list):
 
@@ -424,99 +430,104 @@ class Extractor_fb():
 
             print("Getting comments for " + str(id))
 
-            comment_obj = graph.get_object(id=id, fields='comments.summary(true)')
-            comment_count = comment_obj['comments']['summary']['total_count']
+            try:
 
-            print('Comment count is ' + str(comment_count))
+                comment_obj = graph.get_object(id=id, fields='comments.summary(true)')
+                comment_count = comment_obj['comments']['summary']['total_count']
 
-            if comment_count <= 100 and comment_count > 0:
-                comments_limit = comment_count
-                # page_limit = 1
+                print('Comment count is ' + str(comment_count))
 
-            elif comment_count > 100:
-                comments_limit = 100
-                # page_limit = int(comment_count/100)+1
+                if comment_count <= 100 and comment_count > 0:
+                    comments_limit = comment_count
+                    # page_limit = 1
 
-            elif comment_count == 0:
-                print("No comments, skipping")
-                continue
+                elif comment_count > 100:
+                    comments_limit = 100
+                    # page_limit = int(comment_count/100)+1
 
-            comments = graph.get_connections(id=id, connection_name='comments', limit=comments_limit,
-                                             fields='message, id, created_time, comments{like_count,message,id,created_time}, like_count, comment_count')
-            print(comments)
+                elif comment_count == 0:
+                    print("No comments, skipping")
+                    continue
 
-            ##############
-            # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
-            ##############
+                comments = graph.get_connections(id=id, connection_name='comments', limit=comments_limit,
+                                                 fields='message, id, created_time, comments{like_count,message,id,created_time}, like_count, comment_count')
+                print(comments)
 
-            print('1st page with length ' + str(len(comments['data'])))
+                ##############
+                # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
+                ##############
 
-            comment_list = self.create_comment_list(id, comments, comment_list)
+                print('1st page with length ' + str(len(comments['data'])))
 
-
-            ##############
-            # check if there is a next comment page by checking for the key 'next' in the 'comments' dictionary obtained from get_connections method
-            ##############
-
-            if 'next' in comments['paging']:
-
-                for r in range(retries):
-
-                    print("Attempt " + str(r))
-
-                    try:
-
-                        url = comments['paging']['next']
-                        next_url = urllib.request.urlopen(url)
-                        readable_page = next_url.read()
-                        next_page = json.loads(readable_page.decode())
-
-                        print('2nd page with length ' + str(len(next_page['data'])))
-
-                        comment_list = self.create_comment_list(id, next_page, comment_list)
-
-                        ##############
-                        # check if there is a next comment page by checking for the key 'next' in the 'next_page' dictionary obtained from URL
-                        # Important! While loop has to be under the if statement above
-                        ##############
-
-                        while 'next' in next_page['paging']:
-
-                            for x in range(retries):
-
-                                print("Attempt " + str(x) + " for paging")
-
-                                try:
-
-                                    url = next_page['paging']['next']
-                                    next_url = urllib.request.urlopen(url)
-                                    readable_page = next_url.read()
-                                    next_page = json.loads(readable_page.decode())
-
-                                    print(len(next_page['data']))
-
-                                    comment_list = self.create_comment_list(id, next_page, comment_list)
-
-                                    break
-
-                                except urllib.error.HTTPError as e:
-                                    print("HTTPError caught, retrying...", e.read())
-                                    time.sleep(sleep_time)
-
-                                except:
-                                    print("An error occurred.")
-                                    time.sleep(sleep_time)
-
-                        break
+                comment_list = self.create_comment_list(id, comments, comment_list)
 
 
-                    except urllib.error.HTTPError as e:
-                        print("HTTPError caught, retrying...", e.read())
-                        time.sleep(sleep_time)
+                ##############
+                # check if there is a next comment page by checking for the key 'next' in the 'comments' dictionary obtained from get_connections method
+                ##############
 
-                    except:
-                        print("An error occurred.")
-                        time.sleep(sleep_time)
+                if 'next' in comments['paging']:
+
+                    for r in range(retries):
+
+                        print("Attempt " + str(r))
+
+                        try:
+
+                            url = comments['paging']['next']
+                            next_url = urllib.request.urlopen(url)
+                            readable_page = next_url.read()
+                            next_page = json.loads(readable_page.decode())
+
+                            print('2nd page with length ' + str(len(next_page['data'])))
+
+                            comment_list = self.create_comment_list(id, next_page, comment_list)
+
+                            ##############
+                            # check if there is a next comment page by checking for the key 'next' in the 'next_page' dictionary obtained from URL
+                            # Important! While loop has to be under the if statement above
+                            ##############
+
+                            while 'next' in next_page['paging']:
+
+                                for x in range(retries):
+
+                                    print("Attempt " + str(x) + " for paging")
+
+                                    try:
+
+                                        url = next_page['paging']['next']
+                                        next_url = urllib.request.urlopen(url)
+                                        readable_page = next_url.read()
+                                        next_page = json.loads(readable_page.decode())
+
+                                        print(len(next_page['data']))
+
+                                        comment_list = self.create_comment_list(id, next_page, comment_list)
+
+                                        break
+
+                                    except urllib.error.HTTPError as e:
+                                        print("HTTPError caught, retrying...", e.read())
+                                        time.sleep(sleep_time)
+
+                                    except:
+                                        print("An error occurred.")
+                                        time.sleep(sleep_time)
+
+                            break
+
+
+                        except urllib.error.HTTPError as e:
+                            print("HTTPError caught, retrying...", e.read())
+                            time.sleep(sleep_time)
+
+                        except:
+                            print("An error occurred.")
+                            time.sleep(sleep_time)
+
+            except Exception as e:
+                print('Failed: ' + str(e))
 
         return comment_list
 
@@ -536,99 +547,105 @@ class Extractor_fb():
 
             print("Getting comments for " + str(id))
 
-            comment_obj = graph.get_object(id=id, fields='comments.summary(true)')
-            comment_count = comment_obj['comments']['summary']['total_count']
+            try:
 
-            print('Comment count is ' + str(comment_count))
+                comment_obj = graph.get_object(id=id, fields='comments.summary(true)')
+                comment_count = comment_obj['comments']['summary']['total_count']
 
-            if comment_count <= 100 and comment_count > 0:
-                comments_limit = comment_count
-                # page_limit = 1
+                print('Comment count is ' + str(comment_count))
 
-            elif comment_count > 100:
-                comments_limit = 100
-                # page_limit = int(comment_count/100)+1
+                if comment_count <= 100 and comment_count > 0:
+                    comments_limit = comment_count
+                    # page_limit = 1
 
-            elif comment_count == 0:
-                print("No comments, skipping")
-                continue
+                elif comment_count > 100:
+                    comments_limit = 100
+                    # page_limit = int(comment_count/100)+1
 
-            comments = graph.get_connections(id=id, connection_name='comments', limit=comments_limit,
-                                             fields='message, id, created_time, comments{like_count,message,id,created_time}, like_count, comment_count')
+                elif comment_count == 0:
+                    print("No comments, skipping")
+                    continue
 
-
-            ##############
-            # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
-            ##############
-
-            print('1st page with length ' + str(len(comments['data'])))
-
-            comment_list = self.create_comment_list_with_replies(id, comments, comment_list)
+                comments = graph.get_connections(id=id, connection_name='comments', limit=comments_limit,
+                                                 fields='message, id, created_time, comments{like_count,message,id,created_time}, like_count, comment_count')
 
 
-            ##############
-            # check if there is a next comment page by checking for the key 'next' in the 'comments' dictionary obtained from get_connections method
-            ##############
+                ##############
+                # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
+                ##############
 
-            if 'next' in comments['paging']:
+                print('1st page with length ' + str(len(comments['data'])))
 
-                for r in range(retries):
-
-                    print("Attempt " + str(r))
-
-                    try:
-
-                        url = comments['paging']['next']
-                        next_url = urllib.request.urlopen(url)
-                        readable_page = next_url.read()
-                        next_page = json.loads(readable_page.decode())
-
-                        print('2nd page with length ' + str(len(next_page['data'])))
-
-                        comment_list = self.create_comment_list_with_replies(id, next_page, comment_list)
+                comment_list = self.create_comment_list_with_replies(id, comments, comment_list)
 
 
-                        ##############
-                        # check if there is a next comment page by checking for the key 'next' in the 'next_page' dictionary obtained from URL
-                        # Important! While loop has to be under the if statement above
-                        ##############
+                ##############
+                # check if there is a next comment page by checking for the key 'next' in the 'comments' dictionary obtained from get_connections method
+                ##############
 
-                        while 'next' in next_page['paging']:
+                if 'next' in comments['paging']:
 
-                            for x in range(retries):
+                    for r in range(retries):
 
-                                print("Attempt " + str(x) + " for paging")
+                        print("Attempt " + str(r))
 
-                                try:
+                        try:
 
-                                    url = next_page['paging']['next']
-                                    next_url = urllib.request.urlopen(url)
-                                    readable_page = next_url.read()
-                                    next_page = json.loads(readable_page.decode())
+                            url = comments['paging']['next']
+                            next_url = urllib.request.urlopen(url)
+                            readable_page = next_url.read()
+                            next_page = json.loads(readable_page.decode())
 
-                                    print("Another page with length " + str(len(next_page['data'])))
+                            print('2nd page with length ' + str(len(next_page['data'])))
 
-                                    comment_list = self.create_comment_list_with_replies(id, next_page, comment_list)
+                            comment_list = self.create_comment_list_with_replies(id, next_page, comment_list)
 
-                                    break
 
-                                except urllib.error.HTTPError as e:
-                                    print("HTTPError caught, retrying...", e.read())
-                                    time.sleep(sleep_time)
+                            ##############
+                            # check if there is a next comment page by checking for the key 'next' in the 'next_page' dictionary obtained from URL
+                            # Important! While loop has to be under the if statement above
+                            ##############
 
-                                except:
-                                    print("An error occurred.")
-                                    time.sleep(sleep_time)
+                            while 'next' in next_page['paging']:
 
-                        break
+                                for x in range(retries):
 
-                    except urllib.error.HTTPError as e:
-                        print("HTTPError caught, retrying...", e.read())
-                        time.sleep(sleep_time)
+                                    print("Attempt " + str(x) + " for paging")
 
-                    except:
-                        print("An error occurred.")
-                        time.sleep(sleep_time)
+                                    try:
+
+                                        url = next_page['paging']['next']
+                                        next_url = urllib.request.urlopen(url)
+                                        readable_page = next_url.read()
+                                        next_page = json.loads(readable_page.decode())
+
+                                        print("Another page with length " + str(len(next_page['data'])))
+
+                                        comment_list = self.create_comment_list_with_replies(id, next_page, comment_list)
+
+                                        break
+
+                                    except urllib.error.HTTPError as e:
+                                        print("HTTPError caught, retrying...", e.read())
+                                        time.sleep(sleep_time)
+
+                                    except:
+                                        print("An error occurred.")
+                                        time.sleep(sleep_time)
+
+                            break
+
+                        except urllib.error.HTTPError as e:
+                            print("HTTPError caught, retrying...", e.read())
+                            time.sleep(sleep_time)
+
+                        except:
+                            print("An error occurred.")
+                            time.sleep(sleep_time)
+
+
+            except Exception as e:
+                print('Failed: ' + str(e))
 
         print(len(comment_list))
 

@@ -651,7 +651,7 @@ if __name__ == '__main__':
     # run NB Classifier
     ##################
 
-    #clf, count_vect = nb.train_classifier()
+    clf, count_vect = nb.train_classifier()
 
 
     ###################
@@ -665,7 +665,7 @@ if __name__ == '__main__':
     # use pipeline
     ###################
 
-    clf, count_vect = nb.use_pipeline()
+    #clf, count_vect = nb.use_pipeline()
 
     ###################
     # use pipeline and use feature selection
@@ -678,7 +678,7 @@ if __name__ == '__main__':
     # Get feature importance
     ###################
 
-    nb.get_important_features(clf,count_vect)
+    #nb.get_important_features(clf,count_vect)
 
 
     ##################

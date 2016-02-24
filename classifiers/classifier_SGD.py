@@ -29,6 +29,7 @@ import numpy as np
 
 
 class SGD():
+
     def train_test_split(self):
 
         #################
