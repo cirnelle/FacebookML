@@ -179,29 +179,31 @@ class Extractor_fb():
 
                         print ('2nd page replies with length '+str(len(next_page_comment['data'])))
 
-                        for x in range(len(next_page_comment['data'])):
+                        if len(next_page_comment['data']) != 0:
 
-                            if next_page_comment['data'][x]['message'] != '':
+                            for x in range(len(next_page_comment['data'])):
 
-                                comment_list.append([id, next_page_comment['data'][x]['created_time'], next_page_comment['data'][x]['id'], str(1), str(next_page_comment['data'][x]['like_count']), str(0), next_page_comment['data'][x]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
-                                temp_list.append([id, next_page_comment['data'][x]['created_time'], next_page_comment['data'][x]['id'], str(1), str(next_page_comment['data'][x]['like_count']), str(0), next_page_comment['data'][x]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                if next_page_comment['data'][x]['message'] != '':
+
+                                    comment_list.append([id, next_page_comment['data'][x]['created_time'], next_page_comment['data'][x]['id'], str(1), str(next_page_comment['data'][x]['like_count']), str(0), next_page_comment['data'][x]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                    temp_list.append([id, next_page_comment['data'][x]['created_time'], next_page_comment['data'][x]['id'], str(1), str(next_page_comment['data'][x]['like_count']), str(0), next_page_comment['data'][x]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
 
-                        while 'next' in next_page_comment['paging']:
+                            while 'next' in next_page_comment['paging']:
 
-                            url = next_page_comment['paging']['next']
-                            next_url = urllib.request.urlopen(url)
-                            readable_page = next_url.read()
-                            next_page_comment = json.loads(readable_page.decode())
+                                url = next_page_comment['paging']['next']
+                                next_url = urllib.request.urlopen(url)
+                                readable_page = next_url.read()
+                                next_page_comment = json.loads(readable_page.decode())
 
-                            print ('More replies with length '+str(len(next_page_comment['data'])))
+                                print ('More replies with length '+str(len(next_page_comment['data'])))
 
-                            for y in range(len(next_page_comment['data'])):
+                                for y in range(len(next_page_comment['data'])):
 
-                                if next_page_comment['data'][y]['message'] != '':
+                                    if next_page_comment['data'][y]['message'] != '':
 
-                                    comment_list.append([id, next_page_comment['data'][y]['created_time'], next_page_comment['data'][y]['id'], str(1), str(next_page_comment['data'][y]['like_count']), str(0), next_page_comment['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
-                                    temp_list.append([id, next_page_comment['data'][y]['created_time'], next_page_comment['data'][y]['id'], str(1), str(next_page_comment['data'][y]['like_count']), str(0), next_page_comment['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                        comment_list.append([id, next_page_comment['data'][y]['created_time'], next_page_comment['data'][y]['id'], str(1), str(next_page_comment['data'][y]['like_count']), str(0), next_page_comment['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                        temp_list.append([id, next_page_comment['data'][y]['created_time'], next_page_comment['data'][y]['id'], str(1), str(next_page_comment['data'][y]['like_count']), str(0), next_page_comment['data'][y]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
 
 
         f = open(path_to_store_fb_comments_replies, 'a')
@@ -551,7 +553,8 @@ class Extractor_fb():
 ###############
 
 path_to_user_list = '../user_list/user_list_fb_MASTER'
-path_to_store_fb_posts = '../fb_data/posts/raw_fb_posts_20160223.csv'
+#path_to_store_fb_posts = '../fb_data/posts/raw_fb_posts_20160223.csv'
+path_to_store_fb_posts = '../fb_data/posts/partial_20160223.csv'
 path_to_store_fb_comments = '../fb_data/comments/raw_fb_comments_20160223.csv'
 path_to_store_fb_comments_replies = '../fb_data/comments/raw_fb_comments_replies_20160223.csv'
 
@@ -569,15 +572,15 @@ if __name__ == '__main__':
     # get posts for pages
     ################
 
-    posts = ext.get_page_posts(graph)
+    #posts = ext.get_page_posts(graph)
 
 
     ###############
     # get comments for collected posts based on their id's
     ###############
 
-    #ids = ext.create_id_list()
-    #comments = ext.get_replies_to_comment(graph,ids)
+    ids = ext.create_id_list()
+    comments = ext.get_replies_to_comment(graph,ids)
 
 
     ###############
