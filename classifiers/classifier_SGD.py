@@ -92,11 +92,11 @@ class SGD():
 
         # tfidf transformation###
 
-        tfidf_transformer = TfidfTransformer(use_idf=False)
+        tfidf_transformer = TfidfTransformer(use_idf=True)
         X_tfidf = tfidf_transformer.fit_transform(X_CV)
 
         # train the classifier
-        clf = SGDClassifier(loss='hinge', penalty='l2', random_state=42).fit(X_tfidf, y_train)
+        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_tfidf, y_train)
 
         print("Fitting data ...")
         clf.fit(X_tfidf, y_train)
@@ -137,10 +137,10 @@ class SGD():
 
         # tfidf transformation###
 
-        tfidf_transformer = TfidfTransformer(use_idf=False)
+        tfidf_transformer = TfidfTransformer(use_idf=True)
         X_tfidf = tfidf_transformer.fit_transform(X_CV)
 
-        selector = SelectPercentile(score_func=chi2, percentile=85)
+        selector = SelectPercentile(score_func=chi2, percentile=95)
 
         print("Fitting data with feature selection ...")
         selector.fit(X_tfidf, y_train)
@@ -150,7 +150,7 @@ class SGD():
 
         print("Shape of array after feature selection is " + str(X_features.shape))
 
-        clf = SGDClassifier(loss='hinge', penalty='l2', random_state=42).fit(X_features, y_train)
+        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_features, y_train)
 
         ####################
         # test clf on test data
@@ -445,7 +445,7 @@ class SGD():
         f.close()
 
 
-    def plot_feature_selection(self, docs_train, y_train):
+    def plot_feature_selection(self):
 
         # vectorisation
 
@@ -457,13 +457,13 @@ class SGD():
 
         # tfidf transformation
 
-        tfidf_transformer = TfidfTransformer(use_idf=False)
+        tfidf_transformer = TfidfTransformer(use_idf=True)
         X_tfidf = tfidf_transformer.fit_transform(X_CV)
 
 
         transform = SelectPercentile(score_func=chi2)
 
-        clf = Pipeline([('anova', transform), ('clf', SGDClassifier(loss='hinge', penalty='l2', random_state=42))])
+        clf = Pipeline([('anova', transform), ('clf', SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42))])
 
         ###############################################################################
         # Plot the cross-validation score as a function of percentile of features
@@ -579,7 +579,7 @@ if __name__ == '__main__':
     # Get feature importance
     ###################
 
-    sgd.get_important_features(clf,count_vect)
+    #sgd.get_important_features(clf,count_vect)
 
 
     ##################
