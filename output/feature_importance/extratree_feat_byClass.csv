@@ -1,100 +1,100 @@
-BOTH,18 minutes,3,0
-BOTH,20 minutes,6,0
-BOTH,43am,3,0
-BOTH,67,2,3
-BOTH,anomaly,3,1
-BOTH,antares,7,5
-BOTH,antimatter,2,8
-BOTH,apollo,27,35
-BOTH,appeared,3,3
-BOTH,away photo,1,2
-BOTH,awe,5,1
-BOTH,bound,7,7
-BOTH,brothers,4,0
-BOTH,busy,30,20
-BOTH,captured nasa,0,4
-BOTH,cast,3,8
-BOTH,center closed,1,2
-BOTH,chief engineer,8,1
-BOTH,chronicles,9,1
-BOTH,cool stuff,1,3
-BOTH,crime,5,1
-BOTH,depth,5,0
-BOTH,dinosaurs,3,4
-BOTH,domenico,2,2
-BOTH,dragon set,5,0
-BOTH,driven,8,1
-BOTH,elliptical,8,1
-BOTH,extremely,10,1
-BOTH,falcon lifted,3,0
-BOTH,father day,3,3
-BOTH,fiery,6,0
-BOTH,function,5,1
-BOTH,fusion,2,2
-BOTH,gentle,4,2
-BOTH,glowing,10,2
-BOTH,great day,3,2
-BOTH,hit october,0,4
-BOTH,hug,2,1
-BOTH,hydrothermal,3,3
-BOTH,il,15,19
-BOTH,insertion burn,3,0
-BOTH,intro probability,4,0
-BOTH,ku,8,4
-BOTH,laugh,7,1
-BOTH,launch control,1,2
-BOTH,lift,10,3
-BOTH,like stars,3,2
-BOTH,link,35,28
-BOTH,lovely,10,3
-BOTH,make history,3,0
-BOTH,mammals,3,0
-BOTH,men women,5,0
-BOTH,metric,7,0
-BOTH,michael,2,6
-BOTH,mile mark,1,2
-BOTH,mission asteroid,1,2
-BOTH,mission watch,3,0
-BOTH,money playing,0,4
-BOTH,mountains,13,4
-BOTH,observatory reuters,0,3
-BOTH,orbiting,25,19
-BOTH,oz,5,0
-BOTH,particularly,2,1
-BOTH,peer,4,1
-BOTH,planets astrobiology,2,8
-BOTH,private,15,16
-BOTH,providing,1,4
-BOTH,pulsars,2,1
-BOTH,quakes,3,3
-BOTH,readiness review,6,1
-BOTH,registration open,3,1
-BOTH,respect,2,2
-BOTH,reusable f9r,3,0
-BOTH,ripped,3,3
-BOTH,science minister,4,0
-BOTH,science savings,1,2
-BOTH,science technology,6,5
-BOTH,sheet,2,2
-BOTH,shuttle orbiter,1,2
-BOTH,simulate,5,0
-BOTH,solving,3,1
-BOTH,song,10,8
-BOTH,spacex engineers,6,0
+BOTH,planets,81,84
+BOTH,titan flyby,2,11
 HRT,1st,176
-HRT,animation,32
-HRT,appear,15
-HRT,cluster,46
-HRT,come,95
-HRT,commander,19
-HRT,dscovr,14
-HRT,fly,63
-HRT,half,30
-HRT,health,27
+HRT,67p,280
+HRT,astrobutch,136
+HRT,cometlanding,232
+HRT,cometwatch,87
+HRT,cool,129
+HRT,crew,256
+HRT,day,340
+HRT,dragon,676
+HRT,et,314
+HRT,exp42,80
+HRT,falcon,180
+HRT,great,220
+HRT,happy,212
+HRT,hubble,491
+HRT,iss,662
+HRT,know,143
+HRT,launch,562
+HRT,life,160
 HRT,live,351
-HRT,man,43
-HRT,pm et,16
-HRT,saying,22
-LRT,business insider,16
-LRT,centennial,15
-LRT,chemistry,20
+HRT,mars,551
+HRT,pluto,254
+HRT,plutoflyby,57
+HRT,science,448
+HRT,ska,249
+HRT,soyuz,202
+HRT,space,1212
+HRT,spacephoto,107
+HRT,spacex,400
+HRT,station,282
+HRT,technology,92
+HRT,thanks,97
+HRT,today,667
+HRT,universe,123
+HRT,video,283
+HRT,view,188
+HRT,watch,391
+HRT,way,176
+HRT,week,260
+HRT,world,229
+LRT,2009,35
+LRT,abscicon,14
+LRT,asteroid,111
+LRT,astrobiology,490
+LRT,astrofunfact,41
+LRT,astronomer,41
+LRT,astronomy,198
+LRT,blog post,217
+LRT,blog,327
+LRT,chabot,152
+LRT,check nasa,44
+LRT,check,203
+LRT,climate,62
+LRT,cnn,22
+LRT,constantcontact,38
+LRT,contest,32
+LRT,daily,85
+LRT,di,38
+LRT,engadget,33
+LRT,extrasolar,52
+LRT,famelab,34
+LRT,flickr,42
+LRT,fox,22
+LRT,free spirit,16
+LRT,gizmodo,25
+LRT,house,51
+LRT,insider,29
+LRT,journal,29
+LRT,magazine,62
+LRT,nasa astrobiology,36
+LRT,nasa,1201
+LRT,nasatech,46
+LRT,new opennasa post,74
+LRT,new opennasa,74
+LRT,new,675
+LRT,news,233
+LRT,nightschool,30
+LRT,observatory,82
+LRT,online,72
+LRT,opennasa post,74
+LRT,philaethursday,17
+LRT,planet,163
+LRT,post,369
+LRT,probe,31
+LRT,reuters,20
+LRT,rt,41
+LRT,shuttle,76
+LRT,spacetweeps,226
+LRT,spon,54
+LRT,startalklive,15
+LRT,sts,77
+LRT,stws blog post,185
+LRT,stws,187
+LRT,terrestrial,17
+LRT,times,112
+LRT,tweetup,55
+LRT,usa today,28
+LRT,washington,50

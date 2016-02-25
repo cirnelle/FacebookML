@@ -97,10 +97,10 @@ class SGD():
         X_tfidf = tfidf_transformer.fit_transform(X_CV)
 
         # train the classifier
-        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_tfidf, y_train)
 
         print("Fitting data ...")
-        clf.fit(X_tfidf, y_train)
+        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_tfidf, y_train)
+
 
         ##################
         # run classifier on test data
@@ -141,6 +141,20 @@ class SGD():
         tfidf_transformer = TfidfTransformer(use_idf=True)
         X_tfidf = tfidf_transformer.fit_transform(X_CV)
 
+
+        #################
+        # run classifier on pre-feature-selection data
+        # need it to get feature importance later
+        # cannot use post-feature-selection clf, will result in unequal length!
+        #################
+
+        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_tfidf, y_train)
+
+
+        #################
+        # feature selection
+        #################
+
         selector = SelectPercentile(score_func=chi2, percentile=95)
 
         print("Fitting data with feature selection ...")
@@ -151,7 +165,7 @@ class SGD():
 
         print("Shape of array after feature selection is " + str(X_features.shape))
 
-        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_features, y_train)
+        clf_fs = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_features, y_train)
 
         ####################
         # test clf on test data
@@ -167,15 +181,15 @@ class SGD():
         X_test_selector = selector.transform(X_test_tfidf)
         print("Shape of array for test data after feature selection is " + str(X_test_selector.shape))
 
-        y_predicted = clf.predict(X_test_selector)
+        y_predicted = clf_fs.predict(X_test_selector)
 
         # print the mean accuracy on the given test data and labels
 
-        print("Classifier score is: %s " % clf.score(X_test_selector, y_test))
+        print("Classifier score is: %s " % clf_fs.score(X_test_selector, y_test))
 
         # returns cross validation score
 
-        scores = cross_val_score(clf, X_features, y_train, cv=3, scoring='f1_weighted')
+        scores = cross_val_score(clf_fs, X_features, y_train, cv=3, scoring='f1_weighted')
         print("Cross validation score:%s " % scores)
 
         print(metrics.classification_report(y_test, y_predicted))
@@ -202,7 +216,7 @@ class SGD():
             'vect__ngram_range': [(1, 2), (1, 3)],
             'vect__use_idf': (True, False),
             'clf__loss': ('hinge', 'log'),
-            'clf__penalty': ('none', 'l1', 'elasticnet'),
+            'clf__penalty': ('l2', 'l1', 'elasticnet'),
             'clf__alpha': (0.0001, 0.0005),
         }
 
@@ -304,7 +318,7 @@ class SGD():
             'selector__score_func': (chi2, f_classif),
             'selector__percentile': (85, 95),
             'clf__loss': ('hinge', 'log'),
-            'clf__penalty': ('none', 'l1', 'elasticnet'),
+            'clf__penalty': ('l2', 'l1', 'elasticnet'),
             'clf__alpha': (0.0001, 0.0005),
 
         }
@@ -349,6 +363,21 @@ class SGD():
         # tfidf transformation
 
         tfidf_transformer = TfidfTransformer(use_idf=use_idf)
+        X_tfidf = tfidf_transformer.fit_transform(X_CV)
+
+
+        #################
+        # run classifier on pre-feature-selection data
+        # need it to get feature importance later
+        # cannot use post-feature-selection clf, will result in unequal length!
+        #################
+
+        clf = SGDClassifier(loss=loss, penalty=penalty, alpha=alpha, random_state=42).fit(X_tfidf, y_train)
+
+
+        #################
+        # feature selection
+        #################
 
         selector = SelectPercentile(score_func=score_func, percentile=percentile)
 
@@ -366,9 +395,9 @@ class SGD():
 
         # run classifier on selected features
 
-        clf = SGDClassifier(loss=loss, penalty=penalty, alpha=alpha, random_state=42).fit(X_features, y_train)
+        clf_fs = SGDClassifier(loss=loss, penalty=penalty, alpha=alpha, random_state=42).fit(X_features, y_train)
 
-        y_predicted = clf.predict(X_test_features)
+        y_predicted = clf_fs.predict(X_test_features)
 
 
         # Print and plot the confusion matrix
@@ -412,6 +441,9 @@ class SGD():
         coef_list = []
         for c in coef:
             coef_list.append(c)
+
+        print (len(coef_list))
+        print (len(feature_names))
 
         feat_list = list(zip(coef_list, feature_names))
 
@@ -567,13 +599,13 @@ if __name__ == '__main__':
     # use pipeline
     ###################
 
-    #clf, count_vect = sgd.use_pipeline()
+    clf, count_vect = sgd.use_pipeline()
 
     ###################
     # use pipeline and use feature selection
     ###################
 
-    clf, count_vect = sgd.use_pipeline_with_fs()
+    #clf, count_vect = sgd.use_pipeline_with_fs()
 
 
     ###################

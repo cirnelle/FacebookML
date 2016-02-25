@@ -51,6 +51,11 @@ class Extractor_fb():
         # creates a list of post information we want from the dict returned through API
         ##############
 
+        # get number of page likes for that user
+
+        get_page_likes = graph.get_object(id=user, fields='likes')
+        page_likes = str(get_page_likes['likes'])
+
         #################
         # check if 'message' and 'shares' exist as keys, sometimes they don't (e.g. when page publishes a 'story' such as updating their profile pic)
         #################
@@ -64,12 +69,12 @@ class Extractor_fb():
 
             if message in posts['data'][m] and shares in posts['data'][m]:
                 print(posts['data'][m]['id'])
-                post_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'],
+                post_list.append([user, posts['data'][m]['created_time'], page_likes, posts['data'][m]['id'],
                                   str(posts['data'][m]['likes']['summary']['total_count']),
                                   str(posts['data'][m]['shares']['count']),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
                                   posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
-                temp_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'],
+                temp_list.append([user, posts['data'][m]['created_time'], page_likes, posts['data'][m]['id'],
                                   str(posts['data'][m]['likes']['summary']['total_count']),
                                   str(posts['data'][m]['shares']['count']),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
@@ -77,11 +82,11 @@ class Extractor_fb():
 
             elif message in posts['data'][m] and shares not in posts['data'][m]:
                 print("No shares for " + str(posts['data'][m]['id']))
-                post_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'],
+                post_list.append([user, posts['data'][m]['created_time'], page_likes, posts['data'][m]['id'],
                                   str(posts['data'][m]['likes']['summary']['total_count']), str(0),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
                                   posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
-                temp_list.append([user, posts['data'][m]['created_time'], posts['data'][m]['id'],
+                temp_list.append([user, posts['data'][m]['created_time'], page_likes, posts['data'][m]['id'],
                                   str(posts['data'][m]['likes']['summary']['total_count']), str(0),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
                                   posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
@@ -95,7 +100,7 @@ class Extractor_fb():
 
         # if file is empty create heading
         if os.stat(path_to_store_fb_posts).st_size == 0:
-            f.write('user, created_time, post_id, like_count, share_count, comment_count, type, message' + '\n')
+            f.write('user, created_time, page_likes, post_id, like_count, share_count, comment_count, type, message' + '\n')
             for tl in temp_list:
                 f.write(', '.join(tl) + '\n')
 
@@ -325,6 +330,7 @@ class Extractor_fb():
 
                 posts = graph.get_connections(id=user, connection_name='posts', limit=post_limit,
                                               fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')  # posts is a dict (with other dicts inside)
+
 
                 #################
                 # 'data' is the dictionary that contains the post messages, which are all in one list: data = {[message 1, message 2, ...]}
@@ -716,12 +722,13 @@ class Extractor_fb():
 ###############
 
 path_to_user_list = '../user_list/user_list_fb_MASTER'
-# path_to_store_fb_posts = '../fb_data/posts/raw_fb_posts_20160223.csv'
-path_to_store_fb_posts = '../fb_data/posts/partial_20160223.csv'
+path_to_store_fb_posts = '../fb_data/posts/raw_fb_posts_20160226.csv'
+#path_to_store_fb_posts = '../fb_data/posts/test.csv'
 path_to_store_fb_comments = '../fb_data/comments/raw_fb_comments_20160223.csv'
 path_to_store_fb_comments_replies = '../../_big_files/facebook/raw_fb_comments_replies_20160223.csv'
 
 if __name__ == '__main__':
+
     ################
     # connect to Facebook Graph API
     ################
@@ -733,15 +740,15 @@ if __name__ == '__main__':
     # get posts for pages
     ################
 
-    # posts = ext.get_page_posts(graph)
+    posts = ext.get_page_posts(graph)
 
 
     ###############
     # get comments for collected posts based on their id's
     ###############
 
-    ids = ext.create_id_list()
-    comments = ext.get_replies_to_comment(graph, ids)
+    #ids = ext.create_id_list()
+    #comments = ext.get_replies_to_comment(graph, ids)
 
 
     ###############
