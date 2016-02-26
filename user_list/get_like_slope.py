@@ -82,7 +82,7 @@ for ul in user_list:
     plt.plot(x, ys)
 
 
-    plt.show()
+    #plt.show()
 
     user_slope.append(ul)
 

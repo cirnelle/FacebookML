@@ -526,7 +526,7 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = 'test.txt'
+path_to_labelled_file = '../output/engrate/labelled_fb_posts_20160226_follcorr.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_coefficient_file = '../output/feature_importance/sgd_coef.csv'
 path_to_store_list_of_feature_file = '../output/feature_importance/sgd_feature_names.csv'
@@ -585,7 +585,7 @@ if __name__ == '__main__':
     # run SGD Classifier
     ##################
 
-    #clf, count_vect = sgd.train_classifier()
+    clf, count_vect = sgd.train_classifier()
 
 
     ###################
@@ -599,7 +599,7 @@ if __name__ == '__main__':
     # use pipeline
     ###################
 
-    clf, count_vect = sgd.use_pipeline()
+    #clf, count_vect = sgd.use_pipeline()
 
     ###################
     # use pipeline and use feature selection
@@ -612,7 +612,7 @@ if __name__ == '__main__':
     # Get feature importance
     ###################
 
-    #sgd.get_important_features(clf,count_vect)
+    sgd.get_important_features(clf,count_vect)
 
 
     ##################
