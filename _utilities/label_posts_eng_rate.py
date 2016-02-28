@@ -25,7 +25,7 @@ class LabelFbPostsEngRate():
             spline = line.replace('\n','').split(',')
             fb_posts.append(spline)
 
-        print ("Length of tweet list is "+str(len(fb_posts)))
+        print ("Length of post list is "+str(len(fb_posts)))
 
         for line in lines[:1]:
             spline = line.replace('\n','').split(',')
@@ -41,7 +41,7 @@ class LabelFbPostsEngRate():
 
             if len(fp) == length:
 
-                engagement = (0.5*int(fp[4])) + int(fp[5])
+                engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
 
                 engrate = str((np.divide(int(engagement),int(fp[2])))*100)
 
@@ -74,7 +74,7 @@ class LabelFbPostsEngRate():
 
         for fp in fb_posts:
 
-            if float(fp[7]) > 9:
+            if float(fp[7]) > 11:
 
                 labelled_fb_posts.append([fp[9],'HER'])
                 high_er.append([fp[8],'HER'])
@@ -152,10 +152,10 @@ class LabelFbPostsEngRate():
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/preprocessed_fb_posts_20160226_follcorr.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/preprocessed_fb_posts_20160226_likecorr.csv'
 #path_to_preprocessed_fb_post_file = 'test.csv'
-path_to_store_engrate_output = '../output/engrate/engrate_fb_posts_20160226_follcorr.csv'
-path_to_store_labelled_fb_post = '../output/engrate/labelled_fb_posts_20160226_follcorr.csv'
+path_to_store_engrate_output = '../output/engrate/engrate_withcomment_likecorr.csv'
+path_to_store_labelled_fb_post = '../output/engrate/labelled_withcomment_likecorr.csv'
 
 
 if __name__ == "__main__":

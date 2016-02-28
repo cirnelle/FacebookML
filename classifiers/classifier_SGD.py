@@ -462,10 +462,10 @@ class SGD():
 
         for fl in feat_list:
             if fl[0] < 0:
-                hrt.append('HRT ' + str(fl))
+                hrt.append('HER ' + str(fl))
 
             if fl[0] > 0:
-                lrt.append('LRT ' + str(fl))
+                lrt.append('LER ' + str(fl))
 
         f = open(path_to_store_important_features_by_class_file, 'w')
 
@@ -526,12 +526,12 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = '../output/engrate/labelled_fb_posts_20160226_follcorr.csv'
+path_to_labelled_file = '../output/engrate/labelled_withcomment_likecorr.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_coefficient_file = '../output/feature_importance/sgd_coef.csv'
 path_to_store_list_of_feature_file = '../output/feature_importance/sgd_feature_names.csv'
 path_to_store_feature_and_coef_file = '../output/feature_importance/sgd_coef_and_feat.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/sgd_feat_by_class.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/sgd_feat_by_class_withcomment_likecorr.csv'
 
 
 
@@ -541,9 +541,9 @@ def get_data_set():
     # Get dataset
     #############
 
-    dataset = pd.read_csv(path_to_labelled_file, header=0, names=['tweets', 'class'])
+    dataset = pd.read_csv(path_to_labelled_file, header=0, names=['posts', 'class'])
 
-    X = dataset['tweets']
+    X = dataset['posts']
     y = dataset['class']
 
     return X,y

@@ -507,9 +507,9 @@ class NaiveBayes():
         for i in sortli:
 
             if fb_hrt[i]>fb_lrt[i]:
-                imp_feat.append('HRT '+str(feature_names[i]))
+                imp_feat.append('HER '+str(feature_names[i]))
             else:
-                imp_feat.append('LRT '+str(feature_names[i]))
+                imp_feat.append('LER '+str(feature_names[i]))
 
         imp_feat=sorted(imp_feat)
 
@@ -619,14 +619,14 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = 'test.txt'
+path_to_labelled_file = '../output/engrate/labelled_withcomment.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb_feat_by_class.csv'
 path_to_store_features_by_probability_file = '../output/feature_importance/nb_feat_by_prob.csv'
 path_to_store_list_of_feature_file = '../output/feature_importance/nb_feature_names.txt'
 path_to_store_coefficient_file = '../output/feature_importance/nb_coef.txt'
 path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb_feature_prob_0.csv' #Empirical log probability of features given a class
 path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb_feature_prob_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb_feat_by_class_withcomment.csv'
 
 def get_data_set():
 
@@ -634,9 +634,9 @@ def get_data_set():
     # Get dataset
     #############
 
-    dataset = pd.read_csv(path_to_labelled_file, header=0, names=['tweets', 'class'])
+    dataset = pd.read_csv(path_to_labelled_file, header=0, names=['posts', 'class'])
 
-    X = dataset['tweets']
+    X = dataset['posts']
     y = dataset['class']
 
     return X,y
@@ -679,7 +679,7 @@ if __name__ == '__main__':
     # run NB Classifier
     ##################
 
-    #clf, count_vect = nb.train_classifier()
+    clf, count_vect = nb.train_classifier()
 
 
     ###################
@@ -699,7 +699,7 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    clf, count_vect = nb.use_pipeline_with_fs()
+    #clf, count_vect = nb.use_pipeline_with_fs()
 
 
     ###################

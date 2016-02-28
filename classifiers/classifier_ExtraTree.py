@@ -456,14 +456,14 @@ class ExtraTree():
             #create a list of word which includes ngrams
             n=4
 
-            if spline[1] == 'HRT':
+            if spline[1] == 'HER':
                 for i in range(1,n):
                     n_grams = ngrams(spline[0].split(), i) #output [('one', 'two'), ('two', 'three'), ('three', 'four')]
                     #join the elements within the list together
                     gramify = [' '.join(x) for x in n_grams] #output ['one two', 'two three', 'three four']
                     l1.extend(gramify)
 
-            elif spline[1] == 'LRT':
+            elif spline[1] == 'LER':
                 for i in range(1,n):
                     n_grams = ngrams(spline[0].split(), i)
                     gramify = [' '.join(x) for x in n_grams]
@@ -494,16 +494,16 @@ class ExtraTree():
             hrt_count = hrt.count(f)
             lrt_count = lrt.count(f)
 
-            print ("HRT %s: " % f + str(hrt_count))
-            print ("LRT %s: " % f + str(lrt_count))
+            print ("HER %s: " % f + str(hrt_count))
+            print ("LER %s: " % f + str(lrt_count))
 
-            if (hrt_count-lrt_count)>10:
+            if (hrt_count-lrt_count)>100:
 
-                feat_by_class.append('HRT'+','+f+','+str(hrt_count))
+                feat_by_class.append('HER'+','+f+','+str(hrt_count))
 
 
-            elif (lrt_count-hrt_count)>10:
-                feat_by_class.append('LRT'+','+f+','+str(lrt_count))
+            elif (lrt_count-hrt_count)>100:
+                feat_by_class.append('LER'+','+f+','+str(lrt_count))
 
             else:
                 feat_by_class.append('BOTH'+','+f+','+str(hrt_count)+','+str(lrt_count))
@@ -566,12 +566,12 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = 'test.txt'
+path_to_labelled_file = '../output/engrate/labelled_withcomment_likecorr.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_vocabulary_file = '../output/feature_importance/extratree_vocab.txt'
 path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree_feat_imp_all.txt'
 path_to_store_top_important_features_file = '../output/feature_importance/extratree_feature_importance.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree_feat_byClass.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree_feat_byClass_withcomment_likecorr.csv'
 
 
 def get_data_set():
@@ -580,9 +580,9 @@ def get_data_set():
     # Get dataset
     #############
 
-    dataset = pd.read_csv(path_to_labelled_file, header=0, names=['tweets', 'class'])
+    dataset = pd.read_csv(path_to_labelled_file, header=0, names=['posts', 'class'])
 
-    X = dataset['tweets']
+    X = dataset['posts']
     y = dataset['class']
 
     return X,y
@@ -625,14 +625,14 @@ if __name__ == '__main__':
     # run ExtraTree Classifier
     ##################
 
-    #clf, count_vect = et.train_classifier()
+    clf, count_vect = et.train_classifier()
 
 
     ###################
     # run ExtraTree Classifier and use feature selection
     ###################
 
-    clf, count_vect = et.train_classifier_use_feature_selection()
+    #clf, count_vect = et.train_classifier_use_feature_selection()
 
 
     ###################

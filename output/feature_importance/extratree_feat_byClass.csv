@@ -1,100 +1,100 @@
-BOTH,planets,81,84
-BOTH,titan flyby,2,11
-HRT,1st,176
-HRT,67p,280
-HRT,astrobutch,136
-HRT,cometlanding,232
-HRT,cometwatch,87
-HRT,cool,129
-HRT,crew,256
-HRT,day,340
-HRT,dragon,676
-HRT,et,314
-HRT,exp42,80
-HRT,falcon,180
-HRT,great,220
-HRT,happy,212
-HRT,hubble,491
-HRT,iss,662
-HRT,know,143
-HRT,launch,562
-HRT,life,160
-HRT,live,351
-HRT,mars,551
-HRT,pluto,254
-HRT,plutoflyby,57
-HRT,science,448
-HRT,ska,249
-HRT,soyuz,202
-HRT,space,1212
-HRT,spacephoto,107
-HRT,spacex,400
-HRT,station,282
-HRT,technology,92
-HRT,thanks,97
-HRT,today,667
-HRT,universe,123
-HRT,video,283
-HRT,view,188
-HRT,watch,391
-HRT,way,176
-HRT,week,260
-HRT,world,229
-LRT,2009,35
-LRT,abscicon,14
-LRT,asteroid,111
-LRT,astrobiology,490
-LRT,astrofunfact,41
-LRT,astronomer,41
-LRT,astronomy,198
-LRT,blog post,217
-LRT,blog,327
-LRT,chabot,152
-LRT,check nasa,44
-LRT,check,203
-LRT,climate,62
-LRT,cnn,22
-LRT,constantcontact,38
-LRT,contest,32
-LRT,daily,85
-LRT,di,38
-LRT,engadget,33
-LRT,extrasolar,52
-LRT,famelab,34
-LRT,flickr,42
-LRT,fox,22
-LRT,free spirit,16
-LRT,gizmodo,25
-LRT,house,51
-LRT,insider,29
-LRT,journal,29
-LRT,magazine,62
-LRT,nasa astrobiology,36
-LRT,nasa,1201
-LRT,nasatech,46
-LRT,new opennasa post,74
-LRT,new opennasa,74
-LRT,new,675
-LRT,news,233
-LRT,nightschool,30
-LRT,observatory,82
-LRT,online,72
-LRT,opennasa post,74
-LRT,philaethursday,17
-LRT,planet,163
-LRT,post,369
-LRT,probe,31
-LRT,reuters,20
-LRT,rt,41
-LRT,shuttle,76
-LRT,spacetweeps,226
-LRT,spon,54
-LRT,startalklive,15
-LRT,sts,77
-LRT,stws blog post,185
-LRT,stws,187
-LRT,terrestrial,17
-LRT,times,112
-LRT,tweetup,55
-LRT,usa today,28
-LRT,washington,50
+BOTH,2013,37,122
+BOTH,alma,59,2
+BOTH,birthday,106,32
+BOTH,challenge,9,94
+BOTH,cleveland,0,64
+BOTH,conference,14,104
+BOTH,csa,19,85
+BOTH,curiosity,101,196
+BOTH,day year,8,96
+BOTH,good night,88,2
+BOTH,grail,0,56
+BOTH,journey log day,0,80
+BOTH,journeytomars,84,2
+BOTH,lightsail,37,0
+BOTH,link,23,116
+BOTH,moon,548,511
+BOTH,nasa curiosity mars,49,10
+BOTH,nasa glenn,3,71
+BOTH,nasasocial,2,50
+BOTH,observatory little sdo,88,2
+BOTH,otd,35,2
+BOTH,project,67,103
+BOTH,pslv,30,0
+BOTH,read,406,387
+BOTH,register,4,47
+BOTH,rt,0,62
+BOTH,scott kelly,63,2
+BOTH,spaceship,37,1
+BOTH,thank,83,56
+BOTH,thanks,144,81
+BOTH,today,515,506
+BOTH,tonight finale,42,2
+BOTH,week,285,311
+BOTH,year,298,287
+HER,2014,178
+HER,2015,238
+HER,67p,141
+HER,astronomers,195
+HER,blue,172
+HER,close,196
+HER,comet 67p,125
+HER,credit eso astronomy,137
+HER,credit,895
+HER,day,662
+HER,esa,740
+HER,eso astronomy,241
+HER,galaxies,212
+HER,galaxy,510
+HER,good morning,169
+HER,good,379
+HER,happy,272
+HER,hubble,789
+HER,image credit,437
+HER,image,1354
+HER,international space station,472
+HER,international space,474
+HER,light,544
+HER,like,446
+HER,mars,587
+HER,miles,297
+HER,mission,674
+HER,morning,318
+HER,nasa,2237
+HER,national aeronautics space,155
+HER,nebula,233
+HER,new,839
+HER,night,315
+HER,orbit,251
+HER,philae,108
+HER,planet,480
+HER,pluto,287
+HER,plutoflyby,131
+HER,rocket,189
+HER,saturn,264
+HER,solar,664
+HER,space station,570
+HER,space telescope,330
+HER,space,2477
+HER,spacecraft,415
+HER,star,580
+HER,station,659
+HER,taken,281
+HER,view,498
+HER,yearinspace,333
+HER,years ago,168
+HER,years,650
+LER,2011,179
+LER,check,360
+LER,credit nasa sdo,121
+LER,dryden,169
+LER,kepler,222
+LER,log,114
+LER,lroc featured image,109
+LER,lroc featured,109
+LER,lroc,161
+LER,nasa sdo,142
+LER,retweeted,169
+LER,science,541
+LER,sdo,276
+LER,uk,170
