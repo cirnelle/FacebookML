@@ -73,23 +73,23 @@ class Extractor_fb():
                                   str(posts['data'][m]['likes']['summary']['total_count']),
                                   str(posts['data'][m]['shares']['count']),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
-                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',', ' ')])
                 temp_list.append([user, posts['data'][m]['created_time'], page_likes, posts['data'][m]['id'],
                                   str(posts['data'][m]['likes']['summary']['total_count']),
                                   str(posts['data'][m]['shares']['count']),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
-                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',', ' ')])
 
             elif message in posts['data'][m] and shares not in posts['data'][m]:
                 print("No shares for " + str(posts['data'][m]['id']))
                 post_list.append([user, posts['data'][m]['created_time'], page_likes, posts['data'][m]['id'],
                                   str(posts['data'][m]['likes']['summary']['total_count']), str(0),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
-                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',', ' ')])
                 temp_list.append([user, posts['data'][m]['created_time'], page_likes, posts['data'][m]['id'],
                                   str(posts['data'][m]['likes']['summary']['total_count']), str(0),
                                   str(posts['data'][m]['comments']['summary']['total_count']), posts['data'][m]['type'],
-                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+                                  posts['data'][m]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',', ' ')])
 
 
         ##################
@@ -126,11 +126,11 @@ class Extractor_fb():
                 # print (comments['data'][n]['id'])
                 comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'],
                                      str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']),
-                                     comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',',
+                                     comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',',
                                                                                                                  ' ')])
                 temp_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'],
                                   str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']),
-                                  comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',',
+                                  comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',',
                                                                                                               ' ')])
 
         ##################
@@ -173,11 +173,11 @@ class Extractor_fb():
                     comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0),
                                          str(comments['data'][n]['like_count']),
                                          str(comments['data'][n]['comment_count']),
-                                         comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(
+                                         comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(
                                              ',', ' ')])
                     temp_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0),
                                       str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']),
-                                      comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',',
+                                      comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',',
                                                                                                                   ' ')])
 
             elif comments['data'][n]['comment_count'] > 0:
@@ -186,11 +186,11 @@ class Extractor_fb():
 
                 comment_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0),
                                      str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']),
-                                     comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',',
+                                     comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',',
                                                                                                                  ' ')])
                 temp_list.append([id, comments['data'][n]['created_time'], comments['data'][n]['id'], str(0),
                                   str(comments['data'][n]['like_count']), str(comments['data'][n]['comment_count']),
-                                  comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace(',',
+                                  comments['data'][n]['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',',
                                                                                                               ' ')])
 
                 # check if 'comments' exist as a key. Sometimes even when comment count is greater than 0, there are actually no replies!
@@ -204,13 +204,13 @@ class Extractor_fb():
                                                  str(comments['data'][n]['comments']['data'][m]['like_count']), str(0),
                                                  comments['data'][n]['comments']['data'][m]['message'].replace('\n',
                                                                                                                ' ').replace(
-                                                     '\r', '').replace(',', ' ')])
+                                                     '\r', '').replace('\t',' ').replace(',', ' ')])
                             temp_list.append([id, comments['data'][n]['comments']['data'][m]['created_time'],
                                               comments['data'][n]['comments']['data'][m]['id'], str(1),
                                               str(comments['data'][n]['comments']['data'][m]['like_count']), str(0),
                                               comments['data'][n]['comments']['data'][m]['message'].replace('\n',
                                                                                                             ' ').replace(
-                                                  '\r', '').replace(',', ' ')])
+                                                  '\r', '').replace('\t',' ').replace(',', ' ')])
 
                     if 'next' in comments['data'][n]['comments']['paging']:
 
@@ -237,14 +237,14 @@ class Extractor_fb():
                                                                  str(0),
                                                                  next_page_comment['data'][x]['message'].replace('\n',
                                                                                                                  ' ').replace(
-                                                                     '\r', '').replace(',', ' ')])
+                                                                     '\r', '').replace('\t',' ').replace(',', ' ')])
                                             temp_list.append([id, next_page_comment['data'][x]['created_time'],
                                                               next_page_comment['data'][x]['id'], str(1),
                                                               str(next_page_comment['data'][x]['like_count']), str(0),
                                                               next_page_comment['data'][x]['message'].replace('\n',
                                                                                                               ' ').replace(
                                                                   '\r',
-                                                                  '').replace(
+                                                                  '').replace('\t',' ').replace(
                                                                   ',', ' ')])
 
                                     while 'next' in next_page_comment['paging']:
@@ -270,14 +270,14 @@ class Extractor_fb():
                                                              str(next_page_comment['data'][y]['like_count']), str(0),
                                                              next_page_comment['data'][y]['message'].replace('\n',
                                                                                                              ' ').replace(
-                                                                 '\r', '').replace(',', ' ')])
+                                                                 '\r', '').replace('\t',' ').replace(',', ' ')])
                                                         temp_list.append(
                                                             [id, next_page_comment['data'][y]['created_time'],
                                                              next_page_comment['data'][y]['id'], str(1),
                                                              str(next_page_comment['data'][y]['like_count']), str(0),
                                                              next_page_comment['data'][y]['message'].replace('\n',
                                                                                                              ' ').replace(
-                                                                 '\r', '').replace(',', ' ')])
+                                                                 '\r', '').replace('\t',' ').replace(',', ' ')])
                                                 break
 
                                             except urllib.error.HTTPError as e:

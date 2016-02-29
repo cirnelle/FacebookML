@@ -180,5 +180,5 @@ if __name__ == '__main__':
     gb = GetLIWCBoundaryValues()
 
     #gb.create_category_lists()
-    #gb.get_boundary_values()
-    gb.plot_histogram()
+    gb.get_boundary_values()
+    #gb.plot_histogram()
