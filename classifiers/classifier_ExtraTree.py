@@ -212,7 +212,7 @@ class ExtraTree():
         # Build a grid search to find the best parameter
         # Fit the pipeline on the training set using grid search for the parameters
         parameters = {
-            'vect__ngram_range': [(1,2), (1,3)],
+            'vect__ngram_range': [(1,1), (1,2), (1,3)],
             'vect__use_idf': (True, False),
         }
 
@@ -307,7 +307,7 @@ class ExtraTree():
         # Build a grid search to find the best parameter
         # Fit the pipeline on the training set using grid search for the parameters
         parameters = {
-            'vect__ngram_range': [(1,2), (1,3)],
+            'vect__ngram_range': [(1,1), (1,2), (1,3)],
             'vect__use_idf': (True, False),
             'selector__score_func': (chi2, f_classif),
             'selector__percentile': (85, 95),
@@ -497,12 +497,12 @@ class ExtraTree():
             print ("HER %s: " % f + str(hrt_count))
             print ("LER %s: " % f + str(lrt_count))
 
-            if (hrt_count-lrt_count)>100:
+            if (hrt_count-lrt_count)>50:
 
                 feat_by_class.append('HER'+','+f+','+str(hrt_count))
 
 
-            elif (lrt_count-hrt_count)>100:
+            elif (lrt_count-hrt_count)>50:
                 feat_by_class.append('LER'+','+f+','+str(lrt_count))
 
             else:
@@ -566,12 +566,12 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/engrate/labelled_withcomment_likecorr.csv'
+path_to_labelled_file = '../output/features/labelled_psychometrics.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_vocabulary_file = '../output/feature_importance/extratree_vocab.txt'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree_feature_importance.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree_feat_byClass_withcomment_likecorr.csv'
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/extratree_vocab.txt'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/extratree_feature_importance.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/extratree_feat_byClass_psychometrics.csv'
 
 
 def get_data_set():
@@ -625,7 +625,7 @@ if __name__ == '__main__':
     # run ExtraTree Classifier
     ##################
 
-    clf, count_vect = et.train_classifier()
+    #clf, count_vect = et.train_classifier()
 
 
     ###################
@@ -639,7 +639,7 @@ if __name__ == '__main__':
     # use pipeline
     ###################
 
-    #clf, count_vect = et.use_pipeline()
+    clf, count_vect = et.use_pipeline()
 
     ###################
     # use pipeline and use feature selection

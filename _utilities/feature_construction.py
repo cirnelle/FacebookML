@@ -12,7 +12,7 @@ class FeatureConstruction():
         print (len(lines))
 
         for line in lines[:1]:
-            spline = line.replace('\n','r').split('\t')
+            spline = line.replace('\n','').split('\t')
             length = len(spline)
 
             for index,s in enumerate(spline):
@@ -105,8 +105,8 @@ class FeatureConstruction():
 
         post_features = []
 
-        for line in lines[2:]:
-            spline = line.replace('\n','r').split('\t')
+        for line in lines[1:]:
+            spline = line.replace('\n','').split('\t')
 
             features = []
 
@@ -267,9 +267,12 @@ class FeatureConstruction():
                             features.append('filler_yes')
 
 
+                if len(features) == 0:
+                    print("No feature for this post")
+                    print (spline[0])
+                    features.append('none')
+
                 post_features.append(features)
-
-
 
             else:
                 print (len(spline),line)
@@ -285,18 +288,172 @@ class FeatureConstruction():
         f.close()
 
 
+    def liwc_grammar_features(self):
+
+    ################
+    # features: sixltr (six letter words), word per sentence, punctuation (exclamation and question mark)
+    ################
+
+        lines = open(path_to_liwc_result_file,'r').readlines()
+
+        print (len(lines))
+
+        for line in lines[:1]:
+            spline = line.replace('\n','').split('\t')
+            length = len(spline)
+            print (spline[-1])
+
+            for index,s in enumerate(spline):
+
+                if s == 'Sixltr':
+                    sixltr_index = index
+
+                if s == 'WPS':
+                    wps_index = index
+
+                if s == 'Exclam':
+                    exclam_index = index
+
+                if s == 'QMark':
+                    qmark_index = index
+
+        print ("Number of element per line is "+str(length))
+
+        post_features = []
+
+        for line in lines[2:]:
+            spline = line.replace('\n','').split('\t')
+
+            features = []
+
+            if len(spline) == length:
+
+                for n in range(4):
+
+                    if n == 0:
+
+                        if float(spline[sixltr_index]) > 29.0:
+                            features.append('many_sixltr')
+
+                        elif float(spline[sixltr_index]) < 16.0:
+                            features.append('few_sixltr')
+
+                    if n == 1:
+
+                        if float(spline[wps_index]) > 20.0:
+                            features.append('high_wps')
+
+                        elif float(spline[wps_index]) < 10.0:
+                            features.append('low_wps')
+
+                    if n == 2:
+
+                        if float(spline[exclam_index]) > 0.0:
+                            features.append('has_exclam')
+
+                        else:
+                            features.append('no_exclam')
+
+                    if n == 3:
+
+                        if float(spline[qmark_index]) > 0.0:
+                            features.append('has_qmark')
+
+                        else:
+                            features.append('no_qmark')
+
+                if len(features) == 0:
+                    print("No feature for this post")
+                    print (spline[0])
+                    features.append('none')
+
+                post_features.append(features)
+
+            else:
+                print (len(spline),line)
+
+
+        print (len(post_features))
+
+        f = open(path_to_store_grammar_feature_file,'w')
+
+        for pf in post_features:
+            f.write(' '.join(pf)+'\n')
+
+        f.close()
+
+
+
+    def join_features_and_target(self):
+
+        lines = open(path_to_labelled_raw_file,'r').readlines()
+
+        label = []
+
+        for line in lines:
+            spline = line.replace('\n','').split(', ')
+            label.append(spline[1])
+
+        print ("Length of label list is "+str(len(label)))
+
+        lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
+
+        features = []
+
+        for line in lines2:
+            spline = line.replace('\n','')
+            features.append(spline)
+
+        print ("Length of feature list is "+str(len(features)))
+
+        if len(label) == len(features):
+            zipped_list = zip(features,label)
+
+        else:
+            print ("Lists have different lengths, exiting...")
+            sys.exit()
+
+        # zip both list together
+
+        feature_and_label = []
+
+        for zl in zipped_list:
+            zl = list(zl)
+            feature_and_label.append(zl)
+
+        print ("Length of combined list is "+str(len(feature_and_label)))
+
+        f = open(path_to_store_labelled_psychometric_file,'w')
+
+        for fl in feature_and_label:
+            f.write(','.join(fl)+'\n')
+
+        f.close()
+
+
+
+
 ###############
 # variables
 ###############
 
 path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_20160226.txt'
-#path_to_liwc_result_file = 'test.csv'
+
 path_to_store_psychometric_feature_file = '../output/features/psychometrics.txt'
+path_to_store_grammar_feature_file = '../output/features/grammar.txt'
+
+path_to_labelled_raw_file = '../output/engrate/labelled_raw.csv'
+path_to_store_labelled_psychometric_file = '../output/features/labelled_psychometrics.csv'
+
 
 
 
 if __name__ == '__main__':
 
     fc = FeatureConstruction()
-    fc.liwc_psychometric_features()
+
+    #fc.liwc_psychometric_features()
+    #fc.join_features_and_target()
+
+    fc.liwc_grammar_features()
 

@@ -89,7 +89,7 @@ class NaiveBayes():
     def train_classifier(self):
 
         # Get list of features
-        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1,3))
+        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1,2))
         X_CV = count_vect.fit_transform(docs_train)
 
         # print number of unique words (n_features)
@@ -231,7 +231,7 @@ class NaiveBayes():
         # Build a grid search to find the best parameter
         # Fit the pipeline on the training set using grid search for the parameters
         parameters = {
-            'vect__ngram_range': [(1,2), (1,3)],
+            'vect__ngram_range': [(1,1),(1,2), (1,3)],
             'vect__use_idf': (True, False),
             'clf__alpha': (0.4, 0.5)
         }
@@ -328,7 +328,7 @@ class NaiveBayes():
         # Build a grid search to find the best parameter
         # Fit the pipeline on the training set using grid search for the parameters
         parameters = {
-            'vect__ngram_range': [(1,2), (1,3)],
+            'vect__ngram_range': [(1,1),(1,2), (1,3)],
             'vect__use_idf': (True, False),
             'selector__score_func': (chi2, f_classif),
             'selector__percentile': (85, 95),
@@ -574,7 +574,7 @@ class NaiveBayes():
 
         # vectorisation
 
-        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1,3))
+        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1,1))
         X_CV = count_vect.fit_transform(docs_train)
 
         # print number of unique words (n_features)
@@ -619,14 +619,14 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = '../output/engrate/labelled_withcomment.csv'
+path_to_labelled_file = '../output/features/labelled_psychometrics.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_features_by_probability_file = '../output/feature_importance/nb_feat_by_prob.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/nb_feature_names.txt'
-path_to_store_coefficient_file = '../output/feature_importance/nb_coef.txt'
-path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb_feature_prob_0.csv' #Empirical log probability of features given a class
-path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb_feature_prob_1.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb_feat_by_class_withcomment.csv'
+path_to_store_features_by_probability_file = '../output/feature_importance/nb/nb_feat_by_prob.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/nb/nb_feature_names.txt'
+path_to_store_coefficient_file = '../output/feature_importance/nb/nb_coef.txt'
+path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/nb_feature_prob_0.csv' #Empirical log probability of features given a class
+path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/nb_feature_prob_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/nb_feat_by_class_psychometrics.csv'
 
 def get_data_set():
 

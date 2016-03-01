@@ -85,7 +85,7 @@ class SGD():
     def train_classifier(self):
 
         # Get list of features
-        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1, 3))
+        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1, 1))
         X_CV = count_vect.fit_transform(docs_train)
 
         # print number of unique words (n_features)
@@ -213,7 +213,7 @@ class SGD():
         # Build a grid search to find the best parameter
         # Fit the pipeline on the training set using grid search for the parameters
         parameters = {
-            'vect__ngram_range': [(1, 2), (1, 3)],
+            'vect__ngram_range': [(1, 1), (1, 2), (1, 3)],
             'vect__use_idf': (True, False),
             'clf__loss': ('hinge', 'log'),
             'clf__penalty': ('l2', 'l1', 'elasticnet'),
@@ -313,7 +313,7 @@ class SGD():
         # Build a grid search to find the best parameter
         # Fit the pipeline on the training set using grid search for the parameters
         parameters = {
-            'vect__ngram_range': [(1, 2), (1, 3)],
+            'vect__ngram_range': [(1, 1), (1, 2), (1, 3)],
             'vect__use_idf': (True, False),
             'selector__score_func': (chi2, f_classif),
             'selector__percentile': (85, 95),
@@ -526,12 +526,12 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = '../output/engrate/labelled_withcomment_likecorr.csv'
+path_to_labelled_file = '../output/features/labelled_psychometrics.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_coefficient_file = '../output/feature_importance/sgd_coef.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/sgd_feature_names.csv'
-path_to_store_feature_and_coef_file = '../output/feature_importance/sgd_coef_and_feat.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/sgd_feat_by_class_withcomment_likecorr.csv'
+path_to_store_coefficient_file = '../output/feature_importance/sgd/sgd_coef.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/sgd/sgd_feature_names.csv'
+path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/sgd_coef_and_feat.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/sgd_feat_by_class_psychometrics.csv'
 
 
 
@@ -585,7 +585,7 @@ if __name__ == '__main__':
     # run SGD Classifier
     ##################
 
-    clf, count_vect = sgd.train_classifier()
+    #clf, count_vect = sgd.train_classifier()
 
 
     ###################
@@ -605,7 +605,7 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    #clf, count_vect = sgd.use_pipeline_with_fs()
+    clf, count_vect = sgd.use_pipeline_with_fs()
 
 
     ###################

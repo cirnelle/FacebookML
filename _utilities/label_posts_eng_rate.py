@@ -41,6 +41,7 @@ class LabelFbPostsEngRate():
 
             if len(fp) == length:
 
+                #engagement = (0.5*int(fp[4])) + int(fp[5])
                 engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
 
                 engrate = str((np.divide(int(engagement),int(fp[2])))*100)
@@ -53,6 +54,54 @@ class LabelFbPostsEngRate():
                 pass
 
         f = open(path_to_store_engrate_output,'w')
+
+        for el in engrate_list:
+            f.write(','.join(el)+'\n')
+
+        f.close()
+
+        return engrate_list
+
+
+    def get_eng_rate_raw_posts(self):
+
+        lines = open(path_to_raw_fb_post_file,'r').readlines()
+
+        fb_posts = []
+
+        for line in lines:
+            spline = line.replace('\n','').split(', ')
+            fb_posts.append(spline)
+
+        print ("Length of post list is "+str(len(fb_posts)))
+
+        for line in lines[:1]:
+            spline = line.replace('\n','').split(', ')
+            length = len(spline)
+
+        print ("Number of element per line is "+str(length))
+
+        engrate_list = []
+
+        print ("Calculating engagement rate...")
+
+        for fp in fb_posts[1:]:
+
+            if len(fp) == length:
+
+                engagement = (0.5*int(fp[4])) + int(fp[5])
+                #engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
+
+                engrate = str((np.divide(int(engagement),int(fp[2])))*100)
+
+                engrate_list.append([fp[0],fp[1],fp[2],fp[3],fp[4],fp[5],fp[6],engrate,fp[7],fp[8]])
+
+            else:
+                print ("error")
+                print(fp)
+                pass
+
+        f = open(path_to_store_engrate_output_raw,'w')
 
         for el in engrate_list:
             f.write(','.join(el)+'\n')
@@ -98,7 +147,48 @@ class LabelFbPostsEngRate():
 
         f.close()
 
-        print ("Length of labelled tweets is "+str(len(labelled_fb_posts)))
+        print ("Length of labelled posts is "+str(len(labelled_fb_posts)))
+
+        return labelled_fb_posts
+
+
+    def label_fb_post_raw(self):
+
+        fb_posts = self.get_eng_rate_raw_posts()
+
+        labelled_fb_posts = []
+        high_er = []
+        low_er = []
+
+        print ("Labelling posts ...")
+
+        for fp in fb_posts:
+
+            if float(fp[7]) > 0.39:
+
+                labelled_fb_posts.append([fp[9],'HER'])
+                high_er.append([fp[8],'HER'])
+
+            elif float(fp[7]) < 0.0017:
+
+                labelled_fb_posts.append([fp[9],'LER'])
+                low_er.append([fp[8],'LER'])
+
+            else:
+                pass
+
+        print ("Length of high ER list is "+str(len(high_er)))
+        print ("Length of low ER list is "+str(len(low_er)))
+
+        f = open(path_to_store_labelled_fb_post_raw, 'w')
+
+        for lf in labelled_fb_posts:
+
+            f.write(', '.join(lf)+str('\n'))
+
+        f.close()
+
+        print ("Length of labelled posts is "+str(len(labelled_fb_posts)))
 
         return labelled_fb_posts
 
@@ -153,9 +243,12 @@ class LabelFbPostsEngRate():
 ################
 
 path_to_preprocessed_fb_post_file = '../fb_data/posts/preprocessed_fb_posts_20160226_likecorr.csv'
-#path_to_preprocessed_fb_post_file = 'test.csv'
 path_to_store_engrate_output = '../output/engrate/engrate_withcomment_likecorr.csv'
 path_to_store_labelled_fb_post = '../output/engrate/labelled_withcomment_likecorr.csv'
+
+path_to_raw_fb_post_file = '../fb_data/posts/raw_fb_posts_20160226.csv'
+path_to_store_engrate_output_raw = '../output/engrate/engrate_raw.csv'
+path_to_store_labelled_fb_post_raw = '../output/engrate/labelled_raw.csv'
 
 
 if __name__ == "__main__":
@@ -163,7 +256,10 @@ if __name__ == "__main__":
 
     lf = LabelFbPostsEngRate()
     #lf.get_eng_rate()
-    lf.label_fb_post()
+    #lf.label_fb_post()
+
+    #lf.get_eng_rate_raw_posts()
+    lf.label_fb_post_raw()
 
     #lf.get_histogram()
 
