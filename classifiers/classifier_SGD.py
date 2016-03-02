@@ -99,7 +99,7 @@ class SGD():
         # train the classifier
 
         print("Fitting data ...")
-        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_tfidf, y_train)
+        clf = SGDClassifier(loss='hinge', penalty='l1', random_state=42).fit(X_tfidf, y_train)
 
 
         ##################
@@ -148,7 +148,7 @@ class SGD():
         # cannot use post-feature-selection clf, will result in unequal length!
         #################
 
-        clf = SGDClassifier(loss='hinge', penalty='elasticnet', random_state=42).fit(X_tfidf, y_train)
+        clf = SGDClassifier(loss='hinge', penalty='l1', alpha='0.0005', random_state=42).fit(X_tfidf, y_train)
 
 
         #################
@@ -316,7 +316,7 @@ class SGD():
             'vect__ngram_range': [(1, 1), (1, 2), (1, 3)],
             'vect__use_idf': (True, False),
             'selector__score_func': (chi2, f_classif),
-            'selector__percentile': (85, 95),
+            'selector__percentile': (85, 95, 100),
             'clf__loss': ('hinge', 'log'),
             'clf__penalty': ('l2', 'l1', 'elasticnet'),
             'clf__alpha': (0.0001, 0.0005),
@@ -526,12 +526,12 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_psychometrics.csv'
+path_to_labelled_file = '../output/features/labelled_psychometrics_grammar.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_coefficient_file = '../output/feature_importance/sgd/sgd_coef.csv'
 path_to_store_list_of_feature_file = '../output/feature_importance/sgd/sgd_feature_names.csv'
 path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/sgd_coef_and_feat.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/sgd_feat_by_class_psychometrics.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/sgd_feat_by_class_psychometrics_grammar.csv'
 
 
 
@@ -585,7 +585,7 @@ if __name__ == '__main__':
     # run SGD Classifier
     ##################
 
-    #clf, count_vect = sgd.train_classifier()
+    clf, count_vect = sgd.train_classifier()
 
 
     ###################
@@ -605,7 +605,7 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    clf, count_vect = sgd.use_pipeline_with_fs()
+    #clf, count_vect = sgd.use_pipeline_with_fs()
 
 
     ###################

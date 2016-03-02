@@ -123,12 +123,12 @@ class LabelFbPostsEngRate():
 
         for fp in fb_posts:
 
-            if float(fp[7]) > 11:
+            if float(fp[7]) > 0.25:
 
                 labelled_fb_posts.append([fp[9],'HER'])
                 high_er.append([fp[8],'HER'])
 
-            elif float(fp[7]) < 0.015:
+            elif float(fp[7]) < 0.0045:
 
                 labelled_fb_posts.append([fp[9],'LER'])
                 low_er.append([fp[8],'LER'])

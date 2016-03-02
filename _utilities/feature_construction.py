@@ -301,7 +301,6 @@ class FeatureConstruction():
         for line in lines[:1]:
             spline = line.replace('\n','').split('\t')
             length = len(spline)
-            print (spline[-1])
 
             for index,s in enumerate(spline):
 
@@ -321,7 +320,7 @@ class FeatureConstruction():
 
         post_features = []
 
-        for line in lines[2:]:
+        for line in lines[1:]:
             spline = line.replace('\n','').split('\t')
 
             features = []
@@ -383,10 +382,334 @@ class FeatureConstruction():
         f.close()
 
 
+    def liwc_psychometric_and_grammar_features(self):
+
+    ################
+    # combine both psychometrics and grammar features
+    ################
+
+        lines = open(path_to_liwc_result_file,'r').readlines()
+
+        print (len(lines))
+
+        for line in lines[:1]:
+            spline = line.replace('\n','').split('\t')
+            length = len(spline)
+
+            for index,s in enumerate(spline):
+
+                if s == 'Analytic':
+                    analytic_index = index
+
+                if s == 'Clout':
+                    clout_index = index
+
+                if s == 'Authentic':
+                    authentic_index = index
+
+                if s == 'Tone':
+                    tone_index = index
+
+                if s == 'posemo':
+                    posemo_index = index
+
+                if s == 'negemo':
+                    negemo_index = index
+
+                if s == 'anx':
+                    anx_index = index
+
+                if s == 'anger':
+                    anger_index = index
+
+                if s == 'sad':
+                    sad_index = index
+
+                if s == 'insight':
+                    insight_index = index
+
+                if s == 'cause':
+                    cause_index = index
+
+                if s == 'discrep':
+                    discrep_index = index
+
+                if s == 'tentat':
+                    tentat_index = index
+
+                if s == 'certain':
+                    certain_index = index
+
+                if s == 'differ':
+                    differ_index = index
+
+                if s == 'see':
+                    see_index = index
+
+                if s == 'hear':
+                    hear_index = index
+
+                if s == 'feel':
+                    feel_index = index
+
+                if s == 'affiliation':
+                    affiliation_index = index
+
+                if s == 'achieve':
+                    achieve_index = index
+
+                if s == 'power':
+                    power_index = index
+
+                if s == 'reward':
+                    reward_index = index
+
+                if s == 'risk':
+                    risk_index = index
+
+                if s == 'swear':
+                    swear_index = index
+
+                if s == 'netspeak':
+                    netspeak_index = index
+
+                if s == 'assent':
+                    assent_index = index
+
+                if s == 'nonflu':
+                    nonflu_index = index
+
+                if s == 'filler':
+                    filler_index = index
+
+                if s == 'Sixltr':
+                    sixltr_index = index
+
+                if s == 'WPS':
+                    wps_index = index
+
+                if s == 'Exclam':
+                    exclam_index = index
+
+                if s == 'QMark':
+                    qmark_index = index
+
+        print ("Number of element per line is "+str(length))
+
+        post_features = []
+
+        for line in lines[1:]:
+            spline = line.replace('\n','').split('\t')
+
+            features = []
+
+            if len(spline) == length:
+
+                for n in range(32):
+
+                    if n == 0:
+
+                        if float(spline[analytic_index]) > 98.0:
+                            features.append('is_analytic_yes')
+
+                        elif float(spline[analytic_index]) < 93.0:
+                            features.append('is_analytic_no')
+
+                    if n == 1:
+
+                        if float(spline[clout_index]) > 78.0:
+                            features.append('is_clout_yes')
+
+                        elif float(spline[clout_index]) < 50.0:
+                            features.append('is_clout_no')
+
+                    if n == 2:
+
+                        if float(spline[authentic_index]) > 72.0:
+                            features.append('is_authentic_yes')
+
+                        elif float(spline[clout_index]) < 50.0:
+                            features.append('is_authentic_no')
+
+                    if n == 3:
+
+                        if float(spline[tone_index]) > 84.0:
+                            features.append('is_tone_yes')
+
+                        elif float(spline[tone_index]) < 25.0:
+                            features.append('is_tone_no')
+
+                    if n == 4:
+
+                        if float(spline[posemo_index]) > 0.0:
+                            features.append('posemo_yes')
+
+                    if n == 5:
+
+                        if float(spline[negemo_index]) > 0.0:
+                            features.append('negemo_yes')
+
+                    if n == 6:
+
+                        if float(spline[anx_index]) > 0.0:
+                            features.append('anx_yes')
+
+                    if n == 7:
+
+                        if float(spline[anger_index]) > 0.0:
+                            features.append('anger_yes')
+
+                    if n == 8:
+
+                        if float(spline[sad_index]) > 0.0:
+                            features.append('sad_yes')
+
+                    if n == 9:
+
+                        if float(spline[insight_index]) > 0.0:
+                            features.append('insight_yes')
+
+                    if n == 10:
+
+                        if float(spline[cause_index]) > 0.0:
+                            features.append('cause_yes')
+
+                    if n == 11:
+
+                        if float(spline[discrep_index]) > 0.0:
+                            features.append('discrep_yes')
+
+                    if n == 12:
+
+                        if float(spline[tentat_index]) > 0.0:
+                            features.append('tentat_yes')
+
+                    if n == 13:
+
+                        if float(spline[certain_index]) > 0.0:
+                            features.append('certain_yes')
+
+                    if n == 14:
+
+                        if float(spline[differ_index]) > 0.0:
+                            features.append('differ_yes')
+
+                    if n == 15:
+
+                        if float(spline[see_index]) > 0.0:
+                            features.append('see_yes')
+
+                    if n == 16:
+
+                        if float(spline[hear_index]) > 0.0:
+                            features.append('hear_yes')
+
+                    if n == 17:
+
+                        if float(spline[feel_index]) > 0.0:
+                            features.append('feel_yes')
+
+                    if n == 18:
+
+                        if float(spline[affiliation_index]) > 0.0:
+                            features.append('affiliation_yes')
+
+                    if n == 19:
+
+                        if float(spline[achieve_index]) > 0.0:
+                            features.append('achieve_yes')
+
+                    if n == 20:
+
+                        if float(spline[power_index]) > 0.0:
+                            features.append('power_yes')
+
+                    if n == 21:
+
+                        if float(spline[reward_index]) > 0.0:
+                            features.append('reward_yes')
+
+                    if n == 22:
+
+                        if float(spline[risk_index]) > 0.0:
+                            features.append('risk_yes')
+
+                    if n == 23:
+
+                        if float(spline[swear_index]) > 0.0:
+                            features.append('swear_yes')
+
+                    if n == 24:
+
+                        if float(spline[netspeak_index]) > 0.0:
+                            features.append('netspeak_yes')
+
+                    if n == 25:
+
+                        if float(spline[assent_index]) > 0.0:
+                            features.append('assent_yes')
+
+                    if n == 26:
+
+                        if float(spline[nonflu_index]) > 0.0:
+                            features.append('nonflu_yes')
+
+                    if n == 27:
+
+                        if float(spline[filler_index]) > 0.0:
+                            features.append('filler_yes')
+
+                    if n == 28:
+
+                        if float(spline[sixltr_index]) > 29.0:
+                            features.append('many_sixltr')
+
+                        elif float(spline[sixltr_index]) < 16.0:
+                            features.append('few_sixltr')
+
+                    if n == 29:
+
+                        if float(spline[wps_index]) > 20.0:
+                            features.append('high_wps')
+
+                        elif float(spline[wps_index]) < 10.0:
+                            features.append('low_wps')
+
+                    if n == 30:
+
+                        if float(spline[exclam_index]) > 0.0:
+                            features.append('has_exclam')
+
+                    if n == 31:
+
+                        if float(spline[qmark_index]) > 0.0:
+                            features.append('has_qmark')
+
+
+                if len(features) == 0:
+                    print("No feature for this post")
+                    print (spline[0])
+                    features.append('none')
+
+                post_features.append(features)
+
+            else:
+                print (len(spline),line)
+
+        print (len(post_features))
+
+        f = open(path_to_store_psychometric_grammar_feature_file,'w')
+
+        for pf in post_features:
+            f.write(' '.join(pf)+'\n')
+
+        f.close()
+
 
     def join_features_and_target(self):
 
         lines = open(path_to_labelled_raw_file,'r').readlines()
+
 
         label = []
 
@@ -396,7 +719,13 @@ class FeatureConstruction():
 
         print ("Length of label list is "+str(len(label)))
 
-        lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
+        ##############
+        # select one of the features to compare
+        ##############
+
+        #lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
+        #lines2 = open(path_to_store_grammar_feature_file,'r').readlines()
+        lines2 = open(path_to_store_psychometric_grammar_feature_file,'r').readlines()
 
         features = []
 
@@ -423,7 +752,18 @@ class FeatureConstruction():
 
         print ("Length of combined list is "+str(len(feature_and_label)))
 
-        f = open(path_to_store_labelled_psychometric_file,'w')
+        ###############
+        # select one of the path to store result
+        ###############
+
+        #f = open(path_to_store_labelled_psychometric_file,'w')
+        #f = open(path_to_store_labelled_grammar_file,'w')
+        f = open(path_to_store_labelled_psychometric_grammar_file,'w')
+
+        # add header
+        header = ['posts','label']
+
+        feature_and_label.insert(0,header)
 
         for fl in feature_and_label:
             f.write(','.join(fl)+'\n')
@@ -438,13 +778,15 @@ class FeatureConstruction():
 ###############
 
 path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_20160226.txt'
+path_to_labelled_raw_file = '../output/engrate/labelled_raw.csv'
 
 path_to_store_psychometric_feature_file = '../output/features/psychometrics.txt'
 path_to_store_grammar_feature_file = '../output/features/grammar.txt'
+path_to_store_psychometric_grammar_feature_file = '../output/features/psychometrics_grammar.txt'
 
-path_to_labelled_raw_file = '../output/engrate/labelled_raw.csv'
 path_to_store_labelled_psychometric_file = '../output/features/labelled_psychometrics.csv'
-
+path_to_store_labelled_grammar_file = '../output/features/labelled_grammar.csv'
+path_to_store_labelled_psychometric_grammar_file = '../output/features/labelled_psychometrics_grammar.csv'
 
 
 
@@ -453,7 +795,8 @@ if __name__ == '__main__':
     fc = FeatureConstruction()
 
     #fc.liwc_psychometric_features()
-    #fc.join_features_and_target()
+    #fc.liwc_grammar_features()
+    fc.liwc_psychometric_and_grammar_features()
 
-    fc.liwc_grammar_features()
+    fc.join_features_and_target()
 

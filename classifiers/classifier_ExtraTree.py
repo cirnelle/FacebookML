@@ -81,7 +81,7 @@ class ExtraTree():
     def train_classifier(self):
 
         # Get list of features
-        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1,3))
+        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=(1,1))
         X_CV = count_vect.fit_transform(docs_train)
 
         # print number of unique words (n_features)
@@ -310,7 +310,7 @@ class ExtraTree():
             'vect__ngram_range': [(1,1), (1,2), (1,3)],
             'vect__use_idf': (True, False),
             'selector__score_func': (chi2, f_classif),
-            'selector__percentile': (85, 95),
+            'selector__percentile': (85, 95, 100),
         }
 
         cv = StratifiedShuffleSplit(y_train, n_iter=5, test_size=0.2, random_state=42)
@@ -497,12 +497,12 @@ class ExtraTree():
             print ("HER %s: " % f + str(hrt_count))
             print ("LER %s: " % f + str(lrt_count))
 
-            if (hrt_count-lrt_count)>50:
+            if (hrt_count-lrt_count)>15:
 
                 feat_by_class.append('HER'+','+f+','+str(hrt_count))
 
 
-            elif (lrt_count-hrt_count)>50:
+            elif (lrt_count-hrt_count)>15:
                 feat_by_class.append('LER'+','+f+','+str(lrt_count))
 
             else:
@@ -566,12 +566,12 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_psychometrics.csv'
+path_to_labelled_file = '../output/features/labelled_psychometrics_grammar.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_vocabulary_file = '../output/feature_importance/extratree/extratree_vocab.txt'
 path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/extratree_feat_imp_all.txt'
 path_to_store_top_important_features_file = '../output/feature_importance/extratree/extratree_feature_importance.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/extratree_feat_byClass_psychometrics.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/extratree_feat_byClass_psychometrics_grammar.csv'
 
 
 def get_data_set():
@@ -625,7 +625,7 @@ if __name__ == '__main__':
     # run ExtraTree Classifier
     ##################
 
-    #clf, count_vect = et.train_classifier()
+    clf, count_vect = et.train_classifier()
 
 
     ###################
@@ -639,7 +639,7 @@ if __name__ == '__main__':
     # use pipeline
     ###################
 
-    clf, count_vect = et.use_pipeline()
+    #clf, count_vect = et.use_pipeline()
 
     ###################
     # use pipeline and use feature selection

@@ -72,14 +72,30 @@ for ul in user_list:
 
     x = date_epoch
     y = likecount_list
+    mean_likecount = np.mean(y)
 
     coefficients = np.polyfit(x, y, 1)
     polynomial = np.poly1d(coefficients)
     ys = polynomial(x)
 
+
+    # get standard deviation of like count
+
+    error = abs(ys-y)
+    mean_error = error.mean()
+    error_std = (ys-y).std()
+    error_std_percent = round(((error_std / mean_likecount) * 100),2)
+
+
+    #print ("Mean follcount for "+str(ul)+" is "+str(mean_likecount)+". Mean error is "+str(mean_error)+". Standard deviation is "+str(error_std)+"("+str(error_std_percent)+"%)")
+
     plt.plot(x, y, '*', label=str(ul))
-    pylab.legend(loc='upper right')
-    plt.plot(x, ys)
+    plt.xlabel('Epoch time')
+    plt.ylabel('Like count')
+
+    plt.errorbar(x,ys,error, label='std error '+str(error_std_percent)+'%')
+    pylab.legend(loc='upper left')
+    #plt.plot(x, ys)
 
 
     #plt.show()
