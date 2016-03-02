@@ -619,14 +619,14 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_psychometrics_grammar.csv'
+path_to_labelled_file = '../output/features/labelled_urlhashtagtype.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_features_by_probability_file = '../output/feature_importance/nb/nb_feat_by_prob.csv'
 path_to_store_list_of_feature_file = '../output/feature_importance/nb/nb_feature_names.txt'
 path_to_store_coefficient_file = '../output/feature_importance/nb/nb_coef.txt'
 path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/nb_feature_prob_0.csv' #Empirical log probability of features given a class
 path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/nb_feature_prob_1.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb/nb_feat_by_class_psychometrics_grammar.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/nb_feat_by_class_urlhashtagtype.csv'
 
 def get_data_set():
 
@@ -699,14 +699,14 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    #clf, count_vect = nb.use_pipeline_with_fs()
+    clf, count_vect = nb.use_pipeline_with_fs()
 
 
     ###################
     # Get feature importance
     ###################
 
-    #nb.get_important_features(clf,count_vect)
+    nb.get_important_features(clf,count_vect)
 
 
     ##################
@@ -721,6 +721,6 @@ if __name__ == '__main__':
     # Plot feature selection
     ##################
 
-    nb.plot_feature_selection()
+    #nb.plot_feature_selection()
 
 

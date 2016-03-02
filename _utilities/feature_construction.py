@@ -382,7 +382,80 @@ class FeatureConstruction():
         f.close()
 
 
-    def liwc_psychometric_and_grammar_features(self):
+    def url_hashtag_type_feature(self):
+
+        lines = open(path_to_labelled_raw_file,'r').readlines()
+
+        posts = []
+
+
+        for line in lines:
+            spline = line.replace('\n','').split(', ')
+            posts.append(spline)
+
+        print ("Length of posts is "+str(len(posts)))
+
+        post_features = []
+        url_list = []
+        hashtag_list = []
+
+        for p in posts:
+            features = []
+
+            #append the type (i.e. photo, video, link, etc)
+
+            features.append('type_'+p[2])
+
+            ################
+            #replace special character at end of sentence with white space
+            #so that hashtags without a space in front of them can be detected too (e.g. This is it.#space)
+            ################
+
+            p[0] = p[0].replace(',',' ').replace('.',' ').replace('!',' ').replace('?',' ')
+
+            ################
+            # need two different loops and a 'break' after detecting the first symbol
+            # so that there will be no repeated features when there are more than one hashtags/urls
+            ################
+
+            for word in p[0].split():
+                if word.startswith("#"):
+                    features.append("has_hashtag")
+                    hashtag_list.append(word)
+                    break
+
+            for word in p[0].split():
+                if word.startswith("http://") or word.startswith("https://"):
+                    features.append("has_url")
+                    url_list.append(word)
+                    break
+
+
+            if len(features) == 0:
+                print("No feature for this post")
+                print (spline[0])
+                features.append('none')
+
+
+            features = ' '.join(features)
+
+            # append the label to the list
+            post_features.append([features,p[1]])
+
+        print ("Length of post features list is "+str(len(post_features)))
+        print ("Length of url list is "+str(len(url_list)))
+        print ("Length of hashtag list is "+str(len(hashtag_list)))
+
+        f = open(path_to_store_labelled_urlhashtagtype_file,'w')
+
+        for pf in post_features:
+            f.write(','.join(pf)+'\n')
+
+        f.close()
+
+
+
+    def all_features(self):
 
     ################
     # combine both psychometrics and grammar features
@@ -691,17 +764,94 @@ class FeatureConstruction():
                     print (spline[0])
                     features.append('none')
 
+                features = ' '.join(features)
+
                 post_features.append(features)
 
             else:
                 print (len(spline),line)
 
-        print (len(post_features))
 
-        f = open(path_to_store_psychometric_grammar_feature_file,'w')
+        ##############
+        # get url hashtag type features
+        ##############
 
-        for pf in post_features:
-            f.write(' '.join(pf)+'\n')
+        lines = open(path_to_labelled_raw_file,'r').readlines()
+
+        posts = []
+
+        for line in lines:
+            spline = line.replace('\n','').split(', ')
+            posts.append(spline)
+
+        print ("Length of posts is "+str(len(posts)))
+
+        post_features_sm = []
+        url_list = []
+        hashtag_list = []
+
+        for p in posts:
+            features_sm = []
+
+            #append the type (i.e. photo, video, link, etc)
+
+            features_sm.append('type_'+p[2])
+
+            ################
+            #replace special character at end of sentence with white space
+            #so that hashtags without a space in front of them can be detected too (e.g. This is it.#space)
+            ################
+
+            p[0] = p[0].replace(',',' ').replace('.',' ').replace('!',' ').replace('?',' ')
+
+            ################
+            # need two different loops and a 'break' after detecting the first symbol
+            # so that there will be no repeated features when there are more than one hashtags/urls
+            ################
+
+            for word in p[0].split():
+                if word.startswith("#"):
+                    features_sm.append("has_hashtag")
+                    hashtag_list.append(word)
+                    break
+
+            for word in p[0].split():
+                if word.startswith("http://") or word.startswith("https://"):
+                    features_sm.append("has_url")
+                    url_list.append(word)
+                    break
+
+
+            features_sm = ' '.join(features_sm)
+
+            post_features_sm.append(features_sm)
+
+        print ("Length of liwc feature list is "+str(len(post_features)))
+        print ("Length of sm feature list is "+str(len(post_features_sm)))
+
+
+        if len(post_features) == len(post_features_sm):
+
+            zipped = zip(post_features,post_features_sm)
+
+        else:
+            print ("Length of both lists not equal, exiting...")
+            sys.exit()
+
+        combined_features = []
+
+        for z in zipped:
+            z = list(z)
+            z = ' '.join(z)
+            combined_features.append(z)
+
+        print ("Length of combined list is "+str(len(combined_features)))
+
+
+        f = open(path_to_store_combined_feature_file,'w')
+
+        for cf in combined_features:
+            f.write(cf+'\n')
 
         f.close()
 
@@ -709,7 +859,6 @@ class FeatureConstruction():
     def join_features_and_target(self):
 
         lines = open(path_to_labelled_raw_file,'r').readlines()
-
 
         label = []
 
@@ -725,7 +874,7 @@ class FeatureConstruction():
 
         #lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
         #lines2 = open(path_to_store_grammar_feature_file,'r').readlines()
-        lines2 = open(path_to_store_psychometric_grammar_feature_file,'r').readlines()
+        lines2 = open(path_to_store_combined_feature_file,'r').readlines()
 
         features = []
 
@@ -734,6 +883,7 @@ class FeatureConstruction():
             features.append(spline)
 
         print ("Length of feature list is "+str(len(features)))
+
 
         if len(label) == len(features):
             zipped_list = zip(features,label)
@@ -758,7 +908,7 @@ class FeatureConstruction():
 
         #f = open(path_to_store_labelled_psychometric_file,'w')
         #f = open(path_to_store_labelled_grammar_file,'w')
-        f = open(path_to_store_labelled_psychometric_grammar_file,'w')
+        f = open(path_to_store_labelled_combined_features_file,'w')
 
         # add header
         header = ['posts','label']
@@ -779,14 +929,18 @@ class FeatureConstruction():
 
 path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_20160226.txt'
 path_to_labelled_raw_file = '../output/engrate/labelled_raw.csv'
+#path_to_labelled_raw_file = 'test.csv'
 
 path_to_store_psychometric_feature_file = '../output/features/psychometrics.txt'
 path_to_store_grammar_feature_file = '../output/features/grammar.txt'
-path_to_store_psychometric_grammar_feature_file = '../output/features/psychometrics_grammar.txt'
+# TO DELETE: path_to_store_psychometric_grammar_feature_file = '../output/features/psychometrics_grammar.txt'
+path_to_store_combined_feature_file = '../output/features/combined.txt'
 
 path_to_store_labelled_psychometric_file = '../output/features/labelled_psychometrics.csv'
 path_to_store_labelled_grammar_file = '../output/features/labelled_grammar.csv'
-path_to_store_labelled_psychometric_grammar_file = '../output/features/labelled_psychometrics_grammar.csv'
+# TO DELETE: path_to_store_labelled_psychometric_grammar_file = '../output/features/labelled_psychometrics_grammar.csv'
+path_to_store_labelled_urlhashtagtype_file = '../output/features/labelled_urlhashtagtype.csv'
+path_to_store_labelled_combined_features_file = '../output/features/labelled_combined.csv'
 
 
 
@@ -796,7 +950,8 @@ if __name__ == '__main__':
 
     #fc.liwc_psychometric_features()
     #fc.liwc_grammar_features()
-    fc.liwc_psychometric_and_grammar_features()
+    #fc.url_hashtag_type_feature()
+    #fc.all_features()
 
     fc.join_features_and_target()
 

@@ -1,0 +1,19 @@
+HER has_hashtag
+HER has_hashtag has_url
+HER type_photo
+HER type_photo has_hashtag
+HER type_photo has_url
+HER type_video has_hashtag
+LER has_url
+LER type_event
+LER type_link
+LER type_link has_hashtag
+LER type_link has_url
+LER type_music
+LER type_music has_url
+LER type_note
+LER type_status
+LER type_status has_hashtag
+LER type_status has_url
+LER type_video
+LER type_video has_url

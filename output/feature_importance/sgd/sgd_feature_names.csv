@@ -1,38 +1,23 @@
-achieve_yes
-affiliation_yes
-anger_yes
-anx_yes
-assent_yes
-cause_yes
-certain_yes
-differ_yes
-discrep_yes
-feel_yes
-few_sixltr
-filler_yes
-has_exclam
-has_qmark
-hear_yes
-high_wps
-insight_yes
-is_analytic_no
-is_analytic_yes
-is_authentic_no
-is_authentic_yes
-is_clout_no
-is_clout_yes
-is_tone_no
-is_tone_yes
-low_wps
-many_sixltr
-negemo_yes
-netspeak_yes
-nonflu_yes
-posemo_yes
-power_yes
-reward_yes
-risk_yes
-sad_yes
-see_yes
-swear_yes
-tentat_yes
+has_hashtag
+has_hashtag has_url
+has_url
+type_event
+type_link
+type_link has_hashtag
+type_link has_hashtag has_url
+type_link has_url
+type_music
+type_music has_url
+type_note
+type_photo
+type_photo has_hashtag
+type_photo has_hashtag has_url
+type_photo has_url
+type_status
+type_status has_hashtag
+type_status has_hashtag has_url
+type_status has_url
+type_video
+type_video has_hashtag
+type_video has_hashtag has_url
+type_video has_url

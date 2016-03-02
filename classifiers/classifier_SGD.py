@@ -526,12 +526,12 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_psychometrics_grammar.csv'
+path_to_labelled_file = '../output/features/labelled_urlhashtagtype.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_coefficient_file = '../output/feature_importance/sgd/sgd_coef.csv'
 path_to_store_list_of_feature_file = '../output/feature_importance/sgd/sgd_feature_names.csv'
 path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/sgd_coef_and_feat.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/sgd_feat_by_class_psychometrics_grammar.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/sgd_feat_by_class_urlhashtagtype.csv'
 
 
 
@@ -585,7 +585,7 @@ if __name__ == '__main__':
     # run SGD Classifier
     ##################
 
-    clf, count_vect = sgd.train_classifier()
+    #clf, count_vect = sgd.train_classifier()
 
 
     ###################
@@ -605,7 +605,7 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    #clf, count_vect = sgd.use_pipeline_with_fs()
+    clf, count_vect = sgd.use_pipeline_with_fs()
 
 
     ###################
