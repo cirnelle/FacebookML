@@ -1,6 +1,6 @@
 __author__ = 'yi-linghwong'
 
-lines = open('../fb_data/posts/raw_fb_posts_20160226.csv','r').readlines()
+lines = open('../fb_data/posts/raw_fb_posts_20160226_likecorr.csv','r').readlines()
 #lines = open('test.csv','r').readlines()
 
 print (len(lines))
@@ -14,7 +14,7 @@ for line in lines:
 
     posts.append(spline)
 
-f = open('../fb_data/posts/raw_fb_posts_20160226_1.csv','w')
+f = open('../fb_data/posts/raw_fb_posts_20160226_likecorr.csv','w')
 
 for p in posts:
     f.write(','.join(p)+'\n')

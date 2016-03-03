@@ -455,10 +455,10 @@ class FeatureConstruction():
 
 
 
-    def all_features(self):
+    def combine_features(self):
 
     ################
-    # combine both psychometrics and grammar features
+    # combine psychometrics, grammar and SM (url, hashtags, type) features
     ################
 
         lines = open(path_to_liwc_result_file,'r').readlines()
@@ -781,7 +781,7 @@ class FeatureConstruction():
         posts = []
 
         for line in lines:
-            spline = line.replace('\n','').split(', ')
+            spline = line.replace('\n','').split(',')
             posts.append(spline)
 
         print ("Length of posts is "+str(len(posts)))
@@ -855,6 +855,53 @@ class FeatureConstruction():
 
         f.close()
 
+        return combined_features
+
+
+    def combine_features_all(self):
+
+    ##################
+    # combine all features: psychometrics, grammar, SM, words
+    ##################
+
+        language_features = self.combine_features()
+
+        lines = open(path_to_labelled_preprocessed_file,'r').readlines()
+
+        word_features = []
+
+        for line in lines:
+            spline = line.replace('\n','').split(',')
+            word_features.append(spline[0])
+
+        print ("############################")
+        print ("Length of language feature list is "+str(len(language_features)))
+        print ("Length of word feature list is "+str(len(word_features)))
+
+        if len(language_features) == len(word_features):
+            zipped = zip(language_features,word_features)
+
+        else:
+            print ("Length of lists not equal, exiting...")
+            sys.exit()
+
+        all_features = []
+
+        for z in zipped:
+            z = list(z)
+            z = ' '.join(z)
+            all_features.append(z)
+
+        print ("Length of combined feature list is "+str(len(all_features)))
+
+
+        f = open(path_to_store_combined_feature_all_file,'w')
+
+        for af in all_features:
+            f.write(af+'\n')
+
+        f.close()
+
 
     def join_features_and_target(self):
 
@@ -863,7 +910,7 @@ class FeatureConstruction():
         label = []
 
         for line in lines:
-            spline = line.replace('\n','').split(', ')
+            spline = line.replace('\n','').split(',')
             label.append(spline[1])
 
         print ("Length of label list is "+str(len(label)))
@@ -874,7 +921,8 @@ class FeatureConstruction():
 
         #lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
         #lines2 = open(path_to_store_grammar_feature_file,'r').readlines()
-        lines2 = open(path_to_store_combined_feature_file,'r').readlines()
+        #lines2 = open(path_to_store_combined_feature_file,'r').readlines()
+        lines2 = open(path_to_store_combined_feature_all_file,'r').readlines()
 
         features = []
 
@@ -908,7 +956,8 @@ class FeatureConstruction():
 
         #f = open(path_to_store_labelled_psychometric_file,'w')
         #f = open(path_to_store_labelled_grammar_file,'w')
-        f = open(path_to_store_labelled_combined_features_file,'w')
+        #f = open(path_to_store_labelled_combined_features_file,'w')
+        f = open(path_to_store_labelled_combined_features_all_file,'w')
 
         # add header
         header = ['posts','label']
@@ -929,18 +978,18 @@ class FeatureConstruction():
 
 path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_20160226.txt'
 path_to_labelled_raw_file = '../output/engrate/labelled_raw.csv'
-#path_to_labelled_raw_file = 'test.csv'
+path_to_labelled_preprocessed_file = '../output/engrate/labelled.csv'
 
 path_to_store_psychometric_feature_file = '../output/features/psychometrics.txt'
 path_to_store_grammar_feature_file = '../output/features/grammar.txt'
-# TO DELETE: path_to_store_psychometric_grammar_feature_file = '../output/features/psychometrics_grammar.txt'
 path_to_store_combined_feature_file = '../output/features/combined.txt'
+path_to_store_combined_feature_all_file = '../output/features/combined_all.txt' #includes word features
 
 path_to_store_labelled_psychometric_file = '../output/features/labelled_psychometrics.csv'
 path_to_store_labelled_grammar_file = '../output/features/labelled_grammar.csv'
-# TO DELETE: path_to_store_labelled_psychometric_grammar_file = '../output/features/labelled_psychometrics_grammar.csv'
 path_to_store_labelled_urlhashtagtype_file = '../output/features/labelled_urlhashtagtype.csv'
 path_to_store_labelled_combined_features_file = '../output/features/labelled_combined.csv'
+path_to_store_labelled_combined_features_all_file = '../output/features/labelled_combined_all.csv'
 
 
 
@@ -951,7 +1000,8 @@ if __name__ == '__main__':
     #fc.liwc_psychometric_features()
     #fc.liwc_grammar_features()
     #fc.url_hashtag_type_feature()
-    #fc.all_features()
+    #fc.combine_features()
+    fc.combine_features_all()
 
     fc.join_features_and_target()
 

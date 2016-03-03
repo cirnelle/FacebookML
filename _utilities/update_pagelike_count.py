@@ -107,7 +107,7 @@ class UpdatePagelikeCount():
 
 path_to_raw_facebook_post_file = '../fb_data/posts/raw_fb_posts_20160226.csv'
 path_to_slope_file = '../user_list/like_slope.txt'
-path_to_store_updated_fb_post_file = '../fb_data/posts/raw_fb_post_20160226_follcorr.csv'
+path_to_store_updated_fb_post_file = '../fb_data/posts/raw_fb_posts_20160226_likecorr.csv'
 
 
 

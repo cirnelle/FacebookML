@@ -41,8 +41,13 @@ class LabelFbPostsEngRate():
 
             if len(fp) == length:
 
-                #engagement = (0.5*int(fp[4])) + int(fp[5])
-                engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
+                if with_comment == 0:
+
+                    engagement = (0.5*int(fp[4])) + int(fp[5])
+
+                elif with_comment == 1:
+
+                    engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
 
                 engrate = str((np.divide(int(engagement),int(fp[2])))*100)
 
@@ -70,13 +75,13 @@ class LabelFbPostsEngRate():
         fb_posts = []
 
         for line in lines:
-            spline = line.replace('\n','').split(', ')
+            spline = line.replace('\n','').split(',')
             fb_posts.append(spline)
 
         print ("Length of post list is "+str(len(fb_posts)))
 
         for line in lines[:1]:
-            spline = line.replace('\n','').split(', ')
+            spline = line.replace('\n','').split(',')
             length = len(spline)
 
         print ("Number of element per line is "+str(length))
@@ -89,17 +94,23 @@ class LabelFbPostsEngRate():
 
             if len(fp) == length:
 
-                engagement = (0.5*int(fp[4])) + int(fp[5])
-                #engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
+                if with_comment == 0:
+
+                    engagement = (0.5*int(fp[4])) + int(fp[5])
+
+                elif with_comment == 1:
+
+                    engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
 
                 engrate = str((np.divide(int(engagement),int(fp[2])))*100)
 
                 engrate_list.append([fp[0],fp[1],fp[2],fp[3],fp[4],fp[5],fp[6],engrate,fp[7],fp[8]])
 
             else:
-                print ("error")
+                print ("error, length is "+str(len(fp)))
                 print(fp)
                 pass
+
 
         f = open(path_to_store_engrate_output_raw,'w')
 
@@ -119,16 +130,17 @@ class LabelFbPostsEngRate():
         high_er = []
         low_er = []
 
-        print ("Labelling tweets ...")
+        print ("#############################")
+        print ("Labelling preprocessed posts ...")
 
         for fp in fb_posts:
 
-            if float(fp[7]) > 0.25:
+            if float(fp[7]) > her_boundary:
 
                 labelled_fb_posts.append([fp[9],'HER'])
                 high_er.append([fp[8],'HER'])
 
-            elif float(fp[7]) < 0.0045:
+            elif float(fp[7]) < ler_boundary:
 
                 labelled_fb_posts.append([fp[9],'LER'])
                 low_er.append([fp[8],'LER'])
@@ -143,7 +155,7 @@ class LabelFbPostsEngRate():
 
         for lf in labelled_fb_posts:
 
-            f.write(','.join(lf)+str('\n'))
+            f.write(','.join(lf)+'\n')
 
         f.close()
 
@@ -160,16 +172,17 @@ class LabelFbPostsEngRate():
         high_er = []
         low_er = []
 
-        print ("Labelling posts ...")
+        print ("#############################")
+        print ("Labelling raw posts ...")
 
         for fp in fb_posts:
 
-            if float(fp[7]) > 0.25:
+            if float(fp[7]) > her_boundary:
 
                 labelled_fb_posts.append([fp[9],'HER',fp[8]])
                 high_er.append([fp[8],'HER'])
 
-            elif float(fp[7]) < 0.0045:
+            elif float(fp[7]) < ler_boundary:
 
                 labelled_fb_posts.append([fp[9],'LER',fp[8]])
                 low_er.append([fp[8],'LER'])
@@ -184,7 +197,7 @@ class LabelFbPostsEngRate():
 
         for lf in labelled_fb_posts:
 
-            f.write(', '.join(lf)+str('\n'))
+            f.write(','.join(lf)+'\n')
 
         f.close()
 
@@ -242,21 +255,28 @@ class LabelFbPostsEngRate():
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/preprocessed_fb_posts_20160226_likecorr.csv'
-path_to_store_engrate_output = '../output/engrate/engrate_withcomment_likecorr.csv'
-path_to_store_labelled_fb_post = '../output/engrate/labelled_withcomment_likecorr.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/preprocessed_fb_posts_20160226.csv'
+path_to_store_engrate_output = '../output/engrate/engrate.csv'
+path_to_store_labelled_fb_post = '../output/engrate/labelled.csv'
 
+# for LIWC
 path_to_raw_fb_post_file = '../fb_data/posts/raw_fb_posts_20160226.csv'
 path_to_store_engrate_output_raw = '../output/engrate/engrate_raw.csv'
 path_to_store_labelled_fb_post_raw = '../output/engrate/labelled_raw.csv'
+
+# engrate parameters
+with_comment = 0
+her_boundary = 0.39
+ler_boundary = 0.0017
 
 
 if __name__ == "__main__":
 
 
     lf = LabelFbPostsEngRate()
+
     #lf.get_eng_rate()
-    #lf.label_fb_post()
+    lf.label_fb_post()
 
     #lf.get_eng_rate_raw_posts()
     lf.label_fb_post_raw()
@@ -265,53 +285,4 @@ if __name__ == "__main__":
 
 
 
-'''
-
-lines = open('../followers/user_slope_space.txt','r').readlines()
-
-slope_dict = {}
-
-for line in lines:
-    spline = line.replace('\n','').split(',')
-    slope_dict[spline[0]] = spline[1]
-
-print ("Length of slope_dict is "+str(len(slope_dict)))
-
-
-
-###############
-# create tweet list with updated follower count
-###############
-
-
-lines = open('../output/engrate/_old/output_engrate_MASTER.csv','r').readlines()
-
-tweets = []
-for line in lines:
-    spline = line.replace('\n','').split(',')
-    tweets.append(spline)
-
-print ("Length of tweet list is "+str(len(tweets)))
-
-updated_tweets = []
-
-for t in tweets:
-
-    key = t[0]
-
-    if key in slope_dict:
-
-        del t[6]
-        updated_tweets.append(t)
-
-print (len(updated_tweets))
-
-f = open('../extracted_data/space_nofollcorr.csv','w')
-
-for ut in updated_tweets:
-    f.write(','.join(ut)+'\n')
-
-f.close()
-
-'''
 

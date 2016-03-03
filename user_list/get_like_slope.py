@@ -25,10 +25,6 @@ for line in lines:
     spline = line.replace('\n','').split(',')
     user_list.append(spline[0])
 
-    # if creating list for space user:
-    # user_list.append(spline[0])
-
-
 user_slope_list = []
 
 for ul in user_list:
