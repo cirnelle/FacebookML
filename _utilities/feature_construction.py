@@ -275,6 +275,7 @@ class FeatureConstruction():
                 post_features.append(features)
 
             else:
+                print ("Length of spline incorrect")
                 print (len(spline),line)
 
 
@@ -369,6 +370,7 @@ class FeatureConstruction():
                 post_features.append(features)
 
             else:
+                print ("Length of spline incorrect")
                 print (len(spline),line)
 
 
@@ -390,7 +392,7 @@ class FeatureConstruction():
 
 
         for line in lines:
-            spline = line.replace('\n','').split(', ')
+            spline = line.replace('\n','').split(',')
             posts.append(spline)
 
         print ("Length of posts is "+str(len(posts)))
@@ -433,7 +435,7 @@ class FeatureConstruction():
 
             if len(features) == 0:
                 print("No feature for this post")
-                print (spline[0])
+                print (p[0])
                 features.append('none')
 
 
@@ -769,6 +771,7 @@ class FeatureConstruction():
                 post_features.append(features)
 
             else:
+                print ("Length of spline incorrect")
                 print (len(spline),line)
 
 

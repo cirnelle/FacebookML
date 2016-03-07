@@ -138,12 +138,12 @@ class LabelFbPostsEngRate():
             if float(fp[7]) > her_boundary:
 
                 labelled_fb_posts.append([fp[9],'HER'])
-                high_er.append([fp[8],'HER'])
+                high_er.append([fp[9],'HER'])
 
             elif float(fp[7]) < ler_boundary:
 
                 labelled_fb_posts.append([fp[9],'LER'])
-                low_er.append([fp[8],'LER'])
+                low_er.append([fp[9],'LER'])
 
             else:
                 pass

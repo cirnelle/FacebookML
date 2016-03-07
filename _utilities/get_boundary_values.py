@@ -44,7 +44,7 @@ class GetBoundaryValues():
 
         print ("Number of element per line is "+str(length))
 
-        for line in lines[2:]:
+        for line in lines[1:]:
             spline = line.replace('\n','').split('\t')
 
             if len(spline) == length:
@@ -166,7 +166,7 @@ class GetBoundaryValues():
 
         print ("Number of element per line is "+str(length))
 
-        for line in lines[2:]:
+        for line in lines[1:]:
             spline = line.replace('\n','').split('\t')
 
             if len(spline) == length:
