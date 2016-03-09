@@ -284,8 +284,8 @@ class Extractor_fb():
                                                 print("HTTPError caught, retrying...", e.read())
                                                 time.sleep(sleep_time)
 
-                                            except:
-                                                print("An error occurred.")
+                                            except Exception as e:
+                                                print('Failed: ' + str(e))
                                                 time.sleep(sleep_time)
 
                                 break
@@ -295,8 +295,8 @@ class Extractor_fb():
                                 print("HTTPError caught, retrying...", e.read())
                                 time.sleep(sleep_time)
 
-                            except:
-                                print("An error occurred.")
+                            except Exception as e:
+                                print('Failed: ' + str(e))
                                 time.sleep(sleep_time)
 
         f = open(path_to_store_fb_comments_replies, 'a')
@@ -369,8 +369,8 @@ class Extractor_fb():
                             print("HTTPError caught, retrying...", e.read())
                             time.sleep(sleep_time)
 
-                        except:
-                            print("An error occurred.")
+                        except Exception as e:
+                            print('Failed: ' + str(e))
                             time.sleep(10)
 
 
@@ -408,8 +408,8 @@ class Extractor_fb():
                                     print("HTTPError caught, retrying...", e.read())
                                     time.sleep(sleep_time)
 
-                                except:
-                                    print("An error occurred.")
+                                except Exception as e:
+                                    print('Failed: ' + str(e))
                                     time.sleep(10)
 
                         else:
@@ -517,8 +517,8 @@ class Extractor_fb():
                                         print("HTTPError caught, retrying...", e.read())
                                         time.sleep(sleep_time)
 
-                                    except:
-                                        print("An error occurred.")
+                                    except Exception as e:
+                                        print('Failed: ' + str(e))
                                         time.sleep(sleep_time)
 
                             break
@@ -528,8 +528,8 @@ class Extractor_fb():
                             print("HTTPError caught, retrying...", e.read())
                             time.sleep(sleep_time)
 
-                        except:
-                            print("An error occurred.")
+                        except Exception as e:
+                            print('Failed: ' + str(e))
                             time.sleep(sleep_time)
 
             except Exception as e:
@@ -635,8 +635,8 @@ class Extractor_fb():
                                         print("HTTPError caught, retrying...", e.read())
                                         time.sleep(sleep_time)
 
-                                    except:
-                                        print("An error occurred.")
+                                    except Exception as e:
+                                        print('Failed: ' + str(e))
                                         time.sleep(sleep_time)
 
                             break
@@ -645,8 +645,8 @@ class Extractor_fb():
                             print("HTTPError caught, retrying...", e.read())
                             time.sleep(sleep_time)
 
-                        except:
-                            print("An error occurred.")
+                        except Exception as e:
+                            print('Failed: ' + str(e))
                             time.sleep(sleep_time)
 
 
@@ -721,8 +721,8 @@ class Extractor_fb():
 # variables
 ###############
 
-path_to_user_list = '../user_list/user_list_fb_MASTER'
-path_to_store_fb_posts = '../fb_data/posts/raw_fb_posts_20160226.csv'
+path_to_user_list = '../user_list/others/user_business'
+path_to_store_fb_posts = '../fb_data/posts/others/raw_fb_posts_business.csv'
 #path_to_store_fb_posts = '../fb_data/posts/test.csv'
 path_to_store_fb_comments = '../fb_data/comments/raw_fb_comments_20160223.csv'
 path_to_store_fb_comments_replies = '../../_big_files/facebook/raw_fb_comments_replies_20160223.csv'

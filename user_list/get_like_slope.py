@@ -17,7 +17,7 @@ from decimal import Decimal
 import time
 
 
-lines = open('user_list_fb_MASTER','r').readlines()
+lines = open('user_ALL','r').readlines()
 
 user_list = []
 

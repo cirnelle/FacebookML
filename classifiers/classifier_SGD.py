@@ -515,22 +515,22 @@ class SGD():
             f.write(str(fl) + '\n')
         f.close()
 
-        hrt = []
-        lrt = []
+        her = []
+        ler = []
 
         for fl in feat_list:
             if fl[0] < 0:
-                hrt.append('HER ' + str(fl))
+                her.append('HER ' + str(fl))
 
             if fl[0] > 0:
-                lrt.append('LER ' + str(fl))
+                ler.append('LER ' + str(fl))
 
         f = open(path_to_store_important_features_by_class_file, 'w')
 
-        for feat in hrt[:100]:
+        for feat in her[:100]:
             f.write(str(feat) + '\n')
 
-        for feat in reversed(lrt[-100:]):
+        for feat in reversed(ler[-100:]):
             f.write(str(feat) + '\n')
 
         f.close()
