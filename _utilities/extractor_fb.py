@@ -21,6 +21,7 @@ else:
 
 
 class Extractor_fb():
+
     def create_user_list(self):
 
         ################

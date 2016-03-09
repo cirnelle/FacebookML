@@ -255,14 +255,14 @@ class LabelFbPostsEngRate():
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/preprocessed_fb_posts_20160226.csv'
-path_to_store_engrate_output = '../output/engrate/engrate.csv'
-path_to_store_labelled_fb_post = '../output/engrate/labelled.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/others/preprocessed_fb_posts_business.csv'
+path_to_store_engrate_output = '../output/engrate/others/engrate_business.csv'
+path_to_store_labelled_fb_post = '../output/engrate/others/labelled_business.csv'
 
 # for LIWC
-path_to_raw_fb_post_file = '../fb_data/posts/raw_fb_posts_20160226.csv'
-path_to_store_engrate_output_raw = '../output/engrate/engrate_raw.csv'
-path_to_store_labelled_fb_post_raw = '../output/engrate/labelled_raw.csv'
+path_to_raw_fb_post_file = '../fb_data/posts/others/raw_fb_posts_business.csv'
+path_to_store_engrate_output_raw = '../output/engrate/others/engrate_business_raw.csv'
+path_to_store_labelled_fb_post_raw = '../output/engrate/others/labelled_business_raw.csv'
 
 # engrate parameters
 with_comment = 0
@@ -279,7 +279,7 @@ if __name__ == "__main__":
     lf.label_fb_post()
 
     #lf.get_eng_rate_raw_posts()
-    lf.label_fb_post_raw()
+    #lf.label_fb_post_raw()
 
     #lf.get_histogram()
 
