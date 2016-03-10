@@ -325,7 +325,7 @@ class GetBoundaryValues():
 # variables
 ##############
 
-path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_20160226.txt'
+path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_nonprofit.txt'
 
 
 if __name__ == '__main__':
@@ -333,8 +333,8 @@ if __name__ == '__main__':
     
     gb = GetBoundaryValues()
 
-    #gb.create_category_lists_summary_dimensions()
-    #gb.get_boundary_values_summary_dimensions()
+    gb.create_category_lists_summary_dimensions()
+    gb.get_boundary_values_summary_dimensions()
 
     gb.create_category_lists_grammar()
     gb.get_boundary_value_grammar()
@@ -342,4 +342,4 @@ if __name__ == '__main__':
 
 
 
-    #gb.plot_histogram()
+    gb.plot_histogram()

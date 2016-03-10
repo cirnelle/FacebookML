@@ -101,13 +101,13 @@ class Extractor_fb():
 
         # if file is empty create heading
         if os.stat(path_to_store_fb_posts).st_size == 0:
-            f.write('user, created_time, page_likes, post_id, like_count, share_count, comment_count, type, message' + '\n')
+            f.write('user,created_time,page_likes,post_id,like_count,share_count,comment_count,type,message' + '\n')
             for tl in temp_list:
-                f.write(', '.join(tl) + '\n')
+                f.write(','.join(tl) + '\n')
 
         else:
             for tl in temp_list:
-                f.write(', '.join(tl) + '\n')
+                f.write(','.join(tl) + '\n')
 
         f.close()
 
@@ -142,13 +142,13 @@ class Extractor_fb():
 
         # if file is empty create heading
         if os.stat(path_to_store_fb_comments).st_size == 0:
-            f.write('post_id, created_time, comment_id, like_count, comment_count, message' + '\n')
+            f.write('post_id,created_time,comment_id,like_count,comment_count,message' + '\n')
             for tl in temp_list:
-                f.write(', '.join(tl) + '\n')
+                f.write(','.join(tl) + '\n')
 
         else:
             for tl in temp_list:
-                f.write(', '.join(tl) + '\n')
+                f.write(','.join(tl) + '\n')
 
         f.close()
 
@@ -304,13 +304,13 @@ class Extractor_fb():
 
         # if file is empty create heading
         if os.stat(path_to_store_fb_comments_replies).st_size == 0:
-            f.write('post_id, created_time, comment_id, is_reply, like_count, comment_count, message' + '\n')
+            f.write('post_id,created_time,comment_id,is_reply,like_count,comment_count,message' + '\n')
             for tl in temp_list:
-                f.write(', '.join(tl) + '\n')
+                f.write(','.join(tl) + '\n')
 
         else:
             for tl in temp_list:
-                f.write(', '.join(tl) + '\n')
+                f.write(','.join(tl) + '\n')
 
         f.close()
 

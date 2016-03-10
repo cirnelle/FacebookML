@@ -1,24 +1,8 @@
-HER few_sixltr low_wps
+HER few_sixltr
 HER has_exclam
-HER has_exclam no_qmark
-HER high_wps
-HER high_wps has_exclam
-HER high_wps no_exclam
 HER low_wps
-HER low_wps has_exclam
-HER low_wps no_exclam
-HER many_sixltr low_wps
-HER no_exclam no_qmark
 HER no_qmark
-LER few_sixltr
-LER few_sixltr has_exclam
-LER few_sixltr high_wps
-LER few_sixltr no_exclam
-LER has_exclam has_qmark
 LER has_qmark
+LER high_wps
 LER many_sixltr
-LER many_sixltr has_exclam
-LER many_sixltr high_wps
-LER many_sixltr no_exclam
 LER no_exclam
-LER no_exclam has_qmark

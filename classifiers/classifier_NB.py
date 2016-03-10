@@ -562,11 +562,12 @@ class NaiveBayes():
         for i in sortli:
 
             if fb_hrt[i]>fb_lrt[i]:
-                imp_feat.append('HER '+str(feature_names[i]))
+                imp_feat.append('HER, '+str(feature_names[i]))
             else:
-                imp_feat.append('LER '+str(feature_names[i]))
+                imp_feat.append('LER, '+str(feature_names[i]))
 
-        imp_feat=sorted(imp_feat)
+
+        #imp_feat=sorted(imp_feat)
 
         f4=open(path_to_store_important_features_by_class_file, 'w')
 
@@ -596,6 +597,7 @@ class NaiveBayes():
             f.write(str(fl)+'\n')
 
         f.close()
+
 
         ###############
         # HELPER FILES
@@ -674,21 +676,21 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_combined_all.csv'
+path_to_labelled_file = '../output/features/politics/labelled_psychometrics.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_features_by_probability_file = '../output/feature_importance/nb/nb_feat_by_prob.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/nb/nb_feature_names.txt'
-path_to_store_coefficient_file = '../output/feature_importance/nb/nb_coef.txt'
-path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/nb_feature_prob_0.csv' #Empirical log probability of features given a class
-path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/nb_feature_prob_1.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb/nb_feat_by_class_combined_all.csv'
+path_to_store_features_by_probability_file = '../output/feature_importance/nb/politics/nb_feat_by_prob.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/nb/politics/nb_feature_names.txt'
+path_to_store_coefficient_file = '../output/feature_importance/nb/politics/nb_coef.txt'
+path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/politics/nb_feature_prob_0.csv' #Empirical log probability of features given a class
+path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/politics/nb_feature_prob_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/politics/nb_feat_by_class_psychometrics.csv'
 
 
 # for classifier without pipeline
 _ngram_range = (1,1)
 _alpha = 0.4
-_use_idf = True
-_percentile = 85
+_use_idf = False
+_percentile = 100
 _score_func = chi2
 
 
@@ -744,7 +746,7 @@ if __name__ == '__main__':
     # run NB Classifier
     ##################
 
-    #clf, count_vect = nb.train_classifier()
+    clf, count_vect = nb.train_classifier()
 
 
     ###################
@@ -764,14 +766,14 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    clf, count_vect = nb.use_pipeline_with_fs()
+    #clf, count_vect = nb.use_pipeline_with_fs()
 
 
     ###################
     # Get feature importance
     ###################
 
-    #nb.get_important_features(clf,count_vect)
+    nb.get_important_features(clf,count_vect)
 
 
     ##################

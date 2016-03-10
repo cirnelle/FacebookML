@@ -276,9 +276,9 @@ class TweetProcessing():
 # variables
 ###############
 
-path_to_raw_fb_data_file = '../fb_data/posts/others/raw_fb_posts_business.csv'
+path_to_raw_fb_data_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
 #path_to_raw_fb_data_file = 'test.csv'
-path_to_store_processed_fb_data_file = '../fb_data/posts/others/preprocessed_fb_posts_business.csv'
+path_to_store_processed_fb_data_file = '../fb_data/posts/others/preprocessed_fb_posts_nonprofit.csv'
 
 if __name__ == "__main__":
 

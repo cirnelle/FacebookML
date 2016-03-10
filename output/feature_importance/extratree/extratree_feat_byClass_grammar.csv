@@ -1,8 +1,8 @@
-HER,has_exclam,1966
-HER,high_wps,1221
-HER,low_wps,2176
-HER,no_qmark,5908
-LER,few_sixltr,1699
-LER,has_qmark,1448
-LER,many_sixltr,1598
-LER,no_exclam,4768
+HER,few_sixltr,870
+HER,has_exclam,1054
+HER,low_wps,1257
+HER,no_qmark,3017
+LER,has_qmark,629
+LER,high_wps,595
+LER,many_sixltr,894
+LER,no_exclam,2478

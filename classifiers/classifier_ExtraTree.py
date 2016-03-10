@@ -124,7 +124,7 @@ class ExtraTree():
 
         # print the mean accuracy on the given test data and labels
 
-        print ("Classifier score on test data is: %s " % clf.score(X_test_tfidf,y_test))
+        print ("Classifier score on test data is: %0.2f " % clf.score(X_test_tfidf,y_test))
 
         print(metrics.classification_report(y_test, y_predicted))
         cm = metrics.confusion_matrix(y_test, y_predicted)
@@ -494,7 +494,6 @@ class ExtraTree():
             f.write(lines[i].replace('\n', '') + '\t' + lines2[i].replace('\n', '') + '\n')
         f.close()
 
-
         ##################
         # get feature importance by class
         ##################
@@ -552,19 +551,19 @@ class ExtraTree():
             print ("HER %s: " % f + str(hrt_count))
             print ("LER %s: " % f + str(lrt_count))
 
-            if (hrt_count-lrt_count)>15:
+            if (hrt_count-lrt_count)>0:
 
                 feat_by_class.append('HER'+','+f+','+str(hrt_count))
 
 
-            elif (lrt_count-hrt_count)>15:
+            elif (lrt_count-hrt_count)>0:
                 feat_by_class.append('LER'+','+f+','+str(lrt_count))
 
             else:
                 feat_by_class.append('BOTH'+','+f+','+str(hrt_count)+','+str(lrt_count))
 
 
-        feat_by_class = sorted(feat_by_class)
+        #feat_by_class = sorted(feat_by_class)
 
         file = open(path_to_store_important_features_by_class_file, 'w')
 
@@ -621,18 +620,18 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_combined_all.csv'
+path_to_labelled_file = '../output/features/politics/labelled_psychometrics.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_vocabulary_file = '../output/feature_importance/extratree/extratree_vocab.txt'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree/extratree_feature_importance.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/extratree_feat_byClass_combined_all.csv'
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/politics/extratree_vocab.txt'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/politics/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/politics/extratree_feature_importance.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/politics/extratree_feat_byClass_psychometrics.csv'
 
 
 # for classifier without pipeline
 _ngram_range = (1,1)
 _use_idf = True
-_percentile = 85
+_percentile = 95
 _score_func = chi2
 
 
@@ -687,7 +686,7 @@ if __name__ == '__main__':
     # run ExtraTree Classifier
     ##################
 
-    #clf, count_vect = et.train_classifier()
+    clf, count_vect = et.train_classifier()
 
 
     ###################
@@ -707,14 +706,14 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    clf, count_vect = et.use_pipeline_with_fs()
+    #clf, count_vect = et.use_pipeline_with_fs()
 
 
     ###################
     # Get feature importance
     ###################
 
-    #et.get_important_features(clf,count_vect)
+    et.get_important_features(clf,count_vect)
 
 
     ##################

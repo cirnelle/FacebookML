@@ -1,25 +1,24 @@
 __author__ = 'yi-linghwong'
 
-lines = open('../fb_data/posts/raw_fb_posts_20160226_likecorr.csv','r').readlines()
-#lines = open('test.csv','r').readlines()
+import facebook
+import sys
+import os
 
-print (len(lines))
+if os.path.isfile('../../../keys/facebook_api_keys.txt'):
+    access_token = open('../../../keys/facebook_api_keys.txt', 'r').readline()
 
-posts = []
+else:
+    print("Path not found")
+    sys.exit(1)
 
-for line in lines:
-    spline = line.replace('\n','').split(',')
+graph = facebook.GraphAPI(access_token=access_token)
 
-    spline[8] = spline[8].replace('\t',' ')
+posts = graph.get_connections(id='LEGO', connection_name='posts', limit=5,
+                                              fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')
 
-    posts.append(spline)
+for r in range(5):
 
-f = open('../fb_data/posts/raw_fb_posts_20160226_likecorr.csv','w')
-
-for p in posts:
-    f.write(','.join(p)+'\n')
-
-f.close()
+    print (posts['data'][r]['id'])
 
 
 

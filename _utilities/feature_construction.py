@@ -9,6 +9,9 @@ class FeatureConstruction():
 
         lines = open(path_to_liwc_result_file,'r').readlines()
 
+        print ()
+        print ("Constructing psychometric features...")
+
         print (len(lines))
 
         for line in lines[:1]:
@@ -116,34 +119,34 @@ class FeatureConstruction():
 
                     if n == 0:
 
-                        if float(spline[analytic_index]) > 98.0:
+                        if float(spline[analytic_index]) > analytic_top:
                             features.append('is_analytic_yes')
 
-                        elif float(spline[analytic_index]) < 93.0:
+                        elif float(spline[analytic_index]) < analytic_bottom:
                             features.append('is_analytic_no')
 
                     if n == 1:
 
-                        if float(spline[clout_index]) > 78.0:
+                        if float(spline[clout_index]) > clout_top:
                             features.append('is_clout_yes')
 
-                        elif float(spline[clout_index]) < 50.0:
+                        elif float(spline[clout_index]) < clout_bottom:
                             features.append('is_clout_no')
 
                     if n == 2:
 
-                        if float(spline[authentic_index]) > 72.0:
+                        if float(spline[authentic_index]) > authentic_top:
                             features.append('is_authentic_yes')
 
-                        elif float(spline[clout_index]) < 50.0:
+                        elif float(spline[authentic_index]) < authentic_bottom:
                             features.append('is_authentic_no')
 
                     if n == 3:
 
-                        if float(spline[tone_index]) > 84.0:
+                        if float(spline[tone_index]) > tone_top:
                             features.append('is_tone_yes')
 
-                        elif float(spline[tone_index]) < 25.0:
+                        elif float(spline[tone_index]) < tone_bottom:
                             features.append('is_tone_no')
 
                     if n == 4:
@@ -297,6 +300,9 @@ class FeatureConstruction():
 
         lines = open(path_to_liwc_result_file,'r').readlines()
 
+        print ()
+        print ("Constructing grammar features...")
+
         print (len(lines))
 
         for line in lines[:1]:
@@ -332,18 +338,18 @@ class FeatureConstruction():
 
                     if n == 0:
 
-                        if float(spline[sixltr_index]) > 29.0:
+                        if float(spline[sixltr_index]) > sixltr_top:
                             features.append('many_sixltr')
 
-                        elif float(spline[sixltr_index]) < 16.0:
+                        elif float(spline[sixltr_index]) < sixltr_bottom:
                             features.append('few_sixltr')
 
                     if n == 1:
 
-                        if float(spline[wps_index]) > 20.0:
+                        if float(spline[wps_index]) > wps_top:
                             features.append('high_wps')
 
-                        elif float(spline[wps_index]) < 10.0:
+                        elif float(spline[wps_index]) < wps_bottom:
                             features.append('low_wps')
 
                     if n == 2:
@@ -388,8 +394,10 @@ class FeatureConstruction():
 
         lines = open(path_to_labelled_raw_file,'r').readlines()
 
-        posts = []
+        print ()
+        print ("Constructing social media features...")
 
+        posts = []
 
         for line in lines:
             spline = line.replace('\n','').split(',')
@@ -464,6 +472,9 @@ class FeatureConstruction():
     ################
 
         lines = open(path_to_liwc_result_file,'r').readlines()
+
+        print ()
+        print ("Constructing combined features...")
 
         print (len(lines))
 
@@ -584,34 +595,34 @@ class FeatureConstruction():
 
                     if n == 0:
 
-                        if float(spline[analytic_index]) > 98.0:
+                        if float(spline[analytic_index]) > analytic_top:
                             features.append('is_analytic_yes')
 
-                        elif float(spline[analytic_index]) < 93.0:
+                        elif float(spline[analytic_index]) < analytic_bottom:
                             features.append('is_analytic_no')
 
                     if n == 1:
 
-                        if float(spline[clout_index]) > 78.0:
+                        if float(spline[clout_index]) > clout_top:
                             features.append('is_clout_yes')
 
-                        elif float(spline[clout_index]) < 50.0:
+                        elif float(spline[clout_index]) < clout_bottom:
                             features.append('is_clout_no')
 
                     if n == 2:
 
-                        if float(spline[authentic_index]) > 72.0:
+                        if float(spline[authentic_index]) > authentic_top:
                             features.append('is_authentic_yes')
 
-                        elif float(spline[clout_index]) < 50.0:
+                        elif float(spline[authentic_index]) < authentic_bottom:
                             features.append('is_authentic_no')
 
                     if n == 3:
 
-                        if float(spline[tone_index]) > 84.0:
+                        if float(spline[tone_index]) > tone_top:
                             features.append('is_tone_yes')
 
-                        elif float(spline[tone_index]) < 25.0:
+                        elif float(spline[tone_index]) < tone_bottom:
                             features.append('is_tone_no')
 
                     if n == 4:
@@ -736,18 +747,18 @@ class FeatureConstruction():
 
                     if n == 28:
 
-                        if float(spline[sixltr_index]) > 29.0:
+                        if float(spline[sixltr_index]) > sixltr_top:
                             features.append('many_sixltr')
 
-                        elif float(spline[sixltr_index]) < 16.0:
+                        elif float(spline[sixltr_index]) < sixltr_bottom:
                             features.append('few_sixltr')
 
                     if n == 29:
 
-                        if float(spline[wps_index]) > 20.0:
+                        if float(spline[wps_index]) > wps_top:
                             features.append('high_wps')
 
-                        elif float(spline[wps_index]) < 10.0:
+                        elif float(spline[wps_index]) < wps_bottom:
                             features.append('low_wps')
 
                     if n == 30:
@@ -867,6 +878,9 @@ class FeatureConstruction():
     # combine all features: psychometrics, grammar, SM, words
     ##################
 
+        print ()
+        print ("Constructing combine ALL features...")
+
         language_features = self.combine_features()
 
         lines = open(path_to_labelled_preprocessed_file,'r').readlines()
@@ -979,7 +993,7 @@ class FeatureConstruction():
 # variables
 ###############
 
-path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_20160226.txt'
+path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_space.txt'
 path_to_labelled_raw_file = '../output/engrate/labelled_raw.csv'
 path_to_labelled_preprocessed_file = '../output/engrate/labelled.csv'
 
@@ -993,6 +1007,22 @@ path_to_store_labelled_grammar_file = '../output/features/labelled_grammar.csv'
 path_to_store_labelled_urlhashtagtype_file = '../output/features/labelled_urlhashtagtype.csv'
 path_to_store_labelled_combined_features_file = '../output/features/labelled_combined.csv'
 path_to_store_labelled_combined_features_all_file = '../output/features/labelled_combined_all.csv'
+
+
+# boundary values
+
+analytic_top = 98.0
+analytic_bottom = 75.0
+clout_top = 97.0
+clout_bottom = 67.0
+authentic_top = 46.0
+authentic_bottom = 3.0
+tone_top = 98.0
+tone_bottom = 25.0
+sixltr_top = 26.0
+sixltr_bottom = 14.0
+wps_top = 16.0
+wps_bottom = 9.0
 
 
 

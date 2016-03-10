@@ -584,21 +584,21 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_combined_all.csv'
+path_to_labelled_file = '../output/features/politics/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_coefficient_file = '../output/feature_importance/sgd/sgd_coef.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/sgd/sgd_feature_names.csv'
-path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/sgd_coef_and_feat.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/sgd_feat_by_class_combined_all.csv'
+path_to_store_coefficient_file = '../output/feature_importance/sgd/politics/sgd_coef.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/sgd/politics/sgd_feature_names.csv'
+path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/politics/sgd_coef_and_feat.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/politics/sgd_feat_by_class_combined.csv'
 
 # for classifier without pipeline
 _ngram_range = (1,1)
 _use_idf = True
 _loss = 'hinge'
-_penalty = 'elasticnet'
+_penalty = 'l2'
 _alpha = 0.0001
-_score_func = f_classif
-_percentile = 85
+_score_func = chi2
+_percentile = 95
 
 
 
@@ -652,7 +652,7 @@ if __name__ == '__main__':
     # run SGD Classifier
     ##################
 
-    #clf, count_vect = sgd.train_classifier()
+    clf, count_vect = sgd.train_classifier()
 
 
     ###################
@@ -672,14 +672,14 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    clf, count_vect = sgd.use_pipeline_with_fs()
+    #clf, count_vect = sgd.use_pipeline_with_fs()
 
 
     ###################
     # Get feature importance
     ###################
 
-    #sgd.get_important_features(clf,count_vect)
+    sgd.get_important_features(clf,count_vect)
 
 
     ##################
