@@ -156,14 +156,6 @@ class NaiveBayes():
         X_tfidf = tfidf_transformer.fit_transform(X_CV)
 
         #################
-        # run classifier on pre-feature-selection data
-        # need it to get feature importance later
-        # cannot use post-feature-selection clf, will result in unequal length!
-        #################
-
-        clf = MultinomialNB(alpha=_alpha).fit(X_tfidf, y_train)
-
-        #################
         # feature selection
         #################
 
@@ -177,14 +169,25 @@ class NaiveBayes():
 
         print ("Shape of array after feature selection is "+str(X_features.shape))
 
-        clf_fs = MultinomialNB(alpha=_alpha).fit(X_features, y_train)
+        clf = MultinomialNB(alpha=_alpha).fit(X_features, y_train)
+
+        # get the features which are selected and write to file
+
+        feature_boolean = selector.get_support(indices=False)
+
+        f = open(path_to_store_feature_selection_boolean_file,'w')
+
+        for fb in feature_boolean:
+            f.write(str(fb)+'\n')
+
+        f.close()
 
 
         ##################
         # get cross validation score
         ##################
 
-        scores = cross_val_score(clf_fs, X_features, y_train, cv=10, scoring='f1_weighted')
+        scores = cross_val_score(clf, X_features, y_train, cv=10, scoring='f1_weighted')
         print ("Cross validation score: "+str(scores))
 
         # Get average performance of classifier on training data using 10-fold CV, along with standard deviation
@@ -206,11 +209,11 @@ class NaiveBayes():
         X_test_selector = selector.transform(X_test_tfidf)
         print ("Shape of array for test data after feature selection is "+str(X_test_selector.shape))
 
-        y_predicted = clf_fs.predict(X_test_selector)
+        y_predicted = clf.predict(X_test_selector)
 
         # print the mean accuracy on the given test data and labels
 
-        print ("Classifier score on test data is: %0.2f " % clf_fs.score(X_test_selector,y_test))
+        print ("Classifier score on test data is: %0.2f " % clf.score(X_test_selector,y_test))
 
 
         print(metrics.classification_report(y_test, y_predicted))
@@ -410,14 +413,6 @@ class NaiveBayes():
         X_tfidf = tfidf_transformer.fit_transform(X_CV)
 
         #################
-        # run classifier on pre-feature-selection data
-        # need it to get feature importance later
-        # cannot use post-feature-selection clf, will result in unequal length!
-        #################
-
-        clf = MultinomialNB(alpha=alpha).fit(X_tfidf, y_train)
-
-        #################
         # feature selection
         #################
 
@@ -438,14 +433,25 @@ class NaiveBayes():
 
         # run classifier on selected features
 
-        clf_fs = MultinomialNB(alpha=alpha).fit(X_features, y_train)
+        clf = MultinomialNB(alpha=alpha).fit(X_features, y_train)
+
+        # get the features which are selected and write to file
+
+        feature_boolean = selector.get_support(indices=False)
+
+        f = open(path_to_store_feature_selection_boolean_file,'w')
+
+        for fb in feature_boolean:
+            f.write(str(fb)+'\n')
+
+        f.close()
 
 
         ##################
         # get cross validation score
         ##################
 
-        scores = cross_val_score(clf_fs, X_features, y_train, cv=10, scoring='f1_weighted')
+        scores = cross_val_score(clf, X_features, y_train, cv=10, scoring='f1_weighted')
         print ("Cross validation score: "+str(scores))
 
         # Get average performance of classifier on training data using 10-fold CV, along with standard deviation
@@ -458,11 +464,11 @@ class NaiveBayes():
         #################
 
 
-        y_predicted = clf_fs.predict(X_test_features)
+        y_predicted = clf.predict(X_test_features)
 
         # print the mean accuracy on the given test data and labels
 
-        print ("Classifier score on test data is: %0.2f " % clf_fs.score(X_test_features,y_test))
+        print ("Classifier score on test data is: %0.2f " % clf.score(X_test_features,y_test))
 
         # Print and plot the confusion matrix
 
@@ -531,26 +537,66 @@ class NaiveBayes():
         n=10
 
         class_labels = clf.classes_
-        fb_hrt=clf.feature_log_prob_[0] ##feature probability for HRT
-        fb_lrt=clf.feature_log_prob_[1] ##feature probability for LRT
+        fb_her=clf.feature_log_prob_[0] ##feature probability for HER
+        fb_ler=clf.feature_log_prob_[1] ##feature probability for LER
         feature_names = count_vect.get_feature_names()
 
-        print (len(fb_hrt))
-        print (len(fb_lrt))
+        f=open(path_to_store_list_of_feature_file, 'w')
+
+        for fn in feature_names:
+            f.write(str(fn)+'\n')
+        f.close()
+
+        print (len(fb_her))
+        print (len(fb_ler))
         print (len(feature_names))
+
+        #################
+        # if feature selection was used, need to find out which are the features that are retained
+        #################
+
+        if len(fb_her) != len(feature_names):
+
+            print ()
+            print ("###### feature selection was used, getting retained features ######")
+
+            lines = open(path_to_store_feature_selection_boolean_file).readlines()
+
+            feature_boolean = []
+
+            for line in lines:
+                spline = line.replace('\n','')
+                feature_boolean.append(spline)
+
+            if len(feature_boolean) == len(feature_names):
+
+                selected_features = zip(feature_names,feature_boolean)
+
+                feature_names = []
+
+                for sf in selected_features:
+                    if sf[1] == 'True':
+                        feature_names.append(sf[0])
+
+                print ("Length of retained features is "+str(len(feature_names)))
+
+            else:
+                print ("length not equal, exiting...")
+                sys.exit()
+
 
         ################
         #the next two lines are for printing the highest feat_probability for each class
         ################
 
-        topn_class1 = sorted(zip(fb_hrt, feature_names))[-n:]
-        topn_class2 = sorted(zip(fb_lrt, feature_names))[-n:]
+        topn_class1 = sorted(zip(fb_her, feature_names))[-n:]
+        topn_class2 = sorted(zip(fb_ler, feature_names))[-n:]
 
         #################
         # Most important features are the ones where the difference between feat_prob are the biggest
         #################
 
-        diff = [abs(a-b) for a,b in zip(fb_hrt,fb_lrt)]
+        diff = [abs(a-b) for a,b in zip(fb_her,fb_ler)]
 
         # sort the list by the value of the difference, and return index of that element###
         sortli = sorted(range(len(diff)), key=lambda i:diff[i], reverse=True)[:200]
@@ -561,7 +607,7 @@ class NaiveBayes():
         imp_feat=[]
         for i in sortli:
 
-            if fb_hrt[i]>fb_lrt[i]:
+            if fb_her[i]>fb_ler[i]:
                 imp_feat.append('HER, '+str(feature_names[i]))
             else:
                 imp_feat.append('LER, '+str(feature_names[i]))
@@ -587,9 +633,15 @@ class NaiveBayes():
         for c in coef:
             coef_list.append(c)
 
-        feat_list=list(zip(coef_list,feature_names))
+        if len(coef_list) == len(feature_names):
 
-        feat_list.sort(reverse=True)
+            feat_list=list(zip(coef_list,feature_names))
+
+            feat_list.sort(reverse=True)
+
+        else:
+            print ("Length of coef and feature list not equal, exiting...")
+            sys.exit()
 
         f=open(path_to_store_features_by_probability_file, 'w')
 
@@ -602,12 +654,6 @@ class NaiveBayes():
         ###############
         # HELPER FILES
         ###############
-
-        f=open(path_to_store_list_of_feature_file, 'w')
-
-        for fn in feature_names:
-            f.write(str(fn)+'\n')
-        f.close()
 
         f1=open(path_to_store_coefficient_file, 'w')
 
@@ -676,22 +722,23 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/politics/labelled_psychometrics.csv'
+path_to_labelled_file = '../output/features/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_features_by_probability_file = '../output/feature_importance/nb/politics/nb_feat_by_prob.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/nb/politics/nb_feature_names.txt'
-path_to_store_coefficient_file = '../output/feature_importance/nb/politics/nb_coef.txt'
-path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/politics/nb_feature_prob_0.csv' #Empirical log probability of features given a class
-path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/politics/nb_feature_prob_1.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb/politics/nb_feat_by_class_psychometrics.csv'
+path_to_store_features_by_probability_file = '../output/feature_importance/nb/nb_feat_by_prob.csv'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/nb_fs_boolean.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/nb/nb_feature_names.txt'
+path_to_store_coefficient_file = '../output/feature_importance/nb/nb_coef.txt'
+path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/nb_feature_prob_0.csv' #Empirical log probability of features given a class
+path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/nb_feature_prob_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/nb_feat_by_class_combined.csv'
 
 
 # for classifier without pipeline
 _ngram_range = (1,1)
 _alpha = 0.4
 _use_idf = False
-_percentile = 100
-_score_func = chi2
+_percentile = 85
+_score_func = f_classif
 
 
 

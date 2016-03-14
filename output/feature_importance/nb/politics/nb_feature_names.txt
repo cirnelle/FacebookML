@@ -8,8 +8,14 @@ certain_yes
 differ_yes
 discrep_yes
 feel_yes
+few_sixltr
 filler_yes
+has_exclam
+has_hashtag
+has_qmark
+has_url
 hear_yes
+high_wps
 insight_yes
 is_analytic_no
 is_analytic_yes
@@ -19,6 +25,8 @@ is_clout_no
 is_clout_yes
 is_tone_no
 is_tone_yes
+low_wps
+many_sixltr
 negemo_yes
 netspeak_yes
 nonflu_yes
@@ -30,3 +38,8 @@ sad_yes
 see_yes
 swear_yes
 tentat_yes
+type_event
+type_link
+type_photo
+type_status
+type_video
