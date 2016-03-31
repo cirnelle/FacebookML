@@ -148,7 +148,7 @@ class PrincipalComponentAnalysis():
 # variables
 ################
 
-path_to_labelled_file = '../output/features/labelled_combined.csv'
+path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_pca_result_file = '../output/pca/space_combined.csv'
 
