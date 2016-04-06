@@ -24,7 +24,6 @@ is_authentic_yes
 is_clout_no
 is_clout_yes
 is_tone_no
-is_tone_yes
 low_wps
 many_sixltr
 negemo_yes

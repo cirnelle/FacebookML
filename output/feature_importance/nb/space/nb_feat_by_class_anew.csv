@@ -1,0 +1,10 @@
+LER, low_arousal low_dominance
+LER, low_valence low_arousal
+LER, low_arousal
+LER, low_dominance
+LER, low_valence
+HER, high_valence
+HER, high_valence high_arousal
+HER, high_arousal high_dominance
+HER, high_arousal
+HER, high_dominance

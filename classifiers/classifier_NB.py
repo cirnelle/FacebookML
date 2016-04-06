@@ -722,21 +722,21 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_combined.csv'
+path_to_labelled_file = '../output/features/business/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_features_by_probability_file = '../output/feature_importance/nb/nb_feat_by_prob.csv'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/nb_fs_boolean.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/nb/nb_feature_names.txt'
-path_to_store_coefficient_file = '../output/feature_importance/nb/nb_coef.txt'
-path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/nb_feature_prob_0.csv' #Empirical log probability of features given a class
-path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/nb_feature_prob_1.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb/nb_feat_by_class_combined.csv'
+path_to_store_features_by_probability_file = '../output/feature_importance/nb/business/nb_feat_by_prob.csv'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/business/nb_fs_boolean.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/nb/business/nb_feature_names.txt'
+path_to_store_coefficient_file = '../output/feature_importance/nb/business/nb_coef.txt'
+path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/business/nb_feature_prob_0.csv' #Empirical log probability of features given a class
+path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/business/nb_feature_prob_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/business/nb_feat_by_class_combined.csv'
 
 
 # for classifier without pipeline
 _ngram_range = (1,1)
 _alpha = 0.4
-_use_idf = False
+_use_idf = True
 _percentile = 85
 _score_func = f_classif
 

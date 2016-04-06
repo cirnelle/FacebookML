@@ -598,8 +598,8 @@ class ExtraTree():
             hrt_count = hrt.count(f)
             lrt_count = lrt.count(f)
 
-            print ("HER %s: " % f + str(hrt_count))
-            print ("LER %s: " % f + str(lrt_count))
+            #print ("HER %s: " % f + str(hrt_count))
+            #print ("LER %s: " % f + str(lrt_count))
 
             if (hrt_count-lrt_count)>0:
 
@@ -670,18 +670,18 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_combined.csv'
+path_to_labelled_file = '../output/features/business/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_vocabulary_file = '../output/feature_importance/extratree/extratree_vocab.txt'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/extratree_fs_boolean.csv'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree/extratree_feature_importance.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/extratree_feat_byClass_combined.csv'
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/business/extratree_vocab.txt'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/business/extratree_fs_boolean.csv'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/business/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/business/extratree_feature_importance.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/business/extratree_feat_byClass_combined.csv'
 
 
 # for classifier without pipeline
 _ngram_range = (1,1)
-_use_idf = False
+_use_idf = True
 _percentile = 85
 _score_func = chi2
 

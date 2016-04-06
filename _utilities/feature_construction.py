@@ -464,6 +464,62 @@ class FeatureConstruction():
         f.close()
 
 
+    def anew_features(self):
+
+    ##################
+    # get anew features (valence, arousal and dominance)
+    ##################
+
+        lines = open(path_to_anew_result_file,'r').readlines()
+
+        anew_features = []
+
+        for line in lines:
+
+            spline = line.replace('\n','').split(',')
+
+            features = []
+
+            if len(spline) == 4:
+
+                for n in range(3):
+
+                    if n == 0:
+
+                        if float(spline[1]) > valence_top:
+                            features.append('high_valence')
+
+                        elif float(spline[1]) < valence_bottom:
+                            features.append('low_valence')
+
+                    if n == 1:
+
+                        if float(spline[2]) > arousal_top:
+                            features.append('high_arousal')
+
+                        elif float(spline[2]) < arousal_bottom:
+                            features.append('low_arousal')
+
+                    if n == 2:
+
+                        if float(spline[3]) > dominance_top:
+                            features.append('high_dominance')
+
+                        elif float(spline[3]) < dominance_bottom:
+                            features.append('low_dominance')
+
+                if len(features) == 0:
+                    features.append('anew_neutral')
+
+            anew_features.append(features)
+
+        f = open(path_to_store_anew_feature_file,'w')
+
+        for af in anew_features:
+            f.write(' '.join(af)+'\n')
+
+        f.close()
+
 
     def combine_features(self):
 
@@ -840,8 +896,64 @@ class FeatureConstruction():
 
             post_features_sm.append(features_sm)
 
+        '''
+        #################
+        # get ANEW features
+        #################
+
+        lines = open(path_to_anew_result_file,'r').readlines()
+
+        post_features_anew = []
+
+        for line in lines:
+
+            spline = line.replace('\n','').split(',')
+
+            features_anew = []
+
+            if len(spline) == 4:
+
+                for n in range(2):
+
+
+                    if n == 0:
+
+                        if float(spline[1]) > valence_top:
+                            features_anew.append('high_valence')
+
+                        elif float(spline[1]) < valence_bottom:
+                            features_anew.append('low_valence')
+
+
+                    if n == 0:
+
+                        if float(spline[2]) > arousal_top:
+                            features_anew.append('high_arousal')
+
+                        elif float(spline[2]) < arousal_bottom:
+                            features_anew.append('low_arousal')
+
+
+                    if n == 1:
+
+                        if float(spline[3]) > dominance_top:
+                            features_anew.append('high_dominance')
+
+                        elif float(spline[3]) < dominance_bottom:
+                            features_anew.append('low_dominance')
+
+
+                if len(features_anew) == 0:
+                    features_anew.append('anew_neutral')
+
+                features_anew = ' '.join(features_anew)
+
+            post_features_anew.append(features_anew)
+
+        '''
         print ("Length of liwc feature list is "+str(len(post_features)))
         print ("Length of sm feature list is "+str(len(post_features_sm)))
+        #print ("Length of anew features list is "+str(len(post_features_anew)))
 
 
         if len(post_features) == len(post_features_sm):
@@ -938,6 +1050,7 @@ class FeatureConstruction():
 
         #lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
         #lines2 = open(path_to_store_grammar_feature_file,'r').readlines()
+        #lines2 = open(path_to_store_anew_feature_file,'r').readlines()
         #lines2 = open(path_to_store_combined_feature_file,'r').readlines()
         lines2 = open(path_to_store_combined_feature_all_file,'r').readlines()
 
@@ -973,6 +1086,7 @@ class FeatureConstruction():
 
         #f = open(path_to_store_labelled_psychometric_file,'w')
         #f = open(path_to_store_labelled_grammar_file,'w')
+        #f = open(path_to_store_labelled_anew_file,'w')
         #f = open(path_to_store_labelled_combined_features_file,'w')
         f = open(path_to_store_labelled_combined_features_all_file,'w')
 
@@ -993,36 +1107,49 @@ class FeatureConstruction():
 # variables
 ###############
 
-path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_space.txt'
-path_to_labelled_raw_file = '../output/engrate/labelled_raw.csv'
-path_to_labelled_preprocessed_file = '../output/engrate/labelled.csv'
+path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_business.txt'
+path_to_labelled_raw_file = '../output/engrate/others/labelled_business_raw.csv'
+path_to_labelled_preprocessed_file = '../output/engrate/others/labelled_business.csv'
 
-path_to_store_psychometric_feature_file = '../output/features/psychometrics.txt'
-path_to_store_grammar_feature_file = '../output/features/grammar.txt'
-path_to_store_combined_feature_file = '../output/features/combined.txt'
-path_to_store_combined_feature_all_file = '../output/features/combined_all.txt' #includes word features
+path_to_store_psychometric_feature_file = '../output/features/business/psychometrics.txt'
+path_to_store_grammar_feature_file = '../output/features/business/grammar.txt'
+path_to_store_combined_feature_file = '../output/features/business/combined.txt'
+path_to_store_combined_feature_all_file = '../output/features/business/combined_all.txt' #includes word features
 
-path_to_store_labelled_psychometric_file = '../output/features/labelled_psychometrics.csv'
-path_to_store_labelled_grammar_file = '../output/features/labelled_grammar.csv'
-path_to_store_labelled_urlhashtagtype_file = '../output/features/labelled_urlhashtagtype.csv'
-path_to_store_labelled_combined_features_file = '../output/features/labelled_combined.csv'
-path_to_store_labelled_combined_features_all_file = '../output/features/labelled_combined_all.csv'
+path_to_store_labelled_psychometric_file = '../output/features/business/labelled_psychometrics.csv'
+path_to_store_labelled_grammar_file = '../output/features/business/labelled_grammar.csv'
+path_to_store_labelled_urlhashtagtype_file = '../output/features/business/labelled_urlhashtagtype.csv'
+path_to_store_labelled_combined_features_file = '../output/features/business/labelled_combined.csv'
+path_to_store_labelled_combined_features_all_file = '../output/features/business/labelled_combined_all.csv'
+
+# anew
+
+path_to_anew_result_file = '../output/anew/anew_nonprofit.csv'
+path_to_store_anew_feature_file = '../output/features/nonprofit/anew.txt'
+path_to_store_labelled_anew_file = '../output/features/nonprofit/labelled_anew.csv'
 
 
 # boundary values
 
 analytic_top = 98.0
-analytic_bottom = 75.0
-clout_top = 97.0
-clout_bottom = 67.0
-authentic_top = 46.0
-authentic_bottom = 3.0
-tone_top = 98.0
+analytic_bottom = 77.0
+clout_top = 96.0
+clout_bottom = 50.0
+authentic_top = 61.0
+authentic_bottom = 2.0
+tone_top = 99.0
 tone_bottom = 25.0
 sixltr_top = 26.0
-sixltr_bottom = 14.0
-wps_top = 16.0
-wps_bottom = 9.0
+sixltr_bottom = 12.0
+wps_top = 14.0
+wps_bottom = 7.0
+
+valence_top = 55.0
+valence_bottom = 8.0
+arousal_top = 48.0
+arousal_bottom = 8.0
+dominance_top = 50.0
+dominance_bottom = 8.0
 
 
 
@@ -1033,6 +1160,7 @@ if __name__ == '__main__':
     #fc.liwc_psychometric_features()
     #fc.liwc_grammar_features()
     #fc.url_hashtag_type_feature()
+    #fc.anew_features()
     #fc.combine_features()
     fc.combine_features_all()
 

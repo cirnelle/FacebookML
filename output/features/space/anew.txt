@@ -1,0 +1,6662 @@
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal
+high_valence high_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_arousal
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_valence
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+low_valence low_dominance
+high_valence high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal
+low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal
+low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal
+low_valence low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+low_valence low_dominance
+low_valence low_dominance
+low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_arousal
+anew_neutral
+low_valence low_dominance
+high_valence
+low_valence low_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+low_valence
+high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_arousal
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal
+high_valence high_dominance
+low_valence low_arousal
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+low_valence
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_arousal
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+low_valence
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+high_arousal
+anew_neutral
+high_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_dominance
+anew_neutral
+low_valence low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_dominance
+low_valence low_dominance
+high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+high_valence
+anew_neutral
+anew_neutral
+high_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence
+anew_neutral
+low_arousal
+high_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_dominance
+anew_neutral
+low_arousal
+low_valence low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+low_valence low_dominance
+low_valence low_arousal
+high_arousal
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_arousal
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+high_arousal high_dominance
+high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_arousal
+low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+high_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal
+high_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence
+high_arousal high_dominance
+high_valence
+anew_neutral
+high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal
+low_valence low_arousal low_dominance
+high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+low_valence
+low_valence
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+high_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+low_valence
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal
+high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal
+high_valence high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+high_valence high_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal
+low_valence
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+low_valence
+high_valence high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+high_valence high_dominance
+anew_neutral
+high_valence high_dominance
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence
+low_arousal
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence
+high_valence
+high_arousal
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_dominance
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_dominance
+low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+high_valence high_dominance
+high_valence high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+high_arousal
+high_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+high_valence high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+low_valence low_arousal
+high_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_dominance
+low_valence low_arousal low_dominance
+high_valence high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_dominance
+high_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_dominance
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_arousal
+low_valence low_arousal
+high_valence high_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal
+anew_neutral
+low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_arousal
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_arousal
+high_valence high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+high_valence high_arousal
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_arousal
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_arousal high_dominance
+anew_neutral
+high_valence
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_dominance
+low_valence low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+low_valence low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+high_arousal
+high_arousal high_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_dominance
+low_valence low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_dominance
+low_valence low_dominance
+low_valence low_dominance
+low_valence low_dominance
+high_valence high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_arousal
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal
+high_valence high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+low_valence
+low_valence
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_valence
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_dominance
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_arousal
+high_valence high_arousal high_dominance
+low_valence low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_arousal
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+high_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence
+low_valence
+high_valence high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_arousal
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+high_arousal
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+high_valence high_arousal
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+high_valence high_arousal high_dominance
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+low_valence
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_arousal
+high_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence
+low_valence low_arousal
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_dominance
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+high_valence high_arousal high_dominance
+low_valence
+low_valence low_dominance
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+high_valence high_arousal high_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+anew_neutral
+high_valence high_arousal high_dominance
+low_valence
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence
+anew_neutral
+low_valence
+low_valence
+anew_neutral
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal
+anew_neutral
+low_valence low_arousal
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal
+anew_neutral
+low_valence low_dominance
+low_valence low_arousal low_dominance
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+anew_neutral
+low_valence low_arousal low_dominance
+low_dominance
+low_valence
+anew_neutral
+low_valence
+anew_neutral

@@ -255,19 +255,19 @@ class LabelFbPostsEngRate():
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/others/preprocessed_fb_posts_nonprofit.csv'
-path_to_store_engrate_output = '../output/engrate/others/engrate_nonprofit.csv'
-path_to_store_labelled_fb_post = '../output/engrate/others/labelled_nonprofit.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/others/preprocessed_fb_posts_business.csv'
+path_to_store_engrate_output = '../output/engrate/others/engrate_business.csv'
+path_to_store_labelled_fb_post = '../output/engrate/others/labelled_business.csv'
 
 # for LIWC
-path_to_raw_fb_post_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
-path_to_store_engrate_output_raw = '../output/engrate/others/engrate_nonprofit_raw.csv'
-path_to_store_labelled_fb_post_raw = '../output/engrate/others/labelled_nonprofit_raw.csv'
+path_to_raw_fb_post_file = '../fb_data/posts/others/raw_fb_posts_business.csv'
+path_to_store_engrate_output_raw = '../output/engrate/others/engrate_business_raw.csv'
+path_to_store_labelled_fb_post_raw = '../output/engrate/others/labelled_business_raw.csv'
 
 # engrate parameters
 with_comment = 0
-her_boundary = 0.35
-ler_boundary = 0.00315
+her_boundary = 0.083
+ler_boundary = 5.3e-05
 
 
 if __name__ == "__main__":

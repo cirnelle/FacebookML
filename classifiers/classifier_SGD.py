@@ -628,20 +628,20 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/labelled_combined.csv'
+path_to_labelled_file = '../output/features/business/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_coefficient_file = '../output/feature_importance/sgd/sgd_coef.csv'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/sgd/sgd_fs_boolean.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/sgd/sgd_feature_names.csv'
-path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/sgd_coef_and_feat.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/sgd_feat_by_class_combined.csv'
+path_to_store_coefficient_file = '../output/feature_importance/sgd/business/sgd_coef.csv'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/sgd/business/sgd_fs_boolean.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/sgd/business/sgd_feature_names.csv'
+path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/business/sgd_coef_and_feat.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/business/sgd_feat_by_class_combined.csv'
 
 # for classifier without pipeline
 _ngram_range = (1,1)
 _use_idf = True
 _loss = 'hinge'
-_penalty = 'l1'
-_alpha = 0.0001
+_penalty = 'l2'
+_alpha = 0.0005
 _score_func = chi2
 _percentile = 85
 
