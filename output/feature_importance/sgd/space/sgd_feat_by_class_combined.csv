@@ -1,49 +1,45 @@
-HER (-5.5305247711896195, 'type_photo')
-HER (-2.145850810999415, 'anger_yes')
-HER (-1.649555631146181, 'high_arousal')
-HER (-1.3340820094933965, 'has_hashtag')
-HER (-1.3289794630856067, 'see_yes')
-HER (-1.0047369984786896, 'is_authentic_yes')
-HER (-0.78656698775184719, 'low_wps')
-HER (-0.74957683509488382, 'anx_yes')
-HER (-0.72024649465625146, 'differ_yes')
-HER (-0.68661814756879946, 'swear_yes')
-HER (-0.60005271855610809, 'sad_yes')
-HER (-0.51850321225145346, 'type_video')
-HER (-0.51108019397490156, 'posemo_yes')
-HER (-0.50411354871606529, 'feel_yes')
-HER (-0.48210421318423119, 'reward_yes')
-HER (-0.28608306337747036, 'discrep_yes')
-HER (-0.25684043546803975, 'nonflu_yes')
-HER (-0.18594015350391696, 'low_dominance')
-HER (-0.1448941347996171, 'is_authentic_no')
-HER (-0.068546429664505304, 'tentat_yes')
-HER (-0.062635716546363449, 'certain_yes')
-HER (-0.029107190027302606, 'is_analytic_no')
-HER (-0.013304181240052719, 'risk_yes')
-LER (4.121169989229962, 'type_status')
-LER (3.6091473675997627, 'type_link')
-LER (2.0722893396579449, 'type_event')
-LER (1.6408377076781435, 'filler_yes')
-LER (0.87331152190527983, 'netspeak_yes')
-LER (0.81275696260545094, 'assent_yes')
-LER (0.63605294477893926, 'is_tone_no')
-LER (0.6229167895968577, 'has_url')
-LER (0.60740720088547362, 'has_qmark')
-LER (0.59558336035584836, 'low_arousal')
-LER (0.43364586814531297, 'insight_yes')
-LER (0.40757658419047677, 'is_clout_yes')
-LER (0.39565942228997047, 'many_sixltr')
-LER (0.37972133557244142, 'high_wps')
-LER (0.32577231270672519, 'achieve_yes')
-LER (0.28450699798512769, 'high_dominance')
-LER (0.26523942993472255, 'power_yes')
-LER (0.24679642014226927, 'negemo_yes')
-LER (0.22840200959566792, 'affiliation_yes')
-LER (0.21298907431529543, 'is_analytic_yes')
-LER (0.19986657574747849, 'is_tone_yes')
-LER (0.1812356729373942, 'hear_yes')
-LER (0.1591158746660761, 'has_exclam')
-LER (0.14494345899022879, 'cause_yes')
-LER (0.077579673453022663, 'few_sixltr')
-LER (0.024053185255020464, 'is_clout_no')
+HER,type_photo,-5.91790649899
+HER,anger_yes,-2.87331945572
+HER,has_hashtag,-2.2090249434
+HER,see_yes,-1.77332950757
+HER,reward_yes,-1.47899641629
+HER,anx_yes,-1.36184976084
+HER,discrep_yes,-1.29020372864
+HER,posemo_yes,-1.26420484605
+HER,is_authentic_yes,-1.15863182231
+HER,risk_yes,-0.962217472548
+HER,certain_yes,-0.961890785204
+HER,sad_yes,-0.892074863
+HER,low_wps,-0.738651738478
+HER,hear_yes,-0.727734566073
+HER,feel_yes,-0.450763818604
+HER,affiliation_yes,-0.215422589059
+HER,swear_yes,-0.173442012137
+HER,has_exclam,-0.171806192646
+HER,cause_yes,-0.112299541203
+HER,differ_yes,-0.0402514196208
+LER,type_status,6.31592511471
+LER,type_link,3.39815247506
+LER,type_event,2.05915893415
+LER,has_qmark,1.69788241112
+LER,netspeak_yes,1.1992442655
+LER,filler_yes,1.02097273756
+LER,is_tone_no,1.01993001752
+LER,nonflu_yes,0.869019967833
+LER,assent_yes,0.847260164308
+LER,many_sixltr,0.829419625172
+LER,has_url,0.816501799045
+LER,is_clout_yes,0.812945352885
+LER,is_analytic_yes,0.78383363225
+LER,is_authentic_no,0.715296184363
+LER,few_sixltr,0.708263099345
+LER,is_analytic_no,0.454784706938
+LER,power_yes,0.449819524786
+LER,insight_yes,0.434882502047
+LER,negemo_yes,0.332532943378
+LER,achieve_yes,0.314574603691
+LER,high_wps,0.306427670637
+LER,is_clout_no,0.160170312909
+LER,is_tone_yes,0.134996188392
+LER,tentat_yes,0.073535476343
+LER,type_video,0.0464782924928
