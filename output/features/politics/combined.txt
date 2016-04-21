@@ -278,7 +278,7 @@ posemo_yes insight_yes cause_yes tentat_yes see_yes power_yes many_sixltr high_w
 is_analytic_yes posemo_yes cause_yes tentat_yes see_yes hear_yes power_yes risk_yes high_wps type_photo
 is_analytic_yes is_authentic_no posemo_yes tentat_yes see_yes power_yes risk_yes type_photo
 is_analytic_yes is_authentic_yes tentat_yes see_yes power_yes low_wps type_photo
-is_analytic_yes is_authentic_yes tentat_yes see_yes hear_yes power_yes risk_yes few_sixltr type_photo
+is_analytic_yes tentat_yes see_yes hear_yes power_yes risk_yes few_sixltr type_photo
 is_analytic_yes tentat_yes see_yes power_yes type_photo
 is_analytic_yes is_authentic_yes posemo_yes negemo_yes sad_yes insight_yes cause_yes see_yes hear_yes achieve_yes power_yes risk_yes type_photo
 is_analytic_yes see_yes achieve_yes power_yes type_photo
@@ -300,7 +300,7 @@ is_analytic_yes see_yes affiliation_yes power_yes high_wps type_photo
 is_analytic_yes posemo_yes insight_yes tentat_yes see_yes power_yes type_photo
 is_analytic_no is_clout_yes is_authentic_no cause_yes see_yes hear_yes affiliation_yes achieve_yes power_yes high_wps type_photo
 is_analytic_yes is_authentic_no posemo_yes see_yes hear_yes affiliation_yes power_yes type_photo
-is_analytic_yes is_authentic_yes cause_yes discrep_yes differ_yes see_yes affiliation_yes power_yes type_photo
+is_analytic_yes cause_yes discrep_yes differ_yes see_yes affiliation_yes power_yes type_photo
 is_analytic_yes see_yes affiliation_yes achieve_yes power_yes type_photo
 is_analytic_yes posemo_yes see_yes affiliation_yes power_yes low_wps type_photo
 is_authentic_no insight_yes discrep_yes tentat_yes differ_yes see_yes feel_yes affiliation_yes power_yes reward_yes high_wps type_photo
@@ -540,7 +540,7 @@ is_clout_yes discrep_yes see_yes hear_yes affiliation_yes netspeak_yes has_qmark
 is_authentic_yes posemo_yes insight_yes cause_yes power_yes netspeak_yes few_sixltr type_link has_url
 is_analytic_yes posemo_yes tentat_yes see_yes affiliation_yes achieve_yes power_yes netspeak_yes high_wps type_link has_url
 posemo_yes negemo_yes sad_yes tentat_yes affiliation_yes achieve_yes netspeak_yes high_wps type_link has_url
-is_authentic_yes posemo_yes tentat_yes see_yes affiliation_yes achieve_yes power_yes netspeak_yes high_wps type_photo has_url
+posemo_yes tentat_yes see_yes affiliation_yes achieve_yes power_yes netspeak_yes high_wps type_photo has_url
 is_analytic_no is_tone_no negemo_yes sad_yes insight_yes discrep_yes tentat_yes certain_yes differ_yes see_yes feel_yes affiliation_yes achieve_yes power_yes risk_yes netspeak_yes type_link has_url
 is_analytic_yes insight_yes tentat_yes power_yes reward_yes netspeak_yes type_link has_url
 is_clout_yes is_tone_yes posemo_yes hear_yes affiliation_yes power_yes netspeak_yes type_link has_url
@@ -841,7 +841,7 @@ is_clout_no is_authentic_yes posemo_yes discrep_yes tentat_yes certain_yes diffe
 is_analytic_no is_authentic_yes is_tone_yes posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes hear_yes affiliation_yes achieve_yes power_yes reward_yes has_qmark type_link
 is_analytic_no is_clout_no is_authentic_yes posemo_yes negemo_yes sad_yes insight_yes tentat_yes certain_yes see_yes power_yes type_link
 is_authentic_yes posemo_yes insight_yes cause_yes discrep_yes affiliation_yes achieve_yes power_yes reward_yes type_link
-is_clout_no is_authentic_yes is_tone_yes posemo_yes insight_yes discrep_yes achieve_yes power_yes reward_yes has_exclam type_link
+is_clout_no is_tone_yes posemo_yes insight_yes discrep_yes achieve_yes power_yes reward_yes has_exclam type_link
 is_analytic_yes is_authentic_yes is_tone_yes posemo_yes insight_yes affiliation_yes reward_yes type_link
 is_analytic_yes is_tone_yes posemo_yes power_yes reward_yes few_sixltr type_status
 is_clout_no is_authentic_yes is_tone_yes posemo_yes negemo_yes cause_yes discrep_yes differ_yes see_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes type_status
@@ -1684,7 +1684,7 @@ is_authentic_no cause_yes discrep_yes certain_yes power_yes netspeak_yes few_six
 is_clout_yes affiliation_yes power_yes netspeak_yes high_wps type_link has_url
 is_authentic_no insight_yes feel_yes risk_yes netspeak_yes type_link has_url
 is_analytic_no is_tone_yes posemo_yes negemo_yes insight_yes discrep_yes tentat_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes high_wps type_video
-is_analytic_yes is_clout_no is_authentic_yes is_tone_no negemo_yes sad_yes insight_yes discrep_yes certain_yes differ_yes see_yes achieve_yes power_yes reward_yes netspeak_yes high_wps type_link has_url
+is_analytic_yes is_clout_no is_tone_no negemo_yes sad_yes insight_yes discrep_yes certain_yes differ_yes see_yes achieve_yes power_yes reward_yes netspeak_yes high_wps type_link has_url
 is_authentic_no is_tone_no negemo_yes sad_yes see_yes power_yes netspeak_yes many_sixltr type_link has_url
 posemo_yes negemo_yes sad_yes discrep_yes tentat_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes few_sixltr high_wps has_qmark type_video
 is_analytic_no is_tone_no posemo_yes negemo_yes anx_yes sad_yes cause_yes discrep_yes tentat_yes differ_yes feel_yes affiliation_yes achieve_yes power_yes risk_yes nonflu_yes high_wps type_video
@@ -1848,10 +1848,10 @@ is_authentic_yes power_yes few_sixltr low_wps has_exclam type_status has_hashtag
 is_analytic_no is_authentic_yes posemo_yes insight_yes cause_yes discrep_yes tentat_yes differ_yes see_yes hear_yes affiliation_yes power_yes reward_yes has_exclam type_status has_hashtag
 is_analytic_yes is_clout_no is_authentic_yes differ_yes hear_yes few_sixltr low_wps has_exclam type_link has_hashtag
 is_clout_no is_tone_yes posemo_yes discrep_yes tentat_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes many_sixltr high_wps type_status has_hashtag
-is_clout_no is_authentic_yes posemo_yes insight_yes cause_yes certain_yes differ_yes affiliation_yes power_yes reward_yes high_wps type_status has_hashtag
+is_clout_no posemo_yes insight_yes cause_yes certain_yes differ_yes affiliation_yes power_yes reward_yes high_wps type_status has_hashtag
 is_analytic_no posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes hear_yes affiliation_yes power_yes reward_yes risk_yes high_wps type_status has_hashtag
 is_analytic_no is_clout_no is_authentic_yes posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes achieve_yes power_yes type_link has_hashtag
-is_analytic_no is_authentic_yes is_tone_no posemo_yes negemo_yes anx_yes anger_yes sad_yes insight_yes cause_yes tentat_yes hear_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes has_qmark type_status has_hashtag
+is_analytic_no is_tone_no posemo_yes negemo_yes anx_yes anger_yes sad_yes insight_yes cause_yes tentat_yes hear_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes has_qmark type_status has_hashtag
 is_analytic_no is_clout_yes is_authentic_no posemo_yes insight_yes cause_yes discrep_yes tentat_yes differ_yes affiliation_yes power_yes many_sixltr high_wps has_qmark type_link
 is_analytic_no is_tone_yes posemo_yes negemo_yes insight_yes discrep_yes tentat_yes differ_yes see_yes hear_yes affiliation_yes power_yes reward_yes risk_yes high_wps type_status has_hashtag
 posemo_yes insight_yes cause_yes discrep_yes affiliation_yes power_yes netspeak_yes high_wps has_exclam type_link has_hashtag
@@ -2273,7 +2273,7 @@ is_analytic_yes is_authentic_no see_yes many_sixltr low_wps type_photo
 is_analytic_yes is_authentic_no low_wps type_photo
 is_analytic_yes is_clout_yes affiliation_yes power_yes type_photo
 is_analytic_yes see_yes feel_yes power_yes netspeak_yes type_photo
-is_analytic_yes is_authentic_yes certain_yes see_yes power_yes netspeak_yes type_photo
+is_analytic_yes certain_yes see_yes power_yes netspeak_yes type_photo
 is_analytic_yes see_yes power_yes netspeak_yes type_photo
 is_analytic_yes few_sixltr low_wps type_photo
 is_analytic_yes is_clout_yes many_sixltr low_wps type_photo
@@ -3380,7 +3380,7 @@ is_clout_no is_authentic_yes insight_yes tentat_yes differ_yes power_yes type_st
 is_analytic_yes is_clout_no is_authentic_yes is_tone_yes posemo_yes differ_yes affiliation_yes achieve_yes many_sixltr type_event
 is_analytic_no is_clout_yes posemo_yes negemo_yes discrep_yes tentat_yes differ_yes affiliation_yes achieve_yes reward_yes many_sixltr high_wps type_video has_hashtag
 is_analytic_yes is_clout_yes is_tone_no negemo_yes risk_yes many_sixltr type_event
-is_authentic_yes posemo_yes insight_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes netspeak_yes many_sixltr high_wps type_link has_url
+posemo_yes insight_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes netspeak_yes many_sixltr high_wps type_link has_url
 posemo_yes discrep_yes tentat_yes affiliation_yes achieve_yes netspeak_yes high_wps has_qmark type_link has_url
 discrep_yes tentat_yes differ_yes see_yes affiliation_yes achieve_yes netspeak_yes has_qmark type_link has_url
 is_tone_no negemo_yes anger_yes hear_yes power_yes netspeak_yes high_wps has_qmark type_link has_url
@@ -3446,7 +3446,7 @@ is_analytic_yes is_clout_no is_authentic_yes posemo_yes insight_yes cause_yes di
 is_analytic_yes is_tone_no negemo_yes sad_yes affiliation_yes achieve_yes risk_yes many_sixltr high_wps type_status
 is_authentic_yes is_tone_no negemo_yes anger_yes insight_yes cause_yes differ_yes affiliation_yes power_yes high_wps type_status
 is_analytic_yes posemo_yes negemo_yes anx_yes insight_yes cause_yes affiliation_yes achieve_yes power_yes reward_yes many_sixltr high_wps type_link
-is_authentic_yes posemo_yes negemo_yes insight_yes cause_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes risk_yes many_sixltr high_wps has_exclam type_status
+posemo_yes negemo_yes insight_yes cause_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes risk_yes many_sixltr high_wps has_exclam type_status
 is_analytic_yes is_authentic_yes posemo_yes negemo_yes sad_yes insight_yes cause_yes affiliation_yes achieve_yes power_yes nonflu_yes many_sixltr high_wps type_status
 is_analytic_yes is_tone_yes posemo_yes certain_yes achieve_yes power_yes reward_yes high_wps type_status
 is_analytic_yes is_clout_no is_tone_yes posemo_yes cause_yes tentat_yes differ_yes see_yes achieve_yes power_yes high_wps type_link
@@ -3468,7 +3468,7 @@ posemo_yes negemo_yes cause_yes differ_yes affiliation_yes power_yes reward_yes 
 is_authentic_yes insight_yes discrep_yes certain_yes power_yes many_sixltr has_exclam type_link
 is_analytic_no posemo_yes insight_yes discrep_yes affiliation_yes achieve_yes power_yes reward_yes filler_yes high_wps has_exclam type_status
 is_clout_no is_authentic_yes cause_yes few_sixltr type_link
-is_analytic_yes is_authentic_yes posemo_yes negemo_yes anx_yes discrep_yes tentat_yes see_yes affiliation_yes achieve_yes power_yes risk_yes has_exclam type_status
+is_analytic_yes posemo_yes negemo_yes anx_yes discrep_yes tentat_yes see_yes affiliation_yes achieve_yes power_yes risk_yes has_exclam type_status
 is_authentic_no posemo_yes negemo_yes sad_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes risk_yes assent_yes high_wps type_status
 is_tone_no posemo_yes negemo_yes anx_yes sad_yes insight_yes cause_yes certain_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes many_sixltr has_qmark type_status
 is_analytic_yes is_authentic_no is_tone_yes posemo_yes certain_yes see_yes many_sixltr low_wps type_photo
@@ -3661,7 +3661,7 @@ is_analytic_no is_clout_yes is_authentic_no is_tone_yes posemo_yes insight_yes c
 is_analytic_yes few_sixltr low_wps type_status
 is_analytic_no is_authentic_no posemo_yes insight_yes cause_yes discrep_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes has_exclam type_photo has_hashtag
 is_analytic_no is_clout_no is_tone_yes posemo_yes discrep_yes tentat_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes few_sixltr has_exclam type_photo has_hashtag
-is_authentic_yes is_tone_yes posemo_yes insight_yes discrep_yes certain_yes affiliation_yes achieve_yes power_yes many_sixltr type_photo
+is_tone_yes posemo_yes insight_yes discrep_yes certain_yes affiliation_yes achieve_yes power_yes many_sixltr type_photo
 is_analytic_no is_authentic_yes posemo_yes negemo_yes sad_yes insight_yes discrep_yes tentat_yes differ_yes hear_yes affiliation_yes achieve_yes power_yes nonflu_yes few_sixltr high_wps type_photo
 is_clout_no is_tone_yes posemo_yes many_sixltr low_wps type_status
 posemo_yes negemo_yes insight_yes cause_yes differ_yes hear_yes affiliation_yes achieve_yes power_yes many_sixltr type_photo has_hashtag
@@ -3831,7 +3831,7 @@ is_authentic_yes is_tone_yes posemo_yes many_sixltr low_wps type_video
 is_tone_no negemo_yes anx_yes anger_yes sad_yes insight_yes discrep_yes certain_yes feel_yes power_yes assent_yes high_wps type_status
 is_authentic_no is_tone_no negemo_yes sad_yes certain_yes affiliation_yes power_yes low_wps type_photo
 is_analytic_yes is_tone_no posemo_yes negemo_yes anx_yes sad_yes insight_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes risk_yes high_wps type_photo
-is_authentic_yes posemo_yes insight_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes risk_yes nonflu_yes many_sixltr high_wps type_status
+posemo_yes insight_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes risk_yes nonflu_yes many_sixltr high_wps type_status
 is_analytic_no posemo_yes negemo_yes anx_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes risk_yes high_wps type_status
 is_clout_yes posemo_yes affiliation_yes achieve_yes power_yes reward_yes many_sixltr has_exclam type_photo
 is_analytic_yes posemo_yes negemo_yes sad_yes see_yes affiliation_yes achieve_yes many_sixltr type_status
@@ -4783,7 +4783,7 @@ is_tone_no posemo_yes negemo_yes anx_yes anger_yes insight_yes cause_yes discrep
 is_analytic_no is_authentic_yes posemo_yes negemo_yes anx_yes anger_yes sad_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes hear_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes netspeak_yes nonflu_yes has_exclam has_qmark type_photo
 is_analytic_no is_clout_yes is_tone_yes posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes many_sixltr has_exclam has_qmark type_photo
 is_analytic_no is_clout_yes is_tone_yes posemo_yes negemo_yes anx_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes hear_yes affiliation_yes achieve_yes power_yes reward_yes type_link
-is_analytic_no is_clout_yes is_authentic_yes posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes hear_yes affiliation_yes achieve_yes reward_yes nonflu_yes few_sixltr type_photo
+is_analytic_no is_clout_yes posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes hear_yes affiliation_yes achieve_yes reward_yes nonflu_yes few_sixltr type_photo
 is_authentic_yes tentat_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes few_sixltr type_video
 is_tone_yes posemo_yes tentat_yes see_yes many_sixltr low_wps type_photo has_hashtag
 is_analytic_no is_clout_no is_authentic_yes posemo_yes insight_yes tentat_yes certain_yes differ_yes hear_yes affiliation_yes low_wps type_photo has_hashtag
@@ -4883,7 +4883,7 @@ is_authentic_yes is_tone_yes posemo_yes discrep_yes tentat_yes differ_yes see_ye
 posemo_yes negemo_yes anx_yes sad_yes cause_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes high_wps type_photo has_url
 is_analytic_yes posemo_yes negemo_yes insight_yes cause_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes high_wps type_photo has_url
 is_tone_no posemo_yes negemo_yes sad_yes insight_yes discrep_yes tentat_yes certain_yes differ_yes see_yes feel_yes affiliation_yes achieve_yes power_yes risk_yes type_photo
-is_analytic_no is_authentic_yes posemo_yes negemo_yes anger_yes sad_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes type_status
+is_analytic_no posemo_yes negemo_yes anger_yes sad_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes type_status
 posemo_yes negemo_yes affiliation_yes achieve_yes power_yes type_photo
 is_analytic_no is_clout_yes posemo_yes negemo_yes anx_yes anger_yes sad_yes insight_yes cause_yes discrep_yes certain_yes differ_yes see_yes hear_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes type_status
 is_analytic_no posemo_yes negemo_yes cause_yes discrep_yes certain_yes differ_yes see_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes type_status
@@ -5622,7 +5622,7 @@ is_authentic_no many_sixltr low_wps type_photo
 is_analytic_no is_clout_yes posemo_yes discrep_yes affiliation_yes power_yes netspeak_yes type_link has_url
 is_analytic_no is_authentic_no is_tone_yes posemo_yes discrep_yes certain_yes differ_yes hear_yes power_yes reward_yes assent_yes has_qmark type_photo
 is_authentic_no few_sixltr low_wps type_photo
-is_authentic_yes is_tone_no negemo_yes sad_yes discrep_yes differ_yes hear_yes affiliation_yes power_yes reward_yes risk_yes netspeak_yes type_photo has_url
+is_tone_no negemo_yes sad_yes discrep_yes differ_yes hear_yes affiliation_yes power_yes reward_yes risk_yes netspeak_yes type_photo has_url
 is_authentic_no posemo_yes negemo_yes discrep_yes tentat_yes certain_yes differ_yes power_yes risk_yes netspeak_yes high_wps type_link has_url
 is_analytic_no is_clout_yes insight_yes affiliation_yes power_yes reward_yes netspeak_yes type_link has_url
 is_analytic_no is_clout_no posemo_yes discrep_yes tentat_yes differ_yes risk_yes few_sixltr has_qmark type_photo
@@ -6739,7 +6739,7 @@ is_clout_yes is_authentic_no is_tone_yes posemo_yes discrep_yes affiliation_yes 
 is_analytic_no is_clout_yes is_authentic_no discrep_yes hear_yes affiliation_yes few_sixltr type_link
 is_authentic_no posemo_yes discrep_yes tentat_yes see_yes achieve_yes few_sixltr type_link
 is_analytic_yes is_authentic_no is_tone_no negemo_yes sad_yes hear_yes many_sixltr high_wps type_link
-is_analytic_yes is_authentic_yes posemo_yes negemo_yes anger_yes insight_yes discrep_yes see_yes affiliation_yes power_yes netspeak_yes high_wps has_qmark type_link
+is_analytic_yes posemo_yes negemo_yes anger_yes insight_yes discrep_yes see_yes affiliation_yes power_yes netspeak_yes high_wps has_qmark type_link
 is_analytic_yes is_tone_yes posemo_yes cause_yes tentat_yes affiliation_yes power_yes netspeak_yes high_wps type_link has_url
 is_analytic_yes posemo_yes affiliation_yes achieve_yes netspeak_yes type_link has_url
 is_analytic_yes is_authentic_no posemo_yes negemo_yes sad_yes insight_yes cause_yes certain_yes achieve_yes power_yes reward_yes netspeak_yes many_sixltr type_link has_url
@@ -6794,7 +6794,7 @@ is_clout_yes is_authentic_no is_tone_yes posemo_yes affiliation_yes power_yes fe
 is_analytic_yes is_tone_yes posemo_yes tentat_yes see_yes power_yes risk_yes netspeak_yes type_photo has_url
 is_analytic_yes is_authentic_no is_tone_yes posemo_yes affiliation_yes power_yes many_sixltr low_wps has_exclam type_photo
 is_authentic_no is_tone_yes posemo_yes cause_yes tentat_yes see_yes power_yes risk_yes netspeak_yes type_photo has_url
-is_authentic_yes is_tone_no posemo_yes negemo_yes anx_yes insight_yes cause_yes discrep_yes tentat_yes differ_yes see_yes affiliation_yes achieve_yes power_yes risk_yes many_sixltr type_status
+is_tone_no posemo_yes negemo_yes anx_yes insight_yes cause_yes discrep_yes tentat_yes differ_yes see_yes affiliation_yes achieve_yes power_yes risk_yes many_sixltr type_status
 is_analytic_yes is_tone_yes posemo_yes tentat_yes see_yes power_yes risk_yes netspeak_yes type_photo has_url
 is_clout_yes posemo_yes cause_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes high_wps type_photo
 is_analytic_yes is_authentic_no cause_yes affiliation_yes achieve_yes power_yes few_sixltr high_wps type_photo
@@ -7166,7 +7166,7 @@ is_analytic_no is_authentic_yes insight_yes few_sixltr type_video
 is_analytic_no is_clout_yes is_tone_yes posemo_yes tentat_yes hear_yes affiliation_yes reward_yes low_wps has_exclam type_status
 is_clout_yes posemo_yes negemo_yes anger_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes hear_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes type_status
 is_analytic_no is_clout_no is_authentic_yes is_tone_yes posemo_yes insight_yes tentat_yes power_yes type_status
-is_analytic_yes is_authentic_yes posemo_yes insight_yes discrep_yes tentat_yes differ_yes hear_yes achieve_yes high_wps type_status
+is_analytic_yes posemo_yes insight_yes discrep_yes tentat_yes differ_yes hear_yes achieve_yes high_wps type_status
 is_analytic_yes is_authentic_yes posemo_yes see_yes affiliation_yes reward_yes high_wps type_photo
 is_analytic_yes is_tone_yes posemo_yes low_wps has_exclam type_photo
 is_analytic_no is_clout_yes is_tone_yes posemo_yes insight_yes certain_yes affiliation_yes achieve_yes reward_yes high_wps type_photo
@@ -7215,7 +7215,7 @@ is_analytic_yes posemo_yes negemo_yes cause_yes power_yes reward_yes netspeak_ye
 is_clout_yes posemo_yes negemo_yes anger_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes affiliation_yes power_yes type_photo
 is_analytic_no is_clout_no is_authentic_yes posemo_yes negemo_yes anger_yes insight_yes tentat_yes differ_yes affiliation_yes power_yes netspeak_yes type_photo has_url
 is_authentic_no is_tone_yes posemo_yes insight_yes discrep_yes tentat_yes certain_yes differ_yes see_yes hear_yes affiliation_yes power_yes netspeak_yes few_sixltr has_exclam has_qmark type_photo has_url
-is_clout_yes is_authentic_yes posemo_yes negemo_yes anger_yes insight_yes cause_yes discrep_yes tentat_yes differ_yes see_yes affiliation_yes power_yes high_wps type_status
+is_clout_yes posemo_yes negemo_yes anger_yes insight_yes cause_yes discrep_yes tentat_yes differ_yes see_yes affiliation_yes power_yes high_wps type_status
 is_authentic_no posemo_yes negemo_yes anger_yes insight_yes cause_yes discrep_yes tentat_yes differ_yes see_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes assent_yes type_status
 is_analytic_no is_authentic_yes is_tone_yes posemo_yes negemo_yes anger_yes sad_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes see_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes swear_yes netspeak_yes high_wps has_exclam type_status
 is_analytic_no is_clout_yes is_tone_yes posemo_yes certain_yes affiliation_yes power_yes many_sixltr low_wps type_status
@@ -7336,13 +7336,13 @@ is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_
 is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
 is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
 is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
-is_authentic_yes is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
+is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
 is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
 is_analytic_yes is_authentic_yes posemo_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes few_sixltr has_exclam type_status has_url
 is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
 is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
 see_yes hear_yes netspeak_yes type_status has_url
-is_authentic_yes is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
+is_tone_yes posemo_yes insight_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes netspeak_yes has_exclam has_qmark type_status has_url
 posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes high_wps type_status
 is_clout_yes posemo_yes cause_yes certain_yes hear_yes affiliation_yes achieve_yes power_yes netspeak_yes many_sixltr high_wps type_link
 is_analytic_no is_clout_yes is_authentic_yes is_tone_yes posemo_yes negemo_yes anx_yes sad_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes high_wps type_status
@@ -7732,7 +7732,7 @@ is_analytic_yes posemo_yes negemo_yes anger_yes discrep_yes affiliation_yes powe
 is_tone_yes posemo_yes negemo_yes anger_yes insight_yes cause_yes certain_yes hear_yes affiliation_yes achieve_yes power_yes reward_yes type_status
 is_authentic_no posemo_yes affiliation_yes achieve_yes power_yes many_sixltr type_status
 is_analytic_yes is_tone_yes posemo_yes affiliation_yes achieve_yes power_yes reward_yes many_sixltr high_wps type_photo
-is_analytic_no is_authentic_yes is_tone_yes posemo_yes cause_yes discrep_yes certain_yes see_yes achieve_yes power_yes reward_yes high_wps type_video
+is_analytic_no is_tone_yes posemo_yes cause_yes discrep_yes certain_yes see_yes achieve_yes power_yes reward_yes high_wps type_video
 is_analytic_yes is_authentic_yes posemo_yes cause_yes discrep_yes see_yes affiliation_yes achieve_yes power_yes reward_yes type_photo
 posemo_yes cause_yes discrep_yes certain_yes see_yes affiliation_yes achieve_yes few_sixltr has_exclam type_link
 is_authentic_no posemo_yes negemo_yes anger_yes cause_yes discrep_yes certain_yes affiliation_yes power_yes reward_yes risk_yes type_link
@@ -7842,7 +7842,7 @@ is_analytic_yes is_tone_no negemo_yes insight_yes cause_yes discrep_yes differ_y
 is_analytic_yes is_clout_no is_authentic_yes posemo_yes see_yes feel_yes power_yes reward_yes assent_yes type_photo
 is_analytic_yes is_clout_no posemo_yes see_yes feel_yes power_yes reward_yes assent_yes type_photo
 is_analytic_yes is_clout_no is_authentic_yes is_tone_yes posemo_yes tentat_yes certain_yes see_yes achieve_yes reward_yes few_sixltr has_exclam type_photo
-is_clout_yes is_authentic_yes posemo_yes negemo_yes insight_yes cause_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes high_wps type_status
+is_clout_yes posemo_yes negemo_yes insight_yes cause_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes high_wps type_status
 posemo_yes tentat_yes certain_yes affiliation_yes achieve_yes power_yes reward_yes assent_yes high_wps type_status
 is_tone_no posemo_yes negemo_yes cause_yes discrep_yes certain_yes differ_yes see_yes hear_yes affiliation_yes power_yes high_wps type_status
 is_analytic_yes posemo_yes tentat_yes differ_yes hear_yes affiliation_yes achieve_yes power_yes netspeak_yes assent_yes has_exclam type_photo
@@ -7902,7 +7902,7 @@ is_tone_yes posemo_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes 
 is_clout_yes is_authentic_no posemo_yes negemo_yes anger_yes certain_yes feel_yes affiliation_yes achieve_yes power_yes risk_yes many_sixltr high_wps type_photo
 is_analytic_no is_clout_no is_authentic_no cause_yes discrep_yes differ_yes feel_yes many_sixltr type_video
 is_analytic_no is_tone_no posemo_yes negemo_yes anger_yes sad_yes insight_yes cause_yes discrep_yes tentat_yes certain_yes differ_yes feel_yes affiliation_yes achieve_yes power_yes risk_yes type_photo
-is_authentic_yes posemo_yes negemo_yes sad_yes insight_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes high_wps type_link has_hashtag
+posemo_yes negemo_yes sad_yes insight_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes high_wps type_link has_hashtag
 is_analytic_yes is_tone_yes posemo_yes insight_yes cause_yes feel_yes achieve_yes power_yes reward_yes has_exclam type_status
 is_analytic_yes is_authentic_no is_tone_yes posemo_yes achieve_yes power_yes reward_yes many_sixltr type_photo
 is_analytic_yes is_tone_yes posemo_yes see_yes assent_yes many_sixltr type_photo
@@ -8239,7 +8239,7 @@ is_analytic_no is_clout_yes posemo_yes negemo_yes anger_yes insight_yes cause_ye
 is_analytic_no is_clout_yes is_authentic_no cause_yes certain_yes affiliation_yes few_sixltr low_wps type_link
 is_analytic_no is_clout_yes is_tone_no posemo_yes negemo_yes anger_yes sad_yes insight_yes cause_yes tentat_yes certain_yes differ_yes feel_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes type_status
 is_clout_yes posemo_yes negemo_yes insight_yes discrep_yes tentat_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes risk_yes assent_yes high_wps type_link
-is_analytic_no is_authentic_yes is_tone_no posemo_yes negemo_yes anger_yes sad_yes cause_yes discrep_yes tentat_yes differ_yes feel_yes affiliation_yes achieve_yes power_yes high_wps type_photo
+is_analytic_no is_tone_no posemo_yes negemo_yes anger_yes sad_yes cause_yes discrep_yes tentat_yes differ_yes feel_yes affiliation_yes achieve_yes power_yes high_wps type_photo
 is_authentic_no is_tone_no negemo_yes anger_yes many_sixltr low_wps type_photo has_hashtag
 is_tone_no posemo_yes negemo_yes anx_yes anger_yes discrep_yes tentat_yes differ_yes affiliation_yes power_yes netspeak_yes type_link
 is_analytic_no is_clout_yes posemo_yes negemo_yes anger_yes insight_yes tentat_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes few_sixltr type_video
@@ -8510,7 +8510,7 @@ is_authentic_no posemo_yes discrep_yes tentat_yes hear_yes achieve_yes power_yes
 is_analytic_no is_clout_yes is_authentic_no is_tone_yes posemo_yes insight_yes cause_yes discrep_yes hear_yes affiliation_yes few_sixltr has_qmark type_link
 is_analytic_no is_clout_no is_tone_yes posemo_yes insight_yes cause_yes certain_yes differ_yes affiliation_yes achieve_yes power_yes reward_yes many_sixltr high_wps type_link
 is_clout_no is_authentic_yes is_tone_no negemo_yes cause_yes discrep_yes tentat_yes differ_yes see_yes achieve_yes power_yes reward_yes many_sixltr high_wps type_link
-is_authentic_yes is_tone_no posemo_yes negemo_yes anx_yes sad_yes insight_yes tentat_yes feel_yes affiliation_yes power_yes many_sixltr high_wps type_link
+is_tone_no posemo_yes negemo_yes anx_yes sad_yes insight_yes tentat_yes feel_yes affiliation_yes power_yes many_sixltr high_wps type_link
 is_clout_yes is_authentic_no is_tone_yes posemo_yes insight_yes discrep_yes tentat_yes differ_yes affiliation_yes type_photo
 is_analytic_yes is_tone_yes posemo_yes see_yes achieve_yes few_sixltr type_photo
 posemo_yes negemo_yes sad_yes insight_yes cause_yes discrep_yes certain_yes see_yes affiliation_yes achieve_yes power_yes reward_yes many_sixltr high_wps type_photo
@@ -8583,7 +8583,7 @@ is_clout_yes posemo_yes discrep_yes tentat_yes differ_yes affiliation_yes achiev
 is_analytic_no is_clout_no differ_yes see_yes hear_yes few_sixltr low_wps type_video
 is_analytic_yes is_authentic_yes hear_yes achieve_yes high_wps type_link
 is_analytic_no is_authentic_no posemo_yes cause_yes discrep_yes tentat_yes hear_yes affiliation_yes achieve_yes power_yes reward_yes high_wps type_video
-is_clout_yes is_authentic_yes posemo_yes insight_yes cause_yes certain_yes see_yes affiliation_yes achieve_yes power_yes assent_yes high_wps type_link
+is_clout_yes posemo_yes insight_yes cause_yes certain_yes see_yes affiliation_yes achieve_yes power_yes assent_yes high_wps type_link
 is_analytic_yes posemo_yes insight_yes cause_yes discrep_yes affiliation_yes achieve_yes power_yes reward_yes high_wps type_link
 posemo_yes negemo_yes anger_yes hear_yes affiliation_yes achieve_yes power_yes reward_yes many_sixltr high_wps type_link
 is_analytic_yes is_tone_yes posemo_yes see_yes affiliation_yes achieve_yes power_yes risk_yes many_sixltr high_wps type_link

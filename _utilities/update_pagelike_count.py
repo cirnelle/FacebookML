@@ -25,10 +25,10 @@ class UpdatePagelikeCount():
 
         fb_posts = []
         for line in lines:
-            spline = line.replace('\n','').split(', ')
+            spline = line.replace('\n','').split(',')
             fb_posts.append(spline)
 
-        print ("Length of tweet list is "+str(len(fb_posts)))
+        print ("Length of post list is "+str(len(fb_posts)))
 
         unique_user = []
         updated_fb_posts = []
@@ -39,6 +39,7 @@ class UpdatePagelikeCount():
             key = fp[0]
 
             if key in slope_dict:
+
 
                 if fp[0] not in unique_user:
                     unique_user.append(fp[0])
@@ -61,9 +62,14 @@ class UpdatePagelikeCount():
 
             else:
                 #updated_tweets.append(t)
+                print (key)
+                print ("key not found")
                 pass
 
-        print ("Length of updated tweet list is "+str(len(updated_fb_posts)))
+        print ("Length of updated post list is "+str(len(updated_fb_posts)))
+
+        header = ['user','created_time','page_likes','post_id','like_count','share_count','comment_count','type','message']
+        updated_fb_posts.insert(0,header)
 
         f = open(path_to_store_updated_fb_post_file,'w')
 
@@ -105,9 +111,9 @@ class UpdatePagelikeCount():
 # variables
 ################
 
-path_to_raw_facebook_post_file = '../fb_data/posts/raw_fb_posts_20160226.csv'
+path_to_raw_facebook_post_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
 path_to_slope_file = '../user_list/like_slope.txt'
-path_to_store_updated_fb_post_file = '../fb_data/posts/raw_fb_posts_20160226_likecorr.csv'
+path_to_store_updated_fb_post_file = '../fb_data/posts/likecorr/raw_fb_posts_nonprofit_likecorr.csv'
 
 
 
@@ -125,6 +131,8 @@ if __name__ == "__main__":
     for line in lines:
         spline = line.replace('\n','').split(',')
         slope_dict[spline[0]] = spline[1]
+
+    print (slope_dict)
 
     print ("Length of slope_dict is "+str(len(slope_dict)))
 

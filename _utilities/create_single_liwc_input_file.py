@@ -3,8 +3,8 @@ __author__ = 'yi-linghwong'
 import os
 import sys
 
-path_to_labelled_raw_file = '../output/engrate/others/labelled_politics_raw.csv'
-path_to_store_single_liwc_input_file = '../output/liwc/single_input/politics.txt'
+path_to_labelled_raw_file = '../output/engrate/others/labelled_nonprofit_raw.csv'
+path_to_store_single_liwc_input_file = '../output/liwc/single_input/nonprofit.txt'
 
 lines = open(path_to_labelled_raw_file,'r').readlines()
 

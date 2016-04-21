@@ -21,7 +21,7 @@ for line in lines:
 stop_words = text.ENGLISH_STOP_WORDS.union(my_stopwords)
 
 
-class TweetProcessing():
+class FbPostProcessing():
 
     def get_element_number_per_line(self):
 
@@ -40,6 +40,7 @@ class TweetProcessing():
         lines = open(path_to_raw_fb_data_file,'r').readlines()
 
         posts = []
+
         for line in lines:
 
             spline = line.replace('\n','').split(',')
@@ -276,14 +277,14 @@ class TweetProcessing():
 # variables
 ###############
 
-path_to_raw_fb_data_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
-path_to_store_processed_fb_data_file = '../fb_data/posts/others/preprocessed_fb_posts_nonprofit.csv'
+path_to_raw_fb_data_file = '../fb_data/posts/likecorr/raw_fb_posts_nonprofit_likecorr.csv'
+path_to_store_processed_fb_data_file = '../fb_data/posts/likecorr/preprocessed_fb_posts_nonprofit_likecorr.csv'
 
 if __name__ == "__main__":
 
-    tp = TweetProcessing()
+    fp = FbPostProcessing()
 
-    tp.write_to_file()
+    fp.write_to_file()
 
 
 

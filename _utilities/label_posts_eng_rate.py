@@ -250,24 +250,42 @@ class LabelFbPostsEngRate():
         plt.show(block=True)
 
 
+    def get_mean_and_std(self):
+
+        engrate_list = self.get_eng_rate()
+
+        print ("Length of engrate list is "+str(len(engrate_list)))
+
+        engrate = []
+
+        for el in engrate_list:
+            engrate.append(float(el[-3]))
+
+
+        er_mean = np.mean(engrate)
+        er_std = np.std(engrate)
+
+        print ("Mean is %0.3f" %(er_mean))
+        print ("Standard deviation is %0.3f" %(er_std))
+
 
 ################
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/others/preprocessed_fb_posts_business.csv'
-path_to_store_engrate_output = '../output/engrate/others/engrate_business.csv'
-path_to_store_labelled_fb_post = '../output/engrate/others/labelled_business.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/others/preprocessed_fb_posts_nonprofit.csv'
+path_to_store_engrate_output = '../output/engrate/others/engrate_nonprofit.csv'
+path_to_store_labelled_fb_post = '../output/engrate/others/labelled_nonprofit.csv'
 
 # for LIWC
-path_to_raw_fb_post_file = '../fb_data/posts/others/raw_fb_posts_business.csv'
-path_to_store_engrate_output_raw = '../output/engrate/others/engrate_business_raw.csv'
-path_to_store_labelled_fb_post_raw = '../output/engrate/others/labelled_business_raw.csv'
+path_to_raw_fb_post_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
+path_to_store_engrate_output_raw = '../output/engrate/others/engrate_nonprofit_raw.csv'
+path_to_store_labelled_fb_post_raw = '../output/engrate/others/labelled_nonprofit_raw.csv'
 
 # engrate parameters
 with_comment = 0
-her_boundary = 0.083
-ler_boundary = 5.3e-05
+her_boundary = 0.35
+ler_boundary = 0.00315
 
 
 if __name__ == "__main__":
@@ -282,6 +300,8 @@ if __name__ == "__main__":
     lf.label_fb_post_raw()
 
     #lf.get_histogram()
+
+    #lf.get_mean_and_std()
 
 
 

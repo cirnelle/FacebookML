@@ -114,6 +114,7 @@ class NaiveBayes():
         print ("Cross validation score: "+str(scores))
 
         # Get average performance of classifier on training data using 10-fold CV, along with standard deviation
+        # the factor two is to signify 2 sigma, which is 95% confidence level
 
         print("Cross validation accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
@@ -598,6 +599,7 @@ class NaiveBayes():
 
         diff = [abs(a-b) for a,b in zip(fb_her,fb_ler)]
 
+
         # sort the list by the value of the difference, and return index of that element###
         sortli = sorted(range(len(diff)), key=lambda i:diff[i], reverse=True)[:200]
 
@@ -608,9 +610,9 @@ class NaiveBayes():
         for i in sortli:
 
             if fb_her[i]>fb_ler[i]:
-                imp_feat.append('HER, '+str(feature_names[i]))
+                imp_feat.append('HER,'+str(feature_names[i])+','+str(diff[i]))
             else:
-                imp_feat.append('LER, '+str(feature_names[i]))
+                imp_feat.append('LER,'+str(feature_names[i])+','+str(diff[i]))
 
 
         #imp_feat=sorted(imp_feat)
@@ -621,6 +623,13 @@ class NaiveBayes():
             f4.write(imf+'\n')
 
         f4.close()
+
+        f = open(path_to_store_feat_imp_for_normalisation,'w')
+
+        for imf in imp_feat:
+            f.write(imf+'\n')
+
+        f.close()
 
         #################
         # Get features with highest probability
@@ -649,6 +658,7 @@ class NaiveBayes():
             f.write(str(fl)+'\n')
 
         f.close()
+
 
 
         ###############
@@ -722,21 +732,22 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/business/labelled_combined.csv'
+path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_features_by_probability_file = '../output/feature_importance/nb/business/nb_feat_by_prob.csv'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/business/nb_fs_boolean.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/nb/business/nb_feature_names.txt'
-path_to_store_coefficient_file = '../output/feature_importance/nb/business/nb_coef.txt'
-path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/business/nb_feature_prob_0.csv' #Empirical log probability of features given a class
-path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/business/nb_feature_prob_1.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb/business/nb_feat_by_class_combined.csv'
+path_to_store_features_by_probability_file = '../output/feature_importance/nb/space/nb_feat_by_prob.csv'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/space/nb_fs_boolean.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/nb/space/nb_feature_names.txt'
+path_to_store_coefficient_file = '../output/feature_importance/nb/space/nb_coef.txt'
+path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/space/nb_feature_prob_0.csv' #Empirical log probability of features given a class
+path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/space/nb_feature_prob_1.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/nb/space.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/space/nb_feat_by_class_combined.csv'
 
 
 # for classifier without pipeline
 _ngram_range = (1,1)
 _alpha = 0.4
-_use_idf = True
+_use_idf = False
 _percentile = 85
 _score_func = f_classif
 

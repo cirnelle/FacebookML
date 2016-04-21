@@ -1,43 +1,43 @@
-LER, type_status
-LER, nonflu_yes
-LER, type_link
-LER, filler_yes
-HER, type_photo
-HER, is_clout_no
-HER, anx_yes
-LER, assent_yes
-LER, is_authentic_no
-HER, is_tone_no
-LER, type_video
-LER, reward_yes
-HER, certain_yes
-LER, has_qmark
-HER, is_analytic_yes
-LER, hear_yes
-HER, has_url
-HER, has_exclam
-HER, has_hashtag
-HER, is_authentic_yes
-LER, power_yes
-HER, negemo_yes
-HER, risk_yes
-HER, many_sixltr
-HER, cause_yes
-HER, netspeak_yes
-HER, anger_yes
-HER, high_wps
-LER, achieve_yes
-HER, sad_yes
-HER, insight_yes
-LER, discrep_yes
-LER, is_analytic_no
-HER, see_yes
-HER, feel_yes
-LER, is_clout_yes
-LER, few_sixltr
-HER, differ_yes
-LER, swear_yes
-HER, low_wps
-HER, affiliation_yes
-HER, tentat_yes
-LER, posemo_yes
+LER,type_status,3.5748144589
+LER,nonflu_yes,1.58042249885
+LER,type_link,1.02472265813
+LER,filler_yes,0.998301503677
+HER,type_photo,0.66247444678
+HER,is_clout_no,0.541888286051
+HER,anx_yes,0.520282951062
+LER,is_authentic_no,0.489583871394
+LER,assent_yes,0.4679826074
+HER,is_tone_no,0.43573793752
+LER,has_qmark,0.402576407051
+LER,reward_yes,0.3999401568
+LER,type_video,0.365834611742
+LER,hear_yes,0.353729834575
+HER,certain_yes,0.345146323444
+HER,is_analytic_yes,0.295978604573
+LER,power_yes,0.249416512317
+HER,has_url,0.241150156725
+HER,has_hashtag,0.226214587229
+HER,has_exclam,0.219922710239
+HER,negemo_yes,0.217119854112
+HER,risk_yes,0.209712183771
+HER,is_authentic_yes,0.203428242646
+LER,achieve_yes,0.177456095403
+HER,many_sixltr,0.168124579113
+HER,anger_yes,0.160819685747
+LER,discrep_yes,0.157260854908
+LER,is_analytic_no,0.150579977869
+HER,netspeak_yes,0.141183501322
+HER,cause_yes,0.141078559881
+HER,sad_yes,0.130748791061
+HER,high_wps,0.130036117016
+LER,is_clout_yes,0.122618078233
+LER,few_sixltr,0.110921831215
+LER,swear_yes,0.0908188538059
+HER,insight_yes,0.0889930314125
+HER,feel_yes,0.0783303196399
+HER,see_yes,0.0759168714394
+HER,differ_yes,0.0460976773034
+LER,posemo_yes,0.0353194842622
+LER,affiliation_yes,0.0186017575815
+HER,low_wps,0.0103746393348
+LER,tentat_yes,0.00327489402741
