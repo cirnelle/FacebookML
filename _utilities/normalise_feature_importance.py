@@ -189,6 +189,7 @@ class NormaliseFeatureImportance():
         business_her = []
         business_feat = []
 
+
         for line in lines:
 
             if line in ['\n', '\r\n']:
@@ -220,6 +221,7 @@ class NormaliseFeatureImportance():
                     featimp_ori = abs(float(spline[2]))
                     featimp_norm = round(((m * (featimp_ori)) + c),4)
                     business_her.append(['HER',spline[1],featimp_norm])
+
 
         # for features which are in space feature list but not in the other field's feature list
         for sh in space_her_features:
@@ -524,15 +526,15 @@ class NormaliseFeatureImportance():
 # variables
 ################
 
-path_to_space_feature_score_file = '../output/featimp_normalisation/nb/space.csv'
-path_to_politics_feature_score_file = '../output/featimp_normalisation/nb/politics.csv'
-path_to_business_feature_score_file = '../output/featimp_normalisation/nb/business.csv'
-path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/nb/nonprofit.csv'
+path_to_space_feature_score_file = '../output/featimp_normalisation/sgd/space.csv'
+path_to_politics_feature_score_file = '../output/featimp_normalisation/sgd/politics.csv'
+path_to_business_feature_score_file = '../output/featimp_normalisation/sgd/business.csv'
+path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/sgd/nonprofit.csv'
 
-path_to_store_normalised_space_feature_file = '../output/featimp_normalisation/nb/normalised_space.csv'
-path_to_store_normalised_politics_feature_file = '../output/featimp_normalisation/nb/normalised_politics.csv'
-path_to_store_normalised_business_feature_file = '../output/featimp_normalisation/nb/normalised_business.csv'
-path_to_store_normalised_nonprofit_feature_file = '../output/featimp_normalisation/nb/normalised_nonprofit.csv'
+path_to_store_normalised_space_feature_file = '../output/featimp_normalisation/sgd/normalised_space.csv'
+path_to_store_normalised_politics_feature_file = '../output/featimp_normalisation/sgd/normalised_politics.csv'
+path_to_store_normalised_business_feature_file = '../output/featimp_normalisation/sgd/normalised_business.csv'
+path_to_store_normalised_nonprofit_feature_file = '../output/featimp_normalisation/sgd/normalised_nonprofit.csv'
 
 
 if __name__ == '__main__':
