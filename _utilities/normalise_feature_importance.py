@@ -124,12 +124,15 @@ class NormaliseFeatureImportance():
         # create normalised space HER feat imp file
         ##############
 
-        lines = open(path_to_space_feature_score_file,'r').readlines()
+        lines1 = open(path_to_space_nb_file,'r').readlines()
+        lines2 = open(path_to_space_sgd_file,'r').readlines()
+        lines3 = open(path_to_space_extratree_file,'r').readlines()
 
-        space_her = []
+        lines_all = lines1+lines2+lines3
+
         space_her_features = []
 
-        for line in lines:
+        for line in lines_all:
             spline = line.replace('\n','').split(',')
 
             if spline[0] == 'HER':
@@ -138,14 +141,145 @@ class NormaliseFeatureImportance():
 
                     space_her_features.append(spline[1])
 
-                featimp_ori = abs(float(spline[2]))
-                featimp_norm = round(((m * (featimp_ori)) + c),4)
-                space_her.append('HER,'+spline[1]+','+str(featimp_norm))
+        lines1 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[0]
+        lines2 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[1]
+        lines3 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[2]
+
+        if lines1 == [] or lines2 == [] or lines3 == []:
+            print ("empty list error, exiting...")
+            sys.exit()
+
+        space_her = []
+
+        for i in range(3):
+
+            if i == 0:
+
+                space_feat = []
+
+                for line in lines1:
+
+                    spline = line.replace('\n','').split(',')
+                    space_feat.append(spline[1])
+
+                    if spline[1] in space_her_features:
+
+                        if spline[0] == 'HER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_her.append(['HER',spline[1],featimp_norm])
+
+                        # if the feature is not a HER feature then append '0' as its feat importance
+                        elif spline[0] == 'LER':
+                            space_her.append(['HER',spline[1],0])
+
+
+                        else:
+                            #print ("error")
+                            pass
+
+                    # for HER features of politics which are not in space's HER list, just normalise and append as is
+                    else:
+
+                        if spline[0] == 'HER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_her.append(['HER',spline[1],featimp_norm])
+
+                # for features which are in space feature list but not in the other field's feature list
+                for sh in space_her_features:
+                    if sh not in space_feat:
+                        space_her.append(['HER',sh,0])
+
+            if i == 1:
+
+                space_feat = []
+
+                for line in lines2:
+
+                    spline = line.replace('\n','').split(',')
+                    space_feat.append(spline[1])
+
+                    if spline[1] in space_her_features:
+
+                        if spline[0] == 'HER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_her.append(['HER',spline[1],featimp_norm])
+
+                        # if the feature is not a HER feature then append '0' as its feat importance
+                        elif spline[0] == 'LER':
+                            space_her.append(['HER',spline[1],0])
+
+
+                        else:
+                            #print ("error")
+                            pass
+
+                    # for HER features of politics which are not in space's HER list, just normalise and append as is
+                    else:
+
+                        if spline[0] == 'HER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_her.append(['HER',spline[1],featimp_norm])
+
+                # for features which are in space feature list but not in the other field's feature list
+                for sh in space_her_features:
+                    if sh not in space_feat:
+                        space_her.append(['HER',sh,0])
+
+            if i == 2:
+
+                space_feat = []
+
+                for line in lines3:
+
+                    spline = line.replace('\n','').split(',')
+                    space_feat.append(spline[1])
+
+                    if spline[1] in space_her_features:
+
+                        if spline[0] == 'HER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_her.append(['HER',spline[1],featimp_norm])
+
+                        # if the feature is not a HER feature then append '0' as its feat importance
+                        elif spline[0] == 'LER':
+                            space_her.append(['HER',spline[1],0])
+
+
+                        else:
+                            #print ("error")
+                            pass
+
+                    # for HER features of politics which are not in space's HER list, just normalise and append as is
+                    else:
+
+                        if spline[0] == 'HER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_her.append(['HER',spline[1],featimp_norm])
+
+                # for features which are in space feature list but not in the other field's feature list
+                for sh in space_her_features:
+                    if sh not in space_feat:
+                        space_her.append(['HER',sh,0])
+
+        space_her.sort(key=lambda x: x[2], reverse=True)
+
+        space_her_sorted = []
+
+        for sh in space_her:
+            sh[2] = str(sh[2])
+            space_her_sorted.append(sh)
+        
 
         f = open(path_to_store_normalised_space_feature_file,'w')
 
         for sh in space_her:
-            f.write(sh+'\n')
+            f.write(','.join(sh)+'\n')
 
         f.close()
 
@@ -607,12 +741,15 @@ class NormaliseFeatureImportance():
         # create normalised space HER feat imp file
         ##############
 
-        lines = open(path_to_space_feature_score_file,'r').readlines()
+        lines1 = open(path_to_space_nb_file,'r').readlines()
+        lines2 = open(path_to_space_sgd_file,'r').readlines()
+        lines3 = open(path_to_space_extratree_file,'r').readlines()
 
-        space_ler = []
+        lines_all = lines1+lines2+lines3
+
         space_ler_features = []
 
-        for line in lines:
+        for line in lines_all:
             spline = line.replace('\n','').split(',')
 
             if spline[0] == 'LER':
@@ -621,14 +758,145 @@ class NormaliseFeatureImportance():
 
                     space_ler_features.append(spline[1])
 
-                featimp_ori = abs(float(spline[2]))
-                featimp_norm = round(((m2 * (featimp_ori)) + c2),4)
-                space_ler.append('LER,'+spline[1]+','+str(featimp_norm))
+        lines1 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[0]
+        lines2 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[1]
+        lines3 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[2]
+
+        if lines1 == [] or lines2 == [] or lines3 == []:
+            print ("empty list error, exiting...")
+            sys.exit()
+
+        space_ler = []
+
+        for i in range(3):
+
+            if i == 0:
+
+                space_feat = []
+
+                for line in lines1:
+
+                    spline = line.replace('\n','').split(',')
+                    space_feat.append(spline[1])
+
+                    if spline[1] in space_ler_features:
+
+                        if spline[0] == 'LER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_ler.append(['LER',spline[1],featimp_norm])
+
+                        # if the feature is not a HER feature then append '0' as its feat importance
+                        elif spline[0] == 'HER':
+                            space_ler.append(['LER',spline[1],0])
+
+
+                        else:
+                            #print ("error")
+                            pass
+
+                    # for HER features of politics which are not in space's HER list, just normalise and append as is
+                    else:
+
+                        if spline[0] == 'LER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_ler.append(['LER',spline[1],featimp_norm])
+
+                # for features which are in space feature list but not in the other field's feature list
+                for sh in space_ler_features:
+                    if sh not in space_feat:
+                        space_ler.append(['LER',sh,0])
+
+            if i == 1:
+
+                space_feat = []
+
+                for line in lines2:
+
+                    spline = line.replace('\n','').split(',')
+                    space_feat.append(spline[1])
+
+                    if spline[1] in space_ler_features:
+
+                        if spline[0] == 'LER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_ler.append(['LER',spline[1],featimp_norm])
+
+                        # if the feature is not a HER feature then append '0' as its feat importance
+                        elif spline[0] == 'HER':
+                            space_ler.append(['LER',spline[1],0])
+
+
+                        else:
+                            #print ("error")
+                            pass
+
+                    # for HER features of politics which are not in space's HER list, just normalise and append as is
+                    else:
+
+                        if spline[0] == 'LER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_ler.append(['LER',spline[1],featimp_norm])
+
+                # for features which are in space feature list but not in the other field's feature list
+                for sh in space_ler_features:
+                    if sh not in space_feat:
+                        space_ler.append(['LER',sh,0])
+
+            if i == 2:
+
+                space_feat = []
+
+                for line in lines3:
+
+                    spline = line.replace('\n','').split(',')
+                    space_feat.append(spline[1])
+
+                    if spline[1] in space_ler_features:
+
+                        if spline[0] == 'LER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_ler.append(['LER',spline[1],featimp_norm])
+
+                        # if the feature is not a HER feature then append '0' as its feat importance
+                        elif spline[0] == 'HER':
+                            space_ler.append(['LER',spline[1],0])
+
+
+                        else:
+                            #print ("error")
+                            pass
+
+                    # for HER features of politics which are not in space's HER list, just normalise and append as is
+                    else:
+
+                        if spline[0] == 'LER':
+                            featimp_ori = abs(float(spline[2]))
+                            featimp_norm = round(((m * (featimp_ori)) + c),4)
+                            space_ler.append(['LER',spline[1],featimp_norm])
+
+                # for features which are in space feature list but not in the other field's feature list
+                for sh in space_ler_features:
+                    if sh not in space_feat:
+                        space_ler.append(['LER',sh,0])
+
+        space_ler.sort(key=lambda x: x[2], reverse=True)
+
+        space_ler_sorted = []
+
+        for sh in space_ler:
+            sh[2] = str(sh[2])
+            space_ler_sorted.append(sh)
+
 
         f = open(path_to_store_normalised_space_feature_file,'a')
 
-        for sl in space_ler:
-            f.write(sl+'\n')
+        for sh in space_ler:
+            f.write(','.join(sh)+'\n')
 
         f.close()
 
@@ -1063,15 +1331,20 @@ class NormaliseFeatureImportance():
 # variables
 ################
 
-path_to_space_feature_score_file = '../output/featimp_normalisation/extratree/space.csv'
-path_to_politics_feature_score_file = '../output/featimp_normalisation/extratree/politics.csv'
-path_to_business_feature_score_file = '../output/featimp_normalisation/extratree/business.csv'
-path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/extratree/nonprofit.csv'
+path_to_space_feature_score_file = '../output/featimp_normalisation/sgd/space.csv'
+path_to_politics_feature_score_file = '../output/featimp_normalisation/sgd/politics.csv'
+path_to_business_feature_score_file = '../output/featimp_normalisation/sgd/business.csv'
+path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/sgd/nonprofit.csv'
 
-path_to_store_normalised_space_feature_file = '../output/featimp_normalisation/extratree/normalised_space.csv'
-path_to_store_normalised_politics_feature_file = '../output/featimp_normalisation/extratree/normalised_politics.csv'
-path_to_store_normalised_business_feature_file = '../output/featimp_normalisation/extratree/normalised_business.csv'
-path_to_store_normalised_nonprofit_feature_file = '../output/featimp_normalisation/extratree/normalised_nonprofit.csv'
+path_to_store_normalised_space_feature_file = '../output/featimp_normalisation/sgd/normalised_space.csv'
+path_to_store_normalised_politics_feature_file = '../output/featimp_normalisation/sgd/normalised_politics.csv'
+path_to_store_normalised_business_feature_file = '../output/featimp_normalisation/sgd/normalised_business.csv'
+path_to_store_normalised_nonprofit_feature_file = '../output/featimp_normalisation/sgd/normalised_nonprofit.csv'
+
+# DO NOT change the following!
+path_to_space_nb_file = '../output/featimp_normalisation/nb/space.csv'
+path_to_space_sgd_file = '../output/featimp_normalisation/sgd/space.csv'
+path_to_space_extratree_file = '../output/featimp_normalisation/extratree/space.csv'
 
 
 if __name__ == '__main__':

@@ -17,14 +17,14 @@ HER,insight_yes,-1.13307324548
 HER,is_tone_no,-1.0775310253
 HER,cause_yes,-1.05767218589
 HER,is_tone_yes,-1.03385141847
-HER,anger_yes,-1.02458833911
+HER,power_yes,-1.02458833911
 HER,is_analytic_no,-0.977123438995
 HER,swear_yes,-0.950451903431
 HER,has_url,-0.821268861105
 HER,affiliation_yes,-0.770573428762
 HER,is_clout_yes,-0.643996635693
 HER,feel_yes,-0.610165080648
-HER,power_yes,-0.37208734657
+HER,anger_yes,-0.37208734657
 HER,high_wps,-0.267367499704
 HER,few_sixltr,-0.0763637064643
 HER,is_authentic_no,-0.01508420959
@@ -53,7 +53,7 @@ HER,is_clout_no,-2.11064680851
 HER,negemo_yes,-1.75983907533
 HER,is_analytic_no,-1.70267104866
 HER,anx_yes,-1.69877811757
-HER,anger_yes,-1.50625858092
+HER,power_yes,-1.50625858092
 HER,discrep_yes,-1.48184123651
 HER,risk_yes,-1.37733744757
 HER,is_tone_yes,-1.17896462186
@@ -66,7 +66,7 @@ HER,reward_yes,-0.972246196189
 HER,insight_yes,-0.899505995598
 HER,affiliation_yes,-0.865938027936
 HER,has_url,-0.750947016401
-HER,power_yes,-0.667822895686
+HER,anger_yes,-0.667822895686
 HER,feel_yes,-0.623104796951
 HER,is_clout_yes,-0.437179999074
 HER,type_photo,-0.163183691294
@@ -94,7 +94,7 @@ HER,type_photo,-1.79655534973
 HER,anx_yes,-1.66675291204
 HER,is_analytic_no,-1.63224076036
 HER,discrep_yes,-1.58195126777
-HER,anger_yes,-1.48241792989
+HER,power_yes,-1.48241792989
 HER,risk_yes,-1.43042072693
 HER,differ_yes,-1.3239668138
 HER,is_tone_yes,-1.26511528403
@@ -107,7 +107,7 @@ HER,low_wps,-0.871986361161
 HER,affiliation_yes,-0.81301810394
 HER,feel_yes,-0.794088641954
 HER,swear_yes,-0.780974845275
-HER,power_yes,-0.667346748698
+HER,anger_yes,-0.667346748698
 HER,has_url,-0.507058638591
 HER,is_clout_yes,-0.477711303988
 HER,many_sixltr,-0.211526611376

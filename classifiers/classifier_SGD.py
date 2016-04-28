@@ -656,7 +656,7 @@ path_to_store_important_features_by_class_file = '../output/feature_importance/s
 # for classifier without pipeline
 _ngram_range = (1,1)
 _use_idf = False
-_loss = 'log'
+_loss = 'log' # 'hinge' gives linear SVM; 'log' gives logistic regression
 _penalty = 'l2'
 _alpha = 0.0001
 _score_func = chi2
