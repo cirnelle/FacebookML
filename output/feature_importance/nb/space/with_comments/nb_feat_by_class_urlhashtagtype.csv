@@ -1,0 +1,16 @@
+LER,type_status has_url,3.73426373606
+LER,type_event,2.83814059867
+HER,type_photo has_hashtag,2.55683941915
+LER,type_status has_hashtag,2.42341044217
+LER,type_link has_url,2.23328927381
+HER,type_photo,1.85889861799
+HER,type_photo has_url,1.71412744294
+LER,type_event has_url,1.63062611176
+LER,type_status,1.60041359363
+HER,type_video has_hashtag,1.4265132561
+LER,type_link,1.2963723965
+LER,type_link has_hashtag,1.06813816422
+LER,type_video has_url,0.626362446456
+HER,has_hashtag,0.482819883609
+LER,has_url,0.329097574366
+LER,has_hashtag has_url,0.189346564673

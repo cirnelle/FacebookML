@@ -47,7 +47,7 @@ class LabelFbPostsEngRate():
 
                 elif with_comment == 1:
 
-                    engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
+                    engagement = (0.5*int(fp[4])) + (0.75*int(fp[6])) + int(fp[5])
 
                 engrate = str((np.divide(int(engagement),int(fp[2])))*100)
 
@@ -100,7 +100,7 @@ class LabelFbPostsEngRate():
 
                 elif with_comment == 1:
 
-                    engagement = (0.5*int(fp[4])) + (0.8*int(fp[6])) + int(fp[5])
+                    engagement = (0.5*int(fp[4])) + (0.75*int(fp[6])) + int(fp[5])
 
                 engrate = str((np.divide(int(engagement),int(fp[2])))*100)
 
@@ -137,13 +137,27 @@ class LabelFbPostsEngRate():
 
             if float(fp[7]) > her_boundary:
 
-                labelled_fb_posts.append([fp[9],'HER'])
-                high_er.append([fp[9],'HER'])
+                if fp[9] == '':
+
+                    labelled_fb_posts.append(['nil','HER'])
+                    high_er.append(['nil','HER'])
+
+                else:
+
+                    labelled_fb_posts.append([fp[9],'HER'])
+                    high_er.append([fp[9],'HER'])
 
             elif float(fp[7]) < ler_boundary:
 
-                labelled_fb_posts.append([fp[9],'LER'])
-                low_er.append([fp[9],'LER'])
+                if fp[9] == '':
+
+                    labelled_fb_posts.append(['nil','LER'])
+                    low_er.append(['nil','LER'])
+
+                else:
+
+                    labelled_fb_posts.append([fp[9],'LER'])
+                    low_er.append([fp[9],'LER'])
 
             else:
                 pass
@@ -273,19 +287,19 @@ class LabelFbPostsEngRate():
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/others/preprocessed_fb_posts_nonprofit.csv'
-path_to_store_engrate_output = '../output/engrate/others/engrate_nonprofit.csv'
-path_to_store_labelled_fb_post = '../output/engrate/others/labelled_nonprofit.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/preprocessed_fb_posts_space.csv'
+path_to_store_engrate_output = '../output/engrate/with_comments/engrate_space_withcomment.csv'
+path_to_store_labelled_fb_post = '../output/engrate/with_comments/labelled_space_withcomment.csv'
 
 # for LIWC
-path_to_raw_fb_post_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
-path_to_store_engrate_output_raw = '../output/engrate/others/engrate_nonprofit_raw.csv'
-path_to_store_labelled_fb_post_raw = '../output/engrate/others/labelled_nonprofit_raw.csv'
+path_to_raw_fb_post_file = '../fb_data/posts/raw_fb_posts_space.csv'
+path_to_store_engrate_output_raw = '../output/engrate/with_comments/engrate_space_withcomment_raw.csv'
+path_to_store_labelled_fb_post_raw = '../output/engrate/with_comments/labelled_space_withcomment_raw.csv'
 
 # engrate parameters
-with_comment = 0
-her_boundary = 0.35
-ler_boundary = 0.00315
+with_comment = 1
+her_boundary = 0.39
+ler_boundary = 0.0021
 
 
 if __name__ == "__main__":

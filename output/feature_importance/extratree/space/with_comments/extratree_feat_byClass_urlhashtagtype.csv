@@ -1,0 +1,14 @@
+HER,type_photo,2646
+HER,type_photo has_url,952
+LER,type_link,1966
+HER,type_photo has_hashtag,652
+LER,type_status,772
+LER,type_link has_url,1062
+LER,has_url,2124
+LER,type_status has_url,311
+HER,has_hashtag,851
+LER,type_link has_hashtag,354
+HER,type_video has_hashtag,83
+LER,type_status has_hashtag,179
+LER,type_video has_url,137
+LER,type_event,12

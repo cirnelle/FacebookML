@@ -688,14 +688,14 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/nonprofit/labelled_combined.csv'
+path_to_labelled_file = '../output/features/nonprofit/with_comments/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_vocabulary_file = '../output/feature_importance/extratree/nonprofit/extratree_vocab.txt'
 path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/nonprofit/extratree_fs_boolean.csv'
 path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/nonprofit/extratree_feat_imp_all.txt'
 path_to_store_top_important_features_file = '../output/feature_importance/extratree/nonprofit/extratree_feature_importance.csv'
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/nonprofit.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/nonprofit/extratree_feat_byClass_combined.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/with_comments/nonprofit_withcomment.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/nonprofit/with_comments/extratree_feat_byClass_combined.csv'
 
 
 # for classifier without pipeline

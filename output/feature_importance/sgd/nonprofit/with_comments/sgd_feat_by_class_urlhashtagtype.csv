@@ -1,0 +1,19 @@
+HER,type_photo,-1.22603310489
+HER,type_photo has_url,-1.0124144464
+HER,type_video,-0.955449965769
+HER,type_photo has_hashtag,-0.905605394133
+HER,type_video has_hashtag,-0.674717547484
+HER,has_hashtag has_url,-0.0200971851527
+LER,type_video has_url,1.17282331154
+LER,type_status has_hashtag,1.00632659569
+LER,type_event,0.882059317853
+LER,type_status,0.859723735608
+LER,type_note,0.820163562482
+LER,type_link,0.766472031733
+LER,type_link has_hashtag,0.697734707107
+LER,type_event has_hashtag,0.528175146201
+LER,type_status has_url,0.461028116613
+LER,type_event has_url,0.371972079017
+LER,type_link has_url,0.339133689364
+LER,has_url,0.317144746481
+LER,has_hashtag,0.0922765618404

@@ -141,6 +141,7 @@ class NormaliseFeatureImportance():
 
                     space_her_features.append(spline[1])
 
+
         lines1 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[0]
         lines2 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[1]
         lines3 = self.split_feature_file_by_empty_line(path_to_space_feature_score_file)[2]
@@ -1331,20 +1332,20 @@ class NormaliseFeatureImportance():
 # variables
 ################
 
-path_to_space_feature_score_file = '../output/featimp_normalisation/sgd/space.csv'
-path_to_politics_feature_score_file = '../output/featimp_normalisation/sgd/politics.csv'
-path_to_business_feature_score_file = '../output/featimp_normalisation/sgd/business.csv'
-path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/sgd/nonprofit.csv'
+path_to_space_feature_score_file = '../output/featimp_normalisation/extratree/with_comments/space_withcomment.csv'
+path_to_politics_feature_score_file = '../output/featimp_normalisation/extratree/with_comments/politics_withcomment.csv'
+path_to_business_feature_score_file = '../output/featimp_normalisation/extratree/with_comments/business_withcomment.csv'
+path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/extratree/with_comments/nonprofit_withcomment.csv'
 
-path_to_store_normalised_space_feature_file = '../output/featimp_normalisation/sgd/normalised_space.csv'
-path_to_store_normalised_politics_feature_file = '../output/featimp_normalisation/sgd/normalised_politics.csv'
-path_to_store_normalised_business_feature_file = '../output/featimp_normalisation/sgd/normalised_business.csv'
-path_to_store_normalised_nonprofit_feature_file = '../output/featimp_normalisation/sgd/normalised_nonprofit.csv'
+path_to_store_normalised_space_feature_file = '../output/featimp_normalisation/extratree/with_comments/normalised_space_withcomment.csv'
+path_to_store_normalised_politics_feature_file = '../output/featimp_normalisation/extratree/with_comments/normalised_politics_withcomment.csv'
+path_to_store_normalised_business_feature_file = '../output/featimp_normalisation/extratree/with_comments/normalised_business_withcomment.csv'
+path_to_store_normalised_nonprofit_feature_file = '../output/featimp_normalisation/extratree/with_comments/normalised_nonprofit_withcomment.csv'
 
 # DO NOT change the following!
-path_to_space_nb_file = '../output/featimp_normalisation/nb/space.csv'
-path_to_space_sgd_file = '../output/featimp_normalisation/sgd/space.csv'
-path_to_space_extratree_file = '../output/featimp_normalisation/extratree/space.csv'
+path_to_space_nb_file = '../output/featimp_normalisation/nb/with_comments/space_withcomment.csv'
+path_to_space_sgd_file = '../output/featimp_normalisation/sgd/with_comments/space_withcomment.csv'
+path_to_space_extratree_file = '../output/featimp_normalisation/extratree/with_comments/space_withcomment.csv'
 
 
 if __name__ == '__main__':

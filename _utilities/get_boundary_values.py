@@ -532,7 +532,7 @@ class GetBoundaryValues():
 # variables
 ##############
 
-path_to_liwc_result_file = '../output/liwc/liwc_raw_fb_posts_nonprofit.txt'
+path_to_liwc_result_file = '../output/liwc/with_comments/liwc_fb_nonprofit_withcomment.txt'
 path_to_anew_result_file = '../output/anew/anew_nonprofit.csv'
 
 

@@ -1,0 +1,15 @@
+HER,type_photo has_url,-2.05220039645
+HER,type_video has_hashtag,-1.83711846267
+HER,type_link has_hashtag,-1.57234438426
+HER,type_photo,-1.518301801
+HER,has_hashtag,-1.08742601828
+HER,has_hashtag has_url,-0.966851261063
+HER,type_photo has_hashtag has_url,-0.604020742665
+LER,type_link has_hashtag has_url,4.98545937275
+LER,type_status has_hashtag,2.41545793205
+LER,type_status has_hashtag has_url,0.818025014034
+LER,type_status,0.60140158596
+LER,has_url,0.55957233984
+LER,type_status has_url,0.351143809802
+LER,type_link,0.222547189566
+LER,type_video has_url,0.199420057767

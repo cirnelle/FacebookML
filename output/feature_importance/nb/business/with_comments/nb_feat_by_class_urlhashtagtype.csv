@@ -1,0 +1,18 @@
+LER,type_status has_url,4.17433284536
+LER,type_status,2.98212394025
+LER,type_link has_url,2.95613750277
+LER,type_link has_hashtag has_url,2.0301601294
+LER,type_status has_hashtag has_url,1.46519022855
+LER,type_status has_hashtag,1.43611279611
+LER,type_link has_hashtag,1.03306365948
+LER,type_video has_url,0.975710688054
+HER,type_photo has_hashtag has_url,0.940299988675
+LER,type_link,0.835768530206
+HER,type_photo has_url,0.665830180497
+HER,type_photo,0.447946539593
+HER,type_video has_hashtag,0.424806049194
+LER,type_video,0.418940026314
+HER,type_photo has_hashtag,0.406252331626
+HER,has_hashtag has_url,0.387938944953
+HER,has_url,0.230382610176
+HER,has_hashtag,0.182507254774

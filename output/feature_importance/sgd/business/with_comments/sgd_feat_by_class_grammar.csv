@@ -1,0 +1,14 @@
+HER,high_wps no_exclam,-1.68165988616
+HER,has_exclam,-1.42800704352
+HER,high_wps,-0.738613993245
+HER,few_sixltr has_exclam,-0.701649530126
+HER,many_sixltr high_wps,-0.658266824688
+HER,many_sixltr has_exclam,-0.467950696402
+HER,has_exclam has_qmark,-0.145620490358
+LER,few_sixltr high_wps,2.05401182583
+LER,no_exclam,1.75725736191
+LER,low_wps no_exclam,0.566661395691
+LER,no_exclam has_qmark,0.43962239943
+LER,many_sixltr no_exclam,0.397500481993
+LER,few_sixltr,0.2879947521
+LER,few_sixltr no_exclam,0.0232324379252

@@ -1,0 +1,40 @@
+HER,many_sixltr has_exclam has_qmark,0.896812947627
+LER,low_wps no_exclam has_qmark,0.661886878953
+HER,many_sixltr high_wps no_exclam,0.630793672056
+HER,many_sixltr high_wps,0.543964725178
+LER,few_sixltr high_wps no_exclam,0.478650509915
+HER,many_sixltr has_exclam,0.46266437913
+LER,few_sixltr no_exclam has_qmark,0.437165647153
+LER,no_exclam has_qmark,0.412216916824
+HER,many_sixltr has_exclam no_qmark,0.409109420859
+LER,many_sixltr no_exclam has_qmark,0.384640712952
+LER,few_sixltr high_wps,0.343940810125
+LER,few_sixltr no_exclam,0.305140032164
+HER,low_wps has_exclam has_qmark,0.297184700723
+LER,has_qmark,0.264117218876
+LER,low_wps no_exclam,0.228573012799
+HER,high_wps no_exclam no_qmark,0.222365523305
+LER,few_sixltr no_exclam no_qmark,0.216341601467
+LER,many_sixltr no_exclam,0.200779868444
+HER,high_wps no_exclam,0.193955256207
+HER,has_exclam no_qmark,0.187449461864
+HER,many_sixltr high_wps has_exclam,0.181406069257
+LER,few_sixltr low_wps has_exclam,0.178210805954
+HER,has_exclam,0.172982082975
+HER,high_wps,0.169939160706
+HER,few_sixltr has_exclam no_qmark,0.159839613536
+LER,many_sixltr no_exclam no_qmark,0.152456257254
+LER,few_sixltr,0.151293261841
+LER,many_sixltr low_wps no_exclam,0.150610122507
+LER,few_sixltr low_wps,0.13864712337
+HER,many_sixltr,0.138468536083
+HER,high_wps has_exclam no_qmark,0.137817258394
+HER,few_sixltr has_exclam,0.137102710955
+LER,no_exclam,0.129667700955
+HER,high_wps has_exclam,0.118640831718
+LER,few_sixltr low_wps no_exclam,0.115955906809
+LER,low_wps,0.111348932753
+HER,has_exclam has_qmark,0.0949371272348
+HER,no_qmark,0.0624087359295
+HER,low_wps has_exclam,0.0491869871214
+LER,no_exclam no_qmark,0.0322649443619

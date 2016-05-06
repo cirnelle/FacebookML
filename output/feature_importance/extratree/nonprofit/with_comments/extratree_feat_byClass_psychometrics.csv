@@ -1,0 +1,97 @@
+HER,differ_yes risk_yes,8
+HER,affiliation_yes swear_yes,6
+HER,is_analytic_yes power_yes,7
+HER,hear_yes risk_yes,5
+HER,sad_yes hear_yes,3
+LER,insight_yes reward_yes,3
+HER,swear_yes assent_yes,5
+HER,anx_yes see_yes,3
+HER,is_clout_yes differ_yes,4
+HER,is_analytic_yes achieve_yes,5
+LER,sad_yes power_yes,3
+LER,netspeak_yes,1904
+HER,posemo_yes,3145
+LER,affiliation_yes,3000
+HER,power_yes,2704
+LER,see_yes,1626
+LER,is_analytic_yes,1373
+LER,achieve_yes,1799
+LER,cause_yes,1611
+HER,is_analytic_no,1293
+HER,insight_yes,1640
+LER,is_clout_yes,1275
+LER,is_authentic_yes,1354
+HER,is_authentic_no,1348
+HER,tentat_yes,1381
+LER,reward_yes,1557
+HER,certain_yes,1415
+LER,affiliation_yes achieve_yes,1449
+LER,achieve_yes power_yes,1410
+HER,is_clout_no,1164
+HER,is_authentic_no posemo_yes,923
+HER,differ_yes,1563
+HER,discrep_yes,1211
+HER,affiliation_yes power_yes,804
+LER,power_yes reward_yes,1143
+LER,insight_yes cause_yes,828
+HER,is_authentic_yes posemo_yes,672
+LER,see_yes affiliation_yes,802
+HER,posemo_yes insight_yes,767
+HER,negemo_yes,1427
+HER,risk_yes,799
+LER,hear_yes,666
+HER,differ_yes affiliation_yes,596
+HER,power_yes netspeak_yes,649
+LER,posemo_yes cause_yes,383
+LER,reward_yes netspeak_yes,634
+LER,is_analytic_yes is_clout_no,429
+LER,is_clout_yes posemo_yes,478
+HER,posemo_yes negemo_yes,986
+HER,certain_yes differ_yes,642
+HER,tentat_yes certain_yes,549
+LER,hear_yes affiliation_yes,466
+LER,feel_yes,386
+HER,differ_yes see_yes,489
+LER,is_analytic_yes is_authentic_yes,301
+HER,is_analytic_no is_clout_yes,526
+HER,is_clout_yes is_authentic_no,432
+HER,certain_yes affiliation_yes,293
+HER,discrep_yes tentat_yes,772
+LER,cause_yes tentat_yes,408
+HER,is_clout_no is_authentic_yes,430
+HER,tentat_yes differ_yes,504
+HER,anger_yes,668
+HER,cause_yes discrep_yes,527
+HER,risk_yes netspeak_yes,378
+LER,is_clout_yes is_authentic_yes,282
+LER,affiliation_yes netspeak_yes,256
+HER,is_tone_no,641
+LER,certain_yes see_yes,266
+LER,is_analytic_yes posemo_yes,213
+HER,cause_yes certain_yes,248
+LER,see_yes hear_yes,313
+HER,sad_yes,436
+HER,negemo_yes anger_yes,555
+LER,feel_yes affiliation_yes,286
+HER,insight_yes discrep_yes,275
+HER,power_yes risk_yes,324
+HER,differ_yes hear_yes,166
+HER,is_clout_no posemo_yes,217
+HER,anx_yes,276
+HER,assent_yes,191
+HER,is_clout_no is_authentic_no,263
+LER,is_tone_no negemo_yes,461
+LER,cause_yes see_yes,198
+HER,is_analytic_no is_clout_no,241
+LER,is_analytic_yes is_clout_yes,170
+LER,insight_yes tentat_yes,191
+LER,tentat_yes see_yes,178
+HER,posemo_yes certain_yes,177
+LER,cause_yes affiliation_yes,154
+LER,posemo_yes see_yes,156
+LER,affiliation_yes reward_yes,184
+HER,is_analytic_no posemo_yes,167
+HER,is_analytic_yes is_authentic_no,154
+HER,achieve_yes reward_yes,164
+HER,posemo_yes discrep_yes,201
+LER,tentat_yes affiliation_yes,146

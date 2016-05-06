@@ -1,0 +1,59 @@
+HER,certain_yes,-1.6001899753
+HER,posemo_yes reward_yes,-1.38811681084
+HER,tentat_yes,-1.2460906922
+HER,netspeak_yes,-1.21181614792
+HER,insight_yes cause_yes,-1.17502085058
+HER,is_tone_no,-1.08095127697
+HER,posemo_yes,-0.959307732082
+HER,is_analytic_yes see_yes,-0.815710860425
+HER,is_analytic_yes is_clout_yes,-0.772636714685
+HER,is_clout_no,-0.752411161345
+HER,achieve_yes,-0.71929298149
+HER,cause_yes affiliation_yes,-0.697019459931
+HER,is_authentic_yes discrep_yes,-0.690141394957
+HER,is_authentic_yes insight_yes,-0.68966951265
+HER,affiliation_yes achieve_yes power_yes,-0.656638771721
+HER,is_authentic_yes affiliation_yes achieve_yes,-0.654764561925
+HER,is_authentic_yes posemo_yes,-0.492190397747
+HER,see_yes reward_yes,-0.48954195164
+HER,differ_yes,-0.442296454598
+HER,feel_yes,-0.414738764431
+HER,cause_yes affiliation_yes achieve_yes,-0.403056911945
+HER,is_analytic_yes,-0.356726935736
+HER,certain_yes see_yes,-0.294609538337
+HER,affiliation_yes achieve_yes,-0.0790560201305
+HER,is_authentic_yes is_tone_no,-0.0520086753715
+LER,achieve_yes power_yes reward_yes,6.05717097303
+LER,netspeak_yes nonflu_yes,4.5643496668
+LER,nonflu_yes,3.35288438363
+LER,netspeak_yes assent_yes,3.0140962681
+LER,affiliation_yes power_yes,2.42358484033
+LER,assent_yes,1.65130063447
+LER,is_authentic_no,1.41278880908
+LER,affiliation_yes reward_yes,1.41111621058
+LER,feel_yes affiliation_yes,1.33494159623
+LER,cause_yes see_yes,1.1706177683
+LER,posemo_yes discrep_yes power_yes,1.0176643515
+LER,posemo_yes tentat_yes,0.952600651631
+LER,is_authentic_no see_yes,0.916207820408
+LER,posemo_yes achieve_yes,0.824725896156
+LER,discrep_yes power_yes netspeak_yes,0.815508346599
+LER,is_analytic_no,0.812103259242
+LER,posemo_yes discrep_yes,0.803339400489
+LER,reward_yes,0.741826756163
+LER,posemo_yes certain_yes,0.736860735003
+LER,hear_yes,0.664679297004
+LER,is_clout_yes posemo_yes certain_yes,0.622007916885
+LER,is_authentic_no cause_yes,0.617153400548
+LER,posemo_yes affiliation_yes achieve_yes,0.595218993848
+LER,is_analytic_no is_authentic_no,0.531307658774
+LER,cause_yes see_yes affiliation_yes,0.50794279506
+LER,posemo_yes insight_yes tentat_yes,0.424727515799
+LER,affiliation_yes power_yes reward_yes,0.308765001857
+LER,is_analytic_no is_clout_yes,0.294118916899
+LER,power_yes reward_yes netspeak_yes,0.262364828039
+LER,reward_yes netspeak_yes nonflu_yes,0.19888028129
+LER,posemo_yes insight_yes,0.146711084993
+LER,is_analytic_no is_clout_yes is_authentic_no,0.0924999271157
+LER,see_yes affiliation_yes,0.0879775705566
+LER,feel_yes affiliation_yes achieve_yes,0.010639602141

@@ -1,0 +1,200 @@
+LER,is_authentic_no netspeak_yes,2.8181041406
+LER,is_clout_yes is_authentic_no netspeak_yes,2.75643814836
+LER,negemo_yes affiliation_yes netspeak_yes,2.50582075104
+LER,negemo_yes affiliation_yes,2.46969319435
+LER,is_tone_no negemo_yes affiliation_yes,2.32451016066
+LER,is_authentic_no insight_yes netspeak_yes,2.26874713855
+LER,negemo_yes see_yes affiliation_yes,2.25443572077
+LER,is_clout_yes insight_yes affiliation_yes,2.11912615602
+LER,is_clout_no is_authentic_no see_yes,1.97419874388
+LER,certain_yes netspeak_yes,1.93698302309
+LER,is_authentic_no power_yes,1.93692622911
+LER,is_authentic_no power_yes netspeak_yes,1.9281460104
+LER,is_authentic_no see_yes netspeak_yes,1.87634798918
+LER,negemo_yes insight_yes affiliation_yes,1.8726654423
+HER,is_clout_no is_authentic_yes is_tone_yes,1.81188291283
+LER,is_authentic_no achieve_yes netspeak_yes,1.76175821405
+LER,insight_yes affiliation_yes netspeak_yes,1.75593768765
+LER,is_authentic_no reward_yes,1.73731510182
+LER,netspeak_yes filler_yes,1.73371915427
+LER,is_authentic_no cause_yes netspeak_yes,1.72910089054
+LER,is_clout_yes reward_yes,1.70899340191
+LER,is_authentic_no is_tone_no negemo_yes,1.67357873072
+LER,is_tone_no negemo_yes see_yes,1.66576167257
+LER,insight_yes netspeak_yes,1.62913590793
+LER,insight_yes power_yes,1.62622357199
+LER,is_clout_no insight_yes differ_yes,1.62469937935
+LER,is_authentic_no feel_yes netspeak_yes,1.58663172528
+LER,tentat_yes certain_yes netspeak_yes,1.58114465605
+LER,negemo_yes affiliation_yes achieve_yes,1.57842069397
+HER,anger_yes insight_yes cause_yes,1.57246415022
+LER,is_authentic_no insight_yes,1.56737019023
+HER,posemo_yes see_yes power_yes,1.56392493589
+LER,is_authentic_yes insight_yes power_yes,1.56137525418
+HER,negemo_yes anger_yes insight_yes,1.54646897487
+HER,posemo_yes negemo_yes anger_yes,1.54570833594
+LER,is_analytic_no insight_yes see_yes,1.5344014005
+LER,cause_yes achieve_yes power_yes,1.52605695412
+LER,cause_yes netspeak_yes,1.52382537755
+LER,is_clout_yes insight_yes tentat_yes,1.49656387708
+HER,see_yes power_yes reward_yes,1.4963456089
+LER,is_tone_no negemo_yes insight_yes,1.49333708645
+LER,is_analytic_no is_authentic_no insight_yes,1.49329190115
+LER,negemo_yes tentat_yes affiliation_yes,1.49009624783
+LER,posemo_yes negemo_yes affiliation_yes,1.47985532311
+LER,insight_yes tentat_yes netspeak_yes,1.47869073182
+HER,posemo_yes certain_yes see_yes,1.464798331
+LER,filler_yes,1.46132516999
+LER,is_authentic_yes netspeak_yes,1.44879287557
+LER,is_authentic_no is_tone_no,1.44480288398
+LER,is_analytic_no is_authentic_no netspeak_yes,1.44346334411
+LER,is_analytic_no is_clout_no is_authentic_no,1.44202111808
+LER,is_clout_yes is_authentic_no affiliation_yes,1.4360934524
+LER,discrep_yes netspeak_yes,1.43581276149
+LER,discrep_yes power_yes netspeak_yes,1.43293787119
+LER,insight_yes achieve_yes reward_yes,1.42351790161
+HER,anger_yes insight_yes,1.42075159276
+LER,is_authentic_no affiliation_yes,1.4206140782
+LER,insight_yes tentat_yes hear_yes,1.39664914031
+LER,is_analytic_no is_clout_no insight_yes,1.39492695533
+LER,tentat_yes reward_yes netspeak_yes,1.38657986994
+HER,is_authentic_no posemo_yes see_yes,1.38614386526
+LER,is_clout_no insight_yes see_yes,1.38492229887
+LER,is_clout_no is_authentic_yes achieve_yes,1.37118486552
+LER,negemo_yes see_yes,1.36352936886
+LER,posemo_yes power_yes netspeak_yes,1.34638160939
+HER,is_authentic_yes certain_yes see_yes,1.3444745397
+LER,posemo_yes reward_yes netspeak_yes,1.34221062268
+LER,is_clout_no insight_yes,1.33402449038
+HER,is_authentic_yes see_yes achieve_yes,1.32268869268
+LER,negemo_yes differ_yes affiliation_yes,1.31437212501
+HER,is_clout_no posemo_yes negemo_yes,1.29926607576
+LER,insight_yes power_yes netspeak_yes,1.29686698953
+LER,negemo_yes affiliation_yes power_yes,1.29644962459
+LER,is_clout_yes achieve_yes power_yes,1.29606387285
+LER,is_clout_yes affiliation_yes,1.28767569694
+LER,is_authentic_no achieve_yes power_yes,1.28651260907
+LER,is_clout_yes insight_yes power_yes,1.28330676702
+LER,posemo_yes hear_yes netspeak_yes,1.28330676702
+LER,posemo_yes feel_yes netspeak_yes,1.27887388952
+LER,is_authentic_no affiliation_yes netspeak_yes,1.27812078625
+LER,is_clout_yes affiliation_yes achieve_yes,1.27480315348
+LER,insight_yes tentat_yes reward_yes,1.27473247903
+LER,is_authentic_no see_yes affiliation_yes,1.27173990922
+HER,is_authentic_yes certain_yes,1.2645198241
+LER,insight_yes affiliation_yes power_yes,1.26383272168
+LER,insight_yes hear_yes netspeak_yes,1.2424075975
+LER,negemo_yes cause_yes affiliation_yes,1.23358548572
+HER,discrep_yes differ_yes,1.23172579247
+LER,is_analytic_no is_authentic_no achieve_yes,1.22492325319
+LER,power_yes netspeak_yes filler_yes,1.22392564194
+HER,is_analytic_no is_clout_no is_authentic_yes,1.22204226006
+LER,tentat_yes hear_yes affiliation_yes,1.22135860614
+HER,posemo_yes hear_yes reward_yes,1.21983436327
+LER,affiliation_yes netspeak_yes assent_yes,1.20632814823
+LER,is_authentic_no insight_yes discrep_yes,1.20583334521
+LER,is_analytic_no is_authentic_no affiliation_yes,1.20434627966
+LER,is_authentic_no netspeak_yes assent_yes,1.20434627966
+LER,is_tone_no negemo_yes cause_yes,1.20129252
+LER,is_tone_no negemo_yes differ_yes,1.1882879145
+HER,is_clout_yes is_authentic_yes certain_yes,1.17969365366
+LER,insight_yes discrep_yes power_yes,1.17317990306
+LER,negemo_yes differ_yes,1.17252347429
+LER,negemo_yes certain_yes see_yes,1.17116232058
+LER,cause_yes affiliation_yes netspeak_yes,1.16506779608
+LER,posemo_yes insight_yes netspeak_yes,1.15339217687
+LER,cause_yes hear_yes power_yes,1.15133923874
+LER,is_authentic_no affiliation_yes reward_yes,1.15133923874
+LER,is_clout_yes see_yes hear_yes,1.15133923874
+LER,feel_yes netspeak_yes assent_yes,1.15129014504
+LER,is_tone_no negemo_yes certain_yes,1.14962902154
+LER,negemo_yes certain_yes,1.14962902154
+LER,cause_yes risk_yes,1.14412345899
+LER,cause_yes risk_yes netspeak_yes,1.14412345899
+LER,is_authentic_no achieve_yes,1.14191632515
+LER,is_authentic_yes power_yes netspeak_yes,1.13961492243
+LER,is_authentic_yes feel_yes,1.13568939043
+LER,posemo_yes tentat_yes hear_yes,1.13462336896
+LER,is_authentic_no affiliation_yes power_yes,1.13369903265
+HER,is_analytic_no feel_yes,1.11565003769
+HER,is_clout_no is_authentic_yes posemo_yes,1.11478004995
+HER,negemo_yes anger_yes,1.11250147023
+LER,tentat_yes achieve_yes reward_yes,1.11220293335
+LER,is_clout_yes is_authentic_no is_tone_no,1.10625459356
+LER,feel_yes affiliation_yes assent_yes,1.10611580938
+LER,is_authentic_no see_yes,1.09902391042
+LER,netspeak_yes assent_yes,1.09229457792
+HER,differ_yes see_yes hear_yes,1.09122021116
+LER,is_clout_yes affiliation_yes power_yes,1.08989482345
+LER,is_analytic_no is_authentic_no tentat_yes,1.08618082608
+HER,cause_yes see_yes feel_yes,1.08602364506
+HER,cause_yes feel_yes achieve_yes,1.08599800228
+LER,negemo_yes cause_yes see_yes,1.08296639879
+LER,is_authentic_no see_yes achieve_yes,1.08020145773
+HER,is_authentic_yes is_tone_yes,1.07809211138
+HER,is_authentic_yes is_tone_yes posemo_yes,1.07809211138
+HER,is_clout_no is_authentic_yes certain_yes,1.07780507635
+LER,insight_yes cause_yes reward_yes,1.07711679296
+LER,is_analytic_no insight_yes tentat_yes,1.06807589575
+LER,is_clout_yes discrep_yes,1.06741517419
+LER,is_clout_no insight_yes cause_yes,1.06132726691
+LER,tentat_yes affiliation_yes power_yes,1.05568667063
+LER,tentat_yes risk_yes,1.05122847445
+LER,tentat_yes risk_yes netspeak_yes,1.05122847445
+LER,is_analytic_no is_clout_no cause_yes,1.05062216403
+HER,anger_yes,1.04703250651
+LER,posemo_yes netspeak_yes,1.04684429016
+LER,is_tone_no negemo_yes tentat_yes,1.04311904119
+LER,is_analytic_no is_authentic_no see_yes,1.04241988255
+LER,is_analytic_no is_clout_yes discrep_yes,1.03906860651
+LER,is_clout_yes insight_yes,1.03714568824
+HER,is_clout_yes cause_yes certain_yes,1.03708689857
+HER,see_yes assent_yes,1.03517279383
+HER,power_yes reward_yes risk_yes,1.02754695466
+HER,negemo_yes anger_yes sad_yes,1.02406054695
+LER,insight_yes discrep_yes netspeak_yes,1.02313163515
+LER,tentat_yes certain_yes reward_yes,1.02056613456
+LER,is_clout_no is_tone_no negemo_yes,1.01471997468
+LER,feel_yes netspeak_yes,1.01278510801
+LER,see_yes netspeak_yes assent_yes,1.01012145077
+HER,affiliation_yes power_yes nonflu_yes,1.00722984181
+LER,is_authentic_yes discrep_yes tentat_yes,1.00602112018
+LER,cause_yes achieve_yes netspeak_yes,1.0043479414
+HER,posemo_yes discrep_yes certain_yes,1.00305048473
+LER,is_tone_yes posemo_yes netspeak_yes,1.00291038017
+LER,is_analytic_no is_clout_no is_tone_no,1.00040034658
+LER,affiliation_yes netspeak_yes nonflu_yes,1.00021194603
+HER,is_clout_no is_authentic_yes,0.99411236679
+HER,anger_yes insight_yes discrep_yes,0.986851257614
+LER,is_authentic_no insight_yes see_yes,0.986632883871
+LER,cause_yes reward_yes netspeak_yes,0.981726912356
+HER,is_authentic_no posemo_yes tentat_yes,0.979605490239
+LER,cause_yes power_yes netspeak_yes,0.975690742086
+HER,discrep_yes tentat_yes certain_yes,0.973253766963
+HER,differ_yes see_yes reward_yes,0.972167995104
+HER,differ_yes hear_yes achieve_yes,0.97033719216
+HER,insight_yes certain_yes see_yes,0.969770503483
+LER,is_analytic_no is_clout_no see_yes,0.969449087707
+LER,tentat_yes hear_yes,0.969181481657
+LER,is_authentic_no insight_yes tentat_yes,0.968755879042
+LER,sad_yes insight_yes affiliation_yes,0.965706129657
+HER,posemo_yes negemo_yes insight_yes,0.95765362476
+HER,posemo_yes discrep_yes affiliation_yes,0.955091260384
+HER,certain_yes differ_yes reward_yes,0.954693347683
+HER,anx_yes certain_yes,0.952989104721
+HER,negemo_yes anx_yes certain_yes,0.952989104721
+HER,is_authentic_yes see_yes hear_yes,0.947394057773
+HER,is_authentic_yes differ_yes affiliation_yes,0.946227707739
+HER,is_authentic_yes see_yes power_yes,0.943078909533
+LER,insight_yes discrep_yes affiliation_yes,0.938299082935
+HER,posemo_yes discrep_yes differ_yes,0.937717327528
+HER,posemo_yes certain_yes differ_yes,0.935858529134
+LER,is_clout_yes netspeak_yes,0.933037394606
+HER,is_authentic_yes certain_yes differ_yes,0.932429657439
+LER,posemo_yes affiliation_yes netspeak_yes,0.92768941684
+LER,insight_yes achieve_yes netspeak_yes,0.925222000524
+LER,is_clout_yes posemo_yes affiliation_yes,0.920897818895
+HER,anger_yes see_yes,0.917585904447
+HER,negemo_yes anger_yes see_yes,0.917585904447
+LER,tentat_yes reward_yes,0.917524467842
+LER,is_clout_yes affiliation_yes netspeak_yes,0.914460353666

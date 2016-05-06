@@ -18,7 +18,6 @@ hear_yes
 high_wps
 insight_yes
 is_analytic_no
-is_analytic_yes
 is_authentic_no
 is_authentic_yes
 is_clout_no

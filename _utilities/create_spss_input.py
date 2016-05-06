@@ -98,9 +98,9 @@ class CreateSpssInput():
 
     def get_only_her_or_ler(self,field):
 
-        lines1 = open('../output/featimp_normalisation/nb/normalised_'+field+'.csv','r').readlines()
-        lines2 = open('../output/featimp_normalisation/sgd/normalised_'+field+'.csv','r').readlines()
-        lines3 = open('../output/featimp_normalisation/extratree/normalised_'+field+'.csv','r').readlines()
+        lines1 = open('../output/featimp_normalisation/nb/with_comments/normalised_'+field+'_withcomment.csv','r').readlines()
+        lines2 = open('../output/featimp_normalisation/sgd/with_comments/normalised_'+field+'_withcomment.csv','r').readlines()
+        lines3 = open('../output/featimp_normalisation/extratree/with_comments/normalised_'+field+'_withcomment.csv','r').readlines()
 
         her = []
 
@@ -157,7 +157,7 @@ class CreateSpssInput():
 
             print (len(feat))
 
-            f = open('../output/spss/'+st+'.csv','w')
+            f = open('../output/spss/with_comments/'+st+'.csv','w')
 
             for fe in feat:
                 f.write(','.join(fe)+'\n')
@@ -165,35 +165,27 @@ class CreateSpssInput():
             f.close()
 
 
-
-
-
-
-
-
 ##############
 # variables
 ##############
 
-path_to_space_nb_file = '../output/featimp_normalisation/nb/normalised_space.csv'
-path_to_space_sgd_file = '../output/featimp_normalisation/sgd/normalised_space.csv'
-path_to_space_extratree_file = '../output/featimp_normalisation/extratree/normalised_space.csv'
+path_to_space_nb_file = '../output/featimp_normalisation/nb/with_comments/normalised_space_withcomment.csv'
+path_to_space_sgd_file = '../output/featimp_normalisation/sgd/with_comments/normalised_space_withcomment.csv'
+path_to_space_extratree_file = '../output/featimp_normalisation/extratree/with_comments/normalised_space_withcomment.csv'
 
-path_to_politics_nb_file = '../output/featimp_normalisation/nb/normalised_politics.csv'
-path_to_politics_sgd_file = '../output/featimp_normalisation/sgd/normalised_politics.csv'
-path_to_politics_extratree_file = '../output/featimp_normalisation/extratree/normalised_politics.csv'
+path_to_politics_nb_file = '../output/featimp_normalisation/nb/with_comments/normalised_politics_withcomment.csv'
+path_to_politics_sgd_file = '../output/featimp_normalisation/sgd/with_comments/normalised_politics_withcomment.csv'
+path_to_politics_extratree_file = '../output/featimp_normalisation/extratree/with_comments/normalised_politics_withcomment.csv'
 
-path_to_business_nb_file = '../output/featimp_normalisation/nb/normalised_business.csv'
-path_to_business_sgd_file = '../output/featimp_normalisation/sgd/normalised_business.csv'
-path_to_business_extratree_file = '../output/featimp_normalisation/extratree/normalised_business.csv'
+path_to_business_nb_file = '../output/featimp_normalisation/nb/with_comments/normalised_business_withcomment.csv'
+path_to_business_sgd_file = '../output/featimp_normalisation/sgd/with_comments/normalised_business_withcomment.csv'
+path_to_business_extratree_file = '../output/featimp_normalisation/extratree/with_comments/normalised_business_withcomment.csv'
 
-path_to_nonprofit_nb_file = '../output/featimp_normalisation/nb/normalised_nonprofit.csv'
-path_to_nonprofit_sgd_file = '../output/featimp_normalisation/sgd/normalised_nonprofit.csv'
-path_to_nonprofit_extratree_file = '../output/featimp_normalisation/extratree/normalised_nonprofits.csv'
+path_to_nonprofit_nb_file = '../output/featimp_normalisation/nb/with_comments/normalised_nonprofit_withcomment.csv'
+path_to_nonprofit_sgd_file = '../output/featimp_normalisation/sgd/with_comments/normalised_nonprofit_withcomment.csv'
+path_to_nonprofit_extratree_file = '../output/featimp_normalisation/extratree/with_comments/normalised_nonprofits_withcomment.csv'
 
-path_to_store_feature_mean_score = '../output/spss/feature_mean.csv'
-
-
+path_to_store_feature_mean_score = '../output/spss/with_comments/feature_mean.csv'
 
 
 
