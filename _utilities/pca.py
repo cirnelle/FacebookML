@@ -92,6 +92,8 @@ class PrincipalComponentAnalysis():
 
         feature_pca.sort(reverse=True)
 
+        print (feature_pca)
+
         feature_pca_list = []
 
         for fp in feature_pca:

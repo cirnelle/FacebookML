@@ -688,14 +688,15 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/nonprofit/with_comments/labelled_combined.csv'
+path_to_labelled_file = '../output/features/space/with_comments/labelled_combined_all.csv'
+#path_to_labelled_file = '../output/engrate/with_comments/labelled_space_withcomment.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_vocabulary_file = '../output/feature_importance/extratree/nonprofit/extratree_vocab.txt'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/nonprofit/extratree_fs_boolean.csv'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/nonprofit/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree/nonprofit/extratree_feature_importance.csv'
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/with_comments/nonprofit_withcomment.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/nonprofit/with_comments/extratree_feat_byClass_combined.csv'
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/space/extratree_vocab.txt'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/space/extratree_fs_boolean.csv'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/space/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/space/extratree_feature_importance.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/with_comments/space_withcomment_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/space/with_comments/extratree_feat_byClass_combined_all.csv'
 
 
 # for classifier without pipeline
@@ -756,7 +757,7 @@ if __name__ == '__main__':
     # run ExtraTree Classifier
     ##################
 
-    clf, count_vect = et.train_classifier()
+    #clf, count_vect = et.train_classifier()
 
 
     ###################
@@ -776,7 +777,7 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    #clf, count_vect = et.use_pipeline_with_fs()
+    clf, count_vect = et.use_pipeline_with_fs()
 
 
     ###################

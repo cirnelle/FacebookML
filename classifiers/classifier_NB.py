@@ -736,8 +736,8 @@ class NaiveBayes():
 # variables
 ###############
 
-#path_to_labelled_file = '../output/features/space/with_comments/labelled_combined.csv'
-path_to_labelled_file = '../output/engrate/with_comments/labelled_space_withcomment.csv'
+path_to_labelled_file = '../output/features/space/with_comments/labelled_combined_all.csv'
+#path_to_labelled_file = '../output/engrate/with_comments/labelled_space_withcomment.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 path_to_store_features_by_probability_file = '../output/feature_importance/nb/space/nb_feat_by_prob.csv'
 path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/space/nb_fs_boolean.csv'
@@ -745,8 +745,8 @@ path_to_store_list_of_feature_file = '../output/feature_importance/nb/space/nb_f
 path_to_store_coefficient_file = '../output/feature_importance/nb/space/nb_coef.txt'
 path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/space/nb_feature_prob_0.csv' #Empirical log probability of features given a class
 path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/space/nb_feature_prob_1.csv'
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/nb/with_comments/space_withcomment_bow.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb/space/with_comments/nb_feat_by_class_bow.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/nb/with_comments/space_withcomment_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/space/with_comments/nb_feat_by_class_combined_all.csv'
 
 
 # for classifier without pipeline
@@ -809,7 +809,7 @@ if __name__ == '__main__':
     # run NB Classifier
     ##################
 
-    clf, count_vect = nb.train_classifier()
+    #clf, count_vect = nb.train_classifier()
 
 
     ###################
@@ -829,7 +829,7 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    #clf, count_vect = nb.use_pipeline_with_fs()
+    clf, count_vect = nb.use_pipeline_with_fs()
 
 
     ###################
