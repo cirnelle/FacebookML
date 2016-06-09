@@ -37,14 +37,21 @@ graph = facebook.GraphAPI(access_token = access_token)
 
 for ul in user_list:
 
-    user = graph.get_object(id=ul, fields = 'likes')
+    try:
 
-    now = time.strftime("%c")
+        user = graph.get_object(id=ul, fields='likes')
 
-    f = open("likes/"+ul+".txt",'a')
+        now = time.strftime("%c")
 
-    f.write(str(now)+','+str(user['likes'])+'\n')
+        f = open("likes/" + ul + ".txt", 'a')
 
-    f.close()
+        f.write(str(now) + ',' + str(user['likes']) + '\n')
 
-    time.sleep(1)
+        f.close()
+
+        time.sleep(1)
+
+    except Exception as e:
+        print('Failed: ' + str(e))
+        time.sleep(5)
+
