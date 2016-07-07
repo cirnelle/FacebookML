@@ -615,14 +615,66 @@ class Extractor_fb():
 
         return comment_list
 
-    def get_post_by_id(self, id):
+    def get_post_by_id(self):
 
-        post = graph.get_object(id=id,
-                                fields='shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')
+        lines = open(path_to_id_list,'r').readlines()
 
-        print([post['created_time'], post['id'], str(post['likes']['summary']['total_count']), str(0),
-               str(post['comments']['summary']['total_count']), post['type'],
-               post['message'].replace('\n', ' ').replace('\r', '').replace(',', ' ')])
+        posts = []
+
+        for line in lines:
+            spline = line.rstrip('\n')
+
+            for n in range(5):
+
+                try:
+
+                    post = graph.get_object(id=spline,
+                                        fields='from, shares, message, id, type, created_time, likes.summary(true), comments.summary(true)')
+
+
+                    if 'message' in post:
+
+                        if 'shares' in post:
+
+                            post_by_id = [post['from']['name'],post['created_time'],post['id'],str(post['likes']['summary']['total_count']),
+                                      str(post['shares']['count']),
+                                      str(post['comments']['summary']['total_count']),post['type'],
+                                      post['message'].replace('\n', ' ').replace('\r', '').replace('\t', ' ').replace(',', ' ')]
+
+                        else:
+
+                            post_by_id = [post['from']['name'], post['created_time'], post['id'],
+                                          str(post['likes']['summary']['total_count']),
+                                          str('0'),
+                                          str(post['comments']['summary']['total_count']), post['type'],
+                                          post['message'].replace('\n', ' ').replace('\r', '').replace('\t', ' ').replace(',', ' ')]
+
+                    else:
+                        print ("no message, skipping")
+                        break
+
+
+                    f = open(path_to_store_post_by_id,'a')
+
+                    if os.stat(path_to_store_post_by_id).st_size == 0:
+                        f.write('user,created_time,post_id,like_count,share_count,comment_count,type,message' + '\n')
+                        f.write(','.join(post_by_id)+'\n')
+                        f.close()
+
+                    else:
+                        f.write(','.join(post_by_id)+'\n')
+                        f.close()
+
+                    break
+
+                except Exception as e:
+                    print('Failed: ' + post['id'] + str(e))
+                    time.sleep(5)
+
+
+            # print([post['created_time'], post['id'], str(post['likes']['summary']['total_count']), str(0),
+            #    str(post['comments']['summary']['total_count']), post['type'],
+            #    post['message'].replace('\n', ' ').replace('\r', '').replace('\t',' ').replace(',',' ')])
 
     def get_comment_by_id(self, id):
 
@@ -685,6 +737,9 @@ path_to_store_fb_posts = '../fb_data/posts/others/raw_fb_posts_business.csv'
 path_to_store_fb_comments = '../fb_data/comments/raw_fb_comments_20160223.csv'
 path_to_store_fb_comments_replies = '../../_big_files/facebook/raw_fb_comments_replies_20160223.csv'
 
+path_to_id_list = '../fb_data/posts/maas/fb_id_temp.txt'
+path_to_store_post_by_id = '../fb_data/posts/maas/raw_fb_post.csv'
+
 if __name__ == '__main__':
 
     ################
@@ -698,7 +753,7 @@ if __name__ == '__main__':
     # get posts for pages
     ################
 
-    posts = ext.get_page_posts(graph)
+    #posts = ext.get_page_posts(graph)
 
 
     ###############
@@ -717,9 +772,13 @@ if __name__ == '__main__':
 
 
     ###############
-    # get single post or comment
+    # get post by id
     ###############
 
-    # single_post = ext.get_post_by_id('54912575666_10153187460825667')
+    ext.get_post_by_id()
+
+    ###############
+    # get single commet
+    ###############
 
     # single_comment = ext.get_comment_by_id('10153794959836772_10153794962046772')

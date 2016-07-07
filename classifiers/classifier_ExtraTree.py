@@ -461,6 +461,92 @@ class ExtraTree():
         return clf,count_vect
 
 
+    def predict_posts(self):
+
+        docs_train, docs_test, y_train, y_test = train_test_split(X, y, test_size=0.01, random_state=42)
+
+        print("Number of data point is " + str(len(y)))
+
+        ###############
+        # uncomment either one of the below
+        # predict unlabelled tweet OR test classifier on gold standard
+        ###############
+
+        # dataset_topredict = pd.read_csv(path_to_file_to_be_predicted, header=0, names=['tweets'])
+        dataset_topredict = pd.read_csv(path_to_gold_standard_file, header=0, names=['tweets', 'class'])
+
+        X_topredict = dataset_topredict['tweets']
+        y_goldstandard = dataset_topredict['class']
+
+        ###############
+        # train classifier
+        ###############
+
+        # Get list of features
+        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=_ngram_range)
+        X_CV = count_vect.fit_transform(docs_train)
+
+        # print number of unique words (n_features)
+        print("Shape of train data is " + str(X_CV.shape))
+
+        # tfidf transformation###
+
+        tfidf_transformer = TfidfTransformer(use_idf=_use_idf)
+        X_tfidf = tfidf_transformer.fit_transform(X_CV)
+
+        # train the classifier
+
+        print("Fitting data ...")
+        clf = ExtraTreesClassifier().fit(X_tfidf, y_train)
+
+        ##################
+        # get cross validation score
+        ##################
+
+        scores = cross_val_score(clf, X_tfidf, y_train, cv=10, scoring='f1_weighted')
+        print("Cross validation score: " + str(scores))
+
+        # Get average performance of classifier on training data using 10-fold CV, along with standard deviation
+        # the factor two is to signify 2 sigma, which is 95% confidence level
+
+        print("Cross validation accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+
+        ##################
+        # run classifier to predict tweets
+        ##################
+
+        X_test_CV = count_vect.transform(X_topredict)
+
+        print("Shape of test data is " + str(X_test_CV.shape))
+
+        X_test_tfidf = tfidf_transformer.transform(X_test_CV)
+
+        y_predicted = clf.predict(X_test_tfidf)
+
+        ##################
+        # run classifier on gold standard (tweets that were labelled by twitter insight)
+        ##################
+
+        # print the mean accuracy on the given test data and labels
+
+        print("Classifier score on test data is: %0.2f " % clf.score(X_test_tfidf, y_goldstandard))
+
+        print(metrics.classification_report(y_goldstandard, y_predicted))
+        cm = metrics.confusion_matrix(y_goldstandard, y_predicted)
+        print(cm)
+
+        ##################
+        # write prediction results to file
+        ##################
+
+        f = open(path_to_store_predicted_results, 'w')
+
+        for yp in y_predicted:
+            f.write(yp + '\n')
+
+        f.close()
+
+
     def get_important_features(self, clf, count_vect):
 
         # get vocabulary
@@ -688,15 +774,20 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/space/with_comments/labelled_combined_all.csv'
-#path_to_labelled_file = '../output/engrate/with_comments/labelled_space_withcomment.csv'
+path_to_labelled_file = '../output/features/maas/labelled_combined.csv'
+#path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
-path_to_store_vocabulary_file = '../output/feature_importance/extratree/space/extratree_vocab.txt'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/space/extratree_fs_boolean.csv'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/space/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree/space/extratree_feature_importance.csv'
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/with_comments/space_withcomment_1.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/space/with_comments/extratree_feat_byClass_combined_all.csv'
+path_to_file_to_be_predicted = '../output/to_predict/sydscifest/sydscifest_test'
+path_to_gold_standard_file = '../output/features/maas/labelled_combined.csv'
+
+path_to_store_predicted_results = '../output/predictions/maas/predicted_results_et.csv'
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/maas/extratree_vocab.txt'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/maas/extratree_fs_boolean.csv'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/maas/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/maas/extratree_feature_importance.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/maas/maas.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/maas/extratree_feat_byClass_combined.csv'
+
 
 
 # for classifier without pipeline
@@ -757,7 +848,7 @@ if __name__ == '__main__':
     # run ExtraTree Classifier
     ##################
 
-    #clf, count_vect = et.train_classifier()
+    clf, count_vect = et.train_classifier()
 
 
     ###################
@@ -777,7 +868,7 @@ if __name__ == '__main__':
     # use pipeline and use feature selection
     ###################
 
-    clf, count_vect = et.use_pipeline_with_fs()
+    #clf, count_vect = et.use_pipeline_with_fs()
 
 
     ###################
@@ -785,6 +876,13 @@ if __name__ == '__main__':
     ###################
 
     et.get_important_features(clf,count_vect)
+
+
+    ###################
+    # Run classifier and then predict tweets
+    ###################
+
+    #et.predict_posts()
 
 
     ##################

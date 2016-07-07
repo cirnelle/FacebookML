@@ -1048,11 +1048,11 @@ class FeatureConstruction():
         # select one of the features to compare
         ##############
 
-        lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
+        #lines2 = open(path_to_store_psychometric_feature_file,'r').readlines()
         #lines2 = open(path_to_store_grammar_feature_file,'r').readlines()
         #lines2 = open(path_to_store_anew_feature_file,'r').readlines()
         #lines2 = open(path_to_store_combined_feature_file,'r').readlines()
-        #lines2 = open(path_to_store_combined_feature_all_file,'r').readlines()
+        lines2 = open(path_to_store_combined_feature_all_file,'r').readlines()
 
         features = []
 
@@ -1084,11 +1084,11 @@ class FeatureConstruction():
         # select one of the path to store result
         ###############
 
-        f = open(path_to_store_labelled_psychometric_file,'w')
+        #f = open(path_to_store_labelled_psychometric_file,'w')
         #f = open(path_to_store_labelled_grammar_file,'w')
         #f = open(path_to_store_labelled_anew_file,'w')
         #f = open(path_to_store_labelled_combined_features_file,'w')
-        #f = open(path_to_store_labelled_combined_features_all_file,'w')
+        f = open(path_to_store_labelled_combined_features_all_file,'w')
 
         # add header
         header = ['posts','label']
@@ -1107,20 +1107,20 @@ class FeatureConstruction():
 # variables
 ###############
 
-path_to_liwc_result_file = '../output/liwc/with_comments/liwc_fb_nonprofit_withcomment.txt'
-path_to_labelled_raw_file = '../output/engrate/others/with_comments/labelled_nonprofit_withcomment_raw.csv'
-path_to_labelled_preprocessed_file = '../output/engrate/others/with_comments/labelled_nonprofit_withcomment.csv'
+path_to_liwc_result_file = '../output/liwc/maas/liwc_maas.txt'
+path_to_labelled_raw_file = '../output/engrate/maas/labelled_maas_raw.csv'
+path_to_labelled_preprocessed_file = '../output/engrate/maas/labelled_maas.csv'
 
-path_to_store_psychometric_feature_file = '../output/features/nonprofit/with_comments/psychometrics.txt'
-path_to_store_grammar_feature_file = '../output/features/nonprofit/with_comments/grammar.txt'
-path_to_store_combined_feature_file = '../output/features/nonprofit/with_comments/combined.txt'
-path_to_store_combined_feature_all_file = '../output/features/nonprofit/with_comments/combined_all.txt' #includes word features
+path_to_store_psychometric_feature_file = '../output/features/maas/psychometrics.txt'
+path_to_store_grammar_feature_file = '../output/features/maas/grammar.txt'
+path_to_store_combined_feature_file = '../output/features/maas/combined.txt'
+path_to_store_combined_feature_all_file = '../output/features/maas/combined_all.txt' #includes word features
 
-path_to_store_labelled_psychometric_file = '../output/features/nonprofit/with_comments/labelled_psychometrics.csv'
-path_to_store_labelled_grammar_file = '../output/features/nonprofit/with_comments/labelled_grammar.csv'
-path_to_store_labelled_urlhashtagtype_file = '../output/features/nonprofit/with_comments/labelled_urlhashtagtype.csv'
-path_to_store_labelled_combined_features_file = '../output/features/nonprofit/with_comments/labelled_combined.csv'
-path_to_store_labelled_combined_features_all_file = '../output/features/nonprofit/with_comments/labelled_combined_all.csv'
+path_to_store_labelled_psychometric_file = '../output/features/maas/labelled_psychometrics.csv'
+path_to_store_labelled_grammar_file = '../output/features/maas/labelled_grammar.csv'
+path_to_store_labelled_urlhashtagtype_file = '../output/features/maas/labelled_urlhashtagtype.csv'
+path_to_store_labelled_combined_features_file = '../output/features/maas/labelled_combined.csv'
+path_to_store_labelled_combined_features_all_file = '../output/features/maas/labelled_combined_all.csv'
 
 # anew
 
@@ -1132,17 +1132,17 @@ path_to_store_labelled_anew_file = '../output/features/nonprofit/labelled_anew.c
 # boundary values
 
 analytic_top = 98.0
-analytic_bottom = 74.0
-clout_top = 97.0
-clout_bottom = 66.0
-authentic_top = 43.0
-authentic_bottom = 2.8
-tone_top = 99.0
+analytic_bottom = 87.0
+clout_top = 80.0
+clout_bottom = 50.0
+authentic_top = 74.0
+authentic_bottom = 7.0
+tone_top = 95.0
 tone_bottom = 25.0
 sixltr_top = 26.0
 sixltr_bottom = 14.0
-wps_top = 16.0
-wps_bottom = 8.0
+wps_top = 18.0
+wps_bottom = 11.0
 
 #valence_top = 55.0
 #valence_bottom = 8.0
@@ -1157,12 +1157,12 @@ if __name__ == '__main__':
 
     fc = FeatureConstruction()
 
-    fc.liwc_psychometric_features()
+    #fc.liwc_psychometric_features()
     #fc.liwc_grammar_features()
     #fc.url_hashtag_type_feature()
     #fc.anew_features()
     #fc.combine_features()
-    #fc.combine_features_all()
+    fc.combine_features_all()
 
     fc.join_features_and_target()
 
