@@ -23,7 +23,7 @@ else:
 ################
 
 
-lines = open('user_ALL','r').readlines()
+lines = open('user_ALL.csv','r').readlines()
 
 user_list = []
 

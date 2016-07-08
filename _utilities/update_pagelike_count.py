@@ -49,7 +49,8 @@ class UpdatePagelikeCount():
 
                 like_count = self.compute_pagelike_count(fp[0],fp[1],t_max,fp[2])
 
-                if like_count <= 0:
+                #if like_count <= 0:
+                if like_count <= (0.09 * float(fp[2])):
 
                     like_count = pagelike_count[-1]
                     fp[2] = str(like_count)
@@ -107,34 +108,133 @@ class UpdatePagelikeCount():
         return pagelike_count
 
 
+    def update_likecount_with_real_numbers(self):
+
+        lines1 = open(path_to_raw_facebook_post_file, 'r').readlines()
+
+        users = []
+
+        for line in lines1[1:]:
+            spline = line.rstrip('\n').split(',')
+
+            if spline[0] not in users:
+                users.append(spline[0])
+
+        print (len(users))
+
+        updated_posts = []
+
+        for u in users:
+
+            print(u)
+
+            ##################
+            # get the dates for follcount file
+            ##################
+
+            lines2 = open(path_to_likecount_files + u + '.txt')
+
+            date_dict = {}
+
+            for line in lines2:
+                spline = line.rstrip('\n').split(',')
+
+                if spline == ['']:
+                    print("error")
+                    break
+
+                d1 = spline[0].replace('\n', '').split(' ')
+
+                if len(d1) == 6:
+                    d1.remove(d1[2])
+
+                date_s = d1[1] + ' ' + d1[2] + ' ' + d1[4]
+
+                t1 = time.strptime(date_s, '%b %d %Y')
+                t_epoch = time.mktime(t1)
+                date_dict[t_epoch] = spline[1]
+
+
+            #################
+            # get the dates for raw tweet file
+            #################
+
+            user_posts = []
+
+            for line in lines1[2:]:
+                spline = line.rstrip('\n').split(',')
+
+                if spline[0] == u:
+
+                    d1 = spline[1].replace('\n', '').split('T')
+
+                    date_s = d1[0]
+
+                    t1 = time.strptime(date_s, '%Y-%m-%d')
+                    t_epoch = time.mktime(t1)
+
+
+                    if t_epoch in date_dict:
+
+                        if date_dict[t_epoch] != 'nan':
+
+                            spline[2] = date_dict[t_epoch]
+                            user_posts.append(spline)
+
+                            updated_posts.append(spline)
+
+            print(len(user_posts))
+
+        print(" ")
+
+        print(len(updated_posts))
+
+        f = open(path_to_store_reallike_fb_post_file, 'w')
+
+        for up in updated_posts:
+            f.write(','.join(up) + '\n')
+
+        f.close()
+
+
 ################
 # variables
 ################
 
 path_to_raw_facebook_post_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
-path_to_slope_file = '../user_list/like_slope.txt'
-path_to_store_updated_fb_post_file = '../fb_data/posts/likecorr/raw_fb_posts_nonprofit_likecorr.csv'
+path_to_slope_file = '../user_list/slope/user_slope_nonprofit.txt'
+path_to_store_updated_fb_post_file = '../fb_data/posts/likecorr/others/raw_fb_posts_nonprofit_likecorr.csv'
 
+path_to_likecount_files = '../user_list/likes/'
+path_to_store_reallike_fb_post_file = '../fb_data/posts/reallike/raw_fb_posts_nonprofit_reallike.csv'
 
 
 if __name__ == "__main__":
 
 
     ################
-    # create slope dict
+    # create slope dict and update like count
     ################
 
-    lines = open(path_to_slope_file,'r').readlines()
+    # lines = open(path_to_slope_file,'r').readlines()
+    #
+    # slope_dict = {}
+    #
+    # for line in lines:
+    #     spline = line.replace('\n','').split(',')
+    #     slope_dict[spline[0]] = spline[1]
+    #
+    # print (slope_dict)
+    #
+    # print ("Length of slope_dict is "+str(len(slope_dict)))
+    #
+    # uf = UpdatePagelikeCount()
+    # uf.update_fb_post_list()
 
-    slope_dict = {}
 
-    for line in lines:
-        spline = line.replace('\n','').split(',')
-        slope_dict[spline[0]] = spline[1]
-
-    print (slope_dict)
-
-    print ("Length of slope_dict is "+str(len(slope_dict)))
+    #################
+    # update like count with real data mined daily
+    #################
 
     uf = UpdatePagelikeCount()
-    uf.update_fb_post_list()
+    uf.update_likecount_with_real_numbers()

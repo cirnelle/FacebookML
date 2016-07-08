@@ -149,7 +149,7 @@ class Extractor_fb():
 
         temp_list = []
         retries = 5
-        sleep_time = 50
+        sleep_time = 30
 
         for n in range(len(comments['data'])):
 
@@ -279,7 +279,7 @@ class Extractor_fb():
         page_limit = 100
         post_list = []
         retries = 5
-        sleep_time = 50
+        sleep_time = 30
         user_list = self.create_user_list()
 
         for user in user_list:
@@ -731,8 +731,8 @@ class Extractor_fb():
 # variables
 ###############
 
-path_to_user_list = '../user_list/others/user_business'
-path_to_store_fb_posts = '../fb_data/posts/others/raw_fb_posts_business.csv'
+path_to_user_list = '../user_list/others/user_nonprofit.csv'
+path_to_store_fb_posts = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
 #path_to_store_fb_posts = '../fb_data/posts/test.csv'
 path_to_store_fb_comments = '../fb_data/comments/raw_fb_comments_20160223.csv'
 path_to_store_fb_comments_replies = '../../_big_files/facebook/raw_fb_comments_replies_20160223.csv'
@@ -753,7 +753,7 @@ if __name__ == '__main__':
     # get posts for pages
     ################
 
-    #posts = ext.get_page_posts(graph)
+    posts = ext.get_page_posts(graph)
 
 
     ###############
@@ -775,7 +775,7 @@ if __name__ == '__main__':
     # get post by id
     ###############
 
-    ext.get_post_by_id()
+    #ext.get_post_by_id()
 
     ###############
     # get single commet

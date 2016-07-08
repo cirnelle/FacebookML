@@ -17,7 +17,7 @@ from decimal import Decimal
 import time
 
 
-lines = open('user_ALL','r').readlines()
+lines = open('others/user_nonprofit.csv','r').readlines()
 
 user_list = []
 
@@ -113,7 +113,7 @@ for ul in user_list:
 
 
 # write results to a file
-f = open('like_slope.txt','w')
+f = open('slope/user_slope_nonprofit.txt','w')
 
 for usl in user_slope_list:
     f.write(','.join(usl)+'\n')
