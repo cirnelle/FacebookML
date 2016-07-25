@@ -201,9 +201,9 @@ class UpdatePagelikeCount():
 # variables
 ################
 
-path_to_raw_facebook_post_file = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
-path_to_slope_file = '../user_list/slope/user_slope_nonprofit.txt'
-path_to_store_updated_fb_post_file = '../fb_data/posts/likecorr/others/raw_fb_posts_nonprofit_likecorr.csv'
+path_to_raw_facebook_post_file = '../fb_data/posts/others/old/raw_fb_posts_politics.csv'
+path_to_slope_file = '../user_list/slope/user_slope_politics.txt'
+path_to_store_updated_fb_post_file = '../fb_data/posts/likecorr/others/raw_fb_posts_politics_likecorr.csv'
 
 path_to_likecount_files = '../user_list/likes/'
 path_to_store_reallike_fb_post_file = '../fb_data/posts/reallike/raw_fb_posts_nonprofit_reallike.csv'
@@ -216,25 +216,25 @@ if __name__ == "__main__":
     # create slope dict and update like count
     ################
 
-    # lines = open(path_to_slope_file,'r').readlines()
-    #
-    # slope_dict = {}
-    #
-    # for line in lines:
-    #     spline = line.replace('\n','').split(',')
-    #     slope_dict[spline[0]] = spline[1]
-    #
-    # print (slope_dict)
-    #
-    # print ("Length of slope_dict is "+str(len(slope_dict)))
-    #
-    # uf = UpdatePagelikeCount()
-    # uf.update_fb_post_list()
+    lines = open(path_to_slope_file,'r').readlines()
+
+    slope_dict = {}
+
+    for line in lines:
+        spline = line.replace('\n','').split(',')
+        slope_dict[spline[0]] = spline[1]
+
+    print (slope_dict)
+
+    print ("Length of slope_dict is "+str(len(slope_dict)))
+
+    uf = UpdatePagelikeCount()
+    uf.update_fb_post_list()
 
 
     #################
     # update like count with real data mined daily
     #################
 
-    uf = UpdatePagelikeCount()
-    uf.update_likecount_with_real_numbers()
+    # uf = UpdatePagelikeCount()
+    # uf.update_likecount_with_real_numbers()

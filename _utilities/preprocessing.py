@@ -277,8 +277,8 @@ class FbPostProcessing():
 # variables
 ###############
 
-path_to_raw_fb_data_file = '../output/engrate/maas/engrate_maas_raw.csv'
-path_to_store_processed_fb_data_file = '../output/engrate/maas/engrate_maas.csv'
+path_to_raw_fb_data_file = '../fb_data/posts/likecorr/others/raw_fb_posts_politics_likecorr.csv'
+path_to_store_processed_fb_data_file = '../fb_data/posts/likecorr/others/preprocessed_fb_posts_politics_likecorr.csv'
 
 if __name__ == "__main__":
 

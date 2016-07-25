@@ -124,15 +124,15 @@ class LabelFbPostsEngRate():
 
     def label_fb_post(self):
 
-        #fb_posts = self.get_eng_rate()
+        fb_posts = self.get_eng_rate()
 
-        lines = open(path_to_store_engrate_output, 'r').readlines()
-
-        fb_posts = []
-
-        for line in lines:
-            spline = line.rstrip('\n').split(',')
-            fb_posts.append(spline)
+        # lines = open(path_to_store_engrate_output, 'r').readlines()
+        #
+        # fb_posts = []
+        #
+        # for line in lines:
+        #     spline = line.rstrip('\n').split(',')
+        #     fb_posts.append(spline)
 
         print(len(fb_posts))
 
@@ -145,29 +145,29 @@ class LabelFbPostsEngRate():
 
         for fp in fb_posts:
 
-            if float(fp[6]) > her_boundary:
+            if float(fp[7]) > her_boundary:
 
-                if fp[8] == '':
+                if fp[9] == '':
 
                     labelled_fb_posts.append(['nil','HER'])
                     high_er.append(['nil','HER'])
 
                 else:
 
-                    labelled_fb_posts.append([fp[8],'HER'])
-                    high_er.append([fp[8],'HER'])
+                    labelled_fb_posts.append([fp[9],'HER'])
+                    high_er.append([fp[9],'HER'])
 
-            elif float(fp[6]) < ler_boundary:
+            elif float(fp[7]) < ler_boundary:
 
-                if fp[8] == '':
+                if fp[9] == '':
 
                     labelled_fb_posts.append(['nil','LER'])
                     low_er.append(['nil','LER'])
 
                 else:
 
-                    labelled_fb_posts.append([fp[8],'LER'])
-                    low_er.append([fp[8],'LER'])
+                    labelled_fb_posts.append([fp[9],'LER'])
+                    low_er.append([fp[9],'LER'])
 
             else:
                 pass
@@ -190,15 +190,15 @@ class LabelFbPostsEngRate():
 
     def label_fb_post_raw(self):
 
-        #fb_posts = self.get_eng_rate_raw_posts()
+        fb_posts = self.get_eng_rate_raw_posts()
 
-        lines = open(path_to_store_engrate_output_raw, 'r').readlines()
-
-        fb_posts = []
-
-        for line in lines:
-            spline = line.rstrip('\n').split(',')
-            fb_posts.append(spline)
+        # lines = open(path_to_store_engrate_output_raw, 'r').readlines()
+        #
+        # fb_posts = []
+        #
+        # for line in lines:
+        #     spline = line.rstrip('\n').split(',')
+        #     fb_posts.append(spline)
 
         print(len(fb_posts))
 
@@ -211,15 +211,15 @@ class LabelFbPostsEngRate():
 
         for fp in fb_posts:
 
-            if float(fp[6]) > her_boundary:
+            if float(fp[7]) > her_boundary:
 
-                labelled_fb_posts.append([fp[8],'HER',fp[7]])
-                high_er.append([fp[8],'HER'])
+                labelled_fb_posts.append([fp[9],'HER',fp[8]])
+                high_er.append([fp[9],'HER'])
 
-            elif float(fp[6]) < ler_boundary:
+            elif float(fp[7]) < ler_boundary:
 
-                labelled_fb_posts.append([fp[8],'LER',fp[7]])
-                low_er.append([fp[8],'LER'])
+                labelled_fb_posts.append([fp[9],'LER',fp[8]])
+                low_er.append([fp[9],'LER'])
 
             else:
                 pass
@@ -307,19 +307,19 @@ class LabelFbPostsEngRate():
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/maas/preprocessed_maas.csv'
-path_to_store_engrate_output = '../output/engrate/maas/engrate_maas.csv'
-path_to_store_labelled_fb_post = '../output/engrate/maas/labelled_maas.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/likecorr/others/preprocessed_fb_posts_politics_likecorr.csv'
+path_to_store_engrate_output = '../output/engrate/likecorr/others/engrate_politics_likecorr.csv'
+path_to_store_labelled_fb_post = '../output/engrate/likecorr/others/labelled_politics_likecorr.csv'
 
 # for LIWC
-path_to_raw_fb_post_file = '../fb_data/posts/maas/raw_maas.csv'
-path_to_store_engrate_output_raw = '../output/engrate/maas/engrate_maas_raw.csv'
-path_to_store_labelled_fb_post_raw = '../output/engrate/maas/labelled_maas_raw.csv'
+path_to_raw_fb_post_file = '../fb_data/posts/likecorr/others/raw_fb_posts_politics_likecorr.csv'
+path_to_store_engrate_output_raw = '../output/engrate/likecorr/others/engrate_politics_raw_likecorr.csv'
+path_to_store_labelled_fb_post_raw = '../output/engrate/likecorr/others/labelled_politics_raw_likecorr.csv'
 
 # engrate parameters
 with_comment = 1
-her_boundary = 0.0765
-ler_boundary = 0.02
+her_boundary = 2.35
+ler_boundary = 0.0104
 
 
 if __name__ == "__main__":

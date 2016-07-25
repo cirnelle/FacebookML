@@ -1,0 +1,99 @@
+
+HER,reward_yes netspeak_yes nonflu_yes,9.99888420692e-05
+HER,reward_yes high_wps has_exclam,9.98348083651e-05
+LER,is_analytic_yes netspeak_yes,9.96416061858e-05
+LER,differ_yes netspeak_yes few_sixltr,9.90837529499e-05
+HER,is_clout_no posemo_yes cause_yes,9.88614295637e-05
+LER,is_clout_yes certain_yes affiliation_yes,9.87918076218e-05
+LER,posemo_yes negemo_yes affiliation_yes,9.87485740505e-07
+LER,is_analytic_yes is_authentic_no tentat_yes,9.87485740505e-07
+HER,posemo_yes see_yes many_sixltr,9.8695986654e-05
+HER,is_clout_yes is_authentic_yes see_yes,9.86602448733e-05
+LER,cause_yes hear_yes affiliation_yes,9.85337952118e-05
+LER,tentat_yes many_sixltr,9.84389473038e-05
+HER,posemo_yes cause_yes differ_yes,9.80594324706e-05
+HER,cause_yes power_yes type_photo,9.80098834187e-05
+HER,posemo_yes certain_yes differ_yes,9.79362272904e-05
+HER,is_analytic_no see_yes netspeak_yes,9.78622453859e-05
+HER,achieve_yes reward_yes risk_yes,9.77494884397e-05
+LER,posemo_yes netspeak_yes type_link,9.77256651633e-05
+LER,discrep_yes hear_yes affiliation_yes,9.77203072604e-05
+HER,see_yes feel_yes netspeak_yes,9.76780634284e-05
+LER,insight_yes reward_yes few_sixltr,9.73222125668e-05
+HER,is_authentic_yes insight_yes many_sixltr,9.7094673964e-05
+LER,negemo_yes see_yes,9.67999764699e-05
+LER,see_yes few_sixltr type_link,9.67035370624e-05
+HER,achieve_yes risk_yes few_sixltr,9.66268977899e-05
+LER,negemo_yes tentat_yes see_yes,9.62793003495e-05
+LER,is_analytic_yes see_yes achieve_yes,9.6272772481e-05
+LER,posemo_yes insight_yes netspeak_yes,9.61631760662e-05
+HER,swear_yes netspeak_yes type_photo,9.60636243376e-05
+HER,certain_yes see_yes reward_yes,9.6007107753e-05
+HER,risk_yes high_wps,9.58684739394e-05
+HER,reward_yes few_sixltr has_exclam,9.57280294325e-05
+LER,is_authentic_yes see_yes feel_yes,9.56514426482e-05
+LER,posemo_yes cause_yes hear_yes,9.56176633792e-05
+LER,is_authentic_no see_yes netspeak_yes,9.55990664482e-05
+LER,power_yes reward_yes type_link,9.54259602643e-05
+LER,discrep_yes netspeak_yes few_sixltr,9.50266951545e-09
+LER,see_yes has_exclam has_qmark,9.47986310885e-06
+HER,is_clout_no posemo_yes tentat_yes,9.47986310885e-06
+HER,is_authentic_yes see_yes few_sixltr,9.47986310885e-06
+HER,discrep_yes certain_yes differ_yes,9.47986310885e-06
+LER,cause_yes affiliation_yes power_yes,9.47538526012e-05
+HER,cause_yes low_wps,9.47458243644e-05
+LER,negemo_yes tentat_yes affiliation_yes,9.47246274733e-06
+LER,hear_yes affiliation_yes netspeak_yes,9.46592213369e-05
+HER,achieve_yes reward_yes few_sixltr,9.43344136216e-05
+HER,is_authentic_yes posemo_yes certain_yes,9.43254229788e-05
+LER,posemo_yes tentat_yes affiliation_yes,9.41640562264e-05
+LER,power_yes risk_yes type_status,9.39359428586e-05
+HER,is_clout_no differ_yes,9.34910193792e-05
+HER,reward_yes assent_yes many_sixltr,9.33760696575e-05
+HER,feel_yes achieve_yes power_yes,9.32704769615e-05
+LER,negemo_yes sad_yes power_yes,9.3070475246e-05
+HER,is_authentic_yes type_photo,9.2888978029e-05
+HER,assent_yes few_sixltr type_photo,9.28439701267e-05
+LER,power_yes many_sixltr has_exclam,9.28434791562e-05
+LER,reward_yes has_exclam has_qmark,9.24286653113e-05
+LER,insight_yes cause_yes power_yes,9.24286653113e-05
+LER,power_yes high_wps type_status,9.14914515721e-05
+HER,many_sixltr type_photo has_hashtag,9.1220467601e-05
+LER,is_authentic_no discrep_yes certain_yes,9.11525298928e-07
+LER,cause_yes tentat_yes hear_yes,9.11344674099e-05
+LER,insight_yes netspeak_yes high_wps,8.98552532876e-05
+HER,is_clout_no posemo_yes insight_yes,8.91840693068e-05
+LER,cause_yes power_yes netspeak_yes,8.91831278473e-05
+HER,netspeak_yes assent_yes has_exclam,8.90545866347e-05
+LER,is_clout_yes differ_yes affiliation_yes,8.88737166455e-06
+HER,see_yes affiliation_yes type_photo,8.88737166455e-05
+HER,sad_yes tentat_yes certain_yes,8.85505394941e-05
+LER,reward_yes swear_yes,8.7834747745e-05
+HER,is_analytic_no is_authentic_no see_yes,8.73313847208e-05
+LER,cause_yes affiliation_yes netspeak_yes,8.7024101491e-05
+HER,affiliation_yes achieve_yes nonflu_yes,8.68484337032e-05
+LER,is_authentic_yes insight_yes netspeak_yes,8.61194635252e-05
+HER,risk_yes netspeak_yes few_sixltr,8.60569537141e-05
+LER,is_tone_no negemo_yes certain_yes,8.60241661419e-08
+HER,assent_yes has_exclam has_qmark,8.55038834977e-05
+HER,is_analytic_yes is_clout_yes certain_yes,8.5138648909e-05
+HER,is_authentic_yes insight_yes type_photo,8.46416349005e-07
+HER,is_authentic_yes posemo_yes affiliation_yes,8.46416349005e-06
+HER,see_yes many_sixltr type_link,8.42663705891e-05
+HER,is_analytic_yes is_clout_no cause_yes,8.37387907949e-05
+HER,feel_yes power_yes netspeak_yes,8.36446770788e-05
+HER,hear_yes achieve_yes netspeak_yes,8.35817217622e-05
+HER,affiliation_yes netspeak_yes type_photo,8.31566939373e-07
+HER,is_clout_no see_yes,8.29488022025e-06
+HER,is_authentic_no discrep_yes differ_yes,8.29488022025e-06
+HER,sad_yes insight_yes certain_yes,8.27476935388e-05
+HER,is_analytic_no see_yes,8.24827662038e-05
+HER,netspeak_yes nonflu_yes high_wps,8.18954840793e-05
+LER,assent_yes has_exclam type_status,8.18397327211e-05
+LER,reward_yes netspeak_yes type_status,8.17906046414e-05
+LER,see_yes nonflu_yes,8.14638654877e-05
+LER,is_clout_no is_authentic_yes discrep_yes,8.13064635738e-05
+HER,anger_yes insight_yes affiliation_yes,8.12388474895e-05
+HER,see_yes feel_yes many_sixltr,8.10927019396e-05
+LER,achieve_yes risk_yes netspeak_yes,8.10028356431e-07
+LER,tentat_yes achieve_yes netspeak_yes,8.09223650036e-05

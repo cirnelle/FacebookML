@@ -379,27 +379,27 @@ class CalculateHighestMean():
 ##############
 
 # change the FIELD for the following
-path_to_nb_file = '../output/featimp_normalisation/nb/with_comments/nonprofit_withcomment.csv'
-path_to_sgd_file = '../output/featimp_normalisation/sgd/with_comments/nonprofit_withcomment.csv'
-path_to_extratree_file = '../output/featimp_normalisation/extratree/with_comments/nonprofit_withcomment.csv'
+path_to_nb_file = '../output/featimp_normalisation/nb/likecorr/politics.csv'
+path_to_sgd_file = '../output/featimp_normalisation/sgd/likecorr/politics.csv'
+path_to_extratree_file = '../output/featimp_normalisation/extratree/likecorr/politics.csv'
 
 # change the CLASSIFIER for the following
-path_to_space_feature_score_file = '../output/featimp_normalisation/nb/with_comments/space_withcomment.csv'
-path_to_politics_feature_score_file = '../output/featimp_normalisation/nb/with_comments/politics_withcomment.csv'
-path_to_business_feature_score_file = '../output/featimp_normalisation/nb/with_comments/business_withcomment.csv'
-path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/nb/with_comments/nonprofit_withcomment.csv'
+path_to_space_feature_score_file = '../output/featimp_normalisation/extratree/likecorr/space.csv'
+path_to_politics_feature_score_file = '../output/featimp_normalisation/extratree/likecorr/politics.csv'
+path_to_business_feature_score_file = '../output/featimp_normalisation/extratree/likecorr/business.csv'
+path_to_nonprofit_feature_score_file = '../output/featimp_normalisation/extratree/likecorr/nonprofit.csv'
 
 # change the CLASSIFIER and FIELD for the following
-path_to_feature_score_file_cf = '../output/featimp_normalisation/nb/with_comments/nonprofit_withcomment.csv'
-path_to_store_normalised_feature_file = '../output/featimp_normalisation/nb/others/with_comments/nonprofit_normalised_withcomment.csv'
+path_to_feature_score_file_cf = '../output/featimp_normalisation/extratree/likecorr/politics.csv'
+path_to_store_normalised_feature_file = '../output/featimp_normalisation/extratree/likecorr/per_field/politics_normalised.csv'
 
 #------------------
 
 # change the FIELD for the following
-path_to_normalised_nb_file = '../output/featimp_normalisation/nb/others/with_comments/nonprofit_normalised_withcomment.csv'
-path_to_normalised_sgd_file = '../output/featimp_normalisation/sgd/others/with_comments/nonprofit_normalised_withcomment.csv'
-path_to_normalised_extratree_file = '../output/featimp_normalisation/extratree/others/with_comments/nonprofit_normalised_withcomment.csv'
-path_to_store_feature_mean_score = '../output/spss/others/with_comments/nonprofit_feature_mean_withcomment.csv'
+path_to_normalised_nb_file = '../output/featimp_normalisation/nb/likecorr/per_field/politics_normalised.csv'
+path_to_normalised_sgd_file = '../output/featimp_normalisation/sgd/likecorr/per_field/politics_normalised.csv'
+path_to_normalised_extratree_file = '../output/featimp_normalisation/extratree/likecorr/per_field/politics_normalised.csv'
+path_to_store_feature_mean_score = '../output/spss/likecorr/feature_means/politics_feature_mean.csv'
 
 
 
