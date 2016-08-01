@@ -1,14 +1,14 @@
 
 HER,type_photo,-5.3494607055
 HER,see_yes,-0.976870058906
-HER,feel_yes,-0.776490810692
+HER,anger_yes,-0.776490810692
 HER,certain_yes,-0.736476133892
 HER,reward_yes,-0.636454632954
 HER,is_authentic_yes,-0.539981237817
 HER,cause_yes,-0.462978140439
 HER,posemo_yes,-0.447672104206
 HER,achieve_yes,-0.401695751541
-HER,anger_yes,-0.343977475247
+HER,feel_yes,-0.343977475247
 HER,risk_yes,-0.327396945269
 HER,low_wps,-0.3104813514
 HER,differ_yes,-0.276722245041
@@ -66,14 +66,14 @@ LER,has_hashtag,0.0534070564851
 
 HER,type_photo,-5.3494607055
 HER,see_yes,-0.976870058906
-HER,feel_yes,-0.776490810692
+HER,anger_yes,-0.776490810692
 HER,certain_yes,-0.736476133892
 HER,reward_yes,-0.636454632954
 HER,is_authentic_yes,-0.539981237817
 HER,cause_yes,-0.462978140439
 HER,posemo_yes,-0.447672104206
 HER,achieve_yes,-0.401695751541
-HER,anger_yes,-0.343977475247
+HER,feel_yes,-0.343977475247
 HER,risk_yes,-0.327396945269
 HER,low_wps,-0.3104813514
 HER,differ_yes,-0.276722245041

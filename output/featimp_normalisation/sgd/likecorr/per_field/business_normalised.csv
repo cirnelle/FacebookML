@@ -22,9 +22,9 @@ HER,is_authentic_yes,0
 HER,feel_yes,0
 HER,netspeak_yes,0
 HER,anx_yes,0
-HER,anger_yes,0
-HER,has_hashtag,0
 HER,affiliation_yes,0
+HER,has_hashtag,0
+HER,anger_yes,0
 HER,swear_yes,0
 HER,type_photo,0.3627
 HER,has_url,0.2008
@@ -44,11 +44,11 @@ HER,sad_yes,0
 HER,is_tone_no,0
 HER,anx_yes,0
 HER,negemo_yes,0
-HER,anger_yes,0
+HER,affiliation_yes,0
 HER,is_clout_no,0
 HER,netspeak_yes,0
 HER,has_hashtag,0
-HER,affiliation_yes,0
+HER,anger_yes,0
 HER,is_authentic_yes,0
 HER,feel_yes,0
 HER,swear_yes,0

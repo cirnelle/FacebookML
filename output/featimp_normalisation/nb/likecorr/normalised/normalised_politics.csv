@@ -4,9 +4,9 @@ HER,assent_yes,0.7617
 HER,assent_yes,0.759
 HER,assent_yes,0.7563
 HER,filler_yes,0.7175
-HER,anger_yes,0.5344
-HER,anger_yes,0.5338
-HER,anger_yes,0.5331
+HER,affiliation_yes,0.5344
+HER,affiliation_yes,0.5338
+HER,affiliation_yes,0.5331
 HER,anx_yes,0.5135
 HER,anx_yes,0.5122
 HER,anx_yes,0.5109
@@ -79,9 +79,9 @@ HER,tentat_yes,0.0358
 HER,type_status,0.0083
 HER,type_status,0.0083
 HER,type_status,0.0083
-HER,affiliation_yes,0.0009
-HER,affiliation_yes,0.0009
-HER,affiliation_yes,0.0008
+HER,anger_yes,0.0009
+HER,anger_yes,0.0009
+HER,anger_yes,0.0008
 HER,has_exclam,0
 HER,is_analytic_yes,0
 HER,see_yes,0
@@ -156,6 +156,7 @@ LER,many_sixltr,0.0065
 LER,many_sixltr,0.0065
 LER,filler_yes,0
 LER,assent_yes,0
+LER,affiliation_yes,0
 LER,anx_yes,0
 LER,swear_yes,0
 LER,has_hashtag,0
@@ -169,7 +170,6 @@ LER,type_video,0
 LER,tentat_yes,0
 LER,type_status,0
 LER,power_yes,0.0
-LER,affiliation_yes,0
 LER,type_event,0
 LER,type_link,0
 LER,type_status,0
@@ -198,6 +198,7 @@ LER,tentat_yes,0
 LER,swear_yes,0
 LER,filler_yes,0
 LER,assent_yes,0
+LER,affiliation_yes,0
 LER,anx_yes,0
 LER,swear_yes,0
 LER,has_hashtag,0
@@ -211,7 +212,6 @@ LER,type_video,0
 LER,tentat_yes,0
 LER,type_status,0
 LER,power_yes,0.0
-LER,affiliation_yes,0
 LER,type_event,0
 LER,type_link,0
 LER,type_status,0
@@ -240,6 +240,7 @@ LER,tentat_yes,0
 LER,swear_yes,0
 LER,assent_yes,0
 LER,filler_yes,0
+LER,affiliation_yes,0
 LER,anx_yes,0
 LER,swear_yes,0
 LER,has_hashtag,0
@@ -253,7 +254,6 @@ LER,type_video,0
 LER,tentat_yes,0
 LER,type_status,0
 LER,power_yes,0.0
-LER,affiliation_yes,0
 LER,type_event,0
 LER,type_link,0
 LER,type_status,0

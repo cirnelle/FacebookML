@@ -16,9 +16,9 @@ HER,negemo_yes,0.2703
 HER,negemo_yes,0.2567
 HER,posemo_yes,0.2491
 HER,posemo_yes,0.24
-HER,anger_yes,0.2211
-HER,anger_yes,0.2067
-HER,anger_yes,0.2052
+HER,reward_yes,0.2211
+HER,reward_yes,0.2067
+HER,reward_yes,0.2052
 HER,is_analytic_no,0.1788
 HER,is_analytic_no,0.1784
 HER,is_analytic_no,0.1618
@@ -42,8 +42,8 @@ HER,cause_yes,0.0936
 HER,anx_yes,0.0892
 HER,feel_yes,0.0891
 HER,achieve_yes,0.0886
-HER,reward_yes,0.0879
-HER,reward_yes,0.0868
+HER,anger_yes,0.0879
+HER,anger_yes,0.0868
 HER,achieve_yes,0.0862
 HER,feel_yes,0.0837
 HER,differ_yes,0.0831
@@ -52,7 +52,7 @@ HER,differ_yes,0.0815
 HER,is_tone_no,0.0781
 HER,discrep_yes,0.0778
 HER,is_tone_no,0.0722
-HER,reward_yes,0.0693
+HER,anger_yes,0.0693
 HER,is_tone_yes,0.0578
 HER,high_wps,0.0477
 HER,high_wps,0.0473

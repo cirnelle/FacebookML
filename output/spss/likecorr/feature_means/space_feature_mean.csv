@@ -1,10 +1,10 @@
 type_photo,0.9019
+anger_yes,0.1494
 see_yes,0.1474
-feel_yes,0.1282
 certain_yes,0.1276
 posemo_yes,0.115
-anger_yes,0.1143
 reward_yes,0.114
+feel_yes,0.1116
 is_authentic_yes,0.1097
 cause_yes,0.0998
 differ_yes,0.0878
@@ -18,10 +18,10 @@ low_wps,0.0449
 is_analytic_yes,0.0446
 tentat_yes,0.0399
 has_exclam,0.0376
-affiliation_yes,0.0361
 swear_yes,0.0339
 discrep_yes,0.0318
 is_clout_no,0.0217
+affiliation_yes,0.0176
 hear_yes,0.0097
 type_video,0.0055
 sad_yes,0.0039

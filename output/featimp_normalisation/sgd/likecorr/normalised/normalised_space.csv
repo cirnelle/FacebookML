@@ -4,8 +4,8 @@ HER,type_photo,0.9274
 HER,see_yes,0.1693
 HER,see_yes,0.1693
 HER,certain_yes,0.1434
-HER,feel_yes,0.1346
-HER,feel_yes,0.1346
+HER,anger_yes,0.1346
+HER,anger_yes,0.1346
 HER,certain_yes,0.1276
 HER,certain_yes,0.1276
 HER,see_yes,0.1245
@@ -22,8 +22,8 @@ HER,posemo_yes,0.0776
 HER,achieve_yes,0.0696
 HER,achieve_yes,0.0696
 HER,cause_yes,0.0678
-HER,anger_yes,0.0596
-HER,anger_yes,0.0596
+HER,feel_yes,0.0596
+HER,feel_yes,0.0596
 HER,risk_yes,0.0567
 HER,risk_yes,0.0567
 HER,low_wps,0.0538

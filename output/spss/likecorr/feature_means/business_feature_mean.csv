@@ -6,6 +6,7 @@ insight_yes,0.128
 high_wps,0.1084
 risk_yes,0.0971
 differ_yes,0.0845
+affiliation_yes,0.0818
 many_sixltr,0.0774
 is_analytic_yes,0.0754
 negemo_yes,0.0731
@@ -16,13 +17,12 @@ is_tone_no,0.065
 anx_yes,0.0576
 has_exclam,0.054
 is_clout_no,0.0528
-anger_yes,0.0518
 discrep_yes,0.0462
-affiliation_yes,0.0445
 has_hashtag,0.0437
 posemo_yes,0.0431
 is_authentic_yes,0.0378
 see_yes,0.0317
 feel_yes,0.0204
+anger_yes,0.0145
 is_tone_yes,0.0144
 swear_yes,0.0036

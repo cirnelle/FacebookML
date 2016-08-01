@@ -15,14 +15,14 @@ is_clout_no,0.0498
 is_tone_yes,0.0455
 netspeak_yes,0.044
 has_exclam,0.0432
+nonflu_yes,0.0422
 type_video,0.0324
-nonflu_yes,0.0323
 high_wps,0.0317
 achieve_yes,0.0314
 cause_yes,0.0257
 tentat_yes,0.0229
 negemo_yes,0.0224
 anx_yes,0.018
-anger_yes,0.015
 feel_yes,0.0118
+anger_yes,0.0051
 assent_yes,0.0048

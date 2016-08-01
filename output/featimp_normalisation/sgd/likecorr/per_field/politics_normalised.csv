@@ -4,7 +4,7 @@ HER,has_hashtag,0.3375
 HER,assent_yes,0.2948
 HER,negemo_yes,0.2703
 HER,posemo_yes,0.2491
-HER,anger_yes,0.2067
+HER,reward_yes,0.2067
 HER,is_analytic_no,0.1784
 HER,risk_yes,0.1592
 HER,is_clout_no,0.1207
@@ -14,7 +14,7 @@ HER,is_tone_yes,0.1102
 HER,cause_yes,0.1026
 HER,anx_yes,0.0892
 HER,achieve_yes,0.0886
-HER,reward_yes,0.0868
+HER,anger_yes,0.0868
 HER,feel_yes,0.0837
 HER,differ_yes,0.0815
 HER,is_tone_no,0.0722
@@ -37,7 +37,7 @@ HER,has_hashtag,0.4168
 HER,type_photo,0.3782
 HER,negemo_yes,0.3763
 HER,posemo_yes,0.2968
-HER,anger_yes,0.2211
+HER,reward_yes,0.2211
 HER,is_analytic_no,0.1618
 HER,risk_yes,0.1529
 HER,is_clout_no,0.1303
@@ -45,13 +45,14 @@ HER,insight_yes,0.0975
 HER,cause_yes,0.0936
 HER,achieve_yes,0.0824
 HER,discrep_yes,0.0778
-HER,reward_yes,0.0693
+HER,anger_yes,0.0693
 HER,is_tone_yes,0.0578
 HER,differ_yes,0.0268
 HER,type_status,0
 HER,tentat_yes,0
 HER,hear_yes,0
 HER,filler_yes,0
+HER,affiliation_yes,0
 HER,anx_yes,0
 HER,swear_yes,0
 HER,sad_yes,0
@@ -59,7 +60,6 @@ HER,feel_yes,0
 HER,is_tone_no,0
 HER,high_wps,0
 HER,type_video,0
-HER,affiliation_yes,0
 HER,is_authentic_yes,0
 HER,power_yes,0
 HER,many_sixltr,0
@@ -70,7 +70,7 @@ HER,has_hashtag,0.3287
 HER,assent_yes,0.2852
 HER,negemo_yes,0.2567
 HER,posemo_yes,0.24
-HER,anger_yes,0.2052
+HER,reward_yes,0.2052
 HER,is_analytic_no,0.1788
 HER,risk_yes,0.1585
 HER,is_clout_no,0.12
@@ -80,7 +80,7 @@ HER,is_tone_yes,0.1144
 HER,cause_yes,0.1024
 HER,anx_yes,0.0986
 HER,feel_yes,0.0891
-HER,reward_yes,0.0879
+HER,anger_yes,0.0879
 HER,achieve_yes,0.0862
 HER,differ_yes,0.0831
 HER,is_tone_no,0.0781

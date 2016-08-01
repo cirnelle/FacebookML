@@ -9,7 +9,7 @@ HER,cause_yes,0.1588
 HER,has_url,0.1525
 HER,negemo_yes,0.1496
 HER,high_wps,0.1381
-HER,anger_yes,0.1375
+HER,affiliation_yes,0.1375
 HER,differ_yes,0.1216
 HER,is_clout_no,0.1101
 HER,netspeak_yes,0.1036
@@ -19,7 +19,7 @@ HER,is_tone_yes,0
 HER,many_sixltr,0.0732
 HER,has_hashtag,0.0404
 HER,discrep_yes,0.0346
-HER,affiliation_yes,0.025
+HER,anger_yes,0.025
 HER,is_authentic_yes,0.021
 HER,feel_yes,0.0157
 HER,posemo_yes,0
@@ -37,7 +37,7 @@ HER,cause_yes,0.1587
 HER,has_url,0.1524
 HER,negemo_yes,0.1494
 HER,high_wps,0.138
-HER,anger_yes,0.1368
+HER,affiliation_yes,0.1368
 HER,differ_yes,0.1215
 HER,is_clout_no,0.1099
 HER,netspeak_yes,0.1036
@@ -47,7 +47,7 @@ HER,is_tone_yes,0
 HER,many_sixltr,0.0732
 HER,has_hashtag,0.0404
 HER,discrep_yes,0.0345
-HER,affiliation_yes,0.0249
+HER,anger_yes,0.0249
 HER,is_authentic_yes,0.0209
 HER,feel_yes,0.0157
 HER,posemo_yes,0
@@ -65,7 +65,7 @@ HER,cause_yes,0.1586
 HER,has_url,0.1524
 HER,negemo_yes,0.1492
 HER,high_wps,0.1379
-HER,anger_yes,0.1361
+HER,affiliation_yes,0.1361
 HER,differ_yes,0.1214
 HER,is_clout_no,0.1096
 HER,netspeak_yes,0.1035
@@ -75,7 +75,7 @@ HER,is_tone_yes,0
 HER,many_sixltr,0.0731
 HER,has_hashtag,0.0404
 HER,discrep_yes,0.0345
-HER,affiliation_yes,0.0249
+HER,anger_yes,0.0249
 HER,is_authentic_yes,0.0209
 HER,feel_yes,0.0156
 HER,posemo_yes,0

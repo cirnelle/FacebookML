@@ -5,7 +5,7 @@ HER,has_hashtag,-1.94710991904
 HER,assent_yes,-1.70064580411
 HER,negemo_yes,-1.5594742658
 HER,posemo_yes,-1.43673340953
-HER,anger_yes,-1.19234858124
+HER,reward_yes,-1.19234858124
 HER,is_analytic_no,-1.02926319938
 HER,risk_yes,-0.91852698838
 HER,is_clout_no,-0.696460705942
@@ -15,7 +15,7 @@ HER,is_tone_yes,-0.636035278149
 HER,cause_yes,-0.591921619142
 HER,anx_yes,-0.514562906705
 HER,achieve_yes,-0.511287393472
-HER,reward_yes,-0.501133867361
+HER,anger_yes,-0.501133867361
 HER,feel_yes,-0.48278305686
 HER,differ_yes,-0.470164452743
 HER,is_tone_no,-0.416878625103
@@ -46,7 +46,7 @@ HER,has_hashtag,-2.40437937898
 HER,type_photo,-2.18189730535
 HER,negemo_yes,-2.17048577119
 HER,posemo_yes,-1.71201357954
-HER,anger_yes,-1.2757581659
+HER,reward_yes,-1.2757581659
 HER,is_analytic_no,-0.933255668665
 HER,risk_yes,-0.882074655778
 HER,is_clout_no,-0.751520312245
@@ -54,7 +54,7 @@ HER,insight_yes,-0.562519900378
 HER,cause_yes,-0.540410264278
 HER,achieve_yes,-0.475285655161
 HER,discrep_yes,-0.449017349875
-HER,reward_yes,-0.399887828581
+HER,anger_yes,-0.399887828581
 HER,is_tone_yes,-0.333406278061
 HER,differ_yes,-0.154774666595
 LER,type_link,4.59022462014
@@ -77,7 +77,7 @@ HER,has_hashtag,-1.89628728118
 HER,assent_yes,-1.64537889423
 HER,negemo_yes,-1.48101845586
 HER,posemo_yes,-1.38464152321
-HER,anger_yes,-1.18360764406
+HER,reward_yes,-1.18360764406
 HER,is_analytic_no,-1.03131173121
 HER,risk_yes,-0.914737061083
 HER,is_clout_no,-0.692553265711
@@ -87,7 +87,7 @@ HER,is_tone_yes,-0.660007692684
 HER,cause_yes,-0.590852266244
 HER,anx_yes,-0.568900980523
 HER,feel_yes,-0.514376558586
-HER,reward_yes,-0.507172420615
+HER,anger_yes,-0.507172420615
 HER,achieve_yes,-0.497598420363
 HER,differ_yes,-0.479797279267
 HER,is_tone_no,-0.450856354121
