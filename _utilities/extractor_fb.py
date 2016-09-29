@@ -737,8 +737,8 @@ path_to_store_fb_posts = '../fb_data/posts/others/raw_fb_posts_nonprofit.csv'
 path_to_store_fb_comments = '../fb_data/comments/raw_fb_comments_20160223.csv'
 path_to_store_fb_comments_replies = '../../_big_files/facebook/raw_fb_comments_replies_20160223.csv'
 
-path_to_id_list = '../fb_data/posts/maas/fb_id_temp.txt'
-path_to_store_post_by_id = '../fb_data/posts/maas/raw_fb_post.csv'
+path_to_id_list = '/Users/yi-linghwong/Documents/PhD/RESEARCH/NASA_data/facebook/data/fb_post_id_missing.csv'
+path_to_store_post_by_id = '/Users/yi-linghwong/Documents/PhD/RESEARCH/NASA_data/facebook/data/fb_post_missing.csv'
 
 if __name__ == '__main__':
 
@@ -753,7 +753,7 @@ if __name__ == '__main__':
     # get posts for pages
     ################
 
-    posts = ext.get_page_posts(graph)
+    #posts = ext.get_page_posts(graph)
 
 
     ###############
@@ -775,7 +775,7 @@ if __name__ == '__main__':
     # get post by id
     ###############
 
-    #ext.get_post_by_id()
+    ext.get_post_by_id()
 
     ###############
     # get single commet
