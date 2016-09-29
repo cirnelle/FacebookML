@@ -6,7 +6,7 @@ import pandas as pd
 from datetime import datetime
 
 
-lines1 = open('../user_list/user_MASTER.csv','r').readlines()
+lines1 = open('../user_list/user_ALL.csv','r').readlines()
 
 users = []
 
@@ -23,7 +23,7 @@ for u in users:
     #-----------------
     # find start and end date to get date range
 
-    lines = open('../followers/follcount/follcount_'+u+'.csv','r').readlines()
+    lines = open('../user_list/likes/'+u+'.txt','r').readlines()
 
     dates_ori = []
 
@@ -173,7 +173,7 @@ for u in users:
             z = list(z)
             date_follcount_interpolated.append(z)
 
-        f = open('../followers/follcount_interpolated/'+u+'.csv','w')
+        f = open('../user_list/likes_interpolated/'+u+'.csv','w')
 
         for df in date_follcount_interpolated:
             f.write(','.join(df)+'\n')
