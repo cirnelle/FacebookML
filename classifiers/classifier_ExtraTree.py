@@ -774,19 +774,22 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/politics/likecorr/labelled_combined.csv'
+path_to_labelled_file = '../output/features/nasa/real/labelled_combined.csv'
 #path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
+
 path_to_file_to_be_predicted = '../output/to_predict/sydscifest/sydscifest_test'
 path_to_gold_standard_file = '../output/features/maas/labelled_combined.csv'
-
 path_to_store_predicted_results = '../output/predictions/maas/predicted_results_et.csv'
-path_to_store_vocabulary_file = '../output/feature_importance/extratree/politics/likecorr/extratree_vocab.txt'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/politics/likecorr/extratree_fs_boolean.csv'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/politics/likecorr/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree/politics/likecorr/extratree_feature_importance.csv'
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/likecorr/politics.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/politics/likecorr/extratree_feat_byClass_combined.csv'
+
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/nasa/extratree_vocab.txt'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/nasa/extratree_fs_boolean.csv'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/nasa/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/nasa/extratree_feature_importance.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/nasa/extratree_feat_byClass_combined.csv'
+
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/nasa/nasa_real.csv'
+
 
 
 

@@ -1,0 +1,8 @@
+LER,low_wps,22
+LER,many_sixltr,49
+HER,has_exclam,35
+LER,no_exclam,110
+HER,no_qmark,89
+HER,few_sixltr,35
+LER,has_qmark,43
+LER,high_wps,37

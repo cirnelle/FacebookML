@@ -30,6 +30,7 @@ class GetLiwcMean():
         liwc_score = []
         liwc_scores = []
 
+
         #analytic,clout,authentic,tone,wps,sixltr,posemo,negemo,anx,ang,sad,insight,cause,discrep,tentat,certain,differ,see,hear,feel,affiliation,achieve,power,reward,risk,swear,netspeak,assent,nonflu,filler,qmark,exclam = []
 
 
@@ -44,6 +45,8 @@ class GetLiwcMean():
 
             liwc_score = [float(i) for i in l]
             liwc_scores.append(liwc_score)
+
+        print("Length of post list is " + str(len(liwc_scores)))
 
         liwc_m = np.mean(liwc_scores, axis = 0)
         liwc_s = np.std(liwc_scores, axis = 0)
@@ -97,8 +100,8 @@ class GetLiwcMean():
 # variables
 ################
 
-path_to_liwc_result_file = '../output/liwc/mean/liwc_nonprofit_all.txt'
-path_to_store_liwc_mean_and_std_file = '../output/liwc/mean/nonprofit_mean.txt'
+path_to_liwc_result_file = '../output/liwc/nasa/liwc_nasa_ALL.txt'
+path_to_store_liwc_mean_and_std_file = '../output/liwc/mean/nasa/liwc_nasa_mean.txt'
 
 
 if __name__ == '__main__':

@@ -1,0 +1,264 @@
+type_Photo has_url,HER
+type_Video,HER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Video has_url,HER
+type_Video has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag,HER
+type_Photo has_url,HER
+type_Video has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Video has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Video has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Video has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Photo has_url,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo,HER
+type_Video has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Video has_url,LER
+type_Photo has_url,LER
+type_Photo,HER
+type_Photo has_hashtag has_url,HER
+type_Photo,LER
+type_Photo has_url,HER
+type_Status has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Link has_url,LER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Photo has_url,HER
+type_Video,HER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Video has_url,HER
+type_Video has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Video has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Status,LER
+type_Video has_hashtag has_url,LER
+type_Video has_hashtag has_url,LER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag,LER
+type_Photo has_url,LER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Video has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo,LER
+type_Photo has_hashtag has_url,LER
+type_Photo,HER
+type_Video has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo,LER
+type_Video has_url,HER
+type_Photo,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Photo has_url,HER
+type_Video has_hashtag,HER
+type_Video has_hashtag has_url,HER
+type_Photo,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Video has_url,HER
+type_Photo has_url,HER
+type_Photo has_url,HER
+type_Photo has_url,HER
+type_Video has_url,LER
+type_Photo,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,HER
+type_Video has_url,HER
+type_Photo has_url,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Photo,LER
+type_Link,LER
+type_Video,LER
+type_Photo has_url,LER
+type_Video,HER
+type_Photo has_hashtag has_url,HER
+type_Photo has_url,LER
+type_Video,LER
+type_Photo has_hashtag has_url,LER
+type_Video has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Video,LER
+type_Photo,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Video has_hashtag has_url,HER
+type_Video,HER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Video,HER
+type_Photo has_url,HER
+type_Video,HER
+type_Photo has_url,LER
+type_Video has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Video has_url,LER
+type_Photo has_url,HER
+type_Video,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,HER
+type_Photo has_url,HER
+type_Video,HER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Video,HER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,HER
+type_Video has_url,LER
+type_Video has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Video,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo,LER
+type_Photo has_url,LER
+type_Video has_url,HER
+type_Photo has_url,HER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Status,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag,LER
+type_Video has_url,HER
+type_Photo has_hashtag has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo has_url,LER
+type_Photo has_hashtag has_url,LER
+type_Photo,LER
+type_Photo has_url,LER
+type_Video has_hashtag has_url,LER
+type_Video has_url,LER
+type_Video has_hashtag has_url,LER
+type_Photo has_url,HER

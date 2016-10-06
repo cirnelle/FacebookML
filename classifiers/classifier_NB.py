@@ -821,26 +821,29 @@ class NaiveBayes():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/politics/likecorr/labelled_combined.csv'
+path_to_labelled_file = '../output/features/nasa/real/labelled_combined.csv'
 #path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
+
 path_to_file_to_be_predicted = '../output/to_predict/sydscifest/sydscifest_test'
 path_to_gold_standard_file = '../output/features/maas/labelled_combined.csv'
-
 path_to_store_predicted_results = '../output/predictions/maas/predicted_results_nb.csv'
-path_to_store_features_by_probability_file = '../output/feature_importance/nb/politics/likecorr/nb_feat_by_prob.csv'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/politics/likecorr/nb_fs_boolean.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/nb/politics/likecorr/nb_feature_names.txt'
-path_to_store_coefficient_file = '../output/feature_importance/nb/politics/likecorr/nb_coef.txt'
-path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/politics/likecorr/nb_feature_prob_0.csv' #Empirical log probability of features given a class
-path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/politics/likecorr/nb_feature_prob_1.csv'
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/nb/likecorr/politics.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/nb/politics/likecorr/nb_feat_by_class_combined.csv'
+
+path_to_store_features_by_probability_file = '../output/feature_importance/nb/nasa/nb_feat_by_prob.csv'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/nb/nasa/nb_fs_boolean.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/nb/nasa/nb_feature_names.txt'
+path_to_store_coefficient_file = '../output/feature_importance/nb/nasa/nb_coef.txt'
+path_to_store_feature_log_prob_for_class_0 = '../output/feature_importance/nb/nasa/nb_feature_prob_0.csv' #Empirical log probability of features given a class
+path_to_store_feature_log_prob_for_class_1 = '../output/feature_importance/nb/nasa/nb_feature_prob_1.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/nb/nasa/nb_feat_by_class_combined.csv'
+
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/nb/nasa/nasa_real.csv'
+
 
 
 # for classifier without pipeline
 _ngram_range = (1,1)
-_alpha = 0.4
+_alpha = 0.6
 _use_idf = False
 _percentile = 85
 _score_func = f_classif
