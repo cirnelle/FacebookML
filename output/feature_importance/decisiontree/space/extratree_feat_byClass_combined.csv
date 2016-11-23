@@ -1,0 +1,99 @@
+HER,is_authentic_yes many_sixltr,17
+LER,is_authentic_no achieve_yes,23
+HER,type_photo,2526
+HER,type_video,301
+LER,has_url,1970
+LER,type_link has_hashtag,332
+LER,is_authentic_no,1276
+HER,see_yes,1833
+LER,has_qmark,629
+LER,type_status,798
+HER,low_wps,1257
+HER,power_yes,1400
+LER,is_analytic_no,1412
+HER,type_video has_hashtag,80
+HER,insight_yes,1171
+HER,is_analytic_yes,1470
+HER,is_authentic_yes,1191
+HER,tentat_yes,870
+HER,cause_yes,960
+HER,is_authentic_yes posemo_yes,150
+HER,is_analytic_yes is_authentic_yes,443
+LER,is_clout_yes,947
+HER,affiliation_yes achieve_yes,610
+LER,is_authentic_no see_yes,177
+HER,is_tone_yes,1246
+LER,is_analytic_no is_clout_yes,551
+HER,achieve_yes,1074
+HER,hear_yes affiliation_yes,123
+HER,posemo_yes,1945
+HER,posemo_yes negemo_yes,259
+HER,affiliation_yes power_yes,284
+HER,feel_yes achieve_yes,61
+HER,is_clout_yes is_tone_yes,168
+LER,affiliation_yes netspeak_yes,240
+LER,netspeak_yes few_sixltr,488
+LER,has_exclam type_link,409
+LER,insight_yes affiliation_yes,77
+HER,many_sixltr low_wps,302
+HER,is_tone_yes posemo_yes,1246
+HER,see_yes affiliation_yes,575
+LER,high_wps,595
+HER,posemo_yes cause_yes,205
+HER,insight_yes cause_yes,484
+LER,many_sixltr,894
+LER,few_sixltr high_wps,102
+HER,low_wps has_exclam,618
+LER,netspeak_yes has_qmark,107
+HER,type_photo has_hashtag,626
+HER,see_yes achieve_yes,181
+HER,feel_yes affiliation_yes,188
+HER,tentat_yes certain_yes,301
+HER,low_wps type_photo,425
+HER,is_analytic_yes posemo_yes,141
+LER,many_sixltr high_wps,154
+HER,has_exclam type_video,62
+HER,is_analytic_no is_clout_no,229
+LER,netspeak_yes has_exclam,109
+HER,reward_yes few_sixltr,126
+LER,is_analytic_no is_authentic_no,337
+HER,feel_yes,360
+HER,posemo_yes discrep_yes,83
+HER,insight_yes see_yes,188
+HER,is_analytic_no is_tone_yes,72
+LER,netspeak_yes,2088
+HER,is_clout_no is_authentic_yes,248
+HER,posemo_yes certain_yes,116
+HER,is_authentic_yes is_tone_yes,453
+HER,tentat_yes see_yes,181
+LER,low_wps has_qmark,151
+HER,discrep_yes,418
+HER,posemo_yes insight_yes,602
+LER,netspeak_yes many_sixltr,497
+LER,is_analytic_yes is_clout_yes,262
+HER,posemo_yes few_sixltr,12
+LER,achieve_yes netspeak_yes,171
+HER,is_clout_yes is_authentic_yes,235
+LER,assent_yes nonflu_yes,15
+HER,achieve_yes power_yes,610
+LER,is_authentic_no is_tone_yes,336
+HER,hear_yes,307
+HER,netspeak_yes nonflu_yes,37
+LER,is_clout_no is_authentic_no,69
+HER,insight_yes differ_yes,42
+LER,high_wps type_link,259
+HER,risk_yes netspeak_yes,89
+HER,tentat_yes differ_yes,256
+HER,is_authentic_yes see_yes,60
+LER,is_analytic_yes is_authentic_no,345
+LER,is_authentic_no affiliation_yes,58
+LER,posemo_yes hear_yes,14
+HER,power_yes has_exclam,21
+HER,is_analytic_no is_authentic_yes,173
+HER,cause_yes differ_yes,55
+HER,insight_yes certain_yes,83
+LER,see_yes netspeak_yes,297
+HER,power_yes netspeak_yes,468
+LER,low_wps type_link,155
+HER,power_yes few_sixltr,87
+HER,differ_yes see_yes,514

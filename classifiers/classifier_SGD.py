@@ -99,7 +99,7 @@ class SGD():
         # train the classifier
 
         print("Fitting data ...")
-        clf = SGDClassifier(loss=_loss, penalty=_penalty, alpha=_alpha, random_state=42).fit(X_tfidf, y_train)
+        clf = SGDClassifier(loss=_loss, penalty=_penalty, alpha=_alpha, n_iter=_n_iter, random_state=42).fit(X_tfidf, y_train)
 
 
         ##################
@@ -165,7 +165,7 @@ class SGD():
 
         print("Shape of array after feature selection is " + str(X_features.shape))
 
-        clf = SGDClassifier(loss=_loss, penalty=_penalty, alpha=_alpha, random_state=42).fit(X_features, y_train)
+        clf = SGDClassifier(loss=_loss, penalty=_penalty, alpha=_alpha, n_iter=_n_iter, random_state=42).fit(X_features, y_train)
 
         # get the features which are selected and write to file
 
@@ -236,6 +236,7 @@ class SGD():
             'vect__use_idf': (True, False),
             'clf__loss': ('hinge', 'log'),
             'clf__penalty': ('l2', 'l1', 'elasticnet'),
+            'clf__n_iter': (5,10), #interesting because big n_iter doesn't perform as well as small one
             'clf__alpha': (0.001, 0.0001, 0.0005),
         }
 
@@ -352,6 +353,7 @@ class SGD():
             'selector__percentile': (85, 95, 100),
             'clf__loss': ('hinge', 'log'),
             'clf__penalty': ('l2', 'l1', 'elasticnet'),
+            'clf__n_iter': (5,10),
             'clf__alpha': (0.001, 0.0001, 0.0005),
 
         }
@@ -730,7 +732,7 @@ class SGD():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/nasa/real/labelled_combined.csv'
+path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 #path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 
@@ -738,13 +740,13 @@ path_to_file_to_be_predicted = '../output/to_predict/sydscifest/sydscifest_test'
 path_to_gold_standard_file = '../output/features/maas/labelled_combined.csv'
 path_to_store_predicted_results = '../output/predictions/maas/predicted_results_sgd.csv'
 
-path_to_store_coefficient_file = '../output/feature_importance/sgd/nasa/sgd_coef.csv'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/sgd/nasa/sgd_fs_boolean.csv'
-path_to_store_list_of_feature_file = '../output/feature_importance/sgd/nasa/sgd_feature_names.csv'
-path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/nasa/sgd_coef_and_feat.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/nasa/sgd_feat_by_class_combined.csv'
+path_to_store_coefficient_file = '../output/feature_importance/sgd/space/sgd_coef.csv'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/sgd/space/sgd_fs_boolean.csv'
+path_to_store_list_of_feature_file = '../output/feature_importance/sgd/space/sgd_feature_names.csv'
+path_to_store_feature_and_coef_file = '../output/feature_importance/sgd/space/sgd_coef_and_feat.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/sgd/space/sgd_feat_by_class_combined.csv'
 
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/sgd/nasa/nasa_real.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/sgd/space.csv'
 
 
 # for classifier without pipeline
@@ -752,6 +754,7 @@ _ngram_range = (1,1)
 _use_idf = False
 _loss = 'log' # 'hinge' gives linear SVM; 'log' gives logistic regression
 _penalty = 'l2'
+_n_iter = 5
 _alpha = 0.001
 _score_func = chi2
 _percentile = 85
@@ -808,7 +811,7 @@ if __name__ == '__main__':
     # run SGD Classifier
     ##################
 
-    clf, count_vect = sgd.train_classifier()
+    #clf, count_vect = sgd.train_classifier()
 
 
     ###################
@@ -822,7 +825,7 @@ if __name__ == '__main__':
     # use pipeline
     ###################
 
-    #clf, count_vect = sgd.use_pipeline()
+    clf, count_vect = sgd.use_pipeline()
 
     ###################
     # use pipeline and use feature selection

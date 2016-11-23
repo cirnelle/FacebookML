@@ -95,7 +95,7 @@ class ExtraTree():
         # train the classifier
 
         print ("Fitting data ...")
-        clf = ExtraTreesClassifier().fit(X_tfidf, y_train)
+        clf = ExtraTreesClassifier(n_estimators=_n_estimators, criterion=_criterion, max_depth=_max_depth, min_samples_split=_min_samples_split).fit(X_tfidf, y_train)
 
 
         ##################
@@ -163,7 +163,7 @@ class ExtraTree():
 
         print ("Shape of array after feature selection is "+str(X_features.shape))
 
-        clf = ExtraTreesClassifier().fit(X_features, y_train)
+        clf = ExtraTreesClassifier(n_estimators=_n_estimators, criterion=_criterion, max_depth=_max_depth, min_samples_split=_min_samples_split).fit(X_features, y_train)
 
         # get the features which are selected and write to file
 
@@ -234,6 +234,10 @@ class ExtraTree():
         parameters = {
             'vect__ngram_range': [(1,1), (1,2), (1,3)],
             'vect__use_idf': (True, False),
+            'clf__n_estimators': (10,50,100),
+            'clf__criterion': ("gini", "entropy"),
+            'clf__max_depth': (None,2,4),
+            'clf__min_samples_split': (2,4,6),
         }
 
         #################
@@ -341,6 +345,10 @@ class ExtraTree():
         parameters = {
             'vect__ngram_range': [(1,1), (1,2), (1,3)],
             'vect__use_idf': (True, False),
+            'clf__n_estimators': (10,50,100),
+            'clf__criterion': ("gini", "entropy"),
+            'clf__max_depth': (None,2,4),
+            'clf__min_samples_split': (2,4,6),
             'selector__score_func': (chi2, f_classif),
             'selector__percentile': (85, 95, 100),
         }
@@ -774,7 +782,7 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/nasa/real/labelled_combined.csv'
+path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 #path_to_labelled_file = '../output/features/space/labelled_combined.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 
@@ -782,13 +790,13 @@ path_to_file_to_be_predicted = '../output/to_predict/sydscifest/sydscifest_test'
 path_to_gold_standard_file = '../output/features/maas/labelled_combined.csv'
 path_to_store_predicted_results = '../output/predictions/maas/predicted_results_et.csv'
 
-path_to_store_vocabulary_file = '../output/feature_importance/extratree/nasa/extratree_vocab.txt'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/nasa/extratree_fs_boolean.csv'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/nasa/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree/nasa/extratree_feature_importance.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/nasa/extratree_feat_byClass_combined.csv'
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/space/extratree_vocab.txt'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/space/extratree_fs_boolean.csv'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/space/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/space/extratree_feature_importance.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/space/extratree_feat_byClass_combined.csv'
 
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/nasa/nasa_real.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/space.csv'
 
 
 
@@ -796,6 +804,10 @@ path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extr
 # for classifier without pipeline
 _ngram_range = (1,1)
 _use_idf = True
+_n_estimators = 10
+_criterion = "gini"
+_max_depth = None
+_min_samples_split = 2
 _percentile = 85
 _score_func = chi2
 
@@ -851,7 +863,7 @@ if __name__ == '__main__':
     # run ExtraTree Classifier
     ##################
 
-    clf, count_vect = et.train_classifier()
+    #clf, count_vect = et.train_classifier()
 
 
     ###################
@@ -865,7 +877,7 @@ if __name__ == '__main__':
     # use pipeline
     ###################
 
-    #clf, count_vect = et.use_pipeline()
+    clf, count_vect = et.use_pipeline()
 
     ###################
     # use pipeline and use feature selection

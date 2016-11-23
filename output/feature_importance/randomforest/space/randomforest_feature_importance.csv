@@ -1,0 +1,100 @@
+9.48336575145e-05	discrep_yes hear_yes
+9.2382689501e-06	assent_yes type_photo
+9.18107494509e-05	tentat_yes netspeak_yes
+9.15558727089e-05	is_analytic_no many_sixltr
+9.12811531419e-05	power_yes has_qmark
+8.74591084733e-06	is_analytic_yes many_sixltr
+8.63992038919e-06	is_analytic_yes type_photo
+8.40377399313e-07	is_analytic_yes certain_yes
+8.29499368341e-05	cause_yes few_sixltr
+8.09966948731e-06	reward_yes type_status
+7.49629138101e-05	is_clout_yes is_tone_no
+7.30672387554e-05	is_clout_yes few_sixltr
+7.28745831076e-05	reward_yes assent_yes
+7.21258421402e-05	is_analytic_no feel_yes
+7.20231442975e-06	is_analytic_yes affiliation_yes
+7.10766008421e-05	is_analytic_no low_wps
+7.05227811512e-05	assent_yes type_status
+6.99776230961e-05	power_yes assent_yes
+6.9001885368e-05	see_yes type_video
+6.77473056341e-05	is_authentic_no reward_yes
+6.73240646185e-05	anx_yes anger_yes
+6.61761838464e-05	reward_yes has_qmark
+6.44965452343e-05	certain_yes hear_yes
+6.32071747433e-05	differ_yes few_sixltr
+6.29886077449e-05	feel_yes assent_yes
+6.27289866982e-06	sad_yes tentat_yes
+6.24003385346e-05	negemo_yes cause_yes
+6.21488630025e-05	insight_yes many_sixltr
+6.04994412099e-05	is_analytic_no achieve_yes
+5.98815192447e-07	feel_yes type_photo
+5.97349167754e-07	differ_yes low_wps
+5.92033555211e-05	is_authentic_yes few_sixltr
+5.90644022262e-05	filler_yes few_sixltr
+5.72243663184e-05	is_analytic_yes netspeak_yes
+5.66999568233e-05	tentat_yes many_sixltr
+5.51106441467e-05	is_clout_no tentat_yes
+5.4546944955e-05	achieve_yes type_video
+5.3750278609e-05	see_yes has_exclam
+5.34244902378e-05	certain_yes power_yes
+5.05440828557e-05	discrep_yes netspeak_yes
+5.03527229978e-05	feel_yes low_wps
+5.03340654429e-05	is_authentic_yes netspeak_yes
+4.53517975764e-05	anx_yes see_yes
+4.49577883909e-05	affiliation_yes type_link
+4.41818906082e-05	risk_yes type_video
+4.40052165458e-05	is_authentic_yes reward_yes
+4.27674135807e-08	is_analytic_yes is_tone_no
+4.21823524132e-05	cause_yes many_sixltr
+3.88729693512e-05	see_yes type_photo
+3.78947079855e-07	negemo_yes feel_yes
+3.78169829691e-06	is_clout_yes discrep_yes
+3.78169829691e-05	is_analytic_no few_sixltr
+3.30746952399e-05	is_authentic_yes hear_yes
+3.24023821524e-07	posemo_yes netspeak_yes
+3.2124664267e-05	posemo_yes power_yes
+2.58838313218e-06	achieve_yes type_status
+2.5195443098e-06	nonflu_yes has_exclam
+2.3668926216e-05	tentat_yes low_wps
+2.22171792772e-07	is_analytic_no discrep_yes
+1.93679822728e-05	hear_yes reward_yes
+1.57089461622e-05	see_yes assent_yes
+1.03431064531e-05	cause_yes high_wps
+0.153209444106	type_photo
+0.060345497897	type_link
+0.0281742155043	type_photo has_url
+0.0272362064273	type_status
+0.0242207329914	type_link has_url
+0.0214908517617	low_wps type_photo
+0.015191472228	type_video
+0.0140794122332	posemo_yes
+0.0140495434289	has_exclam type_photo
+0.0134127661221	see_yes
+0.0128212771966	is_authentic_yes
+0.0118673725675	is_authentic_no
+0.0107648961613	has_url
+0.0101887638541	type_photo has_hashtag
+0.0101359479007	power_yes
+0.0101011115915	is_analytic_no
+0.00960732949297	has_qmark type_link
+0.0092791983097	netspeak_yes
+0.00834560364662	many_sixltr
+0.00814979644701	is_analytic_yes
+0.00766700170695	is_clout_yes
+0.00749281364964	has_qmark
+0.00744416256281	affiliation_yes
+0.00723797092783	achieve_yes
+0.00720013926198	low_wps
+0.00689628424619	reward_yes
+0.00681537573141	has_hashtag
+0.00662179237979	few_sixltr
+0.00653151101034	is_tone_yes
+0.00633795826583	posemo_yes insight_yes
+0.00616807337574	see_yes affiliation_yes
+0.00612980314986	netspeak_yes many_sixltr
+0.00610172036621	has_qmark type_photo
+0.00592326868049	high_wps type_link
+0.00590474521148	is_authentic_yes is_tone_yes
+0.00586363510694	has_exclam type_link
+0.00583459439618	low_wps has_exclam
+0.00582986871801	cause_yes
