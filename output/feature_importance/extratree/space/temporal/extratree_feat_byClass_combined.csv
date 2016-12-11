@@ -1,0 +1,95 @@
+LER,power_yes has_qmark,4
+HER,risk_yes low_wps,10
+LER,is_clout_yes many_sixltr,2
+LER,reward_yes has_qmark,8
+HER,anx_yes sad_yes,9
+HER,differ_yes many_sixltr,3
+HER,hear_yes assent_yes,4
+HER,anx_yes certain_yes,4
+HER,cause_yes low_wps,5
+LER,sad_yes power_yes,3
+HER,certain_yes low_wps,3
+LER,discrep_yes netspeak_yes,10
+LER,assent_yes high_wps,10
+HER,sad_yes differ_yes,4
+HER,power_yes swear_yes,2
+HER,nonflu_yes type_photo,7
+HER,posemo_yes nonflu_yes,3
+LER,affiliation_yes type_status,3
+HER,risk_yes high_wps,11
+HER,is_clout_yes few_sixltr,4
+LER,is_authentic_yes feel_yes,3
+HER,is_clout_no tentat_yes,7
+LER,tentat_yes high_wps,3
+LER,sad_yes hear_yes,3
+HER,nonflu_yes has_qmark,2
+HER,see_yes has_qmark,2
+HER,risk_yes nonflu_yes,7
+HER,nonflu_yes type_video,5
+HER,is_analytic_no tentat_yes,3
+HER,is_clout_no certain_yes,3
+HER,risk_yes type_photo,5
+LER,risk_yes type_link,3
+LER,negemo_yes feel_yes,4
+HER,feel_yes type_photo,4
+HER,assent_yes type_photo,11
+HER,discrep_yes achieve_yes,6
+HER,insight_yes reward_yes,5
+LER,assent_yes type_link,6
+HER,feel_yes assent_yes,3
+LER,insight_yes type_link,3
+HER,certain_yes many_sixltr,4
+LER,is_authentic_yes netspeak_yes,15
+HER,reward_yes swear_yes,4
+HER,is_authentic_yes reward_yes,3
+LER,negemo_yes certain_yes,5
+LER,is_analytic_no netspeak_yes,2
+LER,discrep_yes feel_yes,3
+HER,insight_yes low_wps,3
+HER,type_photo,2143
+LER,type_link,1558
+HER,type_photo has_url,818
+LER,type_link has_url,852
+LER,type_status,642
+LER,netspeak_yes,1760
+HER,type_photo has_hashtag,445
+LER,has_url,1667
+HER,has_exclam type_photo,535
+LER,type_status has_url,297
+LER,is_authentic_no,897
+HER,see_yes,1565
+LER,has_qmark type_link,340
+HER,posemo_yes,1601
+LER,has_exclam type_link,348
+LER,high_wps type_status,156
+HER,netspeak_yes type_photo,228
+LER,type_video,266
+HER,power_yes,1164
+HER,affiliation_yes,1110
+HER,is_authentic_yes,955
+HER,has_hashtag,594
+HER,has_qmark type_photo,221
+HER,has_exclam,832
+LER,high_wps,740
+HER,few_sixltr,635
+LER,is_analytic_no,701
+LER,many_sixltr,808
+LER,is_clout_yes,774
+HER,insight_yes,1011
+HER,affiliation_yes achieve_yes,516
+HER,cause_yes,838
+HER,high_wps type_photo,423
+HER,is_authentic_yes is_tone_yes,298
+HER,is_tone_yes posemo_yes,839
+LER,high_wps type_link,309
+HER,reward_yes,814
+LER,type_link has_hashtag,225
+LER,many_sixltr type_status,122
+LER,has_qmark,534
+HER,achieve_yes,909
+HER,low_wps,809
+HER,low_wps has_exclam,392
+HER,is_tone_yes,839
+HER,see_yes power_yes,229
+LER,netspeak_yes many_sixltr,437
+HER,differ_yes see_yes,449

@@ -532,7 +532,7 @@ class GetBoundaryValues():
 # variables
 ##############
 
-path_to_liwc_result_file = '../output/liwc/nasa/liwc_nasa_real.txt'
+path_to_liwc_result_file = '../output/liwc/temporal/liwc_nonprofit_training.txt'
 path_to_anew_result_file = '../output/anew/anew_nonprofit.csv'
 
 

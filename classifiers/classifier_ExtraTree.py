@@ -25,6 +25,7 @@ from nltk.util import ngrams
 
 
 class ExtraTree():
+
     def train_test_split(self):
 
         #################
@@ -236,8 +237,8 @@ class ExtraTree():
             'vect__use_idf': (True, False),
             'clf__n_estimators': (10,50,100),
             'clf__criterion': ("gini", "entropy"),
-            'clf__max_depth': (None,2,4),
-            'clf__min_samples_split': (2,4,6),
+            #'clf__max_depth': (None,2,4),
+            #'clf__min_samples_split': (2,4,6),
         }
 
         #################
@@ -467,6 +468,121 @@ class ExtraTree():
         # plt.show()
 
         return clf,count_vect
+
+
+    def use_pipeline_temporal(self):
+
+        docs_train, docs_test, y_train, y_test = train_test_split(X, y, test_size=0.0, random_state=42)  # docs_test and y_test will be overwritten
+
+        dataset_test = pd.read_csv(path_to_labelled_test_data_file_temporal, header=0, names=['posts', 'class'])
+
+        docs_test = dataset_test['posts']
+        y_test = dataset_test['class']
+
+        #####################
+        # Build a vectorizer / classifier pipeline that filters out tokens that are too rare or too frequent
+        #####################
+
+        pipeline = Pipeline([
+            ('vect', TfidfVectorizer(stop_words=stopwords, min_df=3, max_df=0.90)),
+            ('clf', ExtraTreesClassifier()),
+        ])
+
+        # Build a grid search to find the best parameter
+        # Fit the pipeline on the training set using grid search for the parameters
+        parameters = {
+            'vect__ngram_range': [(1, 1), (1, 2), (1, 3)],
+            'vect__use_idf': (True, False),
+            'clf__n_estimators': (10, 50, 100),
+            #'clf__criterion': ("gini", "entropy"),
+            #'clf__max_depth': (None, 2, 4),
+            #'clf__min_samples_split': (2, 4, 6),
+        }
+
+        #################
+        # Exhaustive search over specified parameter values for an estimator, use cv to generate data to be used
+        # implements the usual estimator API: when “fitting” it on a dataset all the possible combinations of parameter values are evaluated and the best combination is retained.
+        #################
+
+        cv = StratifiedShuffleSplit(y_train, n_iter=5, test_size=0.2, random_state=42)
+        grid_search = GridSearchCV(pipeline, param_grid=parameters, cv=cv, n_jobs=-1)
+        clf_gs = grid_search.fit(docs_train, y_train)
+
+        ###############
+        # print the cross-validated scores for the each parameters set explored by the grid search
+        ###############
+
+        best_parameters, score, _ = max(clf_gs.grid_scores_, key=lambda x: x[1])
+        for param_name in sorted(parameters.keys()):
+            print("%s: %r" % (param_name, best_parameters[param_name]))
+
+        print("Score for gridsearch is %0.2f" % score)
+
+        # y_predicted = clf_gs.predict(docs_test)
+
+
+        ###############
+        # run the classifier again with the best parameters
+        # in order to get 'clf' for get_important_feature function!
+        ###############
+
+        ngram_range = best_parameters['vect__ngram_range']
+        use_idf = best_parameters['vect__use_idf']
+
+        # vectorisation
+
+        count_vect = CountVectorizer(stop_words=stopwords, min_df=3, max_df=0.90, ngram_range=ngram_range)
+        X_CV = count_vect.fit_transform(docs_train)
+
+        # print number of unique words (n_features)
+        print("Shape of train data is " + str(X_CV.shape))
+
+        # tfidf transformation
+
+        tfidf_transformer = TfidfTransformer(use_idf=use_idf)
+        X_tfidf = tfidf_transformer.fit_transform(X_CV)
+
+        # train the classifier
+
+        print("Fitting data with best parameters ...")
+        clf = ExtraTreesClassifier().fit(X_tfidf, y_train)
+
+        ##################
+        # get cross validation score
+        ##################
+
+        scores = cross_val_score(clf, X_tfidf, y_train, cv=10, scoring='f1_weighted')
+        print("Cross validation score: " + str(scores))
+
+        # Get average performance of classifier on training data using 10-fold CV, along with standard deviation
+
+        print("Cross validation accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+
+        ##################
+        # run classifier on test data
+        ##################
+
+        X_test_CV = count_vect.transform(docs_test)
+
+        X_test_tfidf = tfidf_transformer.transform(X_test_CV)
+
+        y_predicted = clf.predict(X_test_tfidf)
+
+        # print the mean accuracy on the given test data and labels
+
+        print("Classifier score on test data is: %0.2f " % clf.score(X_test_tfidf, y_test))
+
+        # Print and plot the confusion matrix
+
+        print(metrics.classification_report(y_test, y_predicted))
+        cm = metrics.confusion_matrix(y_test, y_predicted)
+        print(cm)
+
+        # import matplotlib.pyplot as plt
+        # plt.matshow(cm)
+        # plt.show()
+
+        return clf, count_vect
 
 
     def predict_posts(self):
@@ -782,21 +898,22 @@ class ExtraTree():
 # variables
 ###############
 
-path_to_labelled_file = '../output/features/space/labelled_combined.csv'
-#path_to_labelled_file = '../output/features/space/labelled_combined.csv'
+path_to_labelled_file = '../output/features/nonprofit/temporal/training/labelled_combined_all.csv'
+#path_to_labelled_file = '../output/features/nonprofit/labelled_combined.csv'
+path_to_labelled_test_data_file_temporal = '../output/features/nonprofit/temporal/test/labelled_combined_all.csv'
 path_to_stopword_file = '../../TwitterML/stopwords/stopwords.csv'
 
 path_to_file_to_be_predicted = '../output/to_predict/sydscifest/sydscifest_test'
 path_to_gold_standard_file = '../output/features/maas/labelled_combined.csv'
 path_to_store_predicted_results = '../output/predictions/maas/predicted_results_et.csv'
 
-path_to_store_vocabulary_file = '../output/feature_importance/extratree/space/extratree_vocab.txt'
-path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/space/extratree_fs_boolean.csv'
-path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/space/extratree_feat_imp_all.txt'
-path_to_store_top_important_features_file = '../output/feature_importance/extratree/space/extratree_feature_importance.csv'
-path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/space/extratree_feat_byClass_combined.csv'
+path_to_store_vocabulary_file = '../output/feature_importance/extratree/nonprofit/temporal/extratree_vocab.txt'
+path_to_store_feature_selection_boolean_file = '../output/feature_importance/extratree/nonprofit/temporal/extratree_fs_boolean.csv'
+path_to_store_complete_feature_importance_file = '../output/feature_importance/extratree/nonprofit/temporal/extratree_feat_imp_all.txt'
+path_to_store_top_important_features_file = '../output/feature_importance/extratree/nonprofit/temporal/extratree_feature_importance.csv'
+path_to_store_important_features_by_class_file = '../output/feature_importance/extratree/nonprofit/temporal/extratree_feat_byClass_combined_all.csv'
 
-path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/space.csv'
+path_to_store_feat_imp_for_normalisation = '../output/featimp_normalisation/extratree/temporal/nonprofit.csv'
 
 
 
@@ -865,19 +982,17 @@ if __name__ == '__main__':
 
     #clf, count_vect = et.train_classifier()
 
-
     ###################
     # run ExtraTree Classifier and use feature selection
     ###################
 
     #clf, count_vect = et.train_classifier_use_feature_selection()
 
-
     ###################
     # use pipeline
     ###################
 
-    clf, count_vect = et.use_pipeline()
+    #clf, count_vect = et.use_pipeline()
 
     ###################
     # use pipeline and use feature selection
@@ -885,6 +1000,11 @@ if __name__ == '__main__':
 
     #clf, count_vect = et.use_pipeline_with_fs()
 
+    ###################
+    # use pipeline (temporal)
+    ###################
+
+    clf, count_vect = et.use_pipeline_temporal()
 
     ###################
     # Get feature importance

@@ -1,0 +1,93 @@
+LER,discrep_yes few_sixltr,5
+LER,achieve_yes swear_yes,3
+HER,discrep_yes achieve_yes,8
+LER,type_event has_url,8
+HER,is_analytic_yes netspeak_yes,2
+LER,filler_yes,3
+LER,is_clout_no many_sixltr,8
+LER,sad_yes achieve_yes,3
+HER,is_authentic_yes achieve_yes,5
+HER,differ_yes low_wps,4
+LER,is_analytic_yes tentat_yes,3
+LER,cause_yes many_sixltr,4
+LER,anger_yes feel_yes,3
+LER,is_analytic_yes discrep_yes,4
+LER,anger_yes many_sixltr,4
+HER,negemo_yes differ_yes,5
+LER,hear_yes high_wps,3
+LER,insight_yes reward_yes,3
+HER,is_clout_yes differ_yes,2
+LER,tentat_yes low_wps,4
+HER,risk_yes has_qmark,5
+LER,high_wps type_event,3
+LER,achieve_yes assent_yes,4
+HER,is_tone_no few_sixltr,3
+HER,swear_yes few_sixltr,4
+LER,achieve_yes type_link,4
+HER,insight_yes low_wps,4
+LER,tentat_yes many_sixltr,3
+LER,achieve_yes has_qmark,5
+HER,risk_yes swear_yes,4
+LER,hear_yes reward_yes,8
+HER,differ_yes many_sixltr,6
+HER,is_analytic_no tentat_yes,3
+LER,nonflu_yes type_status,2
+HER,is_authentic_no assent_yes,2
+LER,is_clout_no few_sixltr,4
+HER,tentat_yes has_exclam,2
+LER,discrep_yes feel_yes,3
+LER,negemo_yes risk_yes,5
+LER,assent_yes has_qmark,5
+LER,sad_yes power_yes,2
+HER,sad_yes feel_yes,5
+LER,discrep_yes many_sixltr,3
+HER,discrep_yes netspeak_yes,2
+HER,hear_yes risk_yes,5
+LER,assent_yes type_status,5
+LER,is_clout_yes discrep_yes,9
+LER,has_qmark type_note,4
+HER,type_photo,2365
+LER,type_status,884
+LER,type_link,1650
+HER,has_exclam type_photo,911
+LER,see_yes,1373
+LER,has_exclam type_status,207
+HER,posemo_yes,2549
+LER,affiliation_yes,2370
+HER,power_yes,2168
+LER,has_qmark,743
+HER,type_photo has_url,818
+HER,has_exclam,1310
+HER,is_analytic_no,1082
+LER,low_wps type_status,175
+HER,differ_yes,1232
+HER,has_url,1496
+LER,is_analytic_yes,1138
+LER,type_status has_url,256
+LER,achieve_yes,1415
+LER,netspeak_yes,1644
+HER,insight_yes,1313
+HER,is_authentic_no,1019
+LER,reward_yes,1197
+LER,is_clout_yes,1029
+HER,cause_yes,1212
+HER,certain_yes,1115
+HER,low_wps,813
+LER,many_sixltr,1012
+LER,power_yes reward_yes,833
+LER,achieve_yes power_yes,1088
+LER,high_wps,939
+LER,has_qmark type_status,207
+LER,affiliation_yes achieve_yes,1121
+LER,is_authentic_yes,1070
+HER,is_clout_no,911
+HER,has_hashtag,803
+LER,type_status has_hashtag,148
+HER,discrep_yes,979
+HER,power_yes netspeak_yes,575
+HER,type_photo has_hashtag,555
+HER,is_authentic_no posemo_yes,705
+LER,few_sixltr,888
+LER,see_yes affiliation_yes,675
+HER,tentat_yes,1108
+HER,has_qmark type_photo,226

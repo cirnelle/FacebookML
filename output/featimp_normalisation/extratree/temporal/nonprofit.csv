@@ -1,0 +1,188 @@
+
+LER,discrep_yes few_sixltr,9.84822677564e-05
+LER,achieve_yes swear_yes,9.83311819241e-05
+HER,discrep_yes achieve_yes,9.70239480839e-05
+LER,type_event has_url,9.34466868865e-05
+HER,is_analytic_yes netspeak_yes,9.27499264302e-05
+LER,filler_yes,9.23967241125e-06
+LER,is_clout_no many_sixltr,8.94302107307e-05
+LER,sad_yes achieve_yes,8.48154544417e-05
+HER,is_authentic_yes achieve_yes,8.4570229126e-05
+HER,differ_yes low_wps,8.40153733761e-05
+LER,is_analytic_yes tentat_yes,8.22332438681e-05
+LER,cause_yes many_sixltr,7.88529144203e-05
+LER,anger_yes feel_yes,7.55703854315e-05
+LER,is_analytic_yes discrep_yes,7.39808146803e-05
+LER,anger_yes many_sixltr,7.34195683682e-05
+HER,negemo_yes differ_yes,7.1162097667e-05
+LER,hear_yes high_wps,7.02215103255e-05
+LER,insight_yes reward_yes,6.92975430843e-06
+HER,is_clout_yes differ_yes,6.64016457572e-05
+LER,tentat_yes low_wps,6.54936814854e-05
+HER,risk_yes has_qmark,6.37919596709e-05
+LER,high_wps type_event,6.08857769702e-05
+LER,achieve_yes assent_yes,6.01136003913e-05
+HER,is_tone_no few_sixltr,5.94476727589e-05
+HER,swear_yes few_sixltr,5.84362451717e-05
+LER,achieve_yes type_link,5.80896321397e-05
+HER,insight_yes low_wps,5.73352715495e-05
+LER,tentat_yes many_sixltr,5.54380344675e-05
+LER,achieve_yes has_qmark,4.78106179378e-05
+HER,risk_yes swear_yes,4.4776873993e-05
+LER,hear_yes reward_yes,4.30982980547e-05
+HER,differ_yes many_sixltr,3.73708515025e-05
+HER,is_analytic_no tentat_yes,3.55235223119e-05
+LER,nonflu_yes type_status,3.28254248221e-05
+HER,is_authentic_no assent_yes,3.10142850168e-06
+LER,is_clout_no few_sixltr,2.77190172337e-06
+HER,tentat_yes has_exclam,2.63990640321e-06
+LER,discrep_yes feel_yes,2.463912643e-06
+LER,negemo_yes risk_yes,2.30991810281e-07
+LER,assent_yes has_qmark,2.28677412699e-05
+LER,sad_yes power_yes,2.18340566518e-05
+HER,sad_yes feel_yes,2.14492395261e-05
+LER,discrep_yes many_sixltr,2.02910452953e-06
+HER,discrep_yes netspeak_yes,2.01712476851e-05
+HER,hear_yes risk_yes,1.65091205583e-05
+LER,assent_yes type_status,1.22816568666e-05
+LER,is_clout_yes discrep_yes,1.14168366001e-05
+LER,has_qmark type_note,1.01636396524e-05
+HER,type_photo,0.0578517455544
+LER,type_status,0.0307022684686
+LER,type_link,0.027331403792
+HER,has_exclam type_photo,0.0251716782622
+LER,see_yes,0.0156512174828
+LER,has_exclam type_status,0.0139841846241
+HER,posemo_yes,0.0138613456791
+LER,affiliation_yes,0.0122612759882
+HER,power_yes,0.0116232397239
+LER,has_qmark,0.0110309245812
+HER,type_photo has_url,0.0106356232322
+HER,has_exclam,0.0105487033629
+HER,is_analytic_no,0.0104586742798
+LER,low_wps type_status,0.0100959727282
+HER,differ_yes,0.00924629464096
+HER,has_url,0.00889739585683
+LER,is_analytic_yes,0.00872960650529
+LER,type_status has_url,0.00867033502286
+LER,achieve_yes,0.00865936719329
+LER,netspeak_yes,0.00855633380297
+HER,insight_yes,0.00851086604809
+HER,is_authentic_no,0.00837055332662
+LER,reward_yes,0.00790542629313
+LER,is_clout_yes,0.00787780865141
+HER,cause_yes,0.00773561118331
+HER,certain_yes,0.00756510573599
+HER,low_wps,0.00755462302281
+LER,many_sixltr,0.00753964590141
+LER,power_yes reward_yes,0.00734089586583
+LER,achieve_yes power_yes,0.00733987788201
+LER,high_wps,0.00731424008375
+LER,has_qmark type_status,0.00725514952894
+LER,affiliation_yes achieve_yes,0.00724783797134
+LER,is_authentic_yes,0.00724455483348
+HER,is_clout_no,0.00720712069207
+HER,has_hashtag,0.00716068588536
+LER,type_status has_hashtag,0.00714293308719
+HER,discrep_yes,0.00696995662651
+HER,power_yes netspeak_yes,0.00660710433079
+HER,type_photo has_hashtag,0.00649227479369
+HER,is_authentic_no posemo_yes,0.00647618842532
+LER,few_sixltr,0.00642959217251
+LER,see_yes affiliation_yes,0.00623134901336
+HER,tentat_yes,0.00617742837585
+HER,has_qmark type_photo,0.00615557751027
+
+LER,instagram,9.99618123451e-05
+LER,items,9.99124895963e-05
+LER,counseling,9.98852470462e-05
+LER,luck,9.97704196965e-05
+HER,glen,9.96377556371e-05
+LER,famous,9.95503275966e-05
+LER,linked,9.95073910539e-05
+LER,digital,9.94861333796e-05
+LER,soccer,9.94855937791e-05
+LER,juicy,9.94611628787e-05
+HER,lea,9.94497738117e-05
+HER,outreach,9.93691598625e-05
+LER,importance,9.93366875714e-05
+LER,goals,9.93255314241e-05
+LER,epidemic,9.93067757987e-05
+HER,funding,9.92062967477e-05
+LER,shoes,9.89522599617e-05
+LER,internship,9.88988746193e-05
+HER,basis,9.87377041438e-05
+LER,generations,9.86109573667e-05
+HER,matched,9.86086433488e-05
+HER,battle,9.85654912585e-05
+LER,track,9.85221693603e-07
+HER,shameful,9.85221693603e-07
+LER,publishing,9.85221693603e-07
+HER,protests,9.85221693603e-07
+LER,lynch,9.85221693603e-07
+LER,lauren,9.85221693603e-07
+LER,interns,9.85221693603e-07
+LER,cue,9.85221693603e-07
+LER,brooklyn,9.85221693603e-07
+LER,brands,9.85221693603e-07
+HER,allow,9.84852717313e-05
+HER,banks,9.83687753871e-05
+HER,issued,9.83409321513e-05
+LER,download,9.81355776084e-05
+HER,swift,9.81327536711e-07
+HER,circus,9.81327536711e-07
+LER,massacre,9.81254477223e-05
+HER,lawmakers,9.81017333602e-07
+LER,tweeted,9.8084293052e-06
+LER,elementary,9.8084293052e-06
+LER,atlanta,9.8084293052e-06
+HER,violent,9.80073666879e-05
+LER,hello,9.79457619712e-05
+LER,est,9.79310363441e-05
+LER,infant,9.78234305705e-08
+HER,9th,9.78234305705e-08
+LER,mean,9.76001725266e-05
+HER,marriageequality,9.75242526677e-05
+LER,interesting,9.75097419107e-05
+HER,bust,9.74850938933e-06
+LER,consider,9.74674741896e-05
+LER,shum,9.74556766366e-05
+HER,called,9.74458347108e-05
+LER,calculator,9.74425916317e-05
+HER,north,9.74253847956e-05
+HER,boost,9.74127365965e-05
+HER,turtle,9.74027258784e-05
+LER,stephen,9.71538881235e-05
+HER,bunny,9.70775627714e-07
+HER,superbowl,9.70015576837e-05
+LER,ultimately,9.69859429492e-05
+LER,katy,9.68957716438e-07
+LER,sissy,9.66832925289e-05
+HER,complex,9.66302981731e-05
+HER,scared,9.63300191263e-05
+HER,skinned,9.60659682529e-05
+HER,belong,9.59971607021e-07
+HER,eyes,9.59616450624e-05
+HER,mobilizing,9.58019112944e-05
+HER,thankful,9.5787285944e-05
+HER,surgery,9.57669825794e-05
+HER,struggling,9.57238464362e-05
+LER,contaminated,9.57230699853e-05
+LER,chat,9.56686473627e-06
+LER,recipes,9.5534282852e-05
+LER,awards,9.54303591928e-05
+LER,minister,9.54036128031e-05
+LER,episode,9.53922560512e-05
+LER,closely,9.53783821468e-05
+LER,earn,9.53426221565e-05
+HER,twins,9.52952744747e-05
+LER,humanitarian,9.52934077398e-05
+LER,malaria,9.52773932871e-05
+HER,courage,9.51988162336e-05
+LER,buffalo,9.51623256207e-05
+HER,milk,9.50918993938e-07
+HER,safety,9.50663148042e-05
+HER,adorable,9.50425546387e-05
+LER,brett,9.49726868535e-07
+LER,tarps,9.49202835987e-07
+LER,sell,9.49202835987e-07

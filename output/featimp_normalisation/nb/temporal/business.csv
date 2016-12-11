@@ -1,0 +1,402 @@
+
+LER,has_qmark type_status,3.32318702113
+LER,few_sixltr has_qmark type_status,3.21272945143
+LER,netspeak_yes nonflu_yes has_exclam,3.08576273622
+LER,type_status,2.97616473732
+LER,reward_yes netspeak_yes nonflu_yes,2.95226108897
+LER,type_status has_url,2.83874736938
+LER,nonflu_yes few_sixltr has_exclam,2.80522952761
+LER,high_wps type_link has_url,2.7557252805
+LER,low_wps has_qmark type_status,2.7482508284
+LER,has_exclam has_qmark type_status,2.70080326145
+LER,low_wps type_status,2.50763648398
+LER,has_qmark type_status has_url,2.50582005752
+LER,type_link has_url,2.44882249113
+LER,reward_yes has_qmark type_status,2.43014359715
+LER,nonflu_yes has_exclam,2.40750754756
+LER,nonflu_yes few_sixltr,2.40203068278
+LER,netspeak_yes nonflu_yes,2.39236637943
+LER,nonflu_yes has_exclam type_photo,2.36732753996
+LER,netspeak_yes type_link,2.33988677951
+LER,type_link has_hashtag has_url,2.33796227414
+LER,netspeak_yes nonflu_yes few_sixltr,2.31352806323
+LER,has_exclam type_status,2.29812232857
+LER,low_wps has_qmark type_link,2.29245511555
+LER,many_sixltr type_status,2.29235771664
+LER,many_sixltr type_link,2.28965483014
+HER,many_sixltr type_photo has_url,2.28029653084
+LER,posemo_yes discrep_yes power_yes,2.26856042849
+LER,netspeak_yes high_wps type_link,2.24882108715
+LER,many_sixltr high_wps type_link,2.2357879472
+LER,high_wps has_qmark type_status,2.15683143053
+LER,power_yes has_qmark type_status,2.13292520467
+LER,netspeak_yes has_qmark type_link,2.12541172074
+LER,reward_yes high_wps type_video,2.1072696566
+LER,affiliation_yes netspeak_yes nonflu_yes,2.07804662969
+LER,has_exclam type_link has_url,2.07552401298
+LER,many_sixltr has_qmark type_link,2.06928891618
+LER,netspeak_yes type_link has_url,2.05516174406
+LER,reward_yes netspeak_yes type_link,2.03984053056
+HER,low_wps type_photo has_url,2.01517277198
+HER,is_authentic_yes posemo_yes many_sixltr,1.99380125258
+LER,many_sixltr type_link has_url,1.97073019244
+LER,low_wps has_exclam type_status,1.95698672029
+LER,high_wps type_link,1.94575139004
+LER,high_wps has_exclam type_status,1.94546836016
+LER,reward_yes type_status,1.92392194251
+LER,nonflu_yes many_sixltr has_exclam,1.9086920215
+LER,high_wps type_status,1.90510237725
+LER,discrep_yes power_yes netspeak_yes,1.90451541878
+LER,posemo_yes certain_yes low_wps,1.90349996336
+LER,few_sixltr has_exclam type_status,1.8669259686
+LER,has_qmark type_link has_hashtag,1.86561188638
+LER,nonflu_yes,1.83183399123
+LER,few_sixltr type_status,1.83046003064
+LER,netspeak_yes type_link has_hashtag,1.79796610948
+LER,netspeak_yes many_sixltr type_link,1.78622188461
+HER,differ_yes achieve_yes netspeak_yes,1.78461779238
+LER,see_yes netspeak_yes nonflu_yes,1.76659929471
+LER,power_yes high_wps type_link,1.75658011621
+HER,affiliation_yes few_sixltr type_photo,1.73440989991
+HER,differ_yes assent_yes,1.72573433448
+HER,tentat_yes differ_yes assent_yes,1.72573433448
+HER,cause_yes achieve_yes netspeak_yes,1.72551038259
+LER,netspeak_yes nonflu_yes low_wps,1.72005340394
+LER,is_analytic_no is_authentic_no low_wps,1.70789214047
+HER,netspeak_yes low_wps type_photo,1.70290845139
+HER,netspeak_yes many_sixltr type_photo,1.69285944249
+LER,many_sixltr type_link has_hashtag,1.68540672368
+LER,many_sixltr has_qmark type_status,1.67289433743
+LER,is_analytic_yes is_authentic_yes risk_yes,1.66444075332
+LER,many_sixltr low_wps type_status,1.66177015841
+HER,achieve_yes netspeak_yes many_sixltr,1.65885795983
+LER,netspeak_yes has_qmark type_status,1.63851579517
+LER,affiliation_yes has_qmark type_status,1.6211764597
+HER,posemo_yes type_photo,1.61691597753
+HER,is_analytic_no is_clout_yes discrep_yes,1.6083415415
+LER,reward_yes has_qmark type_link,1.60779254189
+LER,has_qmark type_link,1.6072384836
+LER,power_yes type_status,1.60687111797
+HER,certain_yes few_sixltr has_exclam,1.59314126887
+LER,is_authentic_no posemo_yes achieve_yes,1.57945880951
+LER,is_authentic_yes cause_yes power_yes,1.56970931441
+HER,posemo_yes has_exclam,1.56900083836
+HER,posemo_yes has_exclam type_photo,1.56900083836
+HER,is_analytic_yes is_authentic_no insight_yes,1.56805513687
+LER,power_yes reward_yes type_status,1.56185523102
+LER,is_authentic_yes type_status,1.5366577689
+HER,many_sixltr high_wps type_photo,1.527459441
+LER,few_sixltr low_wps type_link,1.51836768683
+LER,netspeak_yes nonflu_yes high_wps,1.51590640172
+HER,differ_yes achieve_yes reward_yes,1.51180733271
+HER,power_yes netspeak_yes low_wps,1.51108143458
+HER,posemo_yes low_wps has_exclam,1.4986442814
+LER,achieve_yes has_qmark,1.49023671061
+HER,power_yes high_wps type_photo,1.48247572967
+LER,affiliation_yes netspeak_yes type_link,1.48084109871
+LER,assent_yes nonflu_yes few_sixltr,1.48020352277
+HER,power_yes has_exclam type_link,1.48005153075
+LER,has_qmark type_link has_url,1.47846398244
+LER,is_analytic_yes is_authentic_no many_sixltr,1.47162717996
+HER,is_clout_no is_authentic_yes certain_yes,1.4630086582
+HER,see_yes affiliation_yes has_exclam,1.46104070256
+LER,low_wps has_exclam type_link,1.45804452125
+LER,netspeak_yes few_sixltr type_link,1.45621587232
+LER,reward_yes few_sixltr has_qmark,1.45617375939
+LER,see_yes type_video,1.44633835732
+LER,posemo_yes achieve_yes power_yes,1.43857638941
+HER,achieve_yes many_sixltr has_exclam,1.43725320885
+LER,assent_yes nonflu_yes,1.43620503616
+LER,is_authentic_yes risk_yes,1.43604956766
+HER,netspeak_yes high_wps type_photo,1.43389416949
+LER,has_exclam type_status has_hashtag,1.42942813803
+LER,reward_yes low_wps has_qmark,1.42669428399
+HER,hear_yes netspeak_yes few_sixltr,1.41941638526
+LER,high_wps type_video,1.41510079681
+HER,is_analytic_yes few_sixltr,1.41369675256
+HER,affiliation_yes netspeak_yes type_photo,1.4022037854
+LER,reward_yes type_video,1.4011575618
+HER,achieve_yes power_yes type_photo,1.39588505218
+LER,high_wps type_link has_hashtag,1.39259824215
+LER,reward_yes high_wps type_status,1.38987569325
+HER,differ_yes risk_yes,1.38833344782
+LER,netspeak_yes assent_yes nonflu_yes,1.38336957514
+LER,type_link has_hashtag,1.3832465864
+HER,discrep_yes few_sixltr,1.38240030989
+LER,reward_yes many_sixltr type_photo,1.38202109627
+LER,reward_yes has_exclam type_status,1.38112618949
+LER,nonflu_yes high_wps has_exclam,1.37798704607
+LER,is_clout_yes is_authentic_no is_tone_no,1.37745257738
+LER,netspeak_yes has_exclam type_link,1.36413408446
+HER,is_authentic_yes posemo_yes has_exclam,1.36409513499
+LER,affiliation_yes low_wps type_status,1.36307021272
+HER,is_clout_no posemo_yes negemo_yes,1.36066319795
+HER,is_clout_no achieve_yes,1.35955873355
+LER,is_analytic_no is_clout_yes low_wps,1.35105222328
+LER,low_wps type_link has_url,1.35068788669
+HER,insight_yes many_sixltr low_wps,1.34877931947
+HER,high_wps type_photo has_url,1.34821906312
+LER,few_sixltr high_wps type_link,1.34072792175
+LER,is_authentic_no type_video,1.33385937637
+HER,is_analytic_yes insight_yes certain_yes,1.33350725963
+LER,is_authentic_yes reward_yes,1.32866639019
+HER,is_clout_yes insight_yes see_yes,1.32628813199
+HER,is_clout_yes affiliation_yes few_sixltr,1.32410061811
+LER,power_yes netspeak_yes nonflu_yes,1.32334031627
+HER,posemo_yes reward_yes many_sixltr,1.32181230252
+HER,is_authentic_yes cause_yes certain_yes,1.31934813208
+LER,few_sixltr type_link has_url,1.31609365021
+LER,nonflu_yes high_wps,1.31431486901
+LER,power_yes type_link,1.31417301335
+LER,is_authentic_no achieve_yes many_sixltr,1.31093044736
+HER,is_clout_no posemo_yes see_yes,1.30892553203
+LER,nonflu_yes has_exclam has_qmark,1.30810858188
+LER,assent_yes high_wps type_link,1.30579951727
+HER,posemo_yes reward_yes has_exclam,1.30348707777
+LER,power_yes reward_yes assent_yes,1.30098809159
+LER,differ_yes hear_yes feel_yes,1.29166613793
+LER,type_link,1.28940625148
+LER,is_authentic_no see_yes many_sixltr,1.28809295749
+HER,is_authentic_yes discrep_yes few_sixltr,1.28799347209
+HER,certain_yes has_exclam type_photo,1.28757828492
+LER,is_authentic_no achieve_yes,1.28333265308
+HER,posemo_yes reward_yes has_qmark,1.27938367009
+HER,is_analytic_no is_authentic_yes tentat_yes,1.27894764138
+LER,affiliation_yes achieve_yes high_wps,1.27826407936
+LER,cause_yes reward_yes has_qmark,1.27035853239
+HER,posemo_yes affiliation_yes has_exclam,1.26661387648
+LER,has_exclam type_video has_url,1.26150874268
+HER,posemo_yes reward_yes,1.26100690114
+HER,posemo_yes many_sixltr low_wps,1.25687484018
+HER,differ_yes risk_yes many_sixltr,1.25416007346
+LER,affiliation_yes reward_yes has_exclam,1.25267226773
+LER,discrep_yes power_yes,1.24802489235
+LER,cause_yes power_yes has_qmark,1.24680861964
+HER,certain_yes few_sixltr,1.24512126809
+HER,certain_yes netspeak_yes type_photo,1.24120399781
+LER,type_status has_hashtag,1.23777069797
+HER,affiliation_yes netspeak_yes low_wps,1.23479594318
+LER,few_sixltr has_qmark type_link,1.23451967832
+LER,power_yes netspeak_yes assent_yes,1.23433874101
+LER,hear_yes has_qmark,1.23356883004
+HER,is_clout_no certain_yes differ_yes,1.22947437863
+LER,few_sixltr high_wps type_video,1.229285335
+LER,is_analytic_no is_authentic_no netspeak_yes,1.22776328192
+HER,feel_yes has_exclam,1.22758724143
+LER,is_authentic_no low_wps has_exclam,1.22673731126
+HER,feel_yes reward_yes many_sixltr,1.22244362738
+HER,posemo_yes feel_yes reward_yes,1.22128742916
+LER,nonflu_yes low_wps has_exclam,1.21902600216
+LER,hear_yes low_wps has_exclam,1.21099884658
+HER,reward_yes netspeak_yes type_photo,1.20926899819
+HER,certain_yes achieve_yes netspeak_yes,1.20824442917
+HER,affiliation_yes has_exclam type_link,1.20578249683
+HER,is_analytic_yes see_yes hear_yes,1.20446965219
+LER,power_yes many_sixltr type_link,1.20338123383
+HER,is_clout_no posemo_yes,1.20326267063
+HER,differ_yes hear_yes power_yes,1.20254672369
+LER,nonflu_yes few_sixltr high_wps,1.20211517777
+LER,is_authentic_no low_wps,1.20182613588
+HER,is_authentic_yes discrep_yes differ_yes,1.19885935427
+LER,power_yes netspeak_yes type_link,1.19491513229
+
+LER,levi,4.35128462848
+LER,pepsi,4.30516222807
+HER,siemens,4.14567170718
+LER,max,4.05007322999
+LER,liveinlevis,3.84861056248
+HER,bmw,3.81414996624
+LER,pepsi max,3.79321710735
+HER,disneyland,3.70552906179
+HER,disney,3.62984373323
+HER,coup,3.58184266566
+LER,pringles,3.56928996783
+HER,kitchen,3.56626989087
+LER,ibm,3.53675034066
+HER,mercedes,3.37214712268
+HER,bmw series,3.34010472545
+LER,melbourne,3.33500290185
+LER,has_qmark type_status,3.2765647821
+LER,flavour,3.21047911075
+LER,al paris,3.20013419144
+LER,250,3.15661414967
+HER,ikea,3.10821221866
+HER,amg,3.08087756886
+HER,burberry,3.03106931296
+LER,nutella,2.95249650377
+LER,max crew,2.93614656741
+LER,levis,2.92390659444
+HER,concept,2.91860933589
+LER,type_status has_url,2.89457488242
+HER,pictureoftheweek,2.89204944818
+LER,type_status,2.89158392022
+LER,comp,2.86732492274
+LER,250 pepsi,2.86438665804
+LER,pepsi refresh,2.86438665804
+HER,ultrabook,2.85685620663
+HER,benz,2.84548772329
+HER,mercedes benz,2.84548772329
+HER,gran,2.82460678209
+HER,type_photo happy,2.80935470999
+HER,new bmw,2.794286234
+HER,type_photo bmw,2.79376101133
+LER,type_photo winners,2.78192886534
+LER,refresh,2.78125513815
+HER,has_url pictureoftheweek,2.77154462309
+LER,refresh cards,2.76814833789
+HER,galaxy,2.76133816376
+HER,disneyland park,2.75938906825
+LER,nonflu_yes has_exclam,2.75894572611
+LER,winners 250,2.75545165019
+LER,denim,2.74753700718
+LER,type_status best,2.73824386166
+LER,mcdonald,2.7381331419
+LER,trucker,2.71514661276
+HER,tablet,2.7145536741
+HER,mickey,2.69275538477
+LER,jeans,2.68895308205
+HER,prada,2.68314657307
+HER,pleasure,2.68034743204
+HER,disneyland resort,2.6743268908
+HER,m4,2.66033053006
+HER,bmw i8,2.65662434278
+HER,i8,2.65662434278
+LER,al,2.65232936193
+LER,mates,2.65125357078
+HER,germany,2.64075027767
+HER,land,2.63770551961
+LER,commuter,2.61189635596
+LER,request,2.60722939104
+LER,tailor shop,2.60091581682
+HER,type_photo favorite,2.59060570721
+HER,share space,2.58774338021
+HER,california adventure,2.57844311767
+HER,disney california,2.57844311767
+LER,brisbane,2.57443932866
+LER,levi tailor,2.57249285821
+HER,magical,2.56355981019
+LER,hit refresh,2.56306438548
+LER,kfc,2.55388960648
+LER,splendour,2.55364182654
+HER,mercedes amg,2.54498100032
+LER,chips,2.54030509499
+HER,wind,2.53950194913
+LER,max kick,2.53490366226
+LER,crew,2.53484996598
+HER,has_url bmw,2.53439108716
+HER,happy birthday,2.5279602768
+HER,lego,2.52564876158
+LER,95,2.52425468364
+HER,convertible,2.52161290461
+HER,25daysofsamsung,2.51697277617
+LER,low_wps type_status,2.50553414225
+HER,bmw m4,2.49758149098
+LER,ourfuture,2.49606551785
+LER,many_sixltr type_status,2.49360483361
+HER,type_photo magical,2.46392203616
+LER,nonflu_yes few_sixltr,2.46271823371
+HER,rsvp,2.46268984974
+LER,australian open,2.46140787266
+LER,outfit,2.45569438571
+HER,pdf,2.45030833091
+LER,skate,2.44692374928
+HER,bmw concept,2.44294818474
+LER,levi commuter,2.43477762551
+LER,netspeak_yes nonflu_yes,2.42981799613
+HER,ikea family,2.42616021153
+HER,parks,2.42605961931
+LER,12 noon,2.4208988295
+LER,10am,2.41954071187
+HER,ag,2.4153836316
+HER,driving pleasure,2.40459324024
+LER,netspeak_yes type_link,2.40232551866
+LER,cbd,2.40051553595
+LER,tailor,2.39034654997
+LER,jacket,2.39011488807
+LER,ferrero,2.38953519716
+LER,oreal,2.38906047859
+HER,x5,2.3859283176
+HER,disneyland visit,2.38492777986
+LER,type_link has_url,2.38434551
+LER,free pepsi,2.38089360515
+LER,afternoon,2.37746140201
+HER,ikea store,2.3745470996
+HER,resort,2.37326376218
+LER,australian,2.36893598858
+HER,main street,2.36445827688
+HER,cars land,2.35752394076
+HER,gethappier,2.34832318
+HER,series coup,2.3464419507
+LER,update,2.34101701011
+HER,galaxy note,2.340596682
+HER,nay,2.33984115627
+HER,yay,2.33984115627
+HER,yay nay,2.33984115627
+HER,ikea gift,2.3387196989
+LER,sydney,2.33188615466
+LER,afternoon slump,2.33115378135
+LER,fix afternoon,2.33115378135
+LER,kick fix,2.33115378135
+LER,slump,2.33115378135
+LER,slump request,2.33115378135
+LER,want free,2.33115378135
+HER,bmw individual,2.32944774278
+HER,disney parks,2.32820334864
+HER,combined,2.32588805295
+LER,customised,2.32570023482
+HER,photos courtesy,2.31919604351
+LER,type_status favourite,2.31887383375
+HER,color,2.31435694242
+LER,greg,2.31220290543
+LER,greg murphy,2.31220290543
+LER,murphy,2.31220290543
+HER,individual,2.31111443539
+LER,trucker jacket,2.310575421
+HER,press,2.30532489416
+LER,many_sixltr type_link,2.30148704612
+LER,blogger,2.29957805964
+LER,levi trucker,2.2993766905
+LER,noon,2.29400806277
+LER,makeup,2.2907562048
+LER,max experience,2.28497037431
+LER,type_photo pringles,2.28188663764
+HER,type_photo yay,2.27863280074
+HER,type_photo disneyland,2.27471666362
+HER,new ikea,2.27449798325
+HER,hp,2.27418116529
+LER,12pm,2.27220436969
+HER,note,2.27206244066
+LER,refreshers,2.2678819557
+HER,series gran,2.26690500037
+HER,munich,2.26586183227
+HER,vehicle,2.26586083623
+LER,ibmau,2.26276245394
+LER,skittles,2.2627531029
+LER,has_url ibm,2.25486159744
+HER,flyer,2.25455444692
+HER,ikeacatalog,2.24903377397
+LER,10am 12,2.24871651994
+HER,parks blog,2.239047443
+LER,wrote,2.23550107546
+HER,m6,2.23032840584
+HER,creativity,2.22743270656
+HER,consumption,2.22375886631
+LER,2016,2.22153974978
+HER,bmw x5,2.22080986105
+LER,ultimate max,2.22036698176
+HER,gran coup,2.21964250889
+HER,walt,2.21639251063
+LER,refresh card,2.21377087383
+HER,halloween,2.21370111106
+LER,computing,2.21357246157
+LER,colour,2.20781767814
+LER,favourite,2.20318173003
+LER,australia,2.202993832
+HER,fuel consumption,2.20253872878
+LER,hunts,2.19972549452
+HER,efficiency,2.19909038404
+LER,megan,2.19154544267
+HER,save 20,2.1905139511
+LER,perth,2.18782942066
+LER,carpet,2.18687981103
+HER,plant,2.18556161886

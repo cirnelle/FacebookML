@@ -49,7 +49,7 @@ class LabelFbPostsEngRate():
 
                     engagement = (0.5*int(fp[4])) + (0.75*int(fp[6])) + int(fp[5])
 
-                engrate = str((np.divide(int(engagement),int(fp[3])))*100)
+                engrate = str((np.divide(int(engagement),int(fp[2])))*100)
 
                 engrate_list.append([fp[0],fp[1],fp[2],fp[3],fp[4],fp[5],fp[6],engrate,fp[7],fp[8]])
 
@@ -102,7 +102,7 @@ class LabelFbPostsEngRate():
 
                     engagement = (0.5*int(fp[4])) + (0.75*int(fp[6])) + int(fp[5])
 
-                engrate = str((np.divide(int(engagement),int(fp[3])))*100)
+                engrate = str((np.divide(int(engagement),int(fp[2])))*100)
 
                 engrate_list.append([fp[0],fp[1],fp[2],fp[3],fp[4],fp[5],fp[6],engrate,fp[7],fp[8]])
 
@@ -124,18 +124,18 @@ class LabelFbPostsEngRate():
 
     def label_fb_post(self):
 
-        #fb_posts = self.get_eng_rate()
+        fb_posts = self.get_eng_rate()
 
         #------------------------------
         # uncomment the following if already have gold standard (real) engrate
 
-        lines = open(path_to_store_engrate_output, 'r').readlines()
-
-        fb_posts = []
-
-        for line in lines:
-            spline = line.rstrip('\n').split(',')
-            fb_posts.append(spline)
+        # lines = open(path_to_store_engrate_output, 'r').readlines()
+        #
+        # fb_posts = []
+        #
+        # for line in lines:
+        #     spline = line.rstrip('\n').split(',')
+        #     fb_posts.append(spline)
 
         print(len(fb_posts))
 
@@ -148,29 +148,29 @@ class LabelFbPostsEngRate():
 
         for fp in fb_posts:
 
-            if float(fp[6]) > her_boundary:
+            if float(fp[7]) > her_boundary:
 
-                if fp[8] == '':
+                if fp[9] == '':
 
                     labelled_fb_posts.append(['nil','HER'])
                     high_er.append(['nil','HER'])
 
                 else:
 
-                    labelled_fb_posts.append([fp[8],'HER'])
-                    high_er.append([fp[8],'HER'])
+                    labelled_fb_posts.append([fp[9],'HER'])
+                    high_er.append([fp[9],'HER'])
 
-            elif float(fp[6]) < ler_boundary:
+            elif float(fp[7]) < ler_boundary:
 
-                if fp[8] == '':
+                if fp[9] == '':
 
                     labelled_fb_posts.append(['nil','LER'])
                     low_er.append(['nil','LER'])
 
                 else:
 
-                    labelled_fb_posts.append([fp[8],'LER'])
-                    low_er.append([fp[8],'LER'])
+                    labelled_fb_posts.append([fp[9],'LER'])
+                    low_er.append([fp[9],'LER'])
 
             else:
                 pass
@@ -193,18 +193,18 @@ class LabelFbPostsEngRate():
 
     def label_fb_post_raw(self):
 
-        #fb_posts = self.get_eng_rate_raw_posts()
+        fb_posts = self.get_eng_rate_raw_posts()
 
         #------------------------------
         # uncomment the following if already have gold standard (real) engrate
 
-        lines = open(path_to_store_engrate_output_raw, 'r').readlines()
-
-        fb_posts = []
-
-        for line in lines:
-            spline = line.rstrip('\n').split(',')
-            fb_posts.append(spline)
+        # lines = open(path_to_store_engrate_output_raw, 'r').readlines()
+        #
+        # fb_posts = []
+        #
+        # for line in lines:
+        #     spline = line.rstrip('\n').split(',')
+        #     fb_posts.append(spline)
 
         print(len(fb_posts))
 
@@ -217,15 +217,15 @@ class LabelFbPostsEngRate():
 
         for fp in fb_posts:
 
-            if float(fp[6]) > her_boundary:
+            if float(fp[7]) > her_boundary:
 
-                labelled_fb_posts.append([fp[8],'HER',fp[7]])
-                high_er.append([fp[8],'HER'])
+                labelled_fb_posts.append([fp[9],'HER',fp[8]])
+                high_er.append([fp[9],'HER'])
 
-            elif float(fp[6]) < ler_boundary:
+            elif float(fp[7]) < ler_boundary:
 
-                labelled_fb_posts.append([fp[8],'LER',fp[7]])
-                low_er.append([fp[8],'LER'])
+                labelled_fb_posts.append([fp[9],'LER',fp[8]])
+                low_er.append([fp[9],'LER'])
 
             else:
                 pass
@@ -308,24 +308,161 @@ class LabelFbPostsEngRate():
         print ("Mean is %0.3f" %(er_mean))
         print ("Standard deviation is %0.3f" %(er_std))
 
+    #------------------------------
+
+    def label_fb_post_with_date(self):
+
+        fb_posts = self.get_eng_rate()
+
+        # ------------------------------
+        # uncomment the following if already have gold standard (real) engrate
+
+        # lines = open(path_to_store_engrate_output, 'r').readlines()
+        #
+        # fb_posts = []
+        #
+        # for line in lines:
+        #     spline = line.rstrip('\n').split(',')
+        #     fb_posts.append(spline)
+
+        print(len(fb_posts))
+
+        labelled_fb_posts = []
+        high_er = []
+        low_er = []
+
+        print("#############################")
+        print("Labelling preprocessed posts ...")
+
+        for fp in fb_posts:
+
+            if float(fp[7]) > her_boundary:
+
+                if fp[9] == '':
+
+                    labelled_fb_posts.append([fp[1], 'nil', 'HER'])
+                    high_er.append(['nil', 'HER'])
+
+                else:
+
+                    labelled_fb_posts.append([fp[1], fp[9], 'HER'])
+                    high_er.append([fp[9], 'HER'])
+
+            elif float(fp[7]) < ler_boundary:
+
+                if fp[9] == '':
+
+                    labelled_fb_posts.append([fp[1], 'nil', 'LER'])
+                    low_er.append(['nil', 'LER'])
+
+                else:
+
+                    labelled_fb_posts.append([fp[1], fp[9], 'LER'])
+                    low_er.append([fp[9], 'LER'])
+
+            else:
+                pass
+
+        print("Length of high ER list is " + str(len(high_er)))
+        print("Length of low ER list is " + str(len(low_er)))
+
+        f = open(path_to_store_labelled_fb_post_with_date, 'w')
+
+        for lf in labelled_fb_posts:
+            f.write(','.join(lf) + '\n')
+
+        f.close()
+
+        print("Length of labelled posts is " + str(len(labelled_fb_posts)))
+
+
+    def label_fb_post_raw_with_date(self):
+
+        fb_posts = self.get_eng_rate_raw_posts()
+
+        # ------------------------------
+        # uncomment the following if already have gold standard (real) engrate
+
+        # lines = open(path_to_store_engrate_output, 'r').readlines()
+        #
+        # fb_posts = []
+        #
+        # for line in lines:
+        #     spline = line.rstrip('\n').split(',')
+        #     fb_posts.append(spline)
+
+        print(len(fb_posts))
+
+        labelled_fb_posts = []
+        high_er = []
+        low_er = []
+
+        print("#############################")
+        print("Labelling preprocessed posts ...")
+
+        for fp in fb_posts:
+
+            if float(fp[7]) > her_boundary:
+
+                if fp[9] == '':
+
+                    labelled_fb_posts.append([fp[1], 'nil', 'HER', fp[8]])
+                    high_er.append(['nil', 'HER'])
+
+                else:
+
+                    labelled_fb_posts.append([fp[1], fp[9], 'HER', fp[8]])
+                    high_er.append([fp[9], 'HER'])
+
+            elif float(fp[7]) < ler_boundary:
+
+                if fp[9] == '':
+
+                    labelled_fb_posts.append([fp[1], 'nil', 'LER', fp[8]])
+                    low_er.append(['nil', 'LER'])
+
+                else:
+
+                    labelled_fb_posts.append([fp[1], fp[9], 'LER', fp[8]])
+                    low_er.append([fp[9], 'LER'])
+
+            else:
+                pass
+
+        print("Length of high ER list is " + str(len(high_er)))
+        print("Length of low ER list is " + str(len(low_er)))
+
+        f = open(path_to_store_labelled_fb_post_raw_with_date, 'w')
+
+        for lf in labelled_fb_posts:
+            f.write(','.join(lf) + '\n')
+
+        f.close()
+
+        print("Length of labelled posts is " + str(len(labelled_fb_posts)))
+
 
 ################
 # variables
 ################
 
-path_to_preprocessed_fb_post_file = '../fb_data/posts/nasa/preprocessed_nasa_pagelike_interpolated.csv'
-path_to_store_engrate_output = '../output/engrate/nasa/REAL_engrate_nasa.csv'
-path_to_store_labelled_fb_post = '../output/engrate/nasa/REAL_labelled_nasa.csv'
+path_to_preprocessed_fb_post_file = '../fb_data/posts/nonprofit/preprocessed_fb_posts_nonprofit.csv'
+path_to_store_engrate_output = '../output/engrate/nonprofit/engrate_nonprofit.csv'
+path_to_store_labelled_fb_post = '../output/engrate/nonprofit/labelled_nonprofit.csv'
+path_to_store_labelled_fb_post_with_date = '../output/engrate/nonprofit/temporal/labelled_nonprofit_dates.csv'
 
 # for LIWC
-path_to_raw_fb_post_file = '../fb_data/posts/nasa/raw_nasa_pagelike_interpolated.csv'
-path_to_store_engrate_output_raw = '../output/engrate/nasa/REAL_engrate_nasa_raw.csv'
-path_to_store_labelled_fb_post_raw = '../output/engrate/nasa/REAL_labelled_nasa_raw.csv'
+path_to_raw_fb_post_file = '../fb_data/posts/nonprofit/raw_fb_posts_nonprofit.csv'
+path_to_store_engrate_output_raw = '../output/engrate/nonprofit/engrate_nonprofit_raw.csv'
+path_to_store_labelled_fb_post_raw = '../output/engrate/nonprofit/labelled_nonprofit_raw.csv'
+path_to_store_labelled_fb_post_raw_with_date = '../output/engrate/nonprofit/temporal/labelled_nonprofit_raw_dates.csv'
+
+
 
 # engrate parameters
 with_comment = 1
-her_boundary = 0.099
-ler_boundary = 0.024
+her_boundary = 0.4
+ler_boundary = 0.0031
 
 
 if __name__ == "__main__":
@@ -334,14 +471,23 @@ if __name__ == "__main__":
     lf = LabelFbPostsEngRate()
 
     #lf.get_eng_rate()
-    lf.label_fb_post()
+    #lf.label_fb_post()
 
     #lf.get_eng_rate_raw_posts()
-    lf.label_fb_post_raw()
+    #lf.label_fb_post_raw()
 
     #lf.get_histogram()
 
     #lf.get_mean_and_std()
+
+
+    ##################
+    # label engrate plus date
+    ##################
+
+    lf.label_fb_post_with_date()
+    lf.label_fb_post_raw_with_date()
+
 
 
 
